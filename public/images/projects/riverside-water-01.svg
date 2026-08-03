@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1067" viewBox="0 0 1600 1067" role="img" aria-label="Riverside Water Reclamation">
+  <defs>
+    <linearGradient id="griversidewater01" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#136b7d"/>
+      <stop offset="55%" stop-color="#0d4360"/>
+      <stop offset="100%" stop-color="#0a1420"/>
+    </linearGradient>
+    <radialGradient id="vriversidewater01" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="priversidewater01" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nriversidewater01"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#griversidewater01)"/>
+  <rect width="1600" height="1067" fill="url(#priversidewater01)"/>
+  <line x1="352" y1="896.28" x2="352" y2="491.5892946827225" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="352" y1="491.5892946827225" x2="465.25700455051935" y2="531.2484792462462" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="352" y1="491.5892946827225" x2="266.11383040648025" y2="575.3960120301592" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="352" y1="491.5892946827225" x2="395.8364473039627" y2="379.8826883974767" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="800" y1="896.28" x2="800" y2="337.8819218351971" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="800" y1="337.8819218351971" x2="880.2129153302313" y2="427.13374654609663" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="800" y1="337.8819218351971" x2="725.8452247642467" y2="432.2274003158053" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="800" y1="337.8819218351971" x2="823.028225972876" y2="220.1122279044487" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1248" y1="896.28" x2="1248" y2="436.8479036169592" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="1248" y1="436.8479036169592" x2="1317.1868802266258" y2="534.8947067494761" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1248" y1="436.8479036169592" x2="1131.5294455205012" y2="465.7375200775161" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1248" y1="436.8479036169592" x2="1229.796058392569" y2="318.23670469395176" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="0" y1="908.28" x2="1600" y2="908.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="922.28" x2="1600" y2="922.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="936.28" x2="1600" y2="936.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="950.28" x2="1600" y2="950.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+  <rect width="1600" height="1067" fill="url(#vriversidewater01)"/>
+  <rect width="1600" height="1067" filter="url(#nriversidewater01)" opacity="0.045"/>
+  <g font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+    <rect x="88" y="962.315" width="4" height="46" fill="#F59E0B"/>
+    <text x="106" y="984.315" fill="#ffffff" font-size="30" font-weight="700" letter-spacing="0.5">Riverside Water Reclamation</text>
+    <text x="106" y="1004.315" fill="rgba(255,255,255,.62)" font-size="19" font-weight="600" letter-spacing="2.4">PLATE 01</text>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-label="Meridian Construct">
+  <defs>
+    <linearGradient id="gdesertsolarhero" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#136b7d"/>
+      <stop offset="55%" stop-color="#0d4360"/>
+      <stop offset="100%" stop-color="#0a1420"/>
+    </linearGradient>
+    <radialGradient id="vdesertsolarhero" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pdesertsolarhero" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="ndesertsolarhero"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="2400" height="1350" fill="url(#gdesertsolarhero)"/>
+  <rect width="2400" height="1350" fill="url(#pdesertsolarhero)"/>
+  <line x1="528" y1="1134" x2="528" y2="407.15320504037663" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="528" y1="407.15320504037663" x2="693.6254193679952" y2="477.6388096641274" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="528" y1="407.15320504037663" x2="392.71937874715655" y2="525.8930615058647" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="528" y1="407.15320504037663" x2="442.622015151265" y2="248.68996102723278" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1200" y1="1134" x2="1200" y2="513.2956991856918" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="1200" y1="513.2956991856918" x2="1353.3543443384763" y2="607.542423651405" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1200" y1="513.2956991856918" x2="1021.3633989759469" y2="535.4082470844132" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1200" y1="513.2956991856918" x2="1163.3933418037611" y2="337.0573589310702" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1872" y1="1134" x2="1872" y2="589.5164392632431" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="1872" y1="589.5164392632431" x2="2044.2577938347658" y2="641.7395420356684" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1872" y1="589.5164392632431" x2="1767.261919830121" y2="735.9061061196439" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1872" y1="589.5164392632431" x2="1950.7537424836098" y2="427.65894624909424" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="0" y1="1146" x2="2400" y2="1146" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="1160" x2="2400" y2="1160" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="1174" x2="2400" y2="1174" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="1188" x2="2400" y2="1188" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+  <rect width="2400" height="1350" fill="url(#vdesertsolarhero)"/>
+  <rect width="2400" height="1350" filter="url(#ndesertsolarhero)" opacity="0.045"/>
+  
+</svg>

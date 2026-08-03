@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-label="Meridian Construct">
+  <defs>
+    <linearGradient id="gcareershero" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#33465f"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+    <radialGradient id="vcareershero" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pcareershero" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="ncareershero"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="2400" height="1350" fill="url(#gcareershero)"/>
+  <rect width="2400" height="1350" fill="url(#pcareershero)"/>
+  <line x1="407.5473085124977" y1="1107" x2="407.5473085124977" y2="360.5006804508157" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="277.4640947111137" y1="360.5006804508157" x2="814.0573516418226" y2="360.5006804508157" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="407.5473085124977" y1="330.5006804508157" x2="814.0573516418226" y2="360.5006804508157" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="407.5473085124977" y1="330.5006804508157" x2="277.4640947111137" y2="360.5006804508157" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="407.5473085124977" y1="360.5006804508157" x2="407.5473085124977" y2="330.5006804508157" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="700.2345395656116" y1="360.5006804508157" x2="700.2345395656116" y2="644.0729278335348" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="1107.4029800794087" y1="1107" x2="1107.4029800794087" y2="429.8655074913985" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="943.3727028224431" y1="429.8655074913985" x2="1619.9975965074264" y2="429.8655074913985" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="1107.4029800794087" y1="399.8655074913985" x2="1619.9975965074264" y2="429.8655074913985" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1107.4029800794087" y1="399.8655074913985" x2="943.3727028224431" y2="429.8655074913985" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1107.4029800794087" y1="429.8655074913985" x2="1107.4029800794087" y2="399.8655074913985" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="1476.4711039075814" y1="429.8655074913985" x2="1476.4711039075814" y2="634.6662239651195" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="1850.330684046261" y1="1107" x2="1850.330684046261" y2="684.6016475718934" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="1677.3805107254907" y1="684.6016475718934" x2="2390.799975673668" y2="684.6016475718934" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="1850.330684046261" y1="654.6016475718934" x2="2390.799975673668" y2="684.6016475718934" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1850.330684046261" y1="654.6016475718934" x2="1677.3805107254907" y2="684.6016475718934" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1850.330684046261" y1="684.6016475718934" x2="1850.330684046261" y2="654.6016475718934" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="2239.468574017994" y1="684.6016475718934" x2="2239.468574017994" y2="935.3695436173584" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="0" y1="1107" x2="2400" y2="1107" stroke="rgba(255,255,255,.5)" stroke-width="2.5"/>
+  <rect width="2400" height="1350" fill="url(#vcareershero)"/>
+  <rect width="2400" height="1350" filter="url(#ncareershero)" opacity="0.045"/>
+  
+</svg>

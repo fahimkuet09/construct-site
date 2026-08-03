@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1067" viewBox="0 0 1600 1067" role="img" aria-label="Cascade Pumped Storage">
+  <defs>
+    <linearGradient id="gcascadestorage04" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#136b7d"/>
+      <stop offset="55%" stop-color="#0d4360"/>
+      <stop offset="100%" stop-color="#0a1420"/>
+    </linearGradient>
+    <radialGradient id="vcascadestorage04" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pcascadestorage04" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="ncascadestorage04"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#gcascadestorage04)"/>
+  <rect width="1600" height="1067" fill="url(#pcascadestorage04)"/>
+  <line x1="281.7504397444427" y1="874.9399999999999" x2="281.7504397444427" y2="415.13400969030334" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="158.90326664492488" y1="415.13400969030334" x2="665.6478556804359" y2="415.13400969030334" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="281.7504397444427" y1="385.13400969030334" x2="665.6478556804359" y2="415.13400969030334" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="281.7504397444427" y1="385.13400969030334" x2="158.90326664492488" y2="415.13400969030334" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="281.7504397444427" y1="415.13400969030334" x2="281.7504397444427" y2="385.13400969030334" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="558.1565792183578" y1="415.13400969030334" x2="558.1565792183578" y2="578.1489580372441" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="754.7297367001884" y1="874.9399999999999" x2="754.7297367001884" y2="449.0285520617058" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="634.3001148415916" y1="449.0285520617058" x2="1131.0723050083034" y2="449.0285520617058" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="754.7297367001884" y1="419.0285520617058" x2="1131.0723050083034" y2="449.0285520617058" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="754.7297367001884" y1="419.0285520617058" x2="634.3001148415916" y2="449.0285520617058" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="754.7297367001884" y1="449.0285520617058" x2="754.7297367001884" y2="419.0285520617058" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="1025.696385882031" y1="449.0285520617058" x2="1025.696385882031" y2="754.1643805420724" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="1234.3013215707615" y1="874.9399999999999" x2="1234.3013215707615" y2="500.4417577186273" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="1126.974820172675" y1="500.4417577186273" x2="1569.696638439782" y2="500.4417577186273" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="1234.3013215707615" y1="470.4417577186273" x2="1569.696638439782" y2="500.4417577186273" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1234.3013215707615" y1="470.4417577186273" x2="1126.974820172675" y2="500.4417577186273" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1234.3013215707615" y1="500.4417577186273" x2="1234.3013215707615" y2="470.4417577186273" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="1475.7859497164563" y1="500.4417577186273" x2="1475.7859497164563" y2="841.5925887286896" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="0" y1="874.9399999999999" x2="1600" y2="874.9399999999999" stroke="rgba(255,255,255,.5)" stroke-width="2.5"/>
+  <rect width="1600" height="1067" fill="url(#vcascadestorage04)"/>
+  <rect width="1600" height="1067" filter="url(#ncascadestorage04)" opacity="0.045"/>
+  <g font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+    <rect x="88" y="962.315" width="4" height="46" fill="#F59E0B"/>
+    <text x="106" y="984.315" fill="#ffffff" font-size="30" font-weight="700" letter-spacing="0.5">Cascade Pumped Storage</text>
+    <text x="106" y="1004.315" fill="rgba(255,255,255,.62)" font-size="19" font-weight="600" letter-spacing="2.4">PLATE 04</text>
+  </g>
+</svg>

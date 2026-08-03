@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1067" viewBox="0 0 1600 1067" role="img" aria-label="Harbour Light Rail">
+  <defs>
+    <linearGradient id="gharbourrail01" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#33465f"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+    <radialGradient id="vharbourrail01" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pharbourrail01" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nharbourrail01"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#gharbourrail01)"/>
+  <rect width="1600" height="1067" fill="url(#pharbourrail01)"/>
+  <path d="M 480 469.48 L -240 1067 L 992 1067 Z" fill="rgba(255,255,255,.07)"/><path d="M 672 469.48 L 1152 1067 L 1888 1067 Z" fill="rgba(255,255,255,.05)"/><line x1="0" y1="469.48" x2="1600" y2="469.48" stroke="rgba(255,255,255,.28)" stroke-width="1.4"/><line x1="576" y1="493.3808" x2="586" y2="493.3808" stroke="rgba(245,158,11,.7)" stroke-width="2"/><line x1="521.1428571428571" y1="505.5750857142857" x2="541.1428571428571" y2="505.5750857142857" stroke="rgba(245,158,11,.7)" stroke-width="2.7142857142857144"/><line x1="466.2857142857143" y1="542.1579428571429" x2="496.2857142857143" y2="542.1579428571429" stroke="rgba(245,158,11,.7)" stroke-width="3.4285714285714284"/><line x1="411.42857142857144" y1="603.1293714285714" x2="451.42857142857144" y2="603.1293714285714" stroke="rgba(245,158,11,.7)" stroke-width="4.142857142857142"/><line x1="356.57142857142856" y1="688.4893714285714" x2="406.57142857142856" y2="688.4893714285714" stroke="rgba(245,158,11,.7)" stroke-width="4.857142857142857"/><line x1="301.7142857142857" y1="798.2379428571429" x2="361.7142857142857" y2="798.2379428571429" stroke="rgba(245,158,11,.7)" stroke-width="5.571428571428571"/><line x1="246.8571428571429" y1="932.3750857142857" x2="316.8571428571429" y2="932.3750857142857" stroke="rgba(245,158,11,.7)" stroke-width="6.285714285714286"/><line x1="192" y1="409.48" x2="192" y2="479.48" stroke="rgba(255,255,255,.2)" stroke-width="2"/><line x1="512" y1="409.48" x2="512" y2="479.48" stroke="rgba(255,255,255,.2)" stroke-width="2"/><line x1="832" y1="409.48" x2="832" y2="479.48" stroke="rgba(255,255,255,.2)" stroke-width="2"/><line x1="1152.0000000000002" y1="409.48" x2="1152.0000000000002" y2="479.48" stroke="rgba(255,255,255,.2)" stroke-width="2"/><line x1="1472" y1="409.48" x2="1472" y2="479.48" stroke="rgba(255,255,255,.2)" stroke-width="2"/>
+  <rect width="1600" height="1067" fill="url(#vharbourrail01)"/>
+  <rect width="1600" height="1067" filter="url(#nharbourrail01)" opacity="0.045"/>
+  <g font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+    <rect x="88" y="962.315" width="4" height="46" fill="#F59E0B"/>
+    <text x="106" y="984.315" fill="#ffffff" font-size="30" font-weight="700" letter-spacing="0.5">Harbour Light Rail</text>
+    <text x="106" y="1004.315" fill="rgba(255,255,255,.62)" font-size="19" font-weight="600" letter-spacing="2.4">PLATE 01</text>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Meridian Construct">
+  <defs>
+    <linearGradient id="gdesertsolarthumb" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#136b7d"/>
+      <stop offset="55%" stop-color="#0d4360"/>
+      <stop offset="100%" stop-color="#0a1420"/>
+    </linearGradient>
+    <radialGradient id="vdesertsolarthumb" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pdesertsolarthumb" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="ndesertsolarthumb"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#gdesertsolarthumb)"/>
+  <rect width="1200" height="900" fill="url(#pdesertsolarthumb)"/>
+  <line x1="264" y1="756" x2="264" y2="350.64798013307154" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="264" y1="350.64798013307154" x2="336.8549899662767" y2="403.48878289962425" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="264" y1="350.64798013307154" x2="189.9639947912929" y2="401.8209215448791" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="264" y1="350.64798013307154" x2="233.41028325301681" y2="266.0059738398643" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="600" y1="756" x2="600" y2="277.35408260487014" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="600" y1="277.35408260487014" x2="655.0931101196417" y2="348.52113409181203" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="600" y1="277.35408260487014" x2="551.8018517798266" y2="353.36025674977884" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="600" y1="277.35408260487014" x2="577.3267729911237" y2="190.25686808566775" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="936" y1="756" x2="936" y2="379.735169224441" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="936" y1="379.735169224441" x2="1014.3291805626703" y2="424.0582949307874" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="936" y1="379.735169224441" x2="874.1743425623029" y2="445.1384419437516" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="936" y1="379.735169224441" x2="897.9667122377346" y2="298.16636990759" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="0" y1="768" x2="1200" y2="768" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="782" x2="1200" y2="782" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="796" x2="1200" y2="796" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="810" x2="1200" y2="810" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+  <rect width="1200" height="900" fill="url(#vdesertsolarthumb)"/>
+  <rect width="1200" height="900" filter="url(#ndesertsolarthumb)" opacity="0.045"/>
+  
+</svg>

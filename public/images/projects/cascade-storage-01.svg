@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1067" viewBox="0 0 1600 1067" role="img" aria-label="Cascade Pumped Storage">
+  <defs>
+    <linearGradient id="gcascadestorage01" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#136b7d"/>
+      <stop offset="55%" stop-color="#0d4360"/>
+      <stop offset="100%" stop-color="#0a1420"/>
+    </linearGradient>
+    <radialGradient id="vcascadestorage01" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pcascadestorage01" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="ncascadestorage01"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#gcascadestorage01)"/>
+  <rect width="1600" height="1067" fill="url(#pcascadestorage01)"/>
+  <line x1="352" y1="896.28" x2="352" y2="498.44308028793887" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="352" y1="498.44308028793887" x2="441.50497691109433" y2="578.3734193848329" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="352" y1="498.44308028793887" x2="288.87382870918486" y2="600.4974113972194" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="352" y1="498.44308028793887" x2="301.4612323168964" y2="389.60451652916225" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="800" y1="896.28" x2="800" y2="509.1052104732487" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="800" y1="509.1052104732487" x2="906.5407518480887" y2="564.3235787545008" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="800" y1="509.1052104732487" x2="714.8003653090814" y2="593.6097798676549" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="800" y1="509.1052104732487" x2="821.7843803311985" y2="391.09910565834645" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1248" y1="896.28" x2="1248" y2="458.1045318204443" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="1248" y1="458.1045318204443" x2="1367.7123638097796" y2="466.40814254560115" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1248" y1="458.1045318204443" x2="1170.8552717698462" y2="550.0212925678495" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1248" y1="458.1045318204443" x2="1202.534446457904" y2="347.0510157072172" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="0" y1="908.28" x2="1600" y2="908.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="922.28" x2="1600" y2="922.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="936.28" x2="1600" y2="936.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="950.28" x2="1600" y2="950.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+  <rect width="1600" height="1067" fill="url(#vcascadestorage01)"/>
+  <rect width="1600" height="1067" filter="url(#ncascadestorage01)" opacity="0.045"/>
+  <g font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+    <rect x="88" y="962.315" width="4" height="46" fill="#F59E0B"/>
+    <text x="106" y="984.315" fill="#ffffff" font-size="30" font-weight="700" letter-spacing="0.5">Cascade Pumped Storage</text>
+    <text x="106" y="1004.315" fill="rgba(255,255,255,.62)" font-size="19" font-weight="600" letter-spacing="2.4">PLATE 01</text>
+  </g>
+</svg>

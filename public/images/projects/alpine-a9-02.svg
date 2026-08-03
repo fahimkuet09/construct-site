@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1067" viewBox="0 0 1600 1067" role="img" aria-label="Alpine Corridor A9">
+  <defs>
+    <linearGradient id="galpinea902" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#33465f"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+    <radialGradient id="valpinea902" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="palpinea902" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nalpinea902"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#galpinea902)"/>
+  <rect width="1600" height="1067" fill="url(#palpinea902)"/>
+  <line x1="275.5615082117729" y1="874.9399999999999" x2="275.5615082117729" y2="338.3375982603244" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="154.8082904001884" y1="338.3375982603244" x2="652.9153138729744" y2="338.3375982603244" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="275.5615082117729" y1="308.3375982603244" x2="652.9153138729744" y2="338.3375982603244" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="275.5615082117729" y1="308.3375982603244" x2="154.8082904001884" y2="338.3375982603244" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="275.5615082117729" y1="338.3375982603244" x2="275.5615082117729" y2="308.3375982603244" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="547.2562482878379" y1="338.3375982603244" x2="547.2562482878379" y2="469.83853150390087" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="739.012923731003" y1="874.9399999999999" x2="739.012923731003" y2="388.78498658502934" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="645.7136149160006" y1="388.78498658502934" x2="1030.5732637778856" y2="388.78498658502934" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="739.012923731003" y1="358.78498658502934" x2="1030.5732637778856" y2="388.78498658502934" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="739.012923731003" y1="358.78498658502934" x2="645.7136149160006" y2="388.78498658502934" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="739.012923731003" y1="388.78498658502934" x2="739.012923731003" y2="358.78498658502934" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="948.9363685647585" y1="388.78498658502934" x2="948.9363685647585" y2="616.4879200874688" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="1235.7984127374366" y1="874.9399999999999" x2="1235.7984127374366" y2="366.82304575910314" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="1117.5994319387153" y1="366.82304575910314" x2="1605.1702277334407" y2="366.82304575910314" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="1235.7984127374366" y1="336.82304575910314" x2="1605.1702277334407" y2="366.82304575910314" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1235.7984127374366" y1="336.82304575910314" x2="1117.5994319387153" y2="366.82304575910314" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1235.7984127374366" y1="366.82304575910314" x2="1235.7984127374366" y2="336.82304575910314" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="1501.7461195345595" y1="366.82304575910314" x2="1501.7461195345595" y2="703.5811941703548" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="0" y1="874.9399999999999" x2="1600" y2="874.9399999999999" stroke="rgba(255,255,255,.5)" stroke-width="2.5"/>
+  <rect width="1600" height="1067" fill="url(#valpinea902)"/>
+  <rect width="1600" height="1067" filter="url(#nalpinea902)" opacity="0.045"/>
+  <g font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+    <rect x="88" y="962.315" width="4" height="46" fill="#F59E0B"/>
+    <text x="106" y="984.315" fill="#ffffff" font-size="30" font-weight="700" letter-spacing="0.5">Alpine Corridor A9</text>
+    <text x="106" y="1004.315" fill="rgba(255,255,255,.62)" font-size="19" font-weight="600" letter-spacing="2.4">PLATE 02</text>
+  </g>
+</svg>

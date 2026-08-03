@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-label="Alpine Corridor A9">
+  <defs>
+    <linearGradient id="galpinea903" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#33465f"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+    <radialGradient id="valpinea903" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="palpinea903" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nalpinea903"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#galpinea903)"/>
+  <rect width="1200" height="1500" fill="url(#palpinea903)"/>
+  <path d="M 360 660 L -180 1500 L 744 1500 Z" fill="rgba(255,255,255,.07)"/><path d="M 504 660 L 864 1500 L 1416 1500 Z" fill="rgba(255,255,255,.05)"/><line x1="0" y1="660" x2="1200" y2="660" stroke="rgba(255,255,255,.28)" stroke-width="1.4"/><line x1="432" y1="693.6" x2="442" y2="693.6" stroke="rgba(245,158,11,.7)" stroke-width="2"/><line x1="390.8571428571429" y1="710.7428571428571" x2="410.8571428571429" y2="710.7428571428571" stroke="rgba(245,158,11,.7)" stroke-width="2.7142857142857144"/><line x1="349.7142857142857" y1="762.1714285714286" x2="379.7142857142857" y2="762.1714285714286" stroke="rgba(245,158,11,.7)" stroke-width="3.4285714285714284"/><line x1="308.5714285714286" y1="847.8857142857142" x2="348.5714285714286" y2="847.8857142857142" stroke="rgba(245,158,11,.7)" stroke-width="4.142857142857142"/><line x1="267.42857142857144" y1="967.8857142857142" x2="317.42857142857144" y2="967.8857142857142" stroke="rgba(245,158,11,.7)" stroke-width="4.857142857142857"/><line x1="226.2857142857143" y1="1122.1714285714286" x2="286.28571428571433" y2="1122.1714285714286" stroke="rgba(245,158,11,.7)" stroke-width="5.571428571428571"/><line x1="185.1428571428572" y1="1310.7428571428572" x2="255.1428571428572" y2="1310.7428571428572" stroke="rgba(245,158,11,.7)" stroke-width="6.285714285714286"/><line x1="144" y1="600" x2="144" y2="670" stroke="rgba(255,255,255,.2)" stroke-width="2"/><line x1="384" y1="600" x2="384" y2="670" stroke="rgba(255,255,255,.2)" stroke-width="2"/><line x1="624" y1="600" x2="624" y2="670" stroke="rgba(255,255,255,.2)" stroke-width="2"/><line x1="864.0000000000001" y1="600" x2="864.0000000000001" y2="670" stroke="rgba(255,255,255,.2)" stroke-width="2"/><line x1="1104" y1="600" x2="1104" y2="670" stroke="rgba(255,255,255,.2)" stroke-width="2"/>
+  <rect width="1200" height="1500" fill="url(#valpinea903)"/>
+  <rect width="1200" height="1500" filter="url(#nalpinea903)" opacity="0.045"/>
+  <g font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+    <rect x="66" y="1371.5" width="4" height="46" fill="#F59E0B"/>
+    <text x="84" y="1393.5" fill="#ffffff" font-size="23" font-weight="700" letter-spacing="0.5">Alpine Corridor A9</text>
+    <text x="84" y="1413.5" fill="rgba(255,255,255,.62)" font-size="14" font-weight="600" letter-spacing="2.4">PLATE 03</text>
+  </g>
+</svg>

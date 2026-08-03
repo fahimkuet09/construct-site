@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="1992">
+  <defs>
+    <linearGradient id="ghist1992" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#123f63"/>
+      <stop offset="55%" stop-color="#0a2a45"/>
+      <stop offset="100%" stop-color="#050d16"/>
+    </linearGradient>
+    <radialGradient id="vhist1992" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="phist1992" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nhist1992"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#ghist1992)"/>
+  <rect width="1200" height="900" fill="url(#phist1992)"/>
+  <circle cx="600" cy="522" r="414" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1.0"/><circle cx="600" cy="522" r="362.25" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.3"/><circle cx="600" cy="522" r="310.5" fill="none" stroke="rgba(255,255,255,0.21)" stroke-width="1.6"/><circle cx="600" cy="522" r="258.75" fill="none" stroke="rgba(255,255,255,0.26)" stroke-width="1.9"/><circle cx="600" cy="522" r="207" fill="none" stroke="rgba(255,255,255,0.31)" stroke-width="2.2"/><circle cx="600" cy="522" r="155.25" fill="none" stroke="rgba(255,255,255,0.36)" stroke-width="2.5"/><circle cx="600" cy="522" r="103.5" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="2.8"/><circle cx="600" cy="522" r="51.75" fill="none" stroke="rgba(255,255,255,0.47)" stroke-width="3.1"/><line x1="779.2599453930933" y1="538.3055811814609" x2="1012.2978744041145" y2="559.5028367173599" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="749.7897129824808" y1="621.8150383691058" x2="944.5163398597056" y2="751.5745882489432" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="676.4514627939232" y1="684.9575829370004" x2="775.8383644260232" y2="896.8024407551011" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="594.3667632678267" y1="701.9118301944575" x2="587.0435555160016" y2="935.7972094472522" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="499.32911114427907" y1="671.2158575252613" x2="368.45695563184194" y2="865.1964723081011" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="440.9545473721227" y1="606.2884570887" x2="234.1954589558822" y2="715.8634513040101" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="420.63618262666307" y1="506.8797811767076" x2="187.46322004132514" y2="487.22349670642745" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="447.7176639785987" y1="426.0307854785451" x2="249.75062715077706" y2="301.2708066006537" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="517.260790003145" y1="362.1431167290682" x2="409.6998170072335" y2="154.32916847685675" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="613.8875146233613" y1="342.5365303534284" x2="631.941283633731" y2="109.23401981288532" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="694.934108760308" y1="369.0702285560918" x2="818.3484501487085" y2="170.26152567901113" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="757.32550589888" y1="434.5432381478626" x2="961.848663567424" y2="320.84944774008403" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><circle cx="600" cy="522" r="67.5" fill="rgba(245,158,11,.5)"/>
+  <rect width="1200" height="900" fill="url(#vhist1992)"/>
+  <rect width="1200" height="900" filter="url(#nhist1992)" opacity="0.045"/>
+  <g font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+    <rect x="66" y="804.5" width="4" height="46" fill="#F59E0B"/>
+    <text x="84" y="826.5" fill="#ffffff" font-size="23" font-weight="700" letter-spacing="0.5">1992</text>
+    <text x="84" y="846.5" fill="rgba(255,255,255,.62)" font-size="14" font-weight="600" letter-spacing="2.4">MILESTONE</text>
+  </g>
+</svg>

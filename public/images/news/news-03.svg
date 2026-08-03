@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1067" viewBox="0 0 1600 1067" role="img" aria-label="Meridian Construct">
+  <defs>
+    <linearGradient id="gnews03" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#136b7d"/>
+      <stop offset="55%" stop-color="#0d4360"/>
+      <stop offset="100%" stop-color="#0a1420"/>
+    </linearGradient>
+    <radialGradient id="vnews03" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pnews03" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nnews03"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#gnews03)"/>
+  <rect width="1600" height="1067" fill="url(#pnews03)"/>
+  <line x1="352" y1="896.28" x2="352" y2="405.0580901912878" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="352" y1="405.0580901912878" x2="447.832183439687" y2="477.2813040299296" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="352" y1="405.0580901912878" x2="285.4492417343161" y2="504.91296776" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="352" y1="405.0580901912878" x2="337.30936829557993" y2="285.96071263777037" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="800" y1="896.28" x2="800" y2="400.545880274102" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="800" y1="400.545880274102" x2="899.185039040556" y2="468.0908877174607" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="800" y1="400.545880274102" x2="711.6342099042615" y2="481.7338543882274" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="800" y1="400.545880274102" x2="825.9163789934443" y2="283.37787568296733" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1248" y1="896.28" x2="1248" y2="388.782524466887" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="1248" y1="388.782524466887" x2="1367.7488942980144" y2="396.5415395076625" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1248" y1="388.782524466887" x2="1152.451292711457" y2="461.3803518137734" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1248" y1="388.782524466887" x2="1276.8700503623947" y2="272.3071185132146" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="0" y1="908.28" x2="1600" y2="908.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="922.28" x2="1600" y2="922.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="936.28" x2="1600" y2="936.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="950.28" x2="1600" y2="950.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+  <rect width="1600" height="1067" fill="url(#vnews03)"/>
+  <rect width="1600" height="1067" filter="url(#nnews03)" opacity="0.045"/>
+  
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1067" viewBox="0 0 1600 1067" role="img" aria-label="Meridian Logistics Campus">
+  <defs>
+    <linearGradient id="glogisticscampus02" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#3b4c66"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0c111c"/>
+    </linearGradient>
+    <radialGradient id="vlogisticscampus02" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="plogisticscampus02" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nlogisticscampus02"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#glogisticscampus02)"/>
+  <rect width="1600" height="1067" fill="url(#plogisticscampus02)"/>
+  <line x1="269.61161016626284" y1="874.9399999999999" x2="269.61161016626284" y2="378.42605608193196" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="181.46477520151063" y1="378.42605608193196" x2="545.0704694311135" y2="378.42605608193196" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="269.61161016626284" y1="348.42605608193196" x2="545.0704694311135" y2="378.42605608193196" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="269.61161016626284" y1="348.42605608193196" x2="181.46477520151063" y2="378.42605608193196" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="269.61161016626284" y1="378.42605608193196" x2="269.61161016626284" y2="348.42605608193196" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="467.94198883695526" y1="378.42605608193196" x2="467.94198883695526" y2="515.5799553915392" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="736.325463663321" y1="874.9399999999999" x2="736.325463663321" y2="443.1086572858505" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="632.0583952486329" y1="443.1086572858505" x2="1062.1600524592213" y2="443.1086572858505" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="736.325463663321" y1="413.1086572858505" x2="1062.1600524592213" y2="443.1086572858505" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="736.325463663321" y1="413.1086572858505" x2="632.0583952486329" y2="443.1086572858505" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="736.325463663321" y1="443.1086572858505" x2="736.325463663321" y2="413.1086572858505" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="970.9263675963692" y1="443.1086572858505" x2="970.9263675963692" y2="754.021311924057" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="1225.5684080431238" y1="874.9399999999999" x2="1225.5684080431238" y2="356.00589630081777" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="1125.040832512118" y1="356.00589630081777" x2="1539.717081577517" y2="356.00589630081777" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="1225.5684080431238" y1="326.00589630081777" x2="1539.717081577517" y2="356.00589630081777" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1225.5684080431238" y1="326.00589630081777" x2="1125.040832512118" y2="356.00589630081777" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1225.5684080431238" y1="356.00589630081777" x2="1225.5684080431238" y2="326.00589630081777" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="1451.7554529878869" y1="356.00589630081777" x2="1451.7554529878869" y2="530.8417415821971" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="0" y1="874.9399999999999" x2="1600" y2="874.9399999999999" stroke="rgba(255,255,255,.5)" stroke-width="2.5"/>
+  <rect width="1600" height="1067" fill="url(#vlogisticscampus02)"/>
+  <rect width="1600" height="1067" filter="url(#nlogisticscampus02)" opacity="0.045"/>
+  <g font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+    <rect x="88" y="962.315" width="4" height="46" fill="#F59E0B"/>
+    <text x="106" y="984.315" fill="#ffffff" font-size="30" font-weight="700" letter-spacing="0.5">Meridian Logistics Campus</text>
+    <text x="106" y="1004.315" fill="rgba(255,255,255,.62)" font-size="19" font-weight="600" letter-spacing="2.4">PLATE 02</text>
+  </g>
+</svg>

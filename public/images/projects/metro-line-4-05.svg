@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-label="Capital Metro Line 4">
+  <defs>
+    <linearGradient id="gmetroline405" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#123f63"/>
+      <stop offset="55%" stop-color="#0a2a45"/>
+      <stop offset="100%" stop-color="#050d16"/>
+    </linearGradient>
+    <radialGradient id="vmetroline405" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pmetroline405" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nmetroline405"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#gmetroline405)"/>
+  <rect width="1200" height="1500" fill="url(#pmetroline405)"/>
+  <circle cx="600" cy="869.9999999999999" r="552" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1.0"/><circle cx="600" cy="869.9999999999999" r="483" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.3"/><circle cx="600" cy="869.9999999999999" r="414" fill="none" stroke="rgba(255,255,255,0.21)" stroke-width="1.6"/><circle cx="600" cy="869.9999999999999" r="345" fill="none" stroke="rgba(255,255,255,0.26)" stroke-width="1.9"/><circle cx="600" cy="869.9999999999999" r="276" fill="none" stroke="rgba(255,255,255,0.31)" stroke-width="2.2"/><circle cx="600" cy="869.9999999999999" r="207" fill="none" stroke="rgba(255,255,255,0.36)" stroke-width="2.5"/><circle cx="600" cy="869.9999999999999" r="138" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="2.8"/><circle cx="600" cy="869.9999999999999" r="69" fill="none" stroke="rgba(255,255,255,0.47)" stroke-width="3.1"/><line x1="839.5032590821165" y1="885.433369335454" x2="1150.857495888868" y2="905.4967494715445" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="807.7254898564099" y1="990.2086555282709" x2="1077.7686266697428" y2="1146.4799077150233" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="711.4894080193309" y1="1082.5326137313969" x2="856.4256384444609" y2="1358.825011582213" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="591.8577619192173" y1="1109.861843482943" x2="581.2728524141997" y2="1421.682240010769" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="475.26916228417815" y1="1075.041991120622" x2="313.11907325360966" y2="1341.596579577431" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="390.4414462259327" y1="986.9838131543048" x2="118.01532631964511" y2="1139.0627702549014" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="360.0065107922502" y1="868.2321940463687" x2="48.01497482217553" y2="865.934046306648" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="404.831737330832" y1="730.3241279007048" x2="151.11299586091366" y2="548.7454941716211" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="491.89805312472936" y1="655.7245485787599" x2="351.36552218687757" y2="377.166461731148" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="614.7065302827687" y1="630.4510113420596" x2="633.825019650368" y2="319.03732608673727" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="726.199796014469" y1="665.858844213357" x2="890.2595308332787" y2="400.4753416907212" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="814.1306486832702" y1="761.6115075550825" x2="1092.5004919715216" y2="620.70646737669" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><circle cx="600" cy="869.9999999999999" r="90" fill="rgba(245,158,11,.5)"/>
+  <rect width="1200" height="1500" fill="url(#vmetroline405)"/>
+  <rect width="1200" height="1500" filter="url(#nmetroline405)" opacity="0.045"/>
+  <g font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+    <rect x="66" y="1371.5" width="4" height="46" fill="#F59E0B"/>
+    <text x="84" y="1393.5" fill="#ffffff" font-size="23" font-weight="700" letter-spacing="0.5">Capital Metro Line 4</text>
+    <text x="84" y="1413.5" fill="rgba(255,255,255,.62)" font-size="14" font-weight="600" letter-spacing="2.4">PLATE 05</text>
+  </g>
+</svg>

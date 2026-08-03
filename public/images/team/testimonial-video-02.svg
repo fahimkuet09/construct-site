@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1067" viewBox="0 0 1600 1067" role="img" aria-label="Meridian Construct">
+  <defs>
+    <linearGradient id="gvid02" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#123f63"/>
+      <stop offset="55%" stop-color="#0a2a45"/>
+      <stop offset="100%" stop-color="#050d16"/>
+    </linearGradient>
+    <radialGradient id="vvid02" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pvid02" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nvid02"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#gvid02)"/>
+  <rect width="1600" height="1067" fill="url(#pvid02)"/>
+  <circle cx="800" cy="618.86" r="490.82" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1.0"/><circle cx="800" cy="618.86" r="429.46750000000003" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.3"/><circle cx="800" cy="618.86" r="368.115" fill="none" stroke="rgba(255,255,255,0.21)" stroke-width="1.6"/><circle cx="800" cy="618.86" r="306.7625" fill="none" stroke="rgba(255,255,255,0.26)" stroke-width="1.9"/><circle cx="800" cy="618.86" r="245.41" fill="none" stroke="rgba(255,255,255,0.31)" stroke-width="2.2"/><circle cx="800" cy="618.86" r="184.0575" fill="none" stroke="rgba(255,255,255,0.36)" stroke-width="2.5"/><circle cx="800" cy="618.86" r="122.705" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="2.8"/><circle cx="800" cy="618.86" r="61.3525" fill="none" stroke="rgba(255,255,255,0.47)" stroke-width="3.1"/><line x1="1013.3011806883653" y1="625.3535596516359" x2="1290.59271558324" y2="633.7951871987625" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="977.102702349207" y1="737.9154191148316" x2="1207.336215403176" y2="892.6874639641127" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="901.5510871740845" y1="806.5484031946606" x2="1033.5675005003943" y2="1050.5433273477195" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="785.8600590374389" y1="831.7910265545519" x2="767.4781357861093" y2="1108.6013610754694" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="691.7830920817404" y1="802.7856938021737" x2="551.101111788003" y2="1041.8890957449994" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="610.9973814239559" y1="717.9436523923011" x2="365.29397727509837" y2="846.7524005022925" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="586.725961462002" y1="611.5289369329855" x2="309.46971136260464" y2="601.9985549458668" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="622.8404764145554" y1="499.8891497761813" x2="392.5330957534775" y2="345.22704448521694" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="700.7711951759516" y1="429.9335479262078" x2="571.7737489046887" y2="184.32916023027792" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="806.3736765361825" y1="405.5552034120842" x2="814.6594560332197" y2="128.25896784779377" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="910.4240378223517" y1="436.2508768133206" x2="1053.9752869914087" y2="198.8590166706374" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="987.3718886096619" y1="516.7260910429428" x2="1230.9553438022224" y2="383.9520093987685" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><circle cx="800" cy="618.86" r="80.02499999999999" fill="rgba(245,158,11,.5)"/>
+  <rect width="1600" height="1067" fill="url(#vvid02)"/>
+  <rect width="1600" height="1067" filter="url(#nvid02)" opacity="0.045"/>
+  
+</svg>

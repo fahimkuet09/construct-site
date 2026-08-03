@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Meridian Construct">
+  <defs>
+    <linearGradient id="gnavfeatured" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#0f4c81"/>
+      <stop offset="55%" stop-color="#0a3459"/>
+      <stop offset="100%" stop-color="#04121e"/>
+    </linearGradient>
+    <radialGradient id="vnavfeatured" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pnavfeatured" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nnavfeatured"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#gnavfeatured)"/>
+  <rect width="800" height="600" fill="url(#pnavfeatured)"/>
+  <line x1="148.17109555890784" y1="491.99999999999994" x2="148.17109555890784" y2="245.02032725047314" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="90.0980234020017" y1="245.02032725047314" x2="329.6494460492395" y2="245.02032725047314" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="148.17109555890784" y1="215.02032725047314" x2="329.6494460492395" y2="245.02032725047314" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="148.17109555890784" y1="215.02032725047314" x2="90.0980234020017" y2="245.02032725047314" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="148.17109555890784" y1="245.02032725047314" x2="148.17109555890784" y2="215.02032725047314" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="278.8355079119466" y1="245.02032725047314" x2="278.8355079119466" y2="409.1934461211785" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="382.0848533343524" y1="491.99999999999994" x2="382.0848533343524" y2="216.98446302395308" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="339.5466676520556" y1="216.98446302395308" x2="515.0166835915297" y2="216.98446302395308" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="382.0848533343524" y1="186.98446302395308" x2="515.0166835915297" y2="216.98446302395308" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="382.0848533343524" y1="186.98446302395308" x2="339.5466676520556" y2="216.98446302395308" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="382.0848533343524" y1="216.98446302395308" x2="382.0848533343524" y2="186.98446302395308" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="477.79577111952005" y1="216.98446302395308" x2="477.79577111952005" y2="323.67952554021025" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="632.3466484011151" y1="491.99999999999994" x2="632.3466484011151" y2="283.21846844069654" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="577.1435212362744" y1="283.21846844069654" x2="804.8564207912423" y2="283.21846844069654" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="632.3466484011151" y1="253.21846844069654" x2="804.8564207912423" y2="283.21846844069654" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="632.3466484011151" y1="253.21846844069654" x2="577.1435212362744" y2="283.21846844069654" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="632.3466484011151" y1="283.21846844069654" x2="632.3466484011151" y2="253.21846844069654" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="756.5536845220066" y1="283.21846844069654" x2="756.5536845220066" y2="472.7189355175941" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="0" y1="491.99999999999994" x2="800" y2="491.99999999999994" stroke="rgba(255,255,255,.5)" stroke-width="2.5"/>
+  <rect width="800" height="600" fill="url(#vnavfeatured)"/>
+  <rect width="800" height="600" filter="url(#nnavfeatured)" opacity="0.045"/>
+  
+</svg>

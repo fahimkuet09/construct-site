@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="2021">
+  <defs>
+    <linearGradient id="ghist2021" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#136b7d"/>
+      <stop offset="55%" stop-color="#0d4360"/>
+      <stop offset="100%" stop-color="#0a1420"/>
+    </linearGradient>
+    <radialGradient id="vhist2021" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="phist2021" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nhist2021"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#ghist2021)"/>
+  <rect width="1200" height="900" fill="url(#phist2021)"/>
+  <line x1="264" y1="756" x2="264" y2="312.70821194630116" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="264" y1="312.70821194630116" x2="353.3567284334828" y2="323.44949137031836" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="264" y1="312.70821194630116" x2="174.31446739740863" y2="320.225208806053" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="264" y1="312.70821194630116" x2="304.6335037094555" y2="232.4030541026504" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="600" y1="756" x2="600" y2="380.29335339087993" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="600" y1="380.29335339087993" x2="688.6223097840809" y2="395.98048851920726" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="600" y1="380.29335339087993" x2="530.3101772753457" y2="437.2435826143542" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="600" y1="380.29335339087993" x2="628.0877624123149" y2="294.78851374615954" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="936" y1="756" x2="936" y2="431.1444368725642" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="936" y1="431.1444368725642" x2="997.8222114311181" y2="496.550966927033" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="936" y1="431.1444368725642" x2="856.7092584416264" y2="473.7235198021343" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="936" y1="431.1444368725642" x2="962.8786783378815" y2="345.25184900371084" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="0" y1="768" x2="1200" y2="768" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="782" x2="1200" y2="782" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="796" x2="1200" y2="796" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="810" x2="1200" y2="810" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+  <rect width="1200" height="900" fill="url(#vhist2021)"/>
+  <rect width="1200" height="900" filter="url(#nhist2021)" opacity="0.045"/>
+  <g font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+    <rect x="66" y="804.5" width="4" height="46" fill="#F59E0B"/>
+    <text x="84" y="826.5" fill="#ffffff" font-size="23" font-weight="700" letter-spacing="0.5">2021</text>
+    <text x="84" y="846.5" fill="rgba(255,255,255,.62)" font-size="14" font-weight="600" letter-spacing="2.4">MILESTONE</text>
+  </g>
+</svg>

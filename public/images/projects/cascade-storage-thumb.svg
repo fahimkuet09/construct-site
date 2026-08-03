@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Meridian Construct">
+  <defs>
+    <linearGradient id="gcascadestoragethumb" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#136b7d"/>
+      <stop offset="55%" stop-color="#0d4360"/>
+      <stop offset="100%" stop-color="#0a1420"/>
+    </linearGradient>
+    <radialGradient id="vcascadestoragethumb" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pcascadestoragethumb" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="ncascadestoragethumb"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#gcascadestoragethumb)"/>
+  <rect width="1200" height="900" fill="url(#pcascadestoragethumb)"/>
+  <line x1="264" y1="756" x2="264" y2="425.1843710895628" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="264" y1="425.1843710895628" x2="320.69653341287136" y2="495.0807450939642" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="264" y1="425.1843710895628" x2="211.816058439729" y2="498.5112845881836" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="264" y1="425.1843710895628" x2="296.4048079068572" y2="341.22051919769393" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="600" y1="756" x2="600" y2="393.37431044317776" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="600" y1="393.37431044317776" x2="683.1485862297974" y2="427.8171995204015" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="600" y1="393.37431044317776" x2="541.6101795880318" y2="461.86247637173875" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="600" y1="393.37431044317776" x2="570.9097292151503" y2="308.20532462284456" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="936" y1="756" x2="936" y2="274.157321085222" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="936" y1="274.157321085222" x2="1024.3886240255144" y2="291.11170526384234" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="936" y1="274.157321085222" x2="885.0182091323302" y2="348.3250836234379" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="936" y1="274.157321085222" x2="901.2487741908288" y2="191.13712893439646" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="0" y1="768" x2="1200" y2="768" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="782" x2="1200" y2="782" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="796" x2="1200" y2="796" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="810" x2="1200" y2="810" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+  <rect width="1200" height="900" fill="url(#vcascadestoragethumb)"/>
+  <rect width="1200" height="900" filter="url(#ncascadestoragethumb)" opacity="0.045"/>
+  
+</svg>

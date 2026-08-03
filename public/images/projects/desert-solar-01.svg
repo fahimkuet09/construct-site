@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1067" viewBox="0 0 1600 1067" role="img" aria-label="Desert Solar & Transmission">
+  <defs>
+    <linearGradient id="gdesertsolar01" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#136b7d"/>
+      <stop offset="55%" stop-color="#0d4360"/>
+      <stop offset="100%" stop-color="#0a1420"/>
+    </linearGradient>
+    <radialGradient id="vdesertsolar01" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pdesertsolar01" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="ndesertsolar01"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#gdesertsolar01)"/>
+  <rect width="1600" height="1067" fill="url(#pdesertsolar01)"/>
+  <line x1="352" y1="896.28" x2="352" y2="380.68367955083954" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="352" y1="380.68367955083954" x2="446.68786328121746" y2="454.4007640512284" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="352" y1="380.68367955083954" x2="240.49105879134567" y2="425.020526873635" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="352" y1="380.68367955083954" x2="379.3327780603716" y2="263.83797255438003" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="800" y1="896.28" x2="800" y2="491.1050379021558" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="800" y1="491.1050379021558" x2="890.8216694083056" y2="569.5360545083968" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="800" y1="491.1050379021558" x2="714.0682835870152" y2="574.8650529112182" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="800" y1="491.1050379021558" x2="817.9073604408512" y2="372.44870034683834" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1248" y1="896.28" x2="1248" y2="494.0352440869435" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="1248" y1="494.0352440869435" x2="1325.4640429492856" y2="585.6830593906988" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1248" y1="494.0352440869435" x2="1149.2893307791983" y2="562.2716257464474" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1248" y1="494.0352440869435" x2="1200.096373384853" y2="384.01141686248917" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="0" y1="908.28" x2="1600" y2="908.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="922.28" x2="1600" y2="922.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="936.28" x2="1600" y2="936.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="950.28" x2="1600" y2="950.28" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+  <rect width="1600" height="1067" fill="url(#vdesertsolar01)"/>
+  <rect width="1600" height="1067" filter="url(#ndesertsolar01)" opacity="0.045"/>
+  <g font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
+    <rect x="88" y="962.315" width="4" height="46" fill="#F59E0B"/>
+    <text x="106" y="984.315" fill="#ffffff" font-size="30" font-weight="700" letter-spacing="0.5">Desert Solar & Transmission</text>
+    <text x="106" y="1004.315" fill="rgba(255,255,255,.62)" font-size="19" font-weight="600" letter-spacing="2.4">PLATE 01</text>
+  </g>
+</svg>

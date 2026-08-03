@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-label="Meridian Construct">
+  <defs>
+    <linearGradient id="gmetroline4hero" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#123f63"/>
+      <stop offset="55%" stop-color="#0a2a45"/>
+      <stop offset="100%" stop-color="#050d16"/>
+    </linearGradient>
+    <radialGradient id="vmetroline4hero" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pmetroline4hero" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nmetroline4hero"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="2400" height="1350" fill="url(#gmetroline4hero)"/>
+  <rect width="2400" height="1350" fill="url(#pmetroline4hero)"/>
+  <circle cx="1200" cy="783" r="621" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1.0"/><circle cx="1200" cy="783" r="543.375" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.3"/><circle cx="1200" cy="783" r="465.75" fill="none" stroke="rgba(255,255,255,0.21)" stroke-width="1.6"/><circle cx="1200" cy="783" r="388.125" fill="none" stroke="rgba(255,255,255,0.26)" stroke-width="1.9"/><circle cx="1200" cy="783" r="310.5" fill="none" stroke="rgba(255,255,255,0.31)" stroke-width="2.2"/><circle cx="1200" cy="783" r="232.875" fill="none" stroke="rgba(255,255,255,0.36)" stroke-width="2.5"/><circle cx="1200" cy="783" r="155.25" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="2.8"/><circle cx="1200" cy="783" r="77.625" fill="none" stroke="rgba(255,255,255,0.47)" stroke-width="3.1"/><line x1="1469.939758278269" y1="788.7032359822978" x2="1820.8614440400183" y2="796.1174427592849" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="1422.5766220419016" y1="935.8386316361689" x2="1711.9262306963735" y2="1134.5288527631883" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="1330.5401117044175" y1="1019.3456774222836" x2="1500.2422569201606" y2="1326.5950580712524" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="1194.080620215784" y1="1052.9351050585497" x2="1186.385426496303" y2="1403.8507416346642" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="1055.273237704055" y1="1010.9345613884236" x2="867.1284467193266" y2="1307.2494911933743" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="962.4936672089582" y1="911.4162835630702" x2="653.7354345806037" y2="1078.3574521950618" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="931.0726341764835" y1="758.956873929862" x2="581.4670586059121" y2="727.7008100386826" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="975.4849337566477" y1="633.0233850570593" x2="683.6153476402897" y2="438.0537856312364" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="1066.8819055603165" y1="548.0966732190718" x2="893.828382788728" y2="242.72234840386534" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="1203.2729497364032" y1="513.0198381361643" x2="1207.5277843937274" y2="162.04562771317762" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="1338.2013178859925" y1="551.0508768402543" x2="1517.8630311377826" y2="249.51701673258503" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="1434.7238901316498" y1="649.5657637580777" x2="1739.8649473027947" y2="476.1012566435785" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><circle cx="1200" cy="783" r="101.25" fill="rgba(245,158,11,.5)"/>
+  <rect width="2400" height="1350" fill="url(#vmetroline4hero)"/>
+  <rect width="2400" height="1350" filter="url(#nmetroline4hero)" opacity="0.045"/>
+  
+</svg>
