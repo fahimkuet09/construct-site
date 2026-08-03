@@ -12,10 +12,18 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Talk to Meridian Construct — eight regional offices, department contacts, and an enquiry form routed to a named individual.",
+    "Talk to Meghna Construct — regional offices across every division, department contacts, and an enquiry form routed to a named individual.",
 };
 
-const regions = ["Europe", "Middle East", "Asia Pacific", "Americas", "Africa"] as const;
+const regions = [
+  "Dhaka",
+  "Chattogram",
+  "Khulna",
+  "Rajshahi",
+  "Sylhet",
+  "Barishal",
+  "Rangpur",
+] as const;
 
 export default function ContactPage() {
   return (
@@ -44,7 +52,7 @@ export default function ContactPage() {
           </a>
           <span className="flex items-center gap-2.5 text-[0.9375rem] text-white/60">
             <Clock className="size-4.5 text-accent" aria-hidden />
-            Mon–Fri, 08:00–18:00 GMT
+            Sun–Thu, 09:00–18:00 BST
           </span>
         </div>
       </PageHero>
@@ -167,8 +175,8 @@ export default function ContactPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Our offices"
-              title="Eight regional bases, twenty-four countries"
-              lead="Where we hold no permanent presence, a delivery team mobilises from the nearest regional office."
+              title="Seven divisions, one delivery standard"
+              lead="Regional offices across the country, plus project offices established wherever a major scheme needs one."
             />
           </Reveal>
 

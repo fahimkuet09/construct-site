@@ -52,7 +52,7 @@ export function Testimonials() {
             align="center"
             eyebrow="Client verdict"
             title="What the people who commissioned the work say"
-            lead="Programme directors, chief engineers and asset owners on what it was actually like to have Meridian on their project."
+            lead="Programme directors, chief engineers and asset owners on what it was actually like to have Meghna on their project."
             className="mx-auto"
           />
         </Reveal>

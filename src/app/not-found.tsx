@@ -7,7 +7,7 @@ const routes = [
   { label: "Projects", href: "/projects", description: "The full portfolio, filterable by sector" },
   { label: "Capabilities", href: "/services", description: "The six disciplines we deliver" },
   { label: "About", href: "/about", description: "History, leadership and certifications" },
-  { label: "Careers", href: "/careers", description: "Open positions across 24 countries" },
+  { label: "Careers", href: "/careers", description: "Open positions across every division" },
 ];
 
 export default function NotFound() {

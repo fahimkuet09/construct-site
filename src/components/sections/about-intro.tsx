@@ -22,7 +22,7 @@ export function AboutIntro() {
               >
                 <Image
                   src="/images/about/mission.svg"
-                  alt="Meridian engineers reviewing setting-out data on a bridge deck"
+                  alt="Meghna engineers reviewing setting-out data on a bridge deck"
                   fill
                   sizes="(max-width: 1024px) 100vw, 620px"
                   className="object-cover"
@@ -94,7 +94,7 @@ export function AboutIntro() {
             <Reveal delay={0.1}>
               <Button asChild variant="outline" size="lg" className="mt-9">
                 <Link href="/about">
-                  More about Meridian
+                  More about Meghna
                   <ArrowUpRight
                     className="size-4.5 transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5"
                     aria-hidden

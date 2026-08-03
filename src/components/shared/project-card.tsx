@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight, MapPin } from "lucide-react";
 import type { Project } from "@/types";
-import { formatCurrencyCompact, cn } from "@/lib/utils";
+import { formatCrore, cn } from "@/lib/utils";
 import { Badge } from "@/components/ui";
 
 export function ProjectCard({
@@ -99,7 +99,7 @@ export function ProjectCard({
                 Value
               </dt>
               <dd className="mt-1 font-heading text-[0.9375rem] font-extrabold text-heading tabular-nums">
-                {formatCurrencyCompact(project.contractValueUsd)}
+                {formatCrore(project.contractValueCrore)}
               </dd>
             </div>
             <div>

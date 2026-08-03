@@ -21,21 +21,37 @@ import type {
 } from "@/types";
 
 export const heroStats: Stat[] = [
-  { value: 51, suffix: "", label: "Years of delivery", description: "Since 1974" },
-  { value: 24, suffix: "", label: "Countries", description: "Active operations" },
   {
-    value: 18.4,
-    prefix: "$",
-    suffix: "B",
-    decimals: 1,
+    value: 51,
+    label: "Years of delivery",
+    labelKey: "stat.years",
+    description: "Since 1974",
+    descriptionKey: "stat.yearsNote",
+  },
+  {
+    value: 61,
+    label: "Districts",
+    labelKey: "stat.districts",
+    description: "Of 64 nationwide",
+    descriptionKey: "stat.districtsNote",
+  },
+  {
+    value: 18400,
+    prefix: "৳",
+    suffix: " cr",
+    suffixKey: "unit.crore",
     label: "Portfolio under management",
+    labelKey: "stat.portfolio",
     description: "Live contract value",
+    descriptionKey: "stat.portfolioNote",
   },
   {
     value: 12800,
     suffix: "+",
     label: "People",
+    labelKey: "stat.people",
     description: "Engineers, operatives, specialists",
+    descriptionKey: "stat.peopleNote",
   },
 ];
 
@@ -47,19 +63,19 @@ export const impactStats: Stat[] = [
     description: "Across six infrastructure sectors",
   },
   {
-    value: 96,
+    value: 38,
     suffix: " km",
-    label: "Tunnel driven",
-    description: "Beneath live urban environments",
+    label: "River crossings built",
+    description: "Bridges and viaducts over active channels",
   },
   {
     value: 2180,
     suffix: " km",
-    label: "Carriageway constructed",
-    description: "Highways, corridors and interchanges",
+    label: "Highway constructed",
+    description: "Corridors, expressways and interchanges",
   },
   {
-    value: 0.21,
+    value: 0.24,
     decimals: 2,
     label: "Accident frequency rate",
     description: "Per 100,000 hours worked",
@@ -70,8 +86,8 @@ export const mission = {
   eyebrow: "Our Mission",
   title: "To build infrastructure that outlives the people who commissioned it",
   body: [
-    "Meridian exists to deliver the physical systems that societies depend on — the crossings, corridors, tunnels, ports and utilities that move people, water and power. We take on the projects where the engineering is genuinely difficult and the consequences of getting it wrong are permanent.",
-    "We measure ourselves on what the asset does in year forty, not on how the handover ceremony went.",
+    "Meghna exists to deliver the physical systems Bangladesh depends on — the crossings, corridors, tunnels, ports and utilities that move people, water and power across one of the most demanding deltas on earth.",
+    "We take on the projects where the engineering is genuinely difficult: soft alluvium with no rock at any reachable depth, rivers that move their own beds, a monsoon that closes half the working year, and a coastline that takes direct cyclone landfall. We measure ourselves on what the asset does in year forty, not on how the opening ceremony went.",
   ],
 };
 
@@ -85,7 +101,7 @@ export const visionValues: ValuePillar[] = [
   {
     title: "Vision",
     description:
-      "To be the contractor that governments and operators call when a project cannot be allowed to fail.",
+      "To be the contractor Bangladesh calls when a project cannot be allowed to fail, and to prove that world-class delivery is a domestic capability.",
     icon: Eye,
   },
   {
@@ -100,7 +116,7 @@ export const values: ValuePillar[] = [
   {
     title: "Safety is non-negotiable",
     description:
-      "Every person who arrives on a Meridian site goes home unharmed. No programme date, no commercial pressure and no client instruction outranks that.",
+      "Every person who arrives on a Meghna site goes home unharmed. No programme date, no commercial pressure and no client instruction outranks that.",
     icon: HardHat,
   },
   {
@@ -112,25 +128,25 @@ export const values: ValuePillar[] = [
   {
     title: "Certainty of delivery",
     description:
-      "Programmes are built from first principles and resourced honestly. We commit to dates we have interrogated, then we hold them.",
+      "Programmes are built around the monsoon rather than in spite of it, resourced honestly, and committed to only once we have interrogated them.",
     icon: Gauge,
   },
   {
     title: "Environmental stewardship",
     description:
-      "We build in places people care about. Carbon, habitat and community impact are designed for from tender stage, not mitigated afterwards.",
+      "We build in a delta where a badly placed embankment can flood a village. Drainage, erosion and community impact are designed for from tender stage.",
     icon: Leaf,
   },
   {
     title: "Genuine partnership",
     description:
-      "Clients, designers, supply chain and communities all carry part of the outcome. We share information early and we do not trade risk downwards.",
+      "Clients, designers, supply chain and the communities we build through all carry part of the outcome. We share information early and we do not trade risk downwards.",
     icon: Handshake,
   },
   {
-    title: "Applied innovation",
+    title: "Building national capability",
     description:
-      "New methods earn their place by reducing risk, carbon or programme on a live project — not by looking impressive in a bid document.",
+      "Every major contract transfers skills to Bangladeshi engineers rather than importing them permanently. 94% of our technical staff are local.",
     icon: Lightbulb,
   },
 ];
@@ -138,30 +154,30 @@ export const values: ValuePillar[] = [
 export const milestones: Milestone[] = [
   {
     year: "1974",
-    title: "Founded in London",
+    title: "Founded in Dhaka",
     description:
-      "Meridian is established as a heavy civils contractor with fourteen employees and a single scope: bridge foundations for the national roads programme.",
+      "Meghna is established during post-independence reconstruction with fourteen employees and a single scope: rebuilding bridges destroyed in the Liberation War.",
     image: "/images/about/history-1974.svg",
   },
   {
     year: "1983",
-    title: "First international contract",
+    title: "First major river crossing",
     description:
-      "The company wins its first overseas commission — a 640-metre river crossing in West Africa — beginning five decades of international delivery.",
+      "The company completes its first significant river bridge, establishing the deep-pile foundation capability that delta work demands.",
     image: "/images/about/history-1983.svg",
   },
   {
     year: "1992",
-    title: "Tunnelling division established",
+    title: "Marine division established",
     description:
-      "Meridian acquires its first TBM and forms a dedicated underground division, entering the urban metro market that now represents a third of turnover.",
+      "Purchase of the first dredgers and pontoons builds the in-house marine capability that river training and port work require.",
     image: "/images/about/history-1992.svg",
   },
   {
     year: "2001",
-    title: "Marine fleet acquired",
+    title: "First international contract",
     description:
-      "Purchase of the first jack-up barges and cutter suction dredger removes charter dependency from marine programmes for good.",
+      "Meghna wins its first overseas commission in South Asia, beginning a regional export of Bangladeshi engineering capability.",
     image: "/images/about/history-2001.svg",
   },
   {
@@ -175,72 +191,72 @@ export const milestones: Milestone[] = [
     year: "2016",
     title: "Digital delivery mandated",
     description:
-      "Federated BIM to ISO 19650 becomes mandatory on every project above $50 million, with digital twin handover as standard.",
+      "Federated BIM to ISO 19650 becomes mandatory on every project above ৳500 crore, with digital twin handover as standard.",
     image: "/images/about/history-2016.svg",
   },
   {
     year: "2021",
-    title: "Net zero commitment",
+    title: "Tunnelling capability established",
     description:
-      "Meridian commits to net zero scope 1 and 2 emissions by 2035, validated under the Science Based Targets initiative.",
+      "Meghna acquires its first TBM for the Dhaka metro programme, bringing soft-ground urban tunnelling capability into the country.",
     image: "/images/about/history-2021.svg",
   },
   {
     year: "2025",
-    title: "Fifty-one years, 24 countries",
+    title: "Fifty-one years, 61 districts",
     description:
-      "The company operates across 24 countries with 12,800 people and $18.4 billion of infrastructure under management.",
+      "The company operates in 61 of Bangladesh's 64 districts with 12,800 people and ৳18,400 crore of infrastructure under management.",
     image: "/images/about/history-2025.svg",
   },
 ];
 
 export const leadership: Leader[] = [
   {
-    name: "Adaeze Okonkwo",
+    name: "Nasreen Jahan Rahman",
     role: "Group Chief Executive",
     image: "/images/team/leader-01.svg",
-    bio: "Adaeze joined Meridian as a graduate engineer in 1998 and has led the group since 2019, following six years running the international division. They hold chartered status with the Institution of Civil Engineers.",
-    credentials: "CEng FICE, MSc Structural Engineering",
+    bio: "Nasreen joined Meghna as a graduate engineer in 1998 and has led the group since 2019, following six years running the bridges division. They are a Fellow of the Institution of Engineers, Bangladesh.",
+    credentials: "FIEB, BSc Civil Engineering (BUET), MBA (IBA)",
     linkedin: "#",
   },
   {
-    name: "Henrik Lindqvist",
+    name: "Kamrul Hasan Siddiqui",
     role: "Group Technical Director",
     image: "/images/team/leader-02.svg",
-    bio: "Henrik holds design authority across the group and chairs the technical assurance board. Their career spans 28 years of long-span bridge and deep tunnel design across Europe and Asia.",
-    credentials: "CEng FIStructE, PhD Geotechnics",
+    bio: "Kamrul holds design authority across the group and chairs the technical assurance board. Their career spans 29 years of long-span bridge and deep foundation design in delta conditions.",
+    credentials: "FIEB, MSc Structural Engineering (BUET), PhD Geotechnics",
     linkedin: "#",
   },
   {
-    name: "Mariam Haddad",
+    name: "Farhana Islam Chowdhury",
     role: "Chief Operating Officer",
     image: "/images/team/leader-03.svg",
-    bio: "Mariam is accountable for delivery across all six sectors and 24 countries. They previously led the Gulf region, where they delivered the group's largest marine programme to date.",
-    credentials: "CEng MICE, MBA",
+    bio: "Farhana is accountable for delivery across all six sectors and every division. They previously led the Chattogram region, where they delivered the group's largest marine programme to date.",
+    credentials: "MIEB, BSc Civil Engineering (CUET), MBA",
     linkedin: "#",
   },
   {
-    name: "Tomás Ferreira",
+    name: "Tanvir Ahmed Bhuiyan",
     role: "Director of Health, Safety & Wellbeing",
     image: "/images/team/leader-04.svg",
-    bio: "Tomás has driven the group's accident frequency rate down by 74% over eight years. They sit on the industry safety leadership council and report directly to the board.",
-    credentials: "CMIOSH, MSc Occupational Health",
+    bio: "Tanvir has driven the group's accident frequency rate down by 71% over eight years and built the stop-work authority programme. They report directly to the board.",
+    credentials: "NEBOSH IGC, MSc Occupational Health & Safety",
     linkedin: "#",
   },
   {
-    name: "Yuki Tanaka",
+    name: "Sabrina Karim",
     role: "Director of Sustainability",
     image: "/images/team/leader-05.svg",
-    bio: "Yuki authored Meridian's science-based net zero pathway and leads carbon reduction across design and delivery. Their background is in environmental engineering and life-cycle assessment.",
-    credentials: "CEnv MIEMA, MSc Environmental Engineering",
+    bio: "Sabrina authored Meghna's net zero pathway and leads carbon, climate resilience and community impact across design and delivery. Their background is in environmental engineering.",
+    credentials: "MSc Environmental Engineering (BUET), CEnv",
     linkedin: "#",
   },
   {
-    name: "Rowan Whitfield",
+    name: "Rezaul Karim Talukder",
     role: "Group Finance Director",
     image: "/images/team/leader-06.svg",
-    bio: "Rowan oversees the group's financial strategy and risk framework, including the commercial governance that underpins Meridian's approach to major project bidding.",
-    credentials: "FCA, MA Economics",
+    bio: "Rezaul oversees financial strategy and the commercial governance that underpins Meghna's approach to major public tenders and donor-financed contracts.",
+    credentials: "FCA (ICAB), MBA Finance",
     linkedin: "#",
   },
 ];
@@ -252,7 +268,7 @@ export const certifications: Certification[] = [
     standard: "ISO 9001:2015",
     issuer: "BSI Group",
     description:
-      "Group-wide quality management system audited annually across every operating region and project type.",
+      "Group-wide quality management system audited annually across every region and project type.",
     logo: "/images/logos/certifications/iso-9001.svg",
   },
   {
@@ -261,7 +277,7 @@ export const certifications: Certification[] = [
     standard: "ISO 14001:2015",
     issuer: "BSI Group",
     description:
-      "Environmental management covering carbon, waste, biodiversity and pollution prevention on all sites.",
+      "Environmental management covering carbon, waste, river ecology and pollution prevention on all sites.",
     logo: "/images/logos/certifications/iso-14001.svg",
   },
   {
@@ -270,7 +286,7 @@ export const certifications: Certification[] = [
     standard: "ISO 45001:2018",
     issuer: "BSI Group",
     description:
-      "Health and safety management system independently certified across all 24 countries of operation.",
+      "Health and safety management system independently certified across every operating region.",
     logo: "/images/logos/certifications/iso-45001.svg",
   },
   {
@@ -279,7 +295,7 @@ export const certifications: Certification[] = [
     standard: "ISO 19650-2",
     issuer: "BSI Group",
     description:
-      "BIM information management certified for the delivery phase of assets, mandatory above $50M contract value.",
+      "BIM information management certified for the delivery phase, mandatory above ৳500 crore contract value.",
     logo: "/images/logos/certifications/iso-19650.svg",
   },
   {
@@ -305,39 +321,39 @@ export const certifications: Certification[] = [
 export const awards = [
   {
     year: "2025",
-    title: "Infrastructure Project of the Year",
-    body: "Institution of Civil Engineers",
-    project: "North Estuary Crossing",
+    title: "National Engineering Award — Infrastructure",
+    body: "Institution of Engineers, Bangladesh",
+    project: "Meghna Estuary Crossing",
   },
   {
     year: "2025",
-    title: "Award for Long-Span Structures",
-    body: "Institution of Structural Engineers",
-    project: "North Estuary Crossing",
+    title: "Infrastructure Project of the Year",
+    body: "SAARC Chamber of Commerce & Industry",
+    project: "Meghna Estuary Crossing",
   },
   {
     year: "2025",
     title: "Safety Initiative of the Year",
-    body: "International Tunnelling Association",
-    project: "Capital Metro Line 4",
+    body: "Institution of Engineers, Bangladesh",
+    project: "Dhaka Metro Line 4",
   },
   {
     year: "2025",
-    title: "Capital Project of the Year",
-    body: "Water Industry Achievement Awards",
-    project: "Riverside Water Reclamation",
+    title: "Water Sector Achievement Award",
+    body: "Bangladesh Water Partnership",
+    project: "Sayedabad Water Treatment",
   },
   {
     year: "2024",
-    title: "Ports Project of the Year",
-    body: "Middle East Infrastructure Awards",
-    project: "Gulf Container Terminal",
+    title: "Ports & Logistics Project of the Year",
+    body: "Bangladesh Infrastructure Awards",
+    project: "Matarbari Deep Sea Terminal",
   },
   {
     year: "2023",
-    title: "Outstanding Concrete Structures",
-    body: "Fédération Internationale du Béton",
-    project: "Southern Ring Viaduct",
+    title: "Award for Structural Engineering",
+    body: "Institution of Engineers, Bangladesh",
+    project: "Buriganga Southern Viaduct",
   },
 ];
 
@@ -345,7 +361,7 @@ export const qualityStandards = [
   {
     title: "Independent design checking",
     description:
-      "Category III independent check on every primary structure, commissioned by us and reported to the client directly.",
+      "An independent Category III check on every primary structure, commissioned by us and reported to the client directly.",
     icon: ShieldCheck,
   },
   {
@@ -357,7 +373,7 @@ export const qualityStandards = [
   {
     title: "Behavioural safety programme",
     description:
-      "Every operative is authorised to stop work without consequence. 41,000 stop-work observations logged last year.",
+      "Every operative is authorised to stop work without consequence. 38,000 stop-work observations logged last year.",
     icon: Users,
   },
   {
@@ -369,39 +385,39 @@ export const qualityStandards = [
 ];
 
 export const clients = [
-  "Department for Transport",
-  "Metropolitan Transit Authority",
-  "Gulf Ports Authority",
-  "National Grid Ventures",
-  "Regional Water Authority",
-  "National Railways",
-  "City Transit Board",
-  "Atlantic Renewables",
-  "Northgate Industrial",
-  "National Roads Directorate",
-  "Metropolitan Highways",
-  "Regional Energy Authority",
+  "Roads & Highways Department",
+  "Bangladesh Bridge Authority",
+  "Dhaka Mass Transit Company",
+  "Chittagong Port Authority",
+  "Bangladesh Railway",
+  "Dhaka WASA",
+  "Bangladesh Water Development Board",
+  "Bangladesh Power Development Board",
+  "Power Grid Company of Bangladesh",
+  "Bangladesh Economic Zones Authority",
+  "Local Government Engineering Dept",
+  "RAJUK",
 ];
 
 export const sustainability = [
   {
-    value: "2035",
+    value: "2040",
     label: "Net zero target",
-    detail: "Scope 1 and 2, validated under the Science Based Targets initiative",
+    detail: "Scope 1 and 2, aligned to Bangladesh's NDC commitments",
   },
   {
-    value: "-46%",
+    value: "-38%",
     label: "Carbon intensity",
-    detail: "Reduction per million of turnover since the 2019 baseline",
+    detail: "Reduction per crore of turnover since the 2019 baseline",
   },
   {
-    value: "94%",
+    value: "91%",
     label: "Waste diverted",
     detail: "Construction waste diverted from landfill across all sites",
   },
   {
-    value: "+18%",
-    label: "Biodiversity net gain",
-    detail: "Average measured uplift across schemes completed in 2024",
+    value: "2.4M",
+    label: "Trees planted",
+    detail: "Along corridors and embankments we have built since 2015",
   },
 ];

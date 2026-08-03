@@ -71,7 +71,7 @@ export const processSteps: ProcessStep[] = [
     summary:
       "Self-performed heavy civils with our own plant, our own people and our own accountability.",
     detail:
-      "Meridian self-performs the structural core of every project. Owning the plant and directly employing the operatives means the programme responds to the project rather than to a subcontractor's other commitments. Progress, quality and safety are reported daily against the model, not monthly against a bar chart.",
+      "Meghna self-performs the structural core of every project. Owning the plant and directly employing the operatives means the programme responds to the project rather than to a subcontractor's other commitments. Progress, quality and safety are reported daily against the model, not monthly against a bar chart.",
     deliverables: [
       "Daily progress against 4D model",
       "Quality inspection and test records",

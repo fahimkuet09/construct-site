@@ -1,40 +1,45 @@
 export const site = {
-  name: "Meridian Construct",
-  legalName: "Meridian Construct International PLC",
-  shortName: "Meridian",
-  tagline: "Engineering the Ground Beneath Progress",
+  name: "Meghna Construct",
+  nameBn: "মেঘনা কনস্ট্রাক্ট",
+  legalName: "Meghna Construct Limited",
+  shortName: "Meghna",
+  tagline: "Engineering the Ground Beneath Bangladesh",
+  taglineBn: "বাংলাদেশের ভিত গড়ছি প্রকৌশলে",
   description:
-    "Meridian Construct is an international civil engineering and infrastructure contractor delivering bridges, highways, tunnels, marine works and industrial facilities across 24 countries.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.meridianconstruct.com",
-  locale: "en_GB",
+    "Meghna Construct is a Bangladeshi civil engineering and infrastructure contractor delivering river crossings, expressways, metro tunnels, deep-sea terminals and power infrastructure across all 64 districts.",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.meghnaconstruct.com.bd",
+  locale: "en_BD",
   founded: "1974",
-  email: "enquiries@meridianconstruct.com",
-  careersEmail: "careers@meridianconstruct.com",
-  phone: "+44 20 7946 0318",
-  phoneHref: "+442079460318",
+  email: "enquiries@meghnaconstruct.com.bd",
+  careersEmail: "careers@meghnaconstruct.com.bd",
+  phone: "+880 2 5566 8100",
+  phoneHref: "+880255668100",
   address: {
-    street: "Meridian House, 14 Blackfriars Road",
-    locality: "London",
-    region: "England",
-    postalCode: "SE1 8NW",
-    country: "GB",
-    countryName: "United Kingdom",
+    street: "Meghna House, Plot 42, Road 11, Banani",
+    locality: "Dhaka",
+    region: "Dhaka Division",
+    postalCode: "1213",
+    country: "BD",
+    countryName: "Bangladesh",
   },
   social: {
-    linkedin: "https://www.linkedin.com/company/meridian-construct",
-    x: "https://x.com/meridianconstruct",
-    youtube: "https://www.youtube.com/@meridianconstruct",
-    instagram: "https://www.instagram.com/meridianconstruct",
+    linkedin: "https://www.linkedin.com/company/meghna-construct",
+    x: "https://x.com/meghnaconstruct",
+    youtube: "https://www.youtube.com/@meghnaconstruct",
+    facebook: "https://www.facebook.com/meghnaconstruct",
   },
   ogImage: "/images/hero/og-default.svg",
 } as const;
 
+/**
+ * English is the default. Bangla is the only alternate — the brief calls for
+ * exactly these two, so the switcher is a toggle rather than a long list.
+ */
 export const languages = [
-  { code: "en", label: "English", region: "United Kingdom" },
-  { code: "de", label: "Deutsch", region: "Deutschland" },
-  { code: "fr", label: "Français", region: "France" },
-  { code: "es", label: "Español", region: "España" },
-  { code: "ar", label: "العربية", region: "الإمارات" },
+  { code: "en", label: "English", nativeLabel: "English", region: "Bangladesh" },
+  { code: "bn", label: "Bangla", nativeLabel: "বাংলা", region: "বাংলাদেশ" },
 ] as const;
 
 export type LanguageCode = (typeof languages)[number]["code"];
+
+export const defaultLocale: LanguageCode = "en";

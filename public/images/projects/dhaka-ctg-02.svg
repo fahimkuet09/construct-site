@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1067" viewBox="0 0 1600 1067" role="img" aria-label="Meridian Construct">
+  <defs>
+    <linearGradient id="gdhakactg02" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#33465f"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+    <radialGradient id="vdhakactg02" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pdhakactg02" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="ndhakactg02"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#gdhakactg02)"/>
+  <rect width="1600" height="1067" fill="url(#pdhakactg02)"/>
+  <line x1="285.87607905175537" y1="874.9399999999999" x2="285.87607905175537" y2="321.4640960141504" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="193.68468401696532" y1="321.4640960141504" x2="573.9741885354742" y2="321.4640960141504" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="285.87607905175537" y1="291.4640960141504" x2="573.9741885354742" y2="321.4640960141504" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="285.87607905175537" y1="291.4640960141504" x2="193.68468401696532" y2="321.4640960141504" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="285.87607905175537" y1="321.4640960141504" x2="285.87607905175537" y2="291.4640960141504" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="493.3067178800329" y1="321.4640960141504" x2="493.3067178800329" y2="515.4560180031275" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="743.7616735245101" y1="874.9399999999999" x2="743.7616735245101" y2="205.22404191240662" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="650.0420622421615" y1="205.22404191240662" x2="1036.6354587818496" y2="205.22404191240662" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="743.7616735245101" y1="175.22404191240662" x2="1036.6354587818496" y2="205.22404191240662" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="743.7616735245101" y1="175.22404191240662" x2="650.0420622421615" y2="205.22404191240662" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="743.7616735245101" y1="205.22404191240662" x2="743.7616735245101" y2="175.22404191240662" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="954.6307989097945" y1="205.22404191240662" x2="954.6307989097945" y2="369.579047030108" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="1216.767880147323" y1="874.9399999999999" x2="1216.767880147323" y2="212.7490985414106" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="1104.38978511177" y1="212.7490985414106" x2="1567.949427133426" y2="212.7490985414106" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="1216.767880147323" y1="182.7490985414106" x2="1567.949427133426" y2="212.7490985414106" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1216.767880147323" y1="182.7490985414106" x2="1104.38978511177" y2="212.7490985414106" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1216.767880147323" y1="212.7490985414106" x2="1216.767880147323" y2="182.7490985414106" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="1469.6185939773172" y1="212.7490985414106" x2="1469.6185939773172" y2="412.8404875863995" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="0" y1="874.9399999999999" x2="1600" y2="874.9399999999999" stroke="rgba(255,255,255,.5)" stroke-width="2.5"/>
+  <rect width="1600" height="1067" fill="url(#vdhakactg02)"/>
+  <rect width="1600" height="1067" filter="url(#ndhakactg02)" opacity="0.045"/>
+  
+</svg>

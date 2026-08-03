@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-label="Meridian Construct">
+  <defs>
+    <linearGradient id="gsayedabadhero" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#136b7d"/>
+      <stop offset="55%" stop-color="#0d4360"/>
+      <stop offset="100%" stop-color="#0a1420"/>
+    </linearGradient>
+    <radialGradient id="vsayedabadhero" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="psayedabadhero" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nsayedabadhero"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="2400" height="1350" fill="url(#gsayedabadhero)"/>
+  <rect width="2400" height="1350" fill="url(#psayedabadhero)"/>
+  <line x1="528" y1="1134" x2="528" y2="643.0410221451893" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="528" y1="643.0410221451893" x2="705.9932246195224" y2="669.8442307132741" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="528" y1="643.0410221451893" x2="402.73864082455873" y2="772.3066088166662" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="528" y1="643.0410221451893" x2="588.157857850966" y2="473.39128846198264" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1200" y1="1134" x2="1200" y2="540.098172998987" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="1200" y1="540.098172998987" x2="1309.612963449861" y2="682.8742152600732" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1200" y1="540.098172998987" x2="1047.6591913188036" y2="635.9745413613687" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1200" y1="540.098172998987" x2="1275.521456834762" y2="376.70750754482106" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1872" y1="1134" x2="1872" y2="478.0835335724987" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="1872" y1="478.0835335724987" x2="1984.0770896030606" y2="618.9335459477468" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1872" y1="478.0835335724987" x2="1740.0415918883764" y2="600.5048492354429" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1872" y1="478.0835335724987" x2="1878.8972269677042" y2="298.2157258353831" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="0" y1="1146" x2="2400" y2="1146" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="1160" x2="2400" y2="1160" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="1174" x2="2400" y2="1174" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="1188" x2="2400" y2="1188" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+  <rect width="2400" height="1350" fill="url(#vsayedabadhero)"/>
+  <rect width="2400" height="1350" filter="url(#nsayedabadhero)" opacity="0.045"/>
+  
+</svg>

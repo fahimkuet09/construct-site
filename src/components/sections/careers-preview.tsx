@@ -53,7 +53,7 @@ export function CareersPreview() {
                 >
                   <Image
                     src="/images/careers/culture-01.svg"
-                    alt="A Meridian delivery team during a morning briefing on site"
+                    alt="A Meghna delivery team during a morning briefing on site"
                     fill
                     sizes="(max-width: 1024px) 100vw, 560px"
                     className="object-cover"

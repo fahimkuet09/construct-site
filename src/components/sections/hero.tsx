@@ -14,12 +14,17 @@ import { Button } from "@/components/ui/button";
 import { Magnetic } from "@/components/motion/magnetic";
 import { Counter } from "@/components/motion/counter";
 import { heroStats } from "@/data/company";
+import { useLocale } from "@/components/locale-provider";
+import type { TranslationKey } from "@/lib/i18n";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
 export function Hero() {
   const ref = React.useRef<HTMLElement>(null);
   const reduced = useReducedMotion();
+  const { t } = useLocale();
+  const tk = (key: string | undefined, fallback: string) =>
+    key ? t(key as TranslationKey) : fallback;
   const [videoReady, setVideoReady] = React.useState(false);
 
   const { scrollYProgress } = useScroll({
@@ -36,7 +41,7 @@ export function Hero() {
     <section
       ref={ref}
       className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden bg-primary-950"
-      aria-label="Meridian Construct — introduction"
+      aria-label="Meghna Construct — introduction"
     >
       {/* ------------------------------------------------------- media */}
       <motion.div
@@ -99,13 +104,13 @@ export function Hero() {
               className="rounded-2xl border border-white/12 bg-white/[0.07] px-5 py-4 backdrop-blur-md"
             >
               <p className="font-heading text-[0.625rem] font-bold tracking-[0.16em] text-accent uppercase">
-                Live monitoring
+                {t("hero.monitoring")}
               </p>
               <p className="mt-1.5 font-heading text-[1.75rem] leading-none font-extrabold text-white tabular-nums">
                 4.2<span className="text-[1rem] text-white/50"> mm</span>
               </p>
               <p className="mt-1 text-[0.75rem] text-white/50">
-                Settlement — 12 mm limit
+                {t("hero.settlement")}
               </p>
             </motion.div>
           </motion.div>
@@ -128,13 +133,13 @@ export function Hero() {
               className="rounded-2xl border border-white/12 bg-white/[0.07] px-5 py-4 backdrop-blur-md"
             >
               <p className="font-heading text-[0.625rem] font-bold tracking-[0.16em] text-accent uppercase">
-                Corridor availability
+                {t("hero.availability")}
               </p>
               <p className="mt-1.5 font-heading text-[1.75rem] leading-none font-extrabold text-white tabular-nums">
-                96.4<span className="text-[1rem] text-white/50">%</span>
+                98.1<span className="text-[1rem] text-white/50">%</span>
               </p>
               <p className="mt-1 text-[0.75rem] text-white/50">
-                Across live-carriageway schemes
+                {t("hero.availabilityNote")}
               </p>
             </motion.div>
           </motion.div>
@@ -154,15 +159,15 @@ export function Hero() {
             className="mb-7 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.07] py-2 pr-5 pl-2 backdrop-blur-md"
           >
             <span className="rounded-full bg-accent px-3 py-1 font-heading text-[0.6875rem] font-extrabold tracking-[0.1em] whitespace-nowrap text-primary-950 uppercase">
-              Since 1974
+              {t("hero.badge")}
             </span>
             <span className="text-[0.8125rem] font-medium text-white/75">
-              Civil engineering across 24 countries
+              {t("hero.badgeText")}
             </span>
           </motion.div>
 
           <h1 className="max-w-[17ch] text-display text-white">
-            {["Engineering the", "ground beneath", "progress"].map((line, i) =>
+            {[t("hero.line1"), t("hero.line2"), t("hero.line3")].map((line, i) =>
               reduced ? (
                 <span key={line} className="block">
                   {line}
@@ -188,9 +193,7 @@ export function Hero() {
             transition={{ duration: 0.85, delay: 0.55, ease: EASE }}
             className="mt-7 max-w-[56ch] text-lead text-white/72"
           >
-            We build the crossings, corridors, tunnels and ports that societies
-            depend on — taking on the projects where the engineering is genuinely
-            difficult and failure is not an option.
+            {t("hero.lead")}
           </motion.p>
 
           <motion.div
@@ -202,7 +205,7 @@ export function Hero() {
             <Magnetic>
               <Button asChild variant="accent" size="lg" className="w-full sm:w-auto">
                 <Link href="/projects">
-                  Explore our projects
+                  {t("cta.exploreProjects")}
                   <ArrowRight
                     className="size-4.5 transition-transform duration-300 group-hover/btn:translate-x-1"
                     aria-hidden
@@ -215,7 +218,7 @@ export function Hero() {
               <Button asChild variant="light" size="lg" className="w-full sm:w-auto">
                 <Link href="/about">
                   <Play className="size-4 fill-current" aria-hidden />
-                  Who we are
+                  {t("cta.whoWeAre")}
                 </Link>
               </Button>
             </Magnetic>
@@ -244,16 +247,16 @@ export function Hero() {
                     <Counter
                       value={stat.value}
                       prefix={stat.prefix}
-                      suffix={stat.suffix}
+                      suffix={tk(stat.suffixKey, stat.suffix ?? "")}
                       decimals={stat.decimals}
                     />
                   </dd>
                   <dt className="mt-2.5 font-heading text-[0.875rem] font-bold text-accent">
-                    {stat.label}
+                    {tk(stat.labelKey, stat.label)}
                   </dt>
                   {stat.description ? (
                     <p className="mt-1 text-[0.8125rem] text-white/45">
-                      {stat.description}
+                      {tk(stat.descriptionKey, stat.description)}
                     </p>
                   ) : null}
                 </div>
@@ -273,7 +276,7 @@ export function Hero() {
         className="absolute right-8 bottom-56 hidden flex-col items-center gap-2.5 text-white/45 transition-colors hover:text-white xl:flex"
       >
         <span className="[writing-mode:vertical-rl] font-heading text-[0.625rem] font-bold tracking-[0.22em] uppercase">
-          Scroll
+          {t("hero.scroll")}
         </span>
         <span className="relative flex h-11 w-6 justify-center overflow-hidden rounded-full border border-white/25">
           <span

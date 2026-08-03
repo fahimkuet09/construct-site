@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-label="Meridian Construct">
+  <defs>
+    <linearGradient id="gkaptaihero" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#136b7d"/>
+      <stop offset="55%" stop-color="#0d4360"/>
+      <stop offset="100%" stop-color="#0a1420"/>
+    </linearGradient>
+    <radialGradient id="vkaptaihero" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pkaptaihero" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nkaptaihero"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="2400" height="1350" fill="url(#gkaptaihero)"/>
+  <rect width="2400" height="1350" fill="url(#pkaptaihero)"/>
+  <line x1="528" y1="1134" x2="528" y2="416.9123888667673" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="528" y1="416.9123888667673" x2="701.7867999281822" y2="463.79680174271107" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="528" y1="416.9123888667673" x2="352.77414688846386" y2="458.09370017826353" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="528" y1="416.9123888667673" x2="603.0825051271013" y2="253.31954848602564" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1200" y1="1134" x2="1200" y2="641.0200387774967" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="1200" y1="641.0200387774967" x2="1379.5250301761964" y2="654.0876912153191" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1200" y1="641.0200387774967" x2="1021.3894863663693" y2="663.3423240442564" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1200" y1="641.0200387774967" x2="1158.4492965651289" y2="465.8814107022848" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1872" y1="1134" x2="1872" y2="417.87992466939613" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="1872" y1="417.87992466939613" x2="2005.6637004583486" y2="538.437028067665" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1872" y1="417.87992466939613" x2="1732.6273753802416" y2="531.7889739438059" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="1872" y1="417.87992466939613" x2="1901.4859909931317" y2="240.31141300374932" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="0" y1="1146" x2="2400" y2="1146" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="1160" x2="2400" y2="1160" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="1174" x2="2400" y2="1174" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="1188" x2="2400" y2="1188" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+  <rect width="2400" height="1350" fill="url(#vkaptaihero)"/>
+  <rect width="2400" height="1350" filter="url(#nkaptaihero)" opacity="0.045"/>
+  
+</svg>

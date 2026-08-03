@@ -86,7 +86,7 @@ export function EquipmentSlider() {
                     <div className="relative aspect-[4/3] overflow-hidden bg-primary-950">
                       <Image
                         src={item.image}
-                        alt={`${item.name} operating on a Meridian site`}
+                        alt={`${item.name} operating on a Meghna site`}
                         fill
                         sizes="(max-width: 640px) 92vw, (max-width: 1440px) 45vw, 440px"
                         className="object-cover transition-transform duration-[900ms] ease-[var(--ease-out-quint)] group-hover:scale-[1.06]"

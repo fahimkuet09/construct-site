@@ -25,16 +25,16 @@ import {
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Fifty-one years of heavy civil engineering. Meridian Construct's history, leadership, values, certifications and awards.",
+    "Fifty-one years of heavy civil engineering. Meghna Construct's history, leadership, values, certifications and awards.",
 };
 
 export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="About Meridian"
+        eyebrow="About Meghna"
         title="Fifty-one years of building things that have to work"
-        lead="An international civil engineering contractor of 12,800 people, delivering infrastructure across 24 countries — with design authority and self-performed construction under one roof."
+        lead="A Bangladeshi civil engineering contractor of 12,800 people, delivering infrastructure in 61 of the country's 64 districts — with design authority and self-performed construction under one roof."
         image="/images/about/about-hero.svg"
         crumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
         size="tall"
@@ -103,7 +103,7 @@ export default function AboutPage() {
               >
                 <Image
                   src="/images/about/values.svg"
-                  alt="Meridian engineers on a tunnel drive during a shift handover"
+                  alt="Meghna engineers on a tunnel drive during a shift handover"
                   fill
                   sizes="(max-width: 1024px) 100vw, 560px"
                   className="object-cover"
@@ -172,8 +172,8 @@ export default function AboutPage() {
             <SectionHeading
               invert
               eyebrow="Our history"
-              title="From fourteen people to twenty-four countries"
-              lead="Five decades of deliberate expansion — each step taken to remove a dependency that was limiting what we could take on."
+              title="From fourteen people to sixty-one districts"
+              lead="Five decades of deliberate expansion — each step taken to remove a dependency that was limiting what Bangladeshi engineering could take on for itself."
             />
           </Reveal>
 
@@ -313,7 +313,7 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Certifications"
               title="Independently audited, every region, every year"
-              lead="Certification is verified across all 24 countries of operation rather than held at group level and assumed to cascade."
+              lead="Certification is verified in every region we operate in rather than held at group level and assumed to cascade."
             />
           </Reveal>
 
@@ -453,7 +453,7 @@ export default function AboutPage() {
 
       <CtaBand
         eyebrow="Work with us"
-        title="Fifty-one years of judgement, available to your project"
+        title="Fifty-one years of delta engineering, available to your project"
         body="Whether you are shaping a business case or holding a programme that has already started to slip, we will give you a straight answer about what is achievable."
         primary={{ label: "Talk to our team", href: "/contact" }}
         secondary={{ label: "See our capabilities", href: "/services" }}

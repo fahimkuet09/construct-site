@@ -17,7 +17,7 @@ function buildIcon(accent: boolean) {
   const ring = accent ? "rgba(245,158,11,.28)" : "rgba(15,76,129,.22)";
 
   return L.divIcon({
-    className: "meridian-pin",
+    className: "meghna-pin",
     html: `
       <span style="position:relative;display:block;width:34px;height:34px;">
         <span style="position:absolute;inset:0;border-radius:9999px;background:${ring};transform:scale(1.5);"></span>
@@ -33,8 +33,8 @@ function buildIcon(accent: boolean) {
 
 export function ProjectMap({
   pins,
-  center = [30, 12],
-  zoom = 2,
+  center = [23.8, 90.3],
+  zoom = 7,
   className,
   height = "100%",
 }: {
@@ -53,13 +53,13 @@ export function ProjectMap({
     <MapContainer
       center={center}
       zoom={zoom}
-      minZoom={2}
+      minZoom={5}
       scrollWheelZoom={false}
       zoomControl={false}
       worldCopyJump
       className={className}
       style={{ height, width: "100%" }}
-      aria-label="Map of Meridian Construct project locations"
+      aria-label="Map of Meghna Construct project locations across Bangladesh"
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'

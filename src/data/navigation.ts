@@ -5,10 +5,12 @@ import { projectSectors } from "./projects";
 export const navigation: NavItem[] = [
   {
     label: "Services",
+    labelKey: "nav.services",
     href: "/services",
     columns: [
       {
         heading: "Capabilities",
+        headingKey: "nav.capabilities",
         links: services.slice(0, 3).map((s) => ({
           label: s.title,
           href: `/services/${s.slug}`,
@@ -17,6 +19,7 @@ export const navigation: NavItem[] = [
       },
       {
         heading: "Sectors",
+        headingKey: "nav.sectors",
         links: services.slice(3).map((s) => ({
           label: s.title,
           href: `/services/${s.slug}`,
@@ -35,10 +38,12 @@ export const navigation: NavItem[] = [
   },
   {
     label: "Projects",
+    labelKey: "nav.projects",
     href: "/projects",
     columns: [
       {
         heading: "By sector",
+        headingKey: "nav.bySector",
         links: projectSectors.slice(0, 3).map((sector) => ({
           label: sector,
           href: `/projects?sector=${encodeURIComponent(sector)}`,
@@ -46,6 +51,7 @@ export const navigation: NavItem[] = [
       },
       {
         heading: "More sectors",
+        headingKey: "nav.moreSectors",
         links: projectSectors.slice(3).map((sector) => ({
           label: sector,
           href: `/projects?sector=${encodeURIComponent(sector)}`,
@@ -54,19 +60,21 @@ export const navigation: NavItem[] = [
     ],
     featured: {
       eyebrow: "Featured project",
-      title: "North Estuary Crossing",
+      title: "Meghna Estuary Crossing",
       description:
-        "A 1,420-metre cable-stayed crossing delivered four months early, without ever closing the structure it replaced.",
-      href: "/projects/north-estuary-crossing",
-      image: "/images/projects/north-estuary-thumb.svg",
+        "A 4.8-kilometre cable-stayed crossing that ended Bhola's isolation, founded on 122-metre piles through delta silt.",
+      href: "/projects/meghna-estuary-crossing",
+      image: "/images/projects/meghna-estuary-thumb.svg",
     },
   },
   {
     label: "About",
+    labelKey: "nav.about",
     href: "/about",
     columns: [
       {
         heading: "The company",
+        headingKey: "nav.theCompany",
         links: [
           {
             label: "Who we are",
@@ -81,12 +89,13 @@ export const navigation: NavItem[] = [
           {
             label: "Our history",
             href: "/about#history",
-            description: "From fourteen employees to 24 countries",
+            description: "From fourteen employees to 61 districts",
           },
         ],
       },
       {
         heading: "Standards",
+        headingKey: "nav.standards",
         links: [
           {
             label: "Safety & quality",
@@ -107,14 +116,15 @@ export const navigation: NavItem[] = [
       },
     ],
   },
-  { label: "Careers", href: "/careers" },
-  { label: "News", href: "/news" },
-  { label: "Contact", href: "/contact" },
+  { label: "Careers", labelKey: "nav.careers", href: "/careers" },
+  { label: "News", labelKey: "nav.news", href: "/news" },
+  { label: "Contact", labelKey: "nav.contact", href: "/contact" },
 ];
 
 export const footerNav = [
   {
     heading: "Capabilities",
+        headingKey: "nav.capabilities",
     links: services.map((s) => ({
       label: s.title,
       href: `/services/${s.slug}`,
@@ -123,7 +133,7 @@ export const footerNav = [
   {
     heading: "Company",
     links: [
-      { label: "About Meridian", href: "/about" },
+      { label: "About Meghna", href: "/about" },
       { label: "Leadership", href: "/about#leadership" },
       { label: "Our history", href: "/about#history" },
       { label: "Sustainability", href: "/about#sustainability" },

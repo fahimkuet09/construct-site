@@ -10,11 +10,16 @@ import { navigation } from "@/data/navigation";
 import { site } from "@/lib/site";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useLocale } from "@/components/locale-provider";
+import type { TranslationKey } from "@/lib/i18n";
 
 export function MobileNav({ invert = false }: { invert?: boolean }) {
   const [open, setOpen] = React.useState(false);
   const [expanded, setExpanded] = React.useState<string | null>(null);
   const pathname = usePathname();
+  const { t } = useLocale();
+  const tk = (key: string | undefined, fallback: string) =>
+    key ? t(key as TranslationKey) : fallback;
 
   // Close the drawer whenever the route changes, including anchor jumps.
   // Adjusting state during render is React's documented alternative to an
@@ -30,7 +35,7 @@ export function MobileNav({ invert = false }: { invert?: boolean }) {
       <Dialog.Trigger asChild>
         <button
           type="button"
-          aria-label="Open navigation menu"
+          aria-label={t("nav.openMenu")}
           className={cn(
             "flex size-11 cursor-pointer items-center justify-center rounded-full transition-colors lg:hidden",
             invert
@@ -71,12 +76,12 @@ export function MobileNav({ invert = false }: { invert?: boolean }) {
 
                 <div className="flex items-center justify-between border-b border-line px-5 py-4">
                   <span className="font-heading text-[0.6875rem] font-bold tracking-[0.2em] text-muted uppercase">
-                    Menu
+                    {t("nav.menu")}
                   </span>
                   <Dialog.Close asChild>
                     <button
                       type="button"
-                      aria-label="Close navigation menu"
+                      aria-label={t("nav.closeMenu")}
                       className="flex size-11 cursor-pointer items-center justify-center rounded-full text-heading transition-colors hover:bg-primary-50"
                     >
                       <X className="size-5.5" strokeWidth={2.2} />
@@ -97,7 +102,7 @@ export function MobileNav({ invert = false }: { invert?: boolean }) {
                               href={item.href}
                               className="flex-1 py-4 font-heading text-[1.125rem] font-bold text-heading transition-colors hover:text-primary"
                             >
-                              {item.label}
+                              {tk(item.labelKey, item.label)}
                             </Link>
                             {hasChildren ? (
                               <button
@@ -156,7 +161,7 @@ export function MobileNav({ invert = false }: { invert?: boolean }) {
                 <div className="border-t border-line bg-background px-5 py-5">
                   <Button asChild variant="primary" size="lg" className="w-full">
                     <Link href="/contact">
-                      Start a project
+                      {t("nav.startProject")}
                       <ArrowUpRight className="size-4.5" aria-hidden />
                     </Link>
                   </Button>

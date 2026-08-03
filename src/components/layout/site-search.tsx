@@ -13,17 +13,19 @@ import {
 } from "@/components/ui/dialog";
 import { searchSite, type SearchDoc } from "@/lib/search";
 import { cn } from "@/lib/utils";
+import { useLocale } from "@/components/locale-provider";
 
 const SUGGESTIONS = [
   "Tunnelling",
   "Bridges",
-  "North Estuary",
+  "Meghna Estuary",
   "Graduate programme",
   "Offshore wind",
 ];
 
 export function SiteSearch({ invert = false }: { invert?: boolean }) {
   const router = useRouter();
+  const { t } = useLocale();
   const [open, setOpen] = React.useState(false);
   const [query, setQuery] = React.useState("");
   const [active, setActive] = React.useState(0);
@@ -91,7 +93,7 @@ export function SiteSearch({ invert = false }: { invert?: boolean }) {
       <DialogTrigger asChild>
         <button
           type="button"
-          aria-label="Search the site"
+          aria-label={t("search.open")}
           className={cn(
             "flex size-11 cursor-pointer items-center justify-center rounded-full transition-colors",
             invert
@@ -107,9 +109,9 @@ export function SiteSearch({ invert = false }: { invert?: boolean }) {
         hideClose
         className="top-[12vh] max-w-2xl translate-y-0 p-0 md:p-0"
       >
-        <DialogTitle className="sr-only">Search Meridian Construct</DialogTitle>
+        <DialogTitle className="sr-only">{t("search.title")}</DialogTitle>
         <DialogDescription className="sr-only">
-          Search projects, capabilities, news and open positions.
+          {t("search.description")}
         </DialogDescription>
 
         <div className="flex items-center gap-3 border-b border-line px-5 py-4">
@@ -120,8 +122,8 @@ export function SiteSearch({ invert = false }: { invert?: boolean }) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={onKeyDown}
-            placeholder="Search projects, capabilities, news…"
-            aria-label="Search query"
+            placeholder={t("search.placeholder")}
+            aria-label={t("search.label")}
             className="w-full bg-transparent text-[1.0625rem] text-heading outline-none placeholder:text-muted/70"
           />
           <kbd className="hidden shrink-0 rounded-md border border-line px-2 py-1 font-heading text-[0.6875rem] font-bold text-muted sm:block">
@@ -133,7 +135,7 @@ export function SiteSearch({ invert = false }: { invert?: boolean }) {
           {query.trim().length < 2 ? (
             <div className="px-3 py-5">
               <p className="mb-3 font-heading text-[0.75rem] font-bold tracking-[0.14em] text-muted uppercase">
-                Try searching for
+                {t("search.suggestions")}
               </p>
               <div className="flex flex-wrap gap-2">
                 {SUGGESTIONS.map((s) => (
@@ -151,7 +153,7 @@ export function SiteSearch({ invert = false }: { invert?: boolean }) {
           ) : results.length === 0 ? (
             <div className="px-3 py-12 text-center">
               <p className="font-heading text-[1rem] font-bold text-heading">
-                No results for “{query}”
+                {t("search.noResults")} “{query}”
               </p>
               <p className="mt-1.5 text-[0.875rem] text-muted">
                 Try a sector, a country, or a project name.

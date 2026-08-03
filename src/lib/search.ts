@@ -15,8 +15,8 @@ export interface SearchDoc {
 const staticPages: SearchDoc[] = [
   {
     id: "page-about",
-    title: "About Meridian",
-    description: "Fifty-one years of heavy civil engineering across 24 countries.",
+    title: "About Meghna",
+    description: "Fifty-one years of heavy civil engineering across Bangladesh.",
     href: "/about",
     group: "Pages",
     keywords: "about history leadership values mission vision awards certifications iso",
@@ -31,7 +31,7 @@ const staticPages: SearchDoc[] = [
   },
   {
     id: "page-careers",
-    title: "Careers at Meridian",
+    title: "Careers at Meghna",
     description: "Open positions, graduate programme, benefits and hiring process.",
     href: "/careers",
     group: "Pages",

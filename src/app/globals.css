@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ==========================================================================
-   MERIDIAN CONSTRUCT — DESIGN TOKENS
+   MEGHNA CONSTRUCT — DESIGN TOKENS
    Industrial Luxury / Modern Enterprise
    ========================================================================== */
 
@@ -41,6 +41,7 @@
   /* ---- Typography ---- */
   --font-heading: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
   --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-bangla: var(--font-bengali), ui-sans-serif, system-ui, sans-serif;
 
   /* Fluid type scale — desktop targets: 72 / 56 / 40 / 18 */
   --text-display: clamp(2.75rem, 1.35rem + 5.6vw, 4.5rem); /* → 72px */
@@ -160,6 +161,31 @@
   ::selection {
     background-color: var(--color-primary);
     color: #fff;
+  }
+
+  /* Bangla has no glyphs in Manrope or Inter, so the whole document swaps
+     family when the locale switches. Line height is opened up because
+     Bengali conjuncts and matras need more vertical room than Latin. */
+  :lang(bn),
+  html[lang="bn"] body,
+  html[lang="bn"] h1,
+  html[lang="bn"] h2,
+  html[lang="bn"] h3,
+  html[lang="bn"] h4,
+  html[lang="bn"] h5,
+  html[lang="bn"] h6 {
+    font-family: var(--font-bangla);
+  }
+
+  html[lang="bn"] body {
+    line-height: 1.85;
+  }
+
+  html[lang="bn"] h1,
+  html[lang="bn"] h2,
+  html[lang="bn"] h3 {
+    letter-spacing: 0;
+    line-height: 1.3;
   }
 
   /* The native search decoration clashes with our own ESC affordance */

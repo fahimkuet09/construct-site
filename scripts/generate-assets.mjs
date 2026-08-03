@@ -304,18 +304,18 @@ const WIDE = { w: 2400, h: 1350 };
 const THUMB = { w: 1200, h: 900 };
 
 const PROJECTS = [
-  ["north-estuary", "bridge", "North Estuary Crossing", "United Kingdom"],
-  ["metro-line-4", "tunnel", "Capital Metro Line 4", "Germany"],
-  ["gulf-terminal", "marine", "Gulf Container Terminal", "United Arab Emirates"],
-  ["alpine-a9", "highway", "Alpine Corridor A9", "Austria"],
-  ["riverside-water", "energy", "Riverside Water Reclamation", "United Kingdom"],
-  ["logistics-campus", "industrial", "Meridian Logistics Campus", "Netherlands"],
-  ["harbour-rail", "highway", "Harbour Light Rail", "Australia"],
-  ["cascade-storage", "energy", "Cascade Pumped Storage", "United Kingdom"],
-  ["southern-viaduct", "bridge", "Southern Ring Viaduct", "Portugal"],
-  ["atlantic-wind", "marine", "Atlantic Offshore Wind", "Ireland"],
-  ["central-station", "industrial", "Central Station Redevelopment", "Italy"],
-  ["desert-solar", "energy", "Desert Solar & Transmission", "United States"],
+  ["meghna-estuary", "bridge"],
+  ["dhaka-metro", "tunnel"],
+  ["matarbari", "marine"],
+  ["dhaka-ctg", "highway"],
+  ["sayedabad", "energy"],
+  ["mirsarai", "industrial"],
+  ["ctg-rail", "highway"],
+  ["kaptai", "energy"],
+  ["buriganga", "bridge"],
+  ["payra-wind", "marine"],
+  ["kamalapur", "industrial"],
+  ["teesta-solar", "energy"],
 ];
 
 let count = 0;
@@ -325,7 +325,7 @@ const emit = (rel, svg) => {
 };
 
 /* Projects: hero, thumb, 6 gallery frames */
-for (const [base, palette, label, sub] of PROJECTS) {
+for (const [base, palette] of PROJECTS) {
   emit(
     `images/projects/${base}-hero.svg`,
     scene({ ...WIDE, seed: `${base}-hero`, palette }),
@@ -344,17 +344,15 @@ for (const [base, palette, label, sub] of PROJECTS) {
         seed: `${base}-0${i}`,
         palette,
         motif: motifs[i - 1],
-        label,
-        sub: `Plate ${String(i).padStart(2, "0")}`,
       }),
     );
   }
 }
 
 /* Before / after sliders */
-for (const [base, palette, label] of [
-  ["north-estuary", "bridge", "North Estuary Crossing"],
-  ["gulf-terminal", "marine", "Gulf Container Terminal"],
+for (const [base, palette] of [
+  ["meghna-estuary", "bridge"],
+  ["matarbari", "marine"],
 ]) {
   emit(
     `images/projects/${base}-before.svg`,
@@ -363,13 +361,11 @@ for (const [base, palette, label] of [
       seed: `${base}-before`,
       palette: "earth",
       motif: palette,
-      label,
-      sub: "Before",
     }),
   );
   emit(
     `images/projects/${base}-after.svg`,
-    scene({ ...LAND, seed: `${base}-after`, palette, label, sub: "After" }),
+    scene({ ...LAND, seed: `${base}-after`, palette }),
   );
 }
 

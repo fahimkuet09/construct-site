@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-label="Meridian Construct">
+  <defs>
+    <linearGradient id="gdhakactghero" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#33465f"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+    <radialGradient id="vdhakactghero" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pdhakactghero" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="ndhakactghero"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="2400" height="1350" fill="url(#gdhakactghero)"/>
+  <rect width="2400" height="1350" fill="url(#pdhakactghero)"/>
+  <path d="M 720 594 L -360 1350 L 1488 1350 Z" fill="rgba(255,255,255,.07)"/><path d="M 1008 594 L 1728 1350 L 2832 1350 Z" fill="rgba(255,255,255,.05)"/><line x1="0" y1="594" x2="2400" y2="594" stroke="rgba(255,255,255,.28)" stroke-width="1.4"/><line x1="864" y1="624.24" x2="874" y2="624.24" stroke="rgba(245,158,11,.7)" stroke-width="2"/><line x1="781.7142857142858" y1="639.6685714285715" x2="801.7142857142858" y2="639.6685714285715" stroke="rgba(245,158,11,.7)" stroke-width="2.7142857142857144"/><line x1="699.4285714285714" y1="685.9542857142857" x2="729.4285714285714" y2="685.9542857142857" stroke="rgba(245,158,11,.7)" stroke-width="3.4285714285714284"/><line x1="617.1428571428572" y1="763.0971428571429" x2="657.1428571428572" y2="763.0971428571429" stroke="rgba(245,158,11,.7)" stroke-width="4.142857142857142"/><line x1="534.8571428571429" y1="871.0971428571429" x2="584.8571428571429" y2="871.0971428571429" stroke="rgba(245,158,11,.7)" stroke-width="4.857142857142857"/><line x1="452.5714285714286" y1="1009.9542857142858" x2="512.5714285714287" y2="1009.9542857142858" stroke="rgba(245,158,11,.7)" stroke-width="5.571428571428571"/><line x1="370.2857142857144" y1="1179.6685714285713" x2="440.2857142857144" y2="1179.6685714285713" stroke="rgba(245,158,11,.7)" stroke-width="6.285714285714286"/><line x1="288" y1="534" x2="288" y2="604" stroke="rgba(255,255,255,.2)" stroke-width="2"/><line x1="768" y1="534" x2="768" y2="604" stroke="rgba(255,255,255,.2)" stroke-width="2"/><line x1="1248" y1="534" x2="1248" y2="604" stroke="rgba(255,255,255,.2)" stroke-width="2"/><line x1="1728.0000000000002" y1="534" x2="1728.0000000000002" y2="604" stroke="rgba(255,255,255,.2)" stroke-width="2"/><line x1="2208" y1="534" x2="2208" y2="604" stroke="rgba(255,255,255,.2)" stroke-width="2"/>
+  <rect width="2400" height="1350" fill="url(#vdhakactghero)"/>
+  <rect width="2400" height="1350" filter="url(#ndhakactghero)" opacity="0.045"/>
+  
+</svg>

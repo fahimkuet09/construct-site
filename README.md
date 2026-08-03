@@ -1,7 +1,7 @@
-# Meridian Construct
+# Meghna Construct
 
-A premium civil engineering / infrastructure contractor website, built to the brief in
-[CLAUDE.md](CLAUDE.md).
+A premium civil engineering / infrastructure contractor website for a **Bangladeshi**
+contractor, built to the brief in [CLAUDE.md](CLAUDE.md).
 
 Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · Radix UI · GSAP ·
 Framer Motion · Lenis · Swiper · React Leaflet · LightGallery · React Hook Form + Zod.
@@ -48,7 +48,41 @@ src/
 projects, jobs and offices can be edited without touching a component. Swapping the data
 layer for a CMS means replacing those exports.
 
+The content is written for a Bangladeshi contractor throughout: twelve projects across the
+delta (Meghna estuary crossing, Dhaka Metro Line 4, Matarbari deep-sea terminal, the
+Dhaka–Chattogram corridor, Kaptai pumped storage, Teesta solar), real client bodies
+(RHD, BBA, DMTCL, CPA, Bangladesh Railway, Dhaka WASA, BWDB, BPDB, PGCB, BEZA), seven
+regional offices by division, and contract values in **crore taka**. The engineering
+constraints are the ones that actually govern here — monsoon working seasons, rivers that
+shift their own beds, no rock at any reachable depth, cyclone return-period loading and a
+water table two metres below Dhaka.
+
 ---
+
+## Localisation — English & Bangla
+
+English is the default. Bangla (বাংলা) is the only alternate, exposed as a segmented
+toggle in the header rather than a dropdown, so the alternative is visible without a click.
+
+- **State** — [`locale-provider.tsx`](src/components/locale-provider.tsx) reads the choice
+  from `localStorage` through `useSyncExternalStore`, so it survives navigation and stays
+  in sync across tabs. It also sets `<html lang>`, which drives the font swap and tells
+  screen readers what they are reading.
+- **Strings** — [`src/lib/i18n.ts`](src/lib/i18n.ts) holds both dictionaries side by side.
+- **Type** — Manrope and Inter carry no Bengali glyphs, so `html[lang="bn"]` swaps the
+  whole document to Noto Sans Bengali with a taller line height, because Bengali conjuncts
+  and matras need more vertical room than Latin.
+- **Numerals** — counters and figures render in Bangla digits (৳১৮,৪০০ কোটি) when bn is
+  active, via the `n()` helper on the locale context.
+
+**What is translated:** all site chrome — navigation, mega-menu headings, hero, buttons,
+search, footer, stat labels, form labels and the 404.
+
+**What is not:** long-form editorial copy — project overviews, challenge/solution
+narratives, news articles and job descriptions. These live in `src/data/` and are English
+only in this build. The switcher says so in its tooltip rather than pretending otherwise.
+Adding Bangla there means a parallel field per record (`summaryBn`, `overviewBn`), not
+extending the dictionary.
 
 ## Design system
 
@@ -100,19 +134,24 @@ CSP. Once real raster photography is in place, that flag can be removed.
   (React Hook Form + Zod, inline errors, pending and success states) but no data leaves
   the browser. Each shows a visible "demo build" note. Wire to an endpoint in the
   `onSubmit` handlers.
-- **The language switcher is presentational.** It shows five locales and remembers the
-  selection, but no i18n routing or translation layer is wired up.
+- **Bangla covers the interface, not the articles.** See the Localisation section above
+  for exactly what switches and what does not.
+- **No locale routing.** The choice is client-side and persisted; there are no `/bn/`
+  URLs. If Bangla needs to be indexable, that means Next's i18n routing and a second set
+  of static params — a meaningful piece of work, not a config flag.
 - **Video testimonials reuse the hero showreel** as a stand-in for client films.
 - **Social brand icons are hand-authored SVGs** in `src/components/ui/social-icon.tsx`.
   The brief asked for Lucide only, but lucide-react v1 removed its brand icons, so
-  LinkedIn / X / YouTube / Instagram are drawn to match Lucide's 24×24 grid. Every other
+  LinkedIn / X / YouTube / Facebook are drawn to match Lucide's 24×24 grid. Every other
   icon on the site is Lucide.
 
 ## Verified
 
 - 33 routes build and prerender statically; `tsc --noEmit` and ESLint both clean
   (2 remaining warnings are inherent to react-hook-form's `watch()` API).
-- Zero console errors on every route at 375 / 768 / 1440 px.
-- No horizontal scrolling on any route at any of those widths.
+- Zero console errors on every route at 375 / 768 / 1440 px, in both languages.
+- No horizontal scrolling on any route at any of those widths, in both languages
+  (Bangla strings are longer, so this was re-checked after translation).
+- Language choice persists across navigation and sets `<html lang>` correctly.
 - One `<h1>` and one `<main>` per page, no heading-level skips, all interactive elements
   have accessible names, visible focus rings throughout, skip-to-content link.

@@ -1,4 +1,4 @@
-import { formatCurrencyCompact } from "@/lib/utils";
+import { formatCrore } from "@/lib/utils";
 
 /**
  * Leaflet touches `window` at module scope, so anything that needs pin data
@@ -21,7 +21,7 @@ export function pinsFromProjects(
     sector: string;
     coordinates: [number, number];
     country: string;
-    contractValueUsd: number;
+    contractValueCrore: number;
     featured?: boolean;
   }[],
 ): MapPin[] {
@@ -31,7 +31,7 @@ export function pinsFromProjects(
     subtitle: p.sector,
     coordinates: p.coordinates,
     href: `/projects/${p.slug}`,
-    meta: `${p.country} — ${formatCurrencyCompact(p.contractValueUsd)} contract value`,
+    meta: `${p.country} — ${formatCrore(p.contractValueCrore)} contract value`,
     accent: p.featured,
   }));
 }
@@ -50,7 +50,7 @@ export function pinsFromOffices(
   return items.map((o) => ({
     id: o.id,
     title: `${o.city}, ${o.country}`,
-    subtitle: o.isHeadquarters ? "Group headquarters" : `${o.region} office`,
+    subtitle: o.isHeadquarters ? "Head office" : `${o.region} Division`,
     coordinates: o.coordinates,
     meta: `${o.projectCount} projects delivered from this office`,
     accent: o.isHeadquarters,

@@ -40,7 +40,7 @@ export interface Project {
   coordinates: [number, number];
   year: string;
   durationMonths: number;
-  contractValueUsd: number;
+  contractValueCrore: number;
   summary: string;
   overview: string[];
   heroImage: string;
@@ -168,11 +168,21 @@ export interface Certification {
   logo: string;
 }
 
+export type Division =
+  | "Dhaka"
+  | "Chattogram"
+  | "Khulna"
+  | "Rajshahi"
+  | "Sylhet"
+  | "Barishal"
+  | "Rangpur"
+  | "Mymensingh";
+
 export interface Office {
   id: string;
   city: string;
   country: string;
-  region: "Europe" | "Middle East" | "Asia Pacific" | "Americas" | "Africa";
+  region: Division;
   address: string[];
   phone: string;
   email: string;
@@ -198,9 +208,13 @@ export interface ValuePillar {
 export interface Stat {
   value: number;
   suffix?: string;
+  suffixKey?: string;
   prefix?: string;
   label: string;
+  /** Keys into the i18n dictionary; fall back to the English strings. */
+  labelKey?: string;
   description?: string;
+  descriptionKey?: string;
   decimals?: number;
 }
 
@@ -212,11 +226,15 @@ export interface NavLink {
 
 export interface MegaMenuColumn {
   heading: string;
+  /** Key into the i18n dictionary; falls back to `heading` when absent. */
+  headingKey?: string;
   links: NavLink[];
 }
 
 export interface NavItem {
   label: string;
+  /** Key into the i18n dictionary; falls back to `label` when absent. */
+  labelKey?: string;
   href: string;
   columns?: MegaMenuColumn[];
   featured?: {

@@ -47,7 +47,7 @@ export function Logo({
             invert ? "text-white" : "text-heading",
           )}
         >
-          Meridian
+          Meghna
         </span>
         <span
           className={cn(

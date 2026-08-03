@@ -13,9 +13,14 @@ import { LanguageSwitcher } from "./language-switcher";
 import { MobileNav } from "./mobile-nav";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useLocale } from "@/components/locale-provider";
+import type { TranslationKey } from "@/lib/i18n";
 
 export function SiteHeader() {
   const pathname = usePathname();
+  const { t } = useLocale();
+  const tk = (key: string | undefined, fallback: string) =>
+    key ? t(key as TranslationKey) : fallback;
   const [scrolled, setScrolled] = React.useState(false);
   const [menuOpen, setMenuOpen] = React.useState(false);
 
@@ -76,7 +81,7 @@ export function SiteHeader() {
                           active && (invert ? "text-white" : "text-primary"),
                         )}
                       >
-                        {item.label}
+                        {tk(item.labelKey, item.label)}
                         {active ? (
                           <span
                             aria-hidden
@@ -101,7 +106,7 @@ export function SiteHeader() {
                       active && (invert ? "text-white" : "text-primary"),
                     )}
                   >
-                    {item.label}
+                    {tk(item.labelKey, item.label)}
                     <ChevronDown
                       aria-hidden
                       className="size-3.5 transition-transform duration-300 group-data-[state=open]:rotate-180"
@@ -125,7 +130,7 @@ export function SiteHeader() {
                       {item.columns.map((column) => (
                         <div key={column.heading}>
                           <p className="mb-4 font-heading text-[0.6875rem] font-bold tracking-[0.16em] text-muted uppercase">
-                            {column.heading}
+                            {tk(column.headingKey, column.heading)}
                           </p>
                           <ul className="flex flex-col gap-0.5">
                             {column.links.map((link) => (
@@ -227,7 +232,7 @@ export function SiteHeader() {
             className="ml-1 hidden md:inline-flex"
           >
             <Link href="/contact">
-              Start a project
+              {t("nav.startProject")}
               <ArrowUpRight
                 className="size-4 transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5"
                 aria-hidden

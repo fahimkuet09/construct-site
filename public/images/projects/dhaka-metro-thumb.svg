@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Meridian Construct">
+  <defs>
+    <linearGradient id="gdhakametrothumb" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#123f63"/>
+      <stop offset="55%" stop-color="#0a2a45"/>
+      <stop offset="100%" stop-color="#050d16"/>
+    </linearGradient>
+    <radialGradient id="vdhakametrothumb" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pdhakametrothumb" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="ndhakametrothumb"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#gdhakametrothumb)"/>
+  <rect width="1200" height="900" fill="url(#pdhakametrothumb)"/>
+  <circle cx="600" cy="522" r="414" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1.0"/><circle cx="600" cy="522" r="362.25" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.3"/><circle cx="600" cy="522" r="310.5" fill="none" stroke="rgba(255,255,255,0.21)" stroke-width="1.6"/><circle cx="600" cy="522" r="258.75" fill="none" stroke="rgba(255,255,255,0.26)" stroke-width="1.9"/><circle cx="600" cy="522" r="207" fill="none" stroke="rgba(255,255,255,0.31)" stroke-width="2.2"/><circle cx="600" cy="522" r="155.25" fill="none" stroke="rgba(255,255,255,0.36)" stroke-width="2.5"/><circle cx="600" cy="522" r="103.5" fill="none" stroke="rgba(255,255,255,0.42)" stroke-width="2.8"/><circle cx="600" cy="522" r="51.75" fill="none" stroke="rgba(255,255,255,0.47)" stroke-width="3.1"/><line x1="779.3169009300204" y1="537.6668133598766" x2="1012.4288721390471" y2="558.0336707277164" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="753.8739757714425" y1="615.3959291419575" x2="953.9101442743176" y2="736.8106370265023" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="683.1252741698263" y1="681.6564711942212" x2="791.1881305906004" y2="889.209883746709" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="599.8214480447965" y1="701.9999114421985" x2="599.5893305030321" y2="935.9997963170565" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="502.78925506923736" y1="673.492808641223" x2="376.4152866592459" y2="870.4334598748128" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="437.9974172619136" y1="600.4548480732037" x2="227.3940597024013" y2="702.4461505683686" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="420.30362895338897" y1="511.5494386428911" x2="186.69834659279462" y2="497.96370887864964" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="445.76221727805296" y1="429.2061080619126" x2="245.2530997395217" y2="308.57404854239894" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="524.8410784577652" y1="358.4422532785188" x2="427.13448045285986" y2="145.8171825405933" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="609.2122019588185" y1="342.2358897469521" x2="621.1880645052826" y2="108.54254641798997" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="694.6022641227778" y1="368.86472769853384" x2="817.5852074823889" y2="169.78887370662784" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><line x1="762.6870253560235" y1="444.97447318707526" x2="974.180158318854" y2="344.84128833027313" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/><circle cx="600" cy="522" r="67.5" fill="rgba(245,158,11,.5)"/>
+  <rect width="1200" height="900" fill="url(#vdhakametrothumb)"/>
+  <rect width="1200" height="900" filter="url(#ndhakametrothumb)" opacity="0.045"/>
+  
+</svg>

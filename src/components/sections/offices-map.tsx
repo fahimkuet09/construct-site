@@ -28,7 +28,7 @@ export function OfficesMap() {
         <Reveal delay={0.08}>
           <div className="mt-12 overflow-hidden rounded-[var(--radius-card)] border border-line shadow-[var(--shadow-raise)]">
             <div className="h-[24rem] w-full sm:h-[30rem] lg:h-[34rem]">
-              <ProjectMap pins={pins} center={[28, 24]} zoom={2} />
+              <ProjectMap pins={pins} center={[23.7, 90.3]} zoom={6.8} />
             </div>
           </div>
         </Reveal>

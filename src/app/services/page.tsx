@@ -26,7 +26,7 @@ const generalFaqs = [
   {
     question: "What contract size do you work at?",
     answer:
-      "Our typical range is $50 million to $2.5 billion. We will consider smaller values where the engineering is genuinely complex or the work forms part of a longer programme with an existing client.",
+      "Our typical range is ৳500 crore to ৳25,000 crore. We will consider smaller values where the engineering is genuinely complex or the work forms part of a longer programme with an existing client.",
   },
   {
     question: "How much of the work do you self-perform?",
@@ -41,7 +41,7 @@ const generalFaqs = [
   {
     question: "What forms of contract do you work under?",
     answer:
-      "NEC3 and NEC4, FIDIC Red/Yellow/Silver, JCT, and alliance or integrated project delivery arrangements. We are comfortable with target cost, pain-gain and open-book commercial models.",
+      "FIDIC Red, Yellow and Silver Book, Bangladesh PPR item-rate and design-and-build contracts, and PPP arrangements. We have delivered schemes financed by the World Bank, ADB, JICA and the Government of Bangladesh.",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Capabilities"
         title="Six capabilities, delivered under one accountable contract"
-        lead="From estuary crossings to metro tunnels, deep-water quays to data centres — with the design authority and the plant to deliver them ourselves."
+        lead="From estuary crossings to metro tunnels, deep-water quays to economic zone campuses — with the design authority and the plant to deliver them ourselves."
         image="/images/services/bridges.svg"
         crumbs={[{ label: "Home", href: "/" }, { label: "Capabilities" }]}
       />
@@ -78,7 +78,7 @@ export default function ServicesPage() {
                     <div className="relative aspect-[4/3] overflow-hidden rounded-[var(--radius-card)] border border-line bg-primary-950">
                       <Image
                         src={service.image}
-                        alt={`${service.title} — a Meridian project under construction`}
+                        alt={`${service.title} — a Meghna project under construction`}
                         fill
                         sizes="(max-width: 1024px) 100vw, 620px"
                         className="object-cover"

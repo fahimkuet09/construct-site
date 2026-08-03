@@ -8,6 +8,7 @@ import { EnquiryForm } from "@/components/shared/enquiry-form";
 import { Badge, SectionHeading, Skeleton } from "@/components/ui";
 import { Reveal } from "@/components/motion/reveal";
 import { pinsFromOffices } from "@/lib/map";
+import { site } from "@/lib/site";
 
 const ProjectMap = dynamic(
   () => import("@/components/shared/project-map").then((m) => m.ProjectMap),
@@ -43,7 +44,7 @@ export function ContactSection() {
           <Reveal direction="left" className="flex flex-col gap-8">
             <div className="overflow-hidden rounded-[var(--radius-card)] border border-line">
               <div className="h-64 w-full sm:h-72">
-                <ProjectMap pins={officePins} center={[28, 24]} zoom={1.6} />
+                <ProjectMap pins={officePins} center={[23.7, 90.3]} zoom={6.4} />
               </div>
               <div className="border-t border-line bg-surface p-6">
                 <div className="flex items-start gap-3.5">
@@ -55,29 +56,29 @@ export function ContactSection() {
                   <div>
                     <p className="flex flex-wrap items-center gap-2.5">
                       <span className="font-heading text-[1rem] font-bold text-heading">
-                        London
+                        {site.address.locality}
                       </span>
                       <Badge tone="accent">Headquarters</Badge>
                     </p>
                     <address className="mt-1.5 text-[0.9375rem] leading-relaxed text-body not-italic">
-                      Meridian House, 14 Blackfriars Road
+                      Meghna House, 14 Blackfriars Road
                       <br />
                       London SE1 8NW, United Kingdom
                     </address>
                     <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
                       <a
-                        href="tel:+442079460318"
+                        href={`tel:${site.phoneHref}`}
                         className="flex items-center gap-2 text-[0.875rem] font-semibold text-primary transition-colors hover:text-primary-700"
                       >
                         <Phone className="size-4" aria-hidden />
-                        +44 20 7946 0318
+                        {site.phone}
                       </a>
                       <a
-                        href="mailto:enquiries@meridianconstruct.com"
+                        href={`mailto:${site.email}`}
                         className="flex items-center gap-2 text-[0.875rem] font-semibold text-primary transition-colors hover:text-primary-700"
                       >
                         <Mail className="size-4" aria-hidden />
-                        enquiries@meridianconstruct.com
+                        {site.email}
                       </a>
                     </div>
                   </div>

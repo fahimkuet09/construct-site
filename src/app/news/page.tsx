@@ -6,7 +6,7 @@ import { CtaBand } from "@/components/sections/cta-band";
 export const metadata: Metadata = {
   title: "Newsroom",
   description:
-    "Project milestones, engineering method notes and company announcements from Meridian Construct.",
+    "Project milestones, engineering method notes and company announcements from Meghna Construct.",
 };
 
 export default function NewsPage() {

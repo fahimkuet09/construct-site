@@ -7,6 +7,7 @@ import { z } from "zod";
 import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 import { FieldError } from "@/components/ui/form";
 import { cn } from "@/lib/utils";
+import { useLocale } from "@/components/locale-provider";
 
 const schema = z.object({
   email: z
@@ -18,6 +19,7 @@ const schema = z.object({
 type Values = z.infer<typeof schema>;
 
 export function NewsletterForm() {
+  const { t } = useLocale();
   const [done, setDone] = React.useState(false);
 
   const {
@@ -57,7 +59,7 @@ export function NewsletterForm() {
             id="newsletter-email"
             type="email"
             autoComplete="email"
-            placeholder="you@organisation.com"
+            placeholder={t("footer.emailPlaceholder")}
             aria-invalid={Boolean(errors.email)}
             aria-describedby={errors.email ? "newsletter-error" : undefined}
             className={cn(
@@ -82,7 +84,7 @@ export function NewsletterForm() {
             <Loader2 className="size-4 animate-spin" aria-hidden />
           ) : (
             <>
-              Subscribe
+              {t("cta.subscribe")}
               <ArrowRight className="size-4" aria-hidden />
             </>
           )}

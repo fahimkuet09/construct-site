@@ -22,7 +22,7 @@ import { CtaBand } from "@/components/sections/cta-band";
 import { Badge, SectionHeading } from "@/components/ui";
 import { Button } from "@/components/ui/button";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
-import { formatCurrencyCompact } from "@/lib/utils";
+import { formatCrore } from "@/lib/utils";
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -57,7 +57,7 @@ export default async function ProjectDetailPage({
     {
       icon: CircleDollarSign,
       label: "Contract value",
-      value: formatCurrencyCompact(project.contractValueUsd),
+      value: formatCrore(project.contractValueCrore),
     },
     {
       icon: CalendarClock,

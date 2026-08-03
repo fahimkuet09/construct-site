@@ -14,14 +14,14 @@ import { Counter } from "@/components/motion/counter";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Open engineering, delivery and commercial positions at Meridian Construct, plus our graduate programme, benefits and hiring process.",
+    "Open engineering, delivery and commercial positions at Meghna Construct, plus our graduate programme, benefits and hiring process.",
 };
 
 const peopleStats = [
-  { value: 12800, suffix: "+", label: "People worldwide" },
-  { value: 87, suffix: "%", label: "Graduate retention at 5 years" },
+  { value: 12800, suffix: "+", label: "People nationwide" },
+  { value: 84, suffix: "%", label: "Graduate retention at 5 years" },
   { value: 140, suffix: "", label: "Graduate places for 2026" },
-  { value: 24, suffix: "", label: "Countries to work in" },
+  { value: 7, suffix: "", label: "Regional offices" },
 ];
 
 export default function CareersPage() {
@@ -260,7 +260,7 @@ export default function CareersPage() {
         title="We recruit continuously across every discipline"
         body="If nothing above fits but you think you would do well here, send a speculative application. We keep good people on file and we do come back to them."
         primary={{ label: "Speculative application", href: "/careers#apply" }}
-        secondary={{ label: "About Meridian", href: "/about" }}
+        secondary={{ label: "About Meghna", href: "/about" }}
       />
     </>
   );

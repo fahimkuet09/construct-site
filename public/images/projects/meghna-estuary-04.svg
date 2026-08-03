@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1067" viewBox="0 0 1600 1067" role="img" aria-label="Meridian Construct">
+  <defs>
+    <linearGradient id="gmeghnaestuary04" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#0f4c81"/>
+      <stop offset="55%" stop-color="#0a3459"/>
+      <stop offset="100%" stop-color="#04121e"/>
+    </linearGradient>
+    <radialGradient id="vmeghnaestuary04" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pmeghnaestuary04" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nmeghnaestuary04"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#gmeghnaestuary04)"/>
+  <rect width="1600" height="1067" fill="url(#pmeghnaestuary04)"/>
+  <line x1="277.95726284990087" y1="874.9399999999999" x2="277.95726284990087" y2="419.01733174133574" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="174.7874687958695" y1="419.01733174133574" x2="600.3628692687489" y2="419.01733174133574" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="277.95726284990087" y1="389.01733174133574" x2="600.3628692687489" y2="419.01733174133574" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="277.95726284990087" y1="389.01733174133574" x2="174.7874687958695" y2="419.01733174133574" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="277.95726284990087" y1="419.01733174133574" x2="277.95726284990087" y2="389.01733174133574" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="510.08929947147146" y1="419.01733174133574" x2="510.08929947147146" y2="664.5856376477657" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="758.0947571797296" y1="874.9399999999999" x2="758.0947571797296" y2="266.26731244927726" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="640.6470466370508" y1="266.26731244927726" x2="1125.118852625601" y2="266.26731244927726" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="758.0947571797296" y1="236.26731244927726" x2="1125.118852625601" y2="266.26731244927726" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="758.0947571797296" y1="236.26731244927726" x2="640.6470466370508" y2="266.26731244927726" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="758.0947571797296" y1="266.26731244927726" x2="758.0947571797296" y2="236.26731244927726" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="1022.352105900757" y1="266.26731244927726" x2="1022.352105900757" y2="450.0616717400261" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="1228.6914979633875" y1="874.9399999999999" x2="1228.6914979633875" y2="201.80993159882712" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="1133.741341732461" y1="201.80993159882712" x2="1525.4107361850329" y2="201.80993159882712" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="1228.6914979633875" y1="171.80993159882712" x2="1525.4107361850329" y2="201.80993159882712" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1228.6914979633875" y1="171.80993159882712" x2="1133.741341732461" y2="201.80993159882712" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1228.6914979633875" y1="201.80993159882712" x2="1228.6914979633875" y2="171.80993159882712" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="1442.3293494829722" y1="201.80993159882712" x2="1442.3293494829722" y2="375.9065965801942" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="0" y1="874.9399999999999" x2="1600" y2="874.9399999999999" stroke="rgba(255,255,255,.5)" stroke-width="2.5"/>
+  <rect width="1600" height="1067" fill="url(#vmeghnaestuary04)"/>
+  <rect width="1600" height="1067" filter="url(#nmeghnaestuary04)" opacity="0.045"/>
+  
+</svg>

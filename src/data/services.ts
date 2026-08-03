@@ -27,8 +27,8 @@ export const services: Service[] = [
     summary:
       "Cable-stayed, segmental and composite crossings delivered from concept design through to load testing and handover.",
     description: [
-      "Meridian has delivered 143 major crossings since 1974, from 60-metre highway overpasses to 1.4-kilometre cable-stayed estuary spans. Our bridge division combines in-house design capability with self-performed heavy civils, which removes the interface risk that typically sits between designer and contractor.",
-      "Every crossing is modelled in a federated BIM environment before a single pile is driven. Erection sequences, temporary works and camber profiles are simulated against staged construction analysis, so what is built on site matches what was signed off in the model.",
+      "Meghna has delivered 143 major crossings since 1974, from 60-metre rural overpasses to 4.8-kilometre cable-stayed estuary spans. In a delta with no rock at any reachable depth and rivers that shift their own beds each monsoon, a crossing is won or lost on its foundations.",
+      "We design for the riverbed that will exist after the worst scour of the next hundred years, not the one the survey found. Every crossing is modelled in a federated BIM environment before a single pile is driven, with erection sequences and camber profiles simulated against staged construction analysis.",
     ],
     image: "/images/services/bridges.svg",
     capabilities: [
@@ -45,7 +45,7 @@ export const services: Service[] = [
       {
         title: "Incremental launching",
         description:
-          "Launched steel and concrete decks over live rail, water and environmentally sensitive corridors.",
+          "Launched steel and concrete decks over live rail, navigable rivers and dense settlement.",
       },
       {
         title: "Strengthening & replacement",
@@ -83,19 +83,19 @@ export const services: Service[] = [
     ],
     stats: [
       { label: "Crossings delivered", value: "143" },
-      { label: "Longest span", value: "1,420 m" },
+      { label: "Longest crossing", value: "4,800 m" },
       { label: "Design life", value: "120 yrs" },
     ],
     faqs: [
       {
         question: "Do you carry out your own bridge design?",
         answer:
-          "Yes. Our in-house structures team of 84 engineers holds design authority across Eurocodes, AASHTO LRFD and BS standards, and we appoint an independent Category III checker on every major crossing.",
+          "Yes. Our in-house structures team of 84 engineers holds design authority across AASHTO LRFD, BNBC and Eurocode standards, and we appoint an independent Category III checker on every major crossing.",
       },
       {
-        question: "How do you build over live infrastructure?",
+        question: "How do you build over rivers and settlement you cannot disturb?",
         answer:
-          "We plan possessions around the asset owner's operating windows and pre-assemble offsite. On the Elbe Nord viaduct we launched 4,800 tonnes of deck across an active freight corridor using six night possessions of four hours each.",
+          "We plan around the owner's operating windows and pre-assemble offsite. On the Buriganga Southern Viaduct we erected 1,860 segments entirely from deck level using overhead gantries, so no household below the alignment was displaced and the river stayed navigable throughout.",
       },
       {
         question: "What monitoring do you leave behind?",
@@ -113,15 +113,15 @@ export const services: Service[] = [
     summary:
       "Motorway widening, interchange reconstruction, heavy rail and light rail alignment delivered under live traffic.",
     description: [
-      "Linear infrastructure is won or lost on logistics. Meridian's highways and rail division has completed 2,180 kilometres of carriageway and 640 kilometres of track, the majority of it beside traffic that never stopped running.",
-      "We plan at the level of the individual shift. Materials, plant, possessions and workforce are sequenced against a four-dimensional programme, and the traffic management design is treated as a permanent works discipline rather than an afterthought.",
+      "Linear infrastructure is won or lost on logistics. Meghna's highways and rail division has completed 2,180 kilometres of carriageway and 480 kilometres of track, the majority of it beside traffic that never stopped running.",
+      "We plan at the level of the individual shift, around a monsoon that closes roughly five months of productive earthworks each year. Separating slow-moving and non-motorised traffic onto service roads is the single change that has done most to bring corridor fatality rates down on the schemes we have delivered.",
     ],
     image: "/images/services/highways.svg",
     capabilities: [
       {
         title: "Motorway widening & smart corridors",
         description:
-          "Lane gain under live traffic with gantries, MIDAS loops and variable mandatory signalling.",
+          "Lane gain under live traffic with grade-separated market intersections and segregated service roads.",
       },
       {
         title: "Grade-separated interchanges",
@@ -131,19 +131,19 @@ export const services: Service[] = [
       {
         title: "Heavy & light rail alignment",
         description:
-          "Formation, ballasted and slab track, OLE foundations, and station box civils.",
+          "Dual-gauge formation, ballasted and slab track, and station box civils.",
       },
       {
         title: "Pavement engineering",
         description:
-          "Long-life flexible and rigid pavements, warm-mix asphalt, and full-depth recycling.",
+          "Long-life pavements on soft subgrade, embankment consolidation and full-depth recycling.",
       },
     ],
     benefits: [
       {
         title: "Traffic kept flowing",
         description:
-          "Average corridor availability of 96.4% across live-carriageway schemes over the past five years.",
+          "Average corridor availability of 98.1% across live-carriageway schemes over the past five years.",
         icon: Gauge,
       },
       {
@@ -155,7 +155,7 @@ export const services: Service[] = [
       {
         title: "Lower embodied carbon",
         description:
-          "Full-depth recycling and warm-mix asphalt cut pavement carbon by an average of 31%.",
+          "Full-depth recycling and site-won material reuse cut pavement carbon by an average of 27%.",
         icon: Leaf,
       },
     ],
@@ -169,14 +169,14 @@ export const services: Service[] = [
     ],
     stats: [
       { label: "Carriageway built", value: "2,180 km" },
-      { label: "Track laid", value: "640 km" },
-      { label: "Corridor availability", value: "96.4%" },
+      { label: "Track laid", value: "480 km" },
+      { label: "Corridor availability", value: "98.1%" },
     ],
     faqs: [
       {
         question: "How do you minimise disruption on live corridors?",
         answer:
-          "We front-load the traffic management design, work to narrow-lane running rather than closures wherever the safety case allows, and concentrate high-impact activity into pre-agreed weekend possessions communicated to road users four weeks ahead.",
+          "Where the corridor allows it we build the permanent service road first and divert onto that, so traffic moves onto finished works rather than temporary ones. On the Dhaka–Chattogram Expressway that held corridor availability at 98.1% across 42 months on a route carrying a third of national trade.",
       },
       {
         question: "Can you deliver rail and highway scope on one contract?",
@@ -186,7 +186,7 @@ export const services: Service[] = [
       {
         question: "What is your approach to earthworks balance?",
         answer:
-          "We model cut and fill at design stage to target site-won material reuse above 90%, which reduces both haulage cost and the carbon associated with imported fill.",
+          "We model cut and fill at design stage to maximise site-won reuse, and we surcharge new embankment with vertical drains so it settles before it is tied into the existing carriageway rather than cracking along the joint afterwards.",
       },
     ],
   },
@@ -199,15 +199,15 @@ export const services: Service[] = [
     summary:
       "TBM drives, sprayed concrete lining, shafts and deep basements beneath dense urban fabric.",
     description: [
-      "Underground work is unforgiving: the ground gives one opportunity to get it right. Meridian's tunnelling division has driven 96 kilometres of bored tunnel and sunk 214 shafts, much of it beneath occupied buildings and heritage structures.",
-      "Our ground movement modelling is validated against real-time instrumentation, with automated total stations and fibre-optic strain monitoring reporting into a live dashboard. Where predicted settlement approaches trigger levels, compensation grouting is deployed before damage occurs, not after.",
+      "Underground work is unforgiving: the ground gives one opportunity to get it right. Meghna brought soft-ground tunnelling capability into Bangladesh in 2021, and has since driven 24 kilometres of bored tunnel and sunk 68 shafts beneath some of the most densely occupied land on earth.",
+      "Dhaka’s water table sits within two metres of the surface for most of the year, so every drive is effectively permanently below groundwater. Ground movement modelling is validated against real-time instrumentation, and where predicted settlement approaches trigger levels, compensation grouting is deployed before damage occurs, not after.",
     ],
     image: "/images/services/tunnelling.svg",
     capabilities: [
       {
         title: "TBM drives",
         description:
-          "EPB and slurry machines from 3.2m to 15.6m diameter, including mixed-face and high-pressure ground.",
+          "EPB machines from 6.2m to 9.8m diameter, configured for saturated soft alluvium.",
       },
       {
         title: "Sprayed concrete lining",
@@ -217,19 +217,19 @@ export const services: Service[] = [
       {
         title: "Shafts & deep basements",
         description:
-          "Diaphragm walls, secant piles and caisson sinking to depths beyond 65 metres.",
+          "Diaphragm walls and secant piles toed into clay to form a cut-off, to depths beyond 40 metres.",
       },
       {
         title: "Ground treatment",
         description:
-          "Jet grouting, compensation grouting, ground freezing and dewatering design.",
+          "Jet grouting, compensation grouting, liquefaction mitigation and dewatering design.",
       },
     ],
     benefits: [
       {
         title: "Assets protected",
         description:
-          "Zero category 2 building damage across 96km of urban drives, verified by independent survey.",
+          "Zero structural damage claims across 24km of urban drives, verified by independent survey.",
         icon: ShieldCheck,
       },
       {
@@ -241,7 +241,7 @@ export const services: Service[] = [
       {
         title: "Continuous advance",
         description:
-          "Average TBM utilisation of 71%, roughly ten points above the industry benchmark.",
+          "Average TBM utilisation of 68% in saturated ground, above the international benchmark for comparable conditions.",
         icon: Gauge,
       },
     ],
@@ -254,25 +254,25 @@ export const services: Service[] = [
       "Tunnel fit-out, M&E and commissioning",
     ],
     stats: [
-      { label: "Tunnel driven", value: "96 km" },
-      { label: "Shafts sunk", value: "214" },
-      { label: "TBM utilisation", value: "71%" },
+      { label: "Tunnel driven", value: "24 km" },
+      { label: "Shafts sunk", value: "68" },
+      { label: "TBM utilisation", value: "68%" },
     ],
     faqs: [
       {
         question: "How do you protect buildings above a drive?",
         answer:
-          "We complete a staged damage assessment before work starts, instrument every structure inside the settlement contour, and hold compensation grouting arrays on standby beneath sensitive assets so we can inject before movement reaches trigger level.",
+          "Where record drawings do not exist — which in much of Dhaka they do not — we survey every structure by laser scan and intrusive inspection before the drive reaches it. On Metro Line 4 that meant 610 buildings, 84 of which were strengthened pre-emptively rather than monitored and hoped for.",
       },
       {
         question: "What ground conditions can your fleet handle?",
         answer:
-          "Our owned fleet covers EPB and slurry machines from 3.2m to 15.6m. We have driven through London Clay, Chalk Marl, mixed-face glacial till and water-bearing sands at up to 6 bar face pressure.",
+          "Our owned fleet covers EPB machines from 6.2m to 9.8m, configured for the saturated soft alluvium that underlies most Bangladeshi cities. We have driven through Dhaka clay, silt and water-bearing sand lenses with the face permanently below groundwater.",
       },
       {
         question: "Do you self-perform the ground treatment?",
         answer:
-          "Yes. Grouting, freezing and dewatering are delivered by our own geotechnical specialists, which means the treatment design responds to what the TBM is actually seeing rather than to a subcontractor's fixed scope.",
+          "Yes. Grouting, liquefaction mitigation and dewatering are delivered by our own geotechnical specialists, which means the treatment design responds to what the TBM is actually seeing rather than to a subcontractor's fixed scope.",
       },
     ],
   },
@@ -285,8 +285,8 @@ export const services: Service[] = [
     summary:
       "Deep-water quays, breakwaters, reclamation and offshore foundations delivered from our own marine fleet.",
     description: [
-      "Marine construction compresses everything difficult about civil engineering into a tidal window. Meridian operates an owned fleet of jack-up barges, cutter suction dredgers and heavy-lift pontoons, which means our programme is governed by weather rather than by charter availability.",
-      "We have reclaimed 1,240 hectares and constructed 38 kilometres of quay wall and breakwater, with hydrodynamic modelling on every scheme to confirm that what we build will still be there in eighty years.",
+      "Marine construction on the Bay of Bengal compresses everything difficult about civil engineering into a season. Meghna operates an owned fleet of jack-up barges, cutter suction dredgers and heavy-lift pontoons, so our programme is governed by weather rather than by charter availability.",
+      "We have reclaimed 1,240 hectares and constructed 26 kilometres of quay wall and river training works. Cyclone return-period loading, not normal operating conditions, governs the design of everything we build on this coast.",
     ],
     image: "/images/services/marine.svg",
     capabilities: [
@@ -298,7 +298,7 @@ export const services: Service[] = [
       {
         title: "Breakwaters & coastal defence",
         description:
-          "Rubble mound, caisson and accropode armour designed against 1-in-200-year wave climate.",
+          "Rubble mound and CC block armour designed against 1-in-200-year cyclone surge and wave climate.",
       },
       {
         title: "Land reclamation",
@@ -308,7 +308,7 @@ export const services: Service[] = [
       {
         title: "Offshore foundations",
         description:
-          "Monopile, jacket and gravity base installation for fixed offshore wind.",
+          "Monopile and jacket installation designed for cyclone return-period loading.",
       },
     ],
     benefits: [
@@ -321,13 +321,13 @@ export const services: Service[] = [
       {
         title: "Hydrodynamically verified",
         description:
-          "Physical and numerical wave modelling on every breakwater and coastal defence scheme.",
+          "Storm surge and wave modelling on every coastal and river training scheme.",
         icon: Waves,
       },
       {
         title: "Environmental control",
         description:
-          "Silt curtains, turbidity monitoring and bubble curtains protect sensitive marine habitat.",
+          "Silt curtains, turbidity monitoring and bubble curtains protect hilsa and river dolphin habitat.",
         icon: Leaf,
       },
     ],
@@ -340,25 +340,25 @@ export const services: Service[] = [
       "Berth trials and operational handover",
     ],
     stats: [
-      { label: "Quay & breakwater", value: "38 km" },
+      { label: "Quay & river training", value: "26 km" },
       { label: "Land reclaimed", value: "1,240 ha" },
-      { label: "Marine vessels", value: "26" },
+      { label: "Marine vessels", value: "19" },
     ],
     faqs: [
       {
         question: "Do you own your marine plant?",
         answer:
-          "We own 26 vessels including four jack-up barges, two cutter suction dredgers and a 1,600-tonne heavy-lift pontoon. Owning the fleet is why our marine programmes hold their dates.",
+          "We own 19 vessels including three jack-up barges, two cutter suction dredgers and a 1,200-tonne heavy-lift pontoon. Owning the fleet is why our marine programmes hold their dates across a season that only opens twice a year.",
       },
       {
         question: "How do you protect marine ecology?",
         answer:
-          "Every scheme runs a habitat regulations assessment, with silt curtains, continuous turbidity monitoring and seasonal working restrictions around spawning and migration windows.",
+          "Every scheme runs an environmental impact assessment under DoE clearance, with silt curtains, continuous turbidity monitoring and seasonal restrictions around hilsa spawning and dolphin migration windows.",
       },
       {
         question: "Can you work in remote locations?",
         answer:
-          "Yes. We have delivered port infrastructure in locations with no existing landside access, mobilising a self-sufficient marine spread including accommodation, batching and fuel bunkering.",
+          "Yes. At Matarbari we mobilised a self-sufficient marine spread — accommodation, batching and fuel bunkering — onto a coast with no existing port infrastructure, under a cyclone protocol with a 72-hour evacuation trigger.",
       },
     ],
   },
@@ -371,15 +371,15 @@ export const services: Service[] = [
     summary:
       "Dams, treatment works, pumping stations, transmission networks and renewable generation infrastructure.",
     description: [
-      "Water and energy assets are judged on availability, not on handover. Meridian builds the civil infrastructure that utilities depend on — impounding dams, treatment works, pumping stations, substations and renewable generation — with commissioning support that continues well past practical completion.",
-      "Our process engineering team works alongside the civils delivery team from tender onwards, so buildability, maintenance access and operational resilience are designed in rather than negotiated later.",
+      "Water and energy assets are judged on availability, not on handover. Meghna builds the civil infrastructure utilities depend on — treatment works, pumping stations, embankments, substations and renewable generation — with commissioning support that continues well past practical completion.",
+      "In a country where surface water carries 2,000 NTU through the monsoon and land for solar is scarce enough to be the binding constraint, process design has to start from local conditions rather than from a standard template.",
     ],
     image: "/images/services/water-energy.svg",
     capabilities: [
       {
         title: "Dams & impounding reservoirs",
         description:
-          "RCC, embankment and concrete gravity dams with spillway and outlet works.",
+          "Embankment dams, polders, flood embankments and river training with spillway and outlet works.",
       },
       {
         title: "Water & wastewater treatment",
@@ -394,7 +394,7 @@ export const services: Service[] = [
       {
         title: "Renewable generation",
         description:
-          "Onshore and offshore wind foundations, solar balance of plant, and pumped storage civils.",
+          "Offshore wind foundations, flood-resilient solar balance of plant and pumped storage civils.",
       },
     ],
     benefits: [
@@ -413,28 +413,28 @@ export const services: Service[] = [
       {
         title: "Regulatory compliance",
         description:
-          "Reservoir safety, drinking water and grid connection standards evidenced and audited.",
+          "Drinking water, dam safety and grid connection standards evidenced and audited.",
         icon: HardHat,
       },
     ],
     deliverables: [
       "Process and hydraulic design review",
-      "Reservoir safety engineer liaison",
+      "Dam safety and DoE clearance liaison",
       "Civil, structural and MEICA integration",
       "Factory and site acceptance testing",
       "Operations and maintenance documentation",
       "Post-handover performance monitoring",
     ],
     stats: [
-      { label: "Treatment capacity", value: "4.2M m³/d" },
-      { label: "Dams delivered", value: "17" },
-      { label: "Renewable capacity", value: "3.1 GW" },
+      { label: "Treatment capacity", value: "1.4M m³/d" },
+      { label: "Embankments & polders", value: "340 km" },
+      { label: "Renewable capacity", value: "1.6 GW" },
     ],
     faqs: [
       {
-        question: "Do you work under water industry frameworks?",
+        question: "Are you pre-qualified with the utilities?",
         answer:
-          "We hold positions on six utility capital delivery frameworks across the UK, Germany and the Gulf, covering AMP-cycle water investment and grid reinforcement programmes.",
+          "We are pre-qualified with Dhaka WASA, Chattogram WASA, BWDB, BPDB and PGCB, and have delivered contracts financed by the World Bank, ADB, JICA and the Government of Bangladesh.",
       },
       {
         question: "How is commissioning handled?",
@@ -444,7 +444,7 @@ export const services: Service[] = [
       {
         question: "What renewable experience do you have?",
         answer:
-          "3.1 GW of installed capacity across offshore wind foundations, onshore wind civils, utility-scale solar balance of plant and two pumped storage schemes.",
+          "1.6 GW of installed capacity across offshore wind foundations, flood-resilient utility-scale solar and the country’s first pumped storage scheme.",
       },
     ],
   },
@@ -458,19 +458,19 @@ export const services: Service[] = [
       "Advanced manufacturing plants, data centres, logistics hubs and civic buildings delivered to operational standard.",
     description: [
       "Industrial facilities carry engineering demands that ordinary construction does not: vibration-sensitive floor slabs, cleanroom envelopes, high-density power distribution and process integration that has to work on day one.",
-      "Meridian delivers these buildings as engineered systems rather than as shells. Structure, envelope, services and process are coordinated in a single federated model, clash-resolved before mobilisation, and commissioned against the operator's performance criteria.",
+      "Meghna delivers these buildings as engineered systems rather than as shells. Structure, envelope, services and process are coordinated in a single federated model, clash-resolved before mobilisation, and commissioned against the operator's performance criteria — including the on-site generation that makes a tenant's production date credible when grid supply is still developing.",
     ],
     image: "/images/services/industrial.svg",
     capabilities: [
       {
         title: "Advanced manufacturing",
         description:
-          "Vibration-controlled slabs, cleanroom envelopes and process utility distribution.",
+          "Readymade garment and light engineering facilities with compliant fire and egress design.",
       },
       {
         title: "Data centres",
         description:
-          "Tier III and Tier IV facilities with N+1 power, cooling and structured containment.",
+          "Tier III facilities with N+1 power, cooling and structured containment.",
       },
       {
         title: "Logistics & distribution",
@@ -512,15 +512,15 @@ export const services: Service[] = [
       "Digital twin and asset data handover",
     ],
     stats: [
-      { label: "Floor area delivered", value: "6.4M m²" },
+      { label: "Floor area delivered", value: "2.8M m²" },
       { label: "On-time handover", value: "94%" },
-      { label: "Data centre capacity", value: "820 MW" },
+      { label: "On-site generation", value: "94 MW" },
     ],
     faqs: [
       {
         question: "Can you deliver on an occupied site?",
         answer:
-          "Regularly. We have extended live hospitals, airports and manufacturing plants without interrupting operations, using segregated logistics routes, acoustic mitigation and phased possession plans agreed with the operator.",
+          "Regularly. We have extended live hospitals, railway stations and manufacturing plants without interrupting operations, using segregated logistics routes, phased possession plans and temporary arrangements sized for peak demand rather than average demand.",
       },
       {
         question: "How do you guarantee floor flatness?",
@@ -530,7 +530,7 @@ export const services: Service[] = [
       {
         question: "What does soft landings mean in practice?",
         answer:
-          "The facilities team joins design reviews from RIBA Stage 3, operator training runs before handover, and our commissioning engineers remain on site for a full seasonal cycle afterwards.",
+          "The operations team joins design reviews at concept stage, operator training runs before handover, and our commissioning engineers remain on site through a full monsoon cycle afterwards.",
       },
     ],
   },

@@ -15,7 +15,7 @@ export const jobs: JobOpening[] = [
     id: "job-01",
     title: "Senior Bridge Engineer",
     department: "Structures",
-    location: "London, United Kingdom",
+    location: "Dhaka",
     type: "Full-time",
     level: "Senior",
     postedAt: "2026-07-20",
@@ -29,9 +29,9 @@ export const jobs: JobOpening[] = [
       "Mentor graduate and mid-level engineers within the structures team",
     ],
     requirements: [
-      "Chartered status with ICE or IStructE",
+      "Membership of IEB, or working towards it",
       "Eight or more years in bridge design, including at least one long-span project",
-      "Fluency in Eurocodes; AASHTO LRFD experience an advantage",
+      "Fluency in AASHTO LRFD and BNBC; Eurocode experience an advantage",
       "Experience with staged construction analysis software",
       "Willingness to spend time on site during critical operations",
     ],
@@ -40,12 +40,12 @@ export const jobs: JobOpening[] = [
     id: "job-02",
     title: "Tunnelling Project Manager",
     department: "Underground",
-    location: "Berlin, Germany",
+    location: "Dhaka — Metro Line 4 site",
     type: "Full-time",
     level: "Leadership",
     postedAt: "2026-07-14",
     summary:
-      "Take delivery accountability for a TBM drive beneath a dense historic city centre, including ground treatment, monitoring and cross-passage construction.",
+      "Take delivery accountability for a TBM drive beneath dense central Dhaka, including ground treatment, monitoring and cross-passage construction.",
     responsibilities: [
       "Hold delivery accountability for programme, cost, safety and quality on a live drive",
       "Direct the interface between TBM operations, ground treatment and monitoring",
@@ -56,21 +56,21 @@ export const jobs: JobOpening[] = [
     requirements: [
       "Ten or more years in tunnelling, including TBM drive management",
       "Demonstrable experience of urban drives with settlement constraints",
-      "Chartered engineer or equivalent professional standing",
-      "Strong commercial and contractual capability under FIDIC or NEC",
-      "German language capability desirable but not essential",
+      "IEB membership or equivalent professional standing",
+      "Strong commercial and contractual capability under FIDIC and PPR",
+      "Fluency in Bangla and English essential",
     ],
   },
   {
     id: "job-03",
     title: "Geotechnical Engineer",
     department: "Ground Engineering",
-    location: "Dubai, United Arab Emirates",
+    location: "Chattogram",
     type: "Full-time",
     level: "Mid-level",
     postedAt: "2026-07-11",
     summary:
-      "Deliver ground investigation interpretation, foundation design and ground improvement schemes across marine and land-based infrastructure projects.",
+      "Deliver ground investigation interpretation, foundation design and ground improvement schemes across river, marine and land-based infrastructure projects.",
     responsibilities: [
       "Interpret ground investigation data and produce geotechnical design reports",
       "Design piled and shallow foundations for marine and land structures",
@@ -81,21 +81,21 @@ export const jobs: JobOpening[] = [
     requirements: [
       "Four or more years in geotechnical design",
       "MSc in geotechnical engineering or equivalent",
-      "Experience with ground improvement and settlement analysis",
-      "Familiarity with marine geotechnics an advantage",
-      "Working towards chartership",
+      "Experience with soft alluvial soils, ground improvement and settlement analysis",
+      "Familiarity with delta and marine geotechnics an advantage",
+      "Working towards IEB membership",
     ],
   },
   {
     id: "job-04",
     title: "Site Agent — Highways",
     department: "Delivery",
-    location: "Innsbruck, Austria",
+    location: "Cumilla — Expressway corridor",
     type: "Full-time",
     level: "Senior",
     postedAt: "2026-07-08",
     summary:
-      "Run a section of live-carriageway motorway works, holding responsibility for production, safety, traffic management and the workforce on your section.",
+      "Run a section of live-carriageway expressway works, holding responsibility for production, safety, traffic management and the workforce on your section.",
     responsibilities: [
       "Manage day-to-day delivery of a defined section of the corridor",
       "Own safety performance and the traffic management interface",
@@ -105,7 +105,7 @@ export const jobs: JobOpening[] = [
     ],
     requirements: [
       "Six or more years in highways delivery, including live-carriageway works",
-      "SMSTS or equivalent supervisory safety qualification",
+      "NEBOSH IGC or equivalent supervisory safety qualification",
       "Strong understanding of temporary traffic management design",
       "Practical earthworks and pavement experience",
       "Comfortable working shift patterns including night possessions",
@@ -115,7 +115,7 @@ export const jobs: JobOpening[] = [
     id: "job-05",
     title: "Digital Engineering Lead",
     department: "Digital Delivery",
-    location: "Rotterdam, Netherlands",
+    location: "Dhaka",
     type: "Full-time",
     level: "Senior",
     postedAt: "2026-07-02",
@@ -140,24 +140,24 @@ export const jobs: JobOpening[] = [
     id: "job-06",
     title: "Environmental Manager",
     department: "Sustainability",
-    location: "Inverness, United Kingdom",
+    location: "Rangamati — Kaptai site",
     type: "Full-time",
     level: "Mid-level",
     postedAt: "2026-06-27",
     summary:
-      "Lead environmental compliance and habitat management on a remote pumped storage scheme within a sensitive upland landscape.",
+      "Lead environmental compliance and habitat management on a remote pumped storage scheme in the Chittagong Hill Tracts.",
     responsibilities: [
       "Own environmental compliance against consents and permits",
-      "Manage peatland excavation, storage and reinstatement programmes",
+      "Manage spoil disposal, erosion control and reinstatement programmes",
       "Coordinate ecological surveys and protected species licensing",
       "Run environmental monitoring, auditing and incident reporting",
       "Engage with regulators, agencies and local communities",
     ],
     requirements: [
       "Four or more years in construction environmental management",
-      "Membership of IEMA or equivalent",
-      "Experience with peatland or upland habitat restoration",
-      "Working knowledge of habitats regulations and licensing",
+      "Membership of IEB or a recognised environmental institute",
+      "Experience with hill tract or protected forest environments",
+      "Working knowledge of DoE clearance and ECA requirements",
       "Full driving licence and willingness to work remotely",
     ],
   },
@@ -174,13 +174,13 @@ export const jobs: JobOpening[] = [
     responsibilities: [
       "Complete three six-to-nine month rotations across the business",
       "Contribute to live project delivery from your first week",
-      "Maintain a professional development record towards chartership",
+      "Maintain a professional development record towards professional membership",
       "Participate in the graduate technical seminar programme",
       "Take part in community and STEM outreach activity",
     ],
     requirements: [
       "Degree in civil, structural, geotechnical or environmental engineering",
-      "Accredited course meeting chartership academic requirements",
+      "Accredited course accredited by the Board of Accreditation for Engineering",
       "Genuine interest in heavy civil infrastructure",
       "Willingness to relocate between rotations",
       "Right to work in at least one operating region",
@@ -190,7 +190,7 @@ export const jobs: JobOpening[] = [
     id: "job-08",
     title: "Marine Works Superintendent",
     department: "Marine",
-    location: "Offshore — Atlantic Shelf",
+    location: "Offshore — Bay of Bengal",
     type: "Contract",
     level: "Senior",
     postedAt: "2026-06-10",
@@ -220,31 +220,31 @@ export const benefits: ValuePillar[] = [
   {
     title: "Chartership, fully supported",
     description:
-      "Every engineer gets a chartered supervisor, funded institution membership, study leave and a rotation plan mapped to your professional review.",
+      "Every engineer gets a supervising engineer, funded IEB membership, study leave and a rotation plan mapped to your professional review.",
     icon: GraduationCap,
   },
   {
     title: "Health and wellbeing",
     description:
-      "Private medical cover, 24/7 mental health support, on-site occupational health and an annual health screening for every employee.",
+      "Family medical cover, on-site occupational health, confidential counselling and an annual health screening for every employee.",
     icon: HeartPulse,
   },
   {
-    title: "Meaningful ownership",
+    title: "Meaningful reward",
     description:
-      "An all-employee share scheme, project completion bonuses and a pension contribution of up to 12% of salary.",
+      "Profit participation, project completion bonuses, two annual festival bonuses and a provident fund matched at 10%.",
     icon: Coins,
   },
   {
-    title: "International mobility",
+    title: "Nationwide mobility",
     description:
-      "Assignments across 24 countries with full relocation support, language tuition and family accompaniment.",
+      "Assignments across every division with full relocation support, site accommodation and family allowance.",
     icon: Plane,
   },
   {
     title: "Family and life balance",
     description:
-      "Six months' fully paid parental leave for all parents regardless of gender, plus flexible and compressed working where the role allows.",
+      "Six months' fully paid maternity leave and one month's paternity leave, on-site childcare at head office, and flexible working where the role allows.",
     icon: Baby,
   },
   {
@@ -316,19 +316,24 @@ export const hiringProcess = [
 
 export const careersFaqs: FAQ[] = [
   {
-    question: "Do you sponsor work visas?",
+    question: "Do I need to relocate for a site-based role?",
     answer:
-      "Yes. We sponsor skilled worker visas in the UK, EU Blue Card applications in Germany and the Netherlands, and employment visas across our Gulf operations. Sponsorship is confirmed at offer stage and the process is managed by our mobility team.",
+      "Most major project roles are site-based. We provide accommodation at every project camp, a site allowance, and paid travel home on a rotation agreed before you accept. Family accommodation is available at the larger established sites.",
   },
   {
-    question: "Can I move between disciplines or regions?",
+    question: "Do you recruit from outside the major engineering universities?",
     answer:
-      "Internal mobility is actively encouraged. Roughly a third of our engineers have changed discipline or region at least once, and internal applicants are always considered before a role is advertised externally.",
+      "Yes. We recruit from BUET, CUET, KUET, RUET, MIST and the private engineering universities, and we assess on the technical conversation rather than on where the degree came from. Roughly a third of our 2025 graduate intake came from outside the top four public universities.",
+  },
+  {
+    question: "Can I move between disciplines or divisions?",
+    answer:
+      "Internal mobility is actively encouraged. Roughly a third of our engineers have changed discipline or division at least once, and internal applicants are always considered before a role is advertised externally.",
   },
   {
     question: "What does the graduate rotation actually involve?",
     answer:
-      "Three placements over 24 months: one in design, one in site delivery and one in a specialist function such as geotechnics, digital delivery or sustainability. Each rotation carries real project responsibility and is mapped against your chartership development objectives.",
+      "Three placements over 24 months: one in design, one in site delivery and one in a specialist function such as geotechnics, digital delivery or sustainability. Each rotation carries real project responsibility and is mapped against your IEB professional development objectives.",
   },
   {
     question: "Is site-based work required?",
@@ -338,6 +343,6 @@ export const careersFaqs: FAQ[] = [
   {
     question: "What is your approach to flexible working?",
     answer:
-      "Office-based roles operate on a hybrid pattern of three days in the workplace. Site roles follow the project's shift pattern, which is set out in the advert. Compressed hours and part-time arrangements are available in most non-site roles.",
+      "Office-based roles operate on a hybrid pattern of four days in the workplace. Site roles follow the project's shift pattern, which is set out in the advert. Flexible start times and part-time arrangements are available in most non-site roles.",
   },
 ];

@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
@@ -7,20 +9,23 @@ import { site } from "@/lib/site";
 import { Logo } from "./logo";
 import { NewsletterForm } from "./newsletter-form";
 import {
-  InstagramIcon,
+  FacebookIcon,
   LinkedInIcon,
   XIcon,
   YouTubeIcon,
 } from "@/components/ui/social-icon";
+import { useLocale } from "@/components/locale-provider";
 
 const socials = [
   { label: "LinkedIn", href: site.social.linkedin, Icon: LinkedInIcon },
   { label: "X", href: site.social.x, Icon: XIcon },
   { label: "YouTube", href: site.social.youtube, Icon: YouTubeIcon },
-  { label: "Instagram", href: site.social.instagram, Icon: InstagramIcon },
+  { label: "Facebook", href: site.social.facebook, Icon: FacebookIcon },
 ];
 
 export function SiteFooter() {
+  const { t } = useLocale();
+
   return (
     <footer className="relative overflow-hidden bg-primary-950 text-white/70">
       <div aria-hidden className="blueprint-grid-dark absolute inset-0 opacity-70" />
@@ -36,10 +41,10 @@ export function SiteFooter() {
             <div>
               <span className="eyebrow text-accent">
                 <span aria-hidden className="h-px w-8 bg-accent/50" />
-                Quarterly briefing
+                {t("footer.briefing")}
               </span>
               <h2 className="mt-5 max-w-[16ch] text-[clamp(1.75rem,1.2rem+2vw,2.75rem)] leading-[1.1] font-bold tracking-[-0.03em] text-white">
-                Infrastructure thinking, four times a year
+                {t("footer.briefingTitle")}
               </h2>
               <p className="mt-4 max-w-[52ch] text-[1rem] leading-relaxed text-white/60">
                 Project case studies, method notes and engineering analysis from
@@ -62,9 +67,9 @@ export function SiteFooter() {
             <div className="max-w-sm">
               <Logo invert />
               <p className="mt-6 text-[0.9375rem] leading-relaxed text-white/60">
-                An international civil engineering and infrastructure contractor.
-                Delivering bridges, corridors, tunnels, ports and utilities across
-                24 countries since {site.founded}.
+                A Bangladeshi civil engineering and infrastructure contractor.
+                Delivering river crossings, corridors, tunnels, ports and utilities
+                across Bangladesh since {site.founded}.
               </p>
 
               <address className="mt-7 flex flex-col gap-3.5 not-italic">
@@ -125,7 +130,7 @@ export function SiteFooter() {
         <div className="container-shell border-t border-white/10 py-9">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <p className="font-heading text-[0.6875rem] font-bold tracking-[0.16em] text-white/45 uppercase">
-              Independently certified
+              {t("footer.certified")}
             </p>
             <ul className="flex flex-wrap items-center gap-x-8 gap-y-4">
               {certifications.map((cert) => (
@@ -154,7 +159,7 @@ export function SiteFooter() {
         <div className="container-shell border-t border-white/10 py-7">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <p className="text-[0.8125rem] text-white/45">
-              © {new Date().getFullYear()} {site.legalName}. All rights reserved.
+              © {new Date().getFullYear()} {site.legalName}. {t("footer.rights")}
             </p>
 
             <ul className="flex flex-wrap items-center gap-x-6 gap-y-2">

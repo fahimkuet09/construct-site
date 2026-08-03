@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-label="Meridian Construct">
+  <defs>
+    <linearGradient id="gkaptai03" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#136b7d"/>
+      <stop offset="55%" stop-color="#0d4360"/>
+      <stop offset="100%" stop-color="#0a1420"/>
+    </linearGradient>
+    <radialGradient id="vkaptai03" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pkaptai03" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nkaptai03"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#gkaptai03)"/>
+  <rect width="1200" height="1500" fill="url(#pkaptai03)"/>
+  <line x1="264" y1="1260" x2="264" y2="628.3408773830159" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="264" y1="628.3408773830159" x2="352.6046663683621" y2="644.1273620376579" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="264" y1="628.3408773830159" x2="187.2599508663157" y2="675.3617754918325" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="264" y1="628.3408773830159" x2="227.29563553033603" y2="546.1655183702434" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="600" y1="1260" x2="600" y2="624.7564528835936" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="600" y1="624.7564528835936" x2="663.3209739495815" y2="688.7131120996316" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="600" y1="624.7564528835936" x2="544.9762469494775" y2="695.9771422949938" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="600" y1="624.7564528835936" x2="600.7970032887001" y2="534.7599819207953" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="936" y1="1260" x2="936" y2="575.7699631154536" stroke="rgba(255,255,255,.44)" stroke-width="3"/><line x1="936" y1="575.7699631154536" x2="1023.9225438488874" y2="594.9956304157186" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="936" y1="575.7699631154536" x2="869.2147239827418" y2="636.100112355271" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="936" y1="575.7699631154536" x2="970.6251651999228" y2="492.69711595780495" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/><line x1="0" y1="1272" x2="1200" y2="1272" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="1286" x2="1200" y2="1286" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="1300" x2="1200" y2="1300" stroke="rgba(255,255,255,.12)" stroke-width="1"/><line x1="0" y1="1314" x2="1200" y2="1314" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+  <rect width="1200" height="1500" fill="url(#vkaptai03)"/>
+  <rect width="1200" height="1500" filter="url(#nkaptai03)" opacity="0.045"/>
+  
+</svg>

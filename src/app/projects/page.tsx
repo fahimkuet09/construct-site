@@ -6,15 +6,15 @@ import { ProjectMapSection } from "@/components/sections/project-map-section";
 import { CtaBand } from "@/components/sections/cta-band";
 import { Skeleton } from "@/components/ui";
 import { projects } from "@/data/projects";
-import { formatCurrencyCompact } from "@/lib/utils";
+import { formatCrore } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Bridges, metros, ports, highways, energy and industrial facilities delivered by Meridian Construct across 24 countries.",
+    "River crossings, metros, deep-sea ports, expressways, energy and industrial facilities delivered by Meghna Construct across Bangladesh.",
 };
 
-const totalValue = projects.reduce((sum, p) => sum + p.contractValueUsd, 0);
+const totalValue = projects.reduce((sum, p) => sum + p.contractValueCrore, 0);
 
 export default function ProjectsPage() {
   return (
@@ -37,7 +37,7 @@ export default function ProjectsPage() {
           </div>
           <div>
             <dd className="font-heading text-[1.75rem] leading-none font-extrabold text-white tabular-nums">
-              {formatCurrencyCompact(totalValue)}
+              {formatCrore(totalValue)}
             </dd>
             <dt className="mt-2 font-heading text-[0.8125rem] font-semibold text-accent">
               Combined contract value
