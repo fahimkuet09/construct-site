@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { footerNav, legalLinks } from "@/data/navigation";
 import { certifications } from "@/data/company";
 import { site } from "@/lib/site";
 import { Logo } from "./logo";
 import { NewsletterForm } from "./newsletter-form";
+import { FooterNavColumn } from "./footer-nav";
 import {
   FacebookIcon,
   LinkedInIcon,
@@ -63,7 +64,7 @@ export function SiteFooter() {
 
         {/* ------------------------------------------------ nav columns */}
         <div className="container-shell py-16 lg:py-20">
-          <div className="grid gap-12 lg:grid-cols-[1.25fr_repeat(3,1fr)] lg:gap-10">
+          <div className="grid gap-8 lg:grid-cols-[1.25fr_repeat(3,1fr)] lg:gap-10">
             <div className="max-w-sm">
               <Logo invert />
               <p className="mt-6 text-[0.9375rem] leading-relaxed text-white/60">
@@ -101,27 +102,7 @@ export function SiteFooter() {
             </div>
 
             {footerNav.map((column) => (
-              <nav key={column.heading} aria-label={column.heading}>
-                <h2 className="font-heading text-[0.6875rem] font-bold tracking-[0.16em] text-white/45 uppercase">
-                  {column.heading}
-                </h2>
-                <ul className="mt-5 flex flex-col gap-3">
-                  {column.links.map((link) => (
-                    <li key={link.href + link.label}>
-                      <Link
-                        href={link.href}
-                        className="group inline-flex items-center gap-1.5 text-[0.9375rem] text-white/65 transition-colors hover:text-white"
-                      >
-                        {link.label}
-                        <ArrowUpRight
-                          aria-hidden
-                          className="size-3.5 -translate-x-1 opacity-0 transition-all duration-250 group-hover:translate-x-0 group-hover:opacity-100"
-                        />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
+              <FooterNavColumn key={column.heading} column={column} />
             ))}
           </div>
         </div>

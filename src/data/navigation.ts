@@ -124,7 +124,7 @@ export const navigation: NavItem[] = [
 export const footerNav = [
   {
     heading: "Capabilities",
-        headingKey: "nav.capabilities",
+    headingKey: "footer.capabilities",
     links: services.map((s) => ({
       label: s.title,
       href: `/services/${s.slug}`,
@@ -132,6 +132,7 @@ export const footerNav = [
   },
   {
     heading: "Company",
+    headingKey: "footer.company",
     links: [
       { label: "About Meghna", href: "/about" },
       { label: "Leadership", href: "/about#leadership" },
@@ -143,6 +144,7 @@ export const footerNav = [
   },
   {
     heading: "Work with us",
+    headingKey: "footer.workWithUs",
     links: [
       { label: "All projects", href: "/projects" },
       { label: "Open positions", href: "/careers#positions" },

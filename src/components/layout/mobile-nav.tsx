@@ -9,6 +9,7 @@ import { ArrowUpRight, Menu, Phone, X } from "lucide-react";
 import { navigation } from "@/data/navigation";
 import { site } from "@/lib/site";
 import { Button } from "@/components/ui/button";
+import { LanguageSwitcher } from "./language-switcher";
 import { cn } from "@/lib/utils";
 import { useLocale } from "@/components/locale-provider";
 import type { TranslationKey } from "@/lib/i18n";
@@ -159,6 +160,11 @@ export function MobileNav({ invert = false }: { invert?: boolean }) {
                 </nav>
 
                 <div className="border-t border-line bg-background px-5 py-5">
+                  {/* The header switcher is hidden below md, so the drawer is
+                      the only way to change language on a phone. */}
+                  <div className="mb-4 flex justify-center">
+                    <LanguageSwitcher />
+                  </div>
                   <Button asChild variant="primary" size="lg" className="w-full">
                     <Link href="/contact">
                       {t("nav.startProject")}

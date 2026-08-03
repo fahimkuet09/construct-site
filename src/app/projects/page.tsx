@@ -23,7 +23,7 @@ export default function ProjectsPage() {
         eyebrow="Portfolio"
         title="Projects that could not be allowed to fail"
         lead="Crossings, corridors, tunnels and terminals delivered under live operation, tight tolerance and immovable dates. Filter by sector or status to find work like yours."
-        image="/images/projects/north-estuary-hero.svg"
+        image="/images/projects/meghna-estuary-hero.svg"
         crumbs={[{ label: "Home", href: "/" }, { label: "Projects" }]}
       >
         <dl className="mt-10 flex flex-wrap gap-x-12 gap-y-6">

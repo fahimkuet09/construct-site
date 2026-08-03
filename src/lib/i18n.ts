@@ -153,6 +153,9 @@ const en = {
   "footer.briefingTitle": "Infrastructure thinking, four times a year",
   "footer.certified": "Independently certified",
   "footer.rights": "All rights reserved.",
+  "footer.capabilities": "Capabilities",
+  "footer.company": "Company",
+  "footer.workWithUs": "Work with us",
   "footer.emailPlaceholder": "you@organisation.com",
 } as const;
 
@@ -299,6 +302,9 @@ const bn: Record<keyof Dict, string> = {
   "footer.briefingTitle": "বছরে চারবার অবকাঠামো ভাবনা",
   "footer.certified": "স্বাধীনভাবে সনদপ্রাপ্ত",
   "footer.rights": "সর্বস্বত্ব সংরক্ষিত।",
+  "footer.capabilities": "সক্ষমতা",
+  "footer.company": "প্রতিষ্ঠান",
+  "footer.workWithUs": "আমাদের সাথে কাজ",
   "footer.emailPlaceholder": "you@organisation.com",
 };
 

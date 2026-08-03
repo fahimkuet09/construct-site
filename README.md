@@ -152,6 +152,11 @@ CSP. Once real raster photography is in place, that flag can be removed.
 - Zero console errors on every route at 375 / 768 / 1440 px, in both languages.
 - No horizontal scrolling on any route at any of those widths, in both languages
   (Bangla strings are longer, so this was re-checked after translation).
-- Language choice persists across navigation and sets `<html lang>` correctly.
+- Language choice persists across navigation and sets `<html lang>` correctly, and is
+  reachable on mobile (inside the drawer, since the header switcher hides below `md`).
+- Footer link columns collapse below `lg`, cutting the mobile footer from 2,643px to
+  1,889px (29% shorter). Collapsed links are `visibility: hidden`, so they are also out
+  of the tab order; at `lg` the toggles disappear and all columns are open.
+- Every image path referenced in `src/` resolves to a file in `public/`.
 - One `<h1>` and one `<main>` per page, no heading-level skips, all interactive elements
   have accessible names, visible focus rings throughout, skip-to-content link.
