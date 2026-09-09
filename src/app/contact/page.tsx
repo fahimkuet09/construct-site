@@ -12,26 +12,18 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Talk to Meghna Construct — regional offices across every division, department contacts, and an enquiry form routed to a named individual.",
+    "Talk to Universal Structural Steel Ltd. — our Dhaka office and workshop, department contacts, and an enquiry form to start your project.",
 };
 
-const regions = [
-  "Dhaka",
-  "Chattogram",
-  "Khulna",
-  "Rajshahi",
-  "Sylhet",
-  "Barishal",
-  "Rangpur",
-] as const;
+const regions = ["Dhaka"] as const;
 
 export default function ContactPage() {
   return (
     <>
       <PageHero
         eyebrow="Contact"
-        title="Tell us about the constraint that worries you most"
-        lead="Every enquiry is routed to a named individual rather than a shared inbox. Tender and new business enquiries receive a response within two working days."
+        title="Tell us about the building you're planning"
+        lead="Send us the rough size, use and site location, and we'll arrange a site visit — the first step in our four-stage process."
         image="/images/office/office-hero.svg"
         crumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
       >
@@ -52,7 +44,7 @@ export default function ContactPage() {
           </a>
           <span className="flex items-center gap-2.5 text-[0.9375rem] text-white/60">
             <Clock className="size-4.5 text-accent" aria-hidden />
-            Sun–Thu, 09:00–18:00 BST
+            Sat–Thu, 09:00–18:00 (Dhaka time)
           </span>
         </div>
       </PageHero>
@@ -175,8 +167,8 @@ export default function ContactPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Our offices"
-              title="Seven divisions, one delivery standard"
-              lead="Regional offices across the country, plus project offices established wherever a major scheme needs one."
+              title="Head office and fabrication workshop, Dhaka"
+              lead="Based in Dhaka, with erection crews that travel to project sites across Bangladesh."
             />
           </Reveal>
 
@@ -238,7 +230,9 @@ export default function ContactPage() {
                         </div>
 
                         <p className="mt-4 font-heading text-[0.75rem] font-bold tracking-[0.06em] text-muted uppercase">
-                          {office.projectCount} projects delivered
+                          {office.isHeadquarters
+                            ? "Head office & enquiries"
+                            : "Fabrication & workshop operations"}
                         </p>
                       </li>
                     ))}

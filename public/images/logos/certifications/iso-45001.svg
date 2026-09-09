@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="ISO 45001">
-  <circle cx="120" cy="120" r="112" fill="none" stroke="#0F4C81" stroke-width="2" opacity=".28"/>
-  <circle cx="120" cy="120" r="96" fill="none" stroke="#0F4C81" stroke-width="1" opacity=".2"/>
-  <path d="M120 44 L176 72 L176 128 C176 166 152 188 120 198 C88 188 64 166 64 128 L64 72 Z" fill="none" stroke="#0F4C81" stroke-width="3" opacity=".8"/>
-  <path d="M96 122 L113 139 L148 100" fill="none" stroke="#F59E0B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="120" y="166" text-anchor="middle" font-family="Manrope, sans-serif" font-size="17" font-weight="800" fill="#0F172A">ISO 45001</text>
-  <text x="120" y="184" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#64748B" letter-spacing="1.4">SAFETY</text>
-</svg>

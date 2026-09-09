@@ -4,10 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   ArrowUpRight,
-  Award,
   Building2,
-  CalendarClock,
-  CircleDollarSign,
   Cpu,
   Lightbulb,
   MapPin,
@@ -16,13 +13,11 @@ import {
 import { projects, getProject, getRelatedProjects } from "@/data/projects";
 import { PageHero } from "@/components/shared/page-hero";
 import { ProjectGallery } from "@/components/shared/project-gallery";
-import { BeforeAfter } from "@/components/shared/before-after";
 import { ProjectCard } from "@/components/shared/project-card";
 import { CtaBand } from "@/components/sections/cta-band";
 import { Badge, SectionHeading } from "@/components/ui";
 import { Button } from "@/components/ui/button";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
-import { formatCrore } from "@/lib/utils";
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -54,16 +49,7 @@ export default async function ProjectDetailPage({
   const factSheet = [
     { icon: Building2, label: "Client", value: project.client },
     { icon: MapPin, label: "Location", value: `${project.location}, ${project.country}` },
-    {
-      icon: CircleDollarSign,
-      label: "Contract value",
-      value: formatCrore(project.contractValueCrore),
-    },
-    {
-      icon: CalendarClock,
-      label: "Programme",
-      value: `${project.durationMonths} months`,
-    },
+    { icon: Building2, label: "Category", value: project.sector },
   ];
 
   return (
@@ -82,7 +68,7 @@ export default async function ProjectDetailPage({
       >
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <Badge tone="dark">{project.status}</Badge>
-          <Badge tone="dark">{project.year}</Badge>
+          <Badge tone="dark">{project.client}</Badge>
           <Badge tone="dark">
             <MapPin className="size-3" aria-hidden />
             {project.country}
@@ -114,27 +100,6 @@ export default async function ProjectDetailPage({
                   {para}
                 </p>
               ))}
-
-              {project.awards?.length ? (
-                <div className="mt-9 rounded-[var(--radius-card)] border border-accent/25 bg-accent/8 p-6">
-                  <div className="flex items-center gap-2.5">
-                    <Award className="size-5 text-accent-700" strokeWidth={1.9} aria-hidden />
-                    <p className="font-heading text-[0.6875rem] font-bold tracking-[0.16em] text-accent-700 uppercase">
-                      Recognition
-                    </p>
-                  </div>
-                  <ul className="mt-4 flex flex-col gap-2">
-                    {project.awards.map((award) => (
-                      <li
-                        key={award}
-                        className="text-[0.9375rem] font-medium text-heading"
-                      >
-                        {award}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
             </Reveal>
 
             <Reveal direction="left" className="flex flex-col gap-6">
@@ -295,7 +260,7 @@ export default async function ProjectDetailPage({
             <SectionHeading
               eyebrow="Programme"
               title="How the work was sequenced"
-              lead={`${project.durationMonths} months from mobilisation to handover, phased to keep the critical path clear of the constraints above.`}
+              lead="Measurement through to handover, run as one continuous process rather than a chain of separate contracts."
             />
           </Reveal>
 
@@ -334,33 +299,6 @@ export default async function ProjectDetailPage({
           </div>
         </div>
       </section>
-
-      {/* ============================================== before/after */}
-      {project.beforeAfter ? (
-        <section className="section-y bg-surface">
-          <div className="container-shell">
-            <Reveal>
-              <SectionHeading
-                eyebrow="Before & after"
-                title="The same view, five years apart"
-                lead="Drag the handle to compare the site as we found it against the asset in operational service."
-              />
-            </Reveal>
-
-            <Reveal delay={0.08}>
-              <div className="mt-12">
-                <BeforeAfter
-                  before={project.beforeAfter.before}
-                  after={project.beforeAfter.after}
-                  label={project.beforeAfter.label}
-                  beforeAlt={`${project.title} — the site before construction`}
-                  afterAlt={`${project.title} — the completed asset in service`}
-                />
-              </div>
-            </Reveal>
-          </div>
-        </section>
-      ) : null}
 
       {/* =================================================== gallery */}
       <section className="section-y bg-background">

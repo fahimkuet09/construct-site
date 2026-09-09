@@ -27,8 +27,8 @@ export function ContactSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Start a conversation"
-            title="Tell us about the constraint that worries you most"
-            lead="Every enquiry is routed to a named individual rather than a shared inbox. Tender and new business enquiries receive a response within two working days."
+            title="Tell us about the building you're planning"
+            lead="Send us the rough size, use and site location, and we'll arrange a site visit — the first step in our four-stage process."
           />
         </Reveal>
 
@@ -44,7 +44,7 @@ export function ContactSection() {
           <Reveal direction="left" className="flex flex-col gap-8">
             <div className="overflow-hidden rounded-[var(--radius-card)] border border-line">
               <div className="h-64 w-full sm:h-72">
-                <ProjectMap pins={officePins} center={[23.7, 90.3]} zoom={6.4} />
+                <ProjectMap pins={officePins} center={[23.8, 90.39]} zoom={10.5} />
               </div>
               <div className="border-t border-line bg-surface p-6">
                 <div className="flex items-start gap-3.5">
@@ -61,9 +61,9 @@ export function ContactSection() {
                       <Badge tone="accent">Headquarters</Badge>
                     </p>
                     <address className="mt-1.5 text-[0.9375rem] leading-relaxed text-body not-italic">
-                      Meghna House, 14 Blackfriars Road
+                      {site.address.street}
                       <br />
-                      London SE1 8NW, United Kingdom
+                      {site.address.locality} {site.address.postalCode}
                     </address>
                     <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
                       <a
@@ -90,13 +90,13 @@ export function ContactSection() {
             <div className="rounded-[var(--radius-card)] border border-line bg-surface p-7">
               <div className="flex items-end justify-between gap-4">
                 <p className="font-heading text-[0.6875rem] font-bold tracking-[0.16em] text-muted uppercase">
-                  Regional offices
+                  Also in Dhaka
                 </p>
                 <Link
                   href="/contact"
                   className="font-heading text-[0.8125rem] font-bold text-primary transition-colors hover:text-primary-700"
                 >
-                  All offices
+                  All locations
                 </Link>
               </div>
 
@@ -106,11 +106,9 @@ export function ContactSection() {
                   .map((office) => (
                     <li key={office.id}>
                       <p className="font-heading text-[0.9375rem] font-bold text-heading">
-                        {office.city}
+                        Fabrication workshop
                       </p>
-                      <p className="text-[0.8125rem] text-muted">
-                        {office.country} — {office.projectCount} projects
-                      </p>
+                      <p className="text-[0.8125rem] text-muted">{office.city}</p>
                       <a
                         href={`tel:${office.phone.replace(/[^+\d]/g, "")}`}
                         className="mt-1 inline-block text-[0.8125rem] font-medium text-primary transition-colors hover:text-primary-700"

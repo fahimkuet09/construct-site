@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight, MapPin } from "lucide-react";
 import type { Project } from "@/types";
-import { formatCrore, cn } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui";
 
 export function ProjectCard({
@@ -54,7 +54,7 @@ export function ProjectCard({
               className={cn(
                 project.status === "Completed" &&
                   "border-success-400/45 text-success-400",
-                project.status === "In Progress" && "border-accent/55 text-accent",
+                project.status === "Ongoing" && "border-accent/55 text-accent",
               )}
             >
               {project.status}
@@ -93,29 +93,13 @@ export function ProjectCard({
             {project.summary}
           </p>
 
-          <dl className="mt-6 grid grid-cols-3 gap-4 border-t border-line pt-5">
+          <dl className="mt-6 grid grid-cols-1 gap-4 border-t border-line pt-5">
             <div>
               <dt className="font-heading text-[0.6875rem] font-bold tracking-[0.1em] text-muted uppercase">
-                Value
+                Client
               </dt>
-              <dd className="mt-1 font-heading text-[0.9375rem] font-extrabold text-heading tabular-nums">
-                {formatCrore(project.contractValueCrore)}
-              </dd>
-            </div>
-            <div>
-              <dt className="font-heading text-[0.6875rem] font-bold tracking-[0.1em] text-muted uppercase">
-                Duration
-              </dt>
-              <dd className="mt-1 font-heading text-[0.9375rem] font-extrabold text-heading tabular-nums">
-                {project.durationMonths} mo
-              </dd>
-            </div>
-            <div>
-              <dt className="font-heading text-[0.6875rem] font-bold tracking-[0.1em] text-muted uppercase">
-                Year
-              </dt>
-              <dd className="mt-1 font-heading text-[0.9375rem] font-extrabold text-heading tabular-nums">
-                {project.year}
+              <dd className="mt-1 font-heading text-[0.9375rem] font-extrabold text-heading">
+                {project.client}
               </dd>
             </div>
           </dl>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-label="Universal Structural Steel">
+  <defs>
+    <linearGradient id="gsilverlinehero" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#3b4c66"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0c111c"/>
+    </linearGradient>
+    <radialGradient id="vsilverlinehero" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="psilverlinehero" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nsilverlinehero"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="2400" height="1350" fill="url(#gsilverlinehero)"/>
+  <rect width="2400" height="1350" fill="url(#psilverlinehero)"/>
+  <line x1="409.41742753470317" y1="1107" x2="409.41742753470317" y2="504.344873577822" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="240.40706044161692" y1="504.344873577822" x2="937.5748247005977" y2="504.344873577822" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="409.41742753470317" y1="474.344873577822" x2="937.5748247005977" y2="504.344873577822" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="409.41742753470317" y1="474.344873577822" x2="240.40706044161692" y2="504.344873577822" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="409.41742753470317" y1="504.344873577822" x2="409.41742753470317" y2="474.344873577822" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="789.6907534941472" y1="504.344873577822" x2="789.6907534941472" y2="790.5275215823203" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="1110.7863843217492" y1="1107" x2="1110.7863843217492" y2="290.189532476943" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="944.8891567245125" y1="290.189532476943" x2="1629.2152205631137" y2="290.189532476943" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="1110.7863843217492" y1="260.189532476943" x2="1629.2152205631137" y2="290.189532476943" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1110.7863843217492" y1="260.189532476943" x2="944.8891567245125" y2="290.189532476943" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1110.7863843217492" y1="290.189532476943" x2="1110.7863843217492" y2="260.189532476943" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="1484.0551464155317" y1="290.189532476943" x2="1484.0551464155317" y2="699.1411483269185" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="1824.236125162337" y1="1107" x2="1824.236125162337" y2="458.8849472771399" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="1662.8052285320498" y1="458.8849472771399" x2="2328.7076771319844" y2="458.8849472771399" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="1824.236125162337" y1="428.8849472771399" x2="2328.7076771319844" y2="458.8849472771399" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1824.236125162337" y1="428.8849472771399" x2="1662.8052285320498" y2="458.8849472771399" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1824.236125162337" y1="458.8849472771399" x2="1824.236125162337" y2="428.8849472771399" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="2187.455642580483" y1="458.8849472771399" x2="2187.455642580483" y2="822.2071875594556" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="0" y1="1107" x2="2400" y2="1107" stroke="rgba(255,255,255,.5)" stroke-width="2.5"/>
+  <rect width="2400" height="1350" fill="url(#vsilverlinehero)"/>
+  <rect width="2400" height="1350" filter="url(#nsilverlinehero)" opacity="0.045"/>
+  
+</svg>

@@ -17,7 +17,7 @@ function buildIcon(accent: boolean) {
   const ring = accent ? "rgba(245,158,11,.28)" : "rgba(15,76,129,.22)";
 
   return L.divIcon({
-    className: "meghna-pin",
+    className: "uss-pin",
     html: `
       <span style="position:relative;display:block;width:34px;height:34px;">
         <span style="position:absolute;inset:0;border-radius:9999px;background:${ring};transform:scale(1.5);"></span>
@@ -59,7 +59,7 @@ export function ProjectMap({
       worldCopyJump
       className={className}
       style={{ height, width: "100%" }}
-      aria-label="Map of Meghna Construct project locations across Bangladesh"
+      aria-label="Map of Universal Structural Steel project locations across Bangladesh"
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'

@@ -50,9 +50,9 @@ export function Testimonials() {
         <Reveal>
           <SectionHeading
             align="center"
-            eyebrow="Client verdict"
-            title="What the people who commissioned the work say"
-            lead="Programme directors, chief engineers and asset owners on what it was actually like to have Meghna on their project."
+            eyebrow="Client feedback"
+            title="What it's like to work with us"
+            lead="Representative feedback from the kind of clients we build for — factory owners, plant managers and operators across Bangladesh."
             className="mx-auto"
           />
         </Reveal>

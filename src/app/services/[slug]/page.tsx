@@ -15,14 +15,12 @@ import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/ui";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
 
-/** Maps a capability onto the project sector that represents it. */
+/** Maps a service onto the project category that represents it. */
 const SECTOR_BY_SERVICE: Record<string, string> = {
-  "bridges-and-viaducts": "Bridges & Viaducts",
-  "highways-and-rail": "Highways & Rail",
-  "tunnelling-and-underground": "Tunnelling",
-  "marine-and-ports": "Marine & Ports",
-  "water-and-energy": "Water & Energy",
-  "industrial-and-buildings": "Industrial & Buildings",
+  "industrial-buildings": "Industrial Buildings",
+  "commercial-buildings": "Commercial Buildings",
+  "residential-buildings": "Residential & Other",
+  "agro-based-buildings": "Agro-Based Buildings",
 };
 
 export function generateStaticParams() {
@@ -68,7 +66,7 @@ export default async function ServiceDetailPage({
         image={service.image}
         crumbs={[
           { label: "Home", href: "/" },
-          { label: "Capabilities", href: "/services" },
+          { label: "Services", href: "/services" },
           { label: service.title },
         ]}
       >
@@ -139,8 +137,8 @@ export default async function ServiceDetailPage({
           <Reveal>
             <SectionHeading
               eyebrow="Capabilities"
-              title="What we self-perform in this discipline"
-              lead="Each of these is delivered by directly employed teams using our own plant, rather than passed to a specialist subcontractor."
+              title="What this service covers"
+              lead="Each of these is delivered by our own engineering, fabrication and erection teams — not passed to a separate subcontractor."
             />
           </Reveal>
 
@@ -219,14 +217,14 @@ export default async function ServiceDetailPage({
           <Reveal>
             <SectionHeading
               eyebrow="How we deliver it"
-              title="Six stages from feasibility to first operating cycle"
+              title="Four stages, from site visit to handover"
             />
           </Reveal>
 
           <RevealGroup
             as="ol"
             stagger={0.05}
-            className="mt-14 grid gap-px overflow-hidden rounded-[var(--radius-card)] border border-line bg-line md:grid-cols-2 lg:grid-cols-3"
+            className="mt-14 grid gap-px overflow-hidden rounded-[var(--radius-card)] border border-line bg-line md:grid-cols-2 lg:grid-cols-4"
           >
             {processSteps.map((step) => {
               const Icon = step.icon;
@@ -299,8 +297,8 @@ export default async function ServiceDetailPage({
         <div className="container-shell">
           <Reveal>
             <SectionHeading
-              eyebrow="Other capabilities"
-              title="What else we can hold on the same contract"
+              eyebrow="Other services"
+              title="What else we can deliver on the same contract"
             />
           </Reveal>
 
@@ -323,7 +321,7 @@ export default async function ServiceDetailPage({
         title={`Have a ${service.shortTitle.toLowerCase()} project in the pipeline?`}
         body="Tell us the constraint that worries you most. We will give you a straight assessment of what is achievable and what it will take."
         primary={{ label: "Start a conversation", href: "/contact" }}
-        secondary={{ label: "See all capabilities", href: "/services" }}
+        secondary={{ label: "See all services", href: "/services" }}
       />
     </>
   );

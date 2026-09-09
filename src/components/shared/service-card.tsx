@@ -46,7 +46,7 @@ export function ServiceCard({
           </span>
           <span
             aria-hidden
-            className="font-heading text-[0.8125rem] font-extrabold tracking-[0.1em] text-line tabular-nums"
+            className="font-heading text-[0.8125rem] font-extrabold tracking-[0.1em] text-muted/70 tabular-nums"
           >
             {pad(index + 1)}
           </span>

@@ -5,25 +5,22 @@ import { ProjectsExplorer } from "@/components/sections/projects-explorer";
 import { ProjectMapSection } from "@/components/sections/project-map-section";
 import { CtaBand } from "@/components/sections/cta-band";
 import { Skeleton } from "@/components/ui";
-import { projects } from "@/data/projects";
-import { formatCrore } from "@/lib/utils";
+import { projects, projectSectors } from "@/data/projects";
 
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "River crossings, metros, deep-sea ports, expressways, energy and industrial facilities delivered by Meghna Construct across Bangladesh.",
+    "Industrial, commercial, residential and agro-based steel structures delivered by Universal Structural Steel Ltd. across Bangladesh.",
 };
-
-const totalValue = projects.reduce((sum, p) => sum + p.contractValueCrore, 0);
 
 export default function ProjectsPage() {
   return (
     <>
       <PageHero
         eyebrow="Portfolio"
-        title="Projects that could not be allowed to fail"
-        lead="Crossings, corridors, tunnels and terminals delivered under live operation, tight tolerance and immovable dates. Filter by sector or status to find work like yours."
-        image="/images/projects/meghna-estuary-hero.svg"
+        title="Ongoing and completed steel structures"
+        lead="Industrial sheds, textile mills, process buildings and agro-based structures — delivered under our standard measurement-to-handover process. Filter by category or status to find work like yours."
+        image="/images/projects/navana-hero.svg"
         crumbs={[{ label: "Home", href: "/" }, { label: "Projects" }]}
       >
         <dl className="mt-10 flex flex-wrap gap-x-12 gap-y-6">
@@ -37,18 +34,18 @@ export default function ProjectsPage() {
           </div>
           <div>
             <dd className="font-heading text-[1.75rem] leading-none font-extrabold text-white tabular-nums">
-              {formatCrore(totalValue)}
+              {projects.filter((p) => p.status === "Completed").length}
             </dd>
             <dt className="mt-2 font-heading text-[0.8125rem] font-semibold text-accent">
-              Combined contract value
+              Handed over
             </dt>
           </div>
           <div>
             <dd className="font-heading text-[1.75rem] leading-none font-extrabold text-white tabular-nums">
-              6
+              {projectSectors.length}
             </dd>
             <dt className="mt-2 font-heading text-[0.8125rem] font-semibold text-accent">
-              Infrastructure sectors
+              Building categories
             </dt>
           </div>
         </dl>

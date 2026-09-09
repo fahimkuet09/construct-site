@@ -12,12 +12,7 @@ import { Button } from "@/components/ui/button";
 import { EmptyState } from "@/components/ui";
 import { cn } from "@/lib/utils";
 
-const STATUSES: (ProjectStatus | "All")[] = [
-  "All",
-  "Completed",
-  "In Progress",
-  "Handover",
-];
+const STATUSES: (ProjectStatus | "All")[] = ["All", "Completed", "Ongoing"];
 
 export function ProjectsExplorer() {
   const router = useRouter();
@@ -166,7 +161,7 @@ export function ProjectsExplorer() {
             <EmptyState
               icon={<SearchX className="size-6" aria-hidden />}
               title="No projects match those filters"
-              description="Try widening the sector or status. Our portfolio in some areas is still in pre-construction and not yet published."
+              description="Try widening the category or status — or talk to us about a project like this that we're currently quoting."
               action={
                 <div className="mt-2 flex flex-wrap justify-center gap-3">
                   <Button variant="primary" size="md" onClick={reset}>

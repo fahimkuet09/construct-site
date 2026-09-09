@@ -2,535 +2,369 @@ import {
   Building2,
   Clock,
   Compass,
-  Cpu,
-  Droplets,
-  Gauge,
-  HardHat,
+  Factory,
+  Home,
   Layers,
   Leaf,
-  Mountain,
-  Route,
-  Ship,
   ShieldCheck,
+  Sprout,
+  Timer,
   TrendingUp,
-  Waves,
 } from "lucide-react";
 import type { Service } from "@/types";
 
 export const services: Service[] = [
   {
-    slug: "bridges-and-viaducts",
-    title: "Bridges & Viaducts",
-    shortTitle: "Bridges",
-    icon: Waves,
-    tagline: "Long-span crossings engineered for a 120-year design life",
-    summary:
-      "Cable-stayed, segmental and composite crossings delivered from concept design through to load testing and handover.",
-    description: [
-      "Meghna has delivered 143 major crossings since 1974, from 60-metre rural overpasses to 4.8-kilometre cable-stayed estuary spans. In a delta with no rock at any reachable depth and rivers that shift their own beds each monsoon, a crossing is won or lost on its foundations.",
-      "We design for the riverbed that will exist after the worst scour of the next hundred years, not the one the survey found. Every crossing is modelled in a federated BIM environment before a single pile is driven, with erection sequences and camber profiles simulated against staged construction analysis.",
-    ],
-    image: "/images/services/bridges.svg",
-    capabilities: [
-      {
-        title: "Cable-stayed & extradosed spans",
-        description:
-          "Pylon slipforming, stay cable installation and computer-controlled stressing to ±2% of design force.",
-      },
-      {
-        title: "Balanced cantilever construction",
-        description:
-          "Form travellers and precast segmental erection with geometry control to millimetre tolerance.",
-      },
-      {
-        title: "Incremental launching",
-        description:
-          "Launched steel and concrete decks over live rail, navigable rivers and dense settlement.",
-      },
-      {
-        title: "Strengthening & replacement",
-        description:
-          "Post-tensioned retrofit, bearing replacement and deck widening under partial traffic management.",
-      },
-    ],
-    benefits: [
-      {
-        title: "Single point of accountability",
-        description:
-          "Design and construction under one contract removes the gap where programme and cost usually leak.",
-        icon: ShieldCheck,
-      },
-      {
-        title: "Predictable geometry",
-        description:
-          "Staged construction analysis and real-time survey feedback keep closure tolerances inside 8mm.",
-        icon: Compass,
-      },
-      {
-        title: "Reduced disruption",
-        description:
-          "Offsite segment casting cuts on-site activity by up to 40% over conventional in-situ methods.",
-        icon: Clock,
-      },
-    ],
-    deliverables: [
-      "Category III independent design check",
-      "Staged construction & camber analysis",
-      "Temporary works design and certification",
-      "Static and dynamic load testing",
-      "Structural health monitoring installation",
-      "As-built model and maintenance manual",
-    ],
-    stats: [
-      { label: "Crossings delivered", value: "143" },
-      { label: "Longest crossing", value: "4,800 m" },
-      { label: "Design life", value: "120 yrs" },
-    ],
-    faqs: [
-      {
-        question: "Do you carry out your own bridge design?",
-        answer:
-          "Yes. Our in-house structures team of 84 engineers holds design authority across AASHTO LRFD, BNBC and Eurocode standards, and we appoint an independent Category III checker on every major crossing.",
-      },
-      {
-        question: "How do you build over rivers and settlement you cannot disturb?",
-        answer:
-          "We plan around the owner's operating windows and pre-assemble offsite. On the Buriganga Southern Viaduct we erected 1,860 segments entirely from deck level using overhead gantries, so no household below the alignment was displaced and the river stayed navigable throughout.",
-      },
-      {
-        question: "What monitoring do you leave behind?",
-        answer:
-          "Every major span is handed over with an instrumented monitoring package — strain gauges, accelerometers, bearing displacement and cable force sensors — integrated into the client's asset management system.",
-      },
-    ],
-  },
-  {
-    slug: "highways-and-rail",
-    title: "Highways & Rail",
-    shortTitle: "Highways & Rail",
-    icon: Route,
-    tagline: "Corridors that stay open while we rebuild them",
-    summary:
-      "Motorway widening, interchange reconstruction, heavy rail and light rail alignment delivered under live traffic.",
-    description: [
-      "Linear infrastructure is won or lost on logistics. Meghna's highways and rail division has completed 2,180 kilometres of carriageway and 480 kilometres of track, the majority of it beside traffic that never stopped running.",
-      "We plan at the level of the individual shift, around a monsoon that closes roughly five months of productive earthworks each year. Separating slow-moving and non-motorised traffic onto service roads is the single change that has done most to bring corridor fatality rates down on the schemes we have delivered.",
-    ],
-    image: "/images/services/highways.svg",
-    capabilities: [
-      {
-        title: "Motorway widening & smart corridors",
-        description:
-          "Lane gain under live traffic with grade-separated market intersections and segregated service roads.",
-      },
-      {
-        title: "Grade-separated interchanges",
-        description:
-          "Multi-level junctions, ramp structures and retaining systems built within constrained footprints.",
-      },
-      {
-        title: "Heavy & light rail alignment",
-        description:
-          "Dual-gauge formation, ballasted and slab track, and station box civils.",
-      },
-      {
-        title: "Pavement engineering",
-        description:
-          "Long-life pavements on soft subgrade, embankment consolidation and full-depth recycling.",
-      },
-    ],
-    benefits: [
-      {
-        title: "Traffic kept flowing",
-        description:
-          "Average corridor availability of 98.1% across live-carriageway schemes over the past five years.",
-        icon: Gauge,
-      },
-      {
-        title: "Lower whole-life cost",
-        description:
-          "Long-life pavement design targets 40 years before structural intervention is required.",
-        icon: TrendingUp,
-      },
-      {
-        title: "Lower embodied carbon",
-        description:
-          "Full-depth recycling and site-won material reuse cut pavement carbon by an average of 27%.",
-        icon: Leaf,
-      },
-    ],
-    deliverables: [
-      "Traffic management design and safety audit",
-      "Earthworks and geotechnical certification",
-      "Pavement design and compliance testing",
-      "Drainage, ducting and utility diversions",
-      "Signalling, lighting and ITS installation",
-      "Stage 3 road safety audit and handover",
-    ],
-    stats: [
-      { label: "Carriageway built", value: "2,180 km" },
-      { label: "Track laid", value: "480 km" },
-      { label: "Corridor availability", value: "98.1%" },
-    ],
-    faqs: [
-      {
-        question: "How do you minimise disruption on live corridors?",
-        answer:
-          "Where the corridor allows it we build the permanent service road first and divert onto that, so traffic moves onto finished works rather than temporary ones. On the Dhaka–Chattogram Expressway that held corridor availability at 98.1% across 42 months on a route carrying a third of national trade.",
-      },
-      {
-        question: "Can you deliver rail and highway scope on one contract?",
-        answer:
-          "Yes, and we frequently do. Interface points between road and rail are where most programmes slip, so holding both scopes under a single delivery team removes the coordination risk entirely.",
-      },
-      {
-        question: "What is your approach to earthworks balance?",
-        answer:
-          "We model cut and fill at design stage to maximise site-won reuse, and we surcharge new embankment with vertical drains so it settles before it is tied into the existing carriageway rather than cracking along the joint afterwards.",
-      },
-    ],
-  },
-  {
-    slug: "tunnelling-and-underground",
-    title: "Tunnelling & Underground",
-    shortTitle: "Tunnelling",
-    icon: Mountain,
-    tagline: "Ground engineering where settlement is measured in millimetres",
-    summary:
-      "TBM drives, sprayed concrete lining, shafts and deep basements beneath dense urban fabric.",
-    description: [
-      "Underground work is unforgiving: the ground gives one opportunity to get it right. Meghna brought soft-ground tunnelling capability into Bangladesh in 2021, and has since driven 24 kilometres of bored tunnel and sunk 68 shafts beneath some of the most densely occupied land on earth.",
-      "Dhaka’s water table sits within two metres of the surface for most of the year, so every drive is effectively permanently below groundwater. Ground movement modelling is validated against real-time instrumentation, and where predicted settlement approaches trigger levels, compensation grouting is deployed before damage occurs, not after.",
-    ],
-    image: "/images/services/tunnelling.svg",
-    capabilities: [
-      {
-        title: "TBM drives",
-        description:
-          "EPB machines from 6.2m to 9.8m diameter, configured for saturated soft alluvium.",
-      },
-      {
-        title: "Sprayed concrete lining",
-        description:
-          "SCL caverns, cross-passages and junctions with fibre-reinforced and steel-mesh systems.",
-      },
-      {
-        title: "Shafts & deep basements",
-        description:
-          "Diaphragm walls and secant piles toed into clay to form a cut-off, to depths beyond 40 metres.",
-      },
-      {
-        title: "Ground treatment",
-        description:
-          "Jet grouting, compensation grouting, liquefaction mitigation and dewatering design.",
-      },
-    ],
-    benefits: [
-      {
-        title: "Assets protected",
-        description:
-          "Zero structural damage claims across 24km of urban drives, verified by independent survey.",
-        icon: ShieldCheck,
-      },
-      {
-        title: "Live instrumentation",
-        description:
-          "Automated monitoring reports settlement against trigger levels every fifteen minutes.",
-        icon: Cpu,
-      },
-      {
-        title: "Continuous advance",
-        description:
-          "Average TBM utilisation of 68% in saturated ground, above the international benchmark for comparable conditions.",
-        icon: Gauge,
-      },
-    ],
-    deliverables: [
-      "Ground investigation and geotechnical baseline report",
-      "Settlement prediction and damage assessment",
-      "Instrumentation and monitoring regime",
-      "Segment supply and lining design",
-      "Compensation grouting scheme",
-      "Tunnel fit-out, M&E and commissioning",
-    ],
-    stats: [
-      { label: "Tunnel driven", value: "24 km" },
-      { label: "Shafts sunk", value: "68" },
-      { label: "TBM utilisation", value: "68%" },
-    ],
-    faqs: [
-      {
-        question: "How do you protect buildings above a drive?",
-        answer:
-          "Where record drawings do not exist — which in much of Dhaka they do not — we survey every structure by laser scan and intrusive inspection before the drive reaches it. On Metro Line 4 that meant 610 buildings, 84 of which were strengthened pre-emptively rather than monitored and hoped for.",
-      },
-      {
-        question: "What ground conditions can your fleet handle?",
-        answer:
-          "Our owned fleet covers EPB machines from 6.2m to 9.8m, configured for the saturated soft alluvium that underlies most Bangladeshi cities. We have driven through Dhaka clay, silt and water-bearing sand lenses with the face permanently below groundwater.",
-      },
-      {
-        question: "Do you self-perform the ground treatment?",
-        answer:
-          "Yes. Grouting, liquefaction mitigation and dewatering are delivered by our own geotechnical specialists, which means the treatment design responds to what the TBM is actually seeing rather than to a subcontractor's fixed scope.",
-      },
-    ],
-  },
-  {
-    slug: "marine-and-ports",
-    title: "Marine & Ports",
-    shortTitle: "Marine & Ports",
-    icon: Ship,
-    tagline: "Building where the tide sets the programme",
-    summary:
-      "Deep-water quays, breakwaters, reclamation and offshore foundations delivered from our own marine fleet.",
-    description: [
-      "Marine construction on the Bay of Bengal compresses everything difficult about civil engineering into a season. Meghna operates an owned fleet of jack-up barges, cutter suction dredgers and heavy-lift pontoons, so our programme is governed by weather rather than by charter availability.",
-      "We have reclaimed 1,240 hectares and constructed 26 kilometres of quay wall and river training works. Cyclone return-period loading, not normal operating conditions, governs the design of everything we build on this coast.",
-    ],
-    image: "/images/services/marine.svg",
-    capabilities: [
-      {
-        title: "Deep-water quay walls",
-        description:
-          "Combi-wall, blockwork and open-piled berths for post-Panamax and ULCV operation.",
-      },
-      {
-        title: "Breakwaters & coastal defence",
-        description:
-          "Rubble mound and CC block armour designed against 1-in-200-year cyclone surge and wave climate.",
-      },
-      {
-        title: "Land reclamation",
-        description:
-          "Hydraulic fill, vertical drains and vibro-compaction with settlement monitoring to closure.",
-      },
-      {
-        title: "Offshore foundations",
-        description:
-          "Monopile and jacket installation designed for cyclone return-period loading.",
-      },
-    ],
-    benefits: [
-      {
-        title: "Owned marine fleet",
-        description:
-          "No charter dependency — vessels mobilise to our programme, not to the spot market.",
-        icon: Ship,
-      },
-      {
-        title: "Hydrodynamically verified",
-        description:
-          "Storm surge and wave modelling on every coastal and river training scheme.",
-        icon: Waves,
-      },
-      {
-        title: "Environmental control",
-        description:
-          "Silt curtains, turbidity monitoring and bubble curtains protect hilsa and river dolphin habitat.",
-        icon: Leaf,
-      },
-    ],
-    deliverables: [
-      "Bathymetric and geophysical survey",
-      "Hydrodynamic and wave climate modelling",
-      "Dredging and reclamation method statement",
-      "Quay wall and mooring design",
-      "Environmental monitoring plan",
-      "Berth trials and operational handover",
-    ],
-    stats: [
-      { label: "Quay & river training", value: "26 km" },
-      { label: "Land reclaimed", value: "1,240 ha" },
-      { label: "Marine vessels", value: "19" },
-    ],
-    faqs: [
-      {
-        question: "Do you own your marine plant?",
-        answer:
-          "We own 19 vessels including three jack-up barges, two cutter suction dredgers and a 1,200-tonne heavy-lift pontoon. Owning the fleet is why our marine programmes hold their dates across a season that only opens twice a year.",
-      },
-      {
-        question: "How do you protect marine ecology?",
-        answer:
-          "Every scheme runs an environmental impact assessment under DoE clearance, with silt curtains, continuous turbidity monitoring and seasonal restrictions around hilsa spawning and dolphin migration windows.",
-      },
-      {
-        question: "Can you work in remote locations?",
-        answer:
-          "Yes. At Matarbari we mobilised a self-sufficient marine spread — accommodation, batching and fuel bunkering — onto a coast with no existing port infrastructure, under a cyclone protocol with a 72-hour evacuation trigger.",
-      },
-    ],
-  },
-  {
-    slug: "water-and-energy",
-    title: "Water & Energy",
-    shortTitle: "Water & Energy",
-    icon: Droplets,
-    tagline: "Critical utilities built to run for generations",
-    summary:
-      "Dams, treatment works, pumping stations, transmission networks and renewable generation infrastructure.",
-    description: [
-      "Water and energy assets are judged on availability, not on handover. Meghna builds the civil infrastructure utilities depend on — treatment works, pumping stations, embankments, substations and renewable generation — with commissioning support that continues well past practical completion.",
-      "In a country where surface water carries 2,000 NTU through the monsoon and land for solar is scarce enough to be the binding constraint, process design has to start from local conditions rather than from a standard template.",
-    ],
-    image: "/images/services/water-energy.svg",
-    capabilities: [
-      {
-        title: "Dams & impounding reservoirs",
-        description:
-          "Embankment dams, polders, flood embankments and river training with spillway and outlet works.",
-      },
-      {
-        title: "Water & wastewater treatment",
-        description:
-          "Full process civils, MEICA integration and commissioning to regulatory standard.",
-      },
-      {
-        title: "Transmission & distribution",
-        description:
-          "Substation civils, cable tunnels, tower foundations and pipeline corridors.",
-      },
-      {
-        title: "Renewable generation",
-        description:
-          "Offshore wind foundations, flood-resilient solar balance of plant and pumped storage civils.",
-      },
-    ],
-    benefits: [
-      {
-        title: "Operational resilience",
-        description:
-          "Redundancy and maintenance access designed in from tender stage, not retrofitted.",
-        icon: ShieldCheck,
-      },
-      {
-        title: "Commissioning support",
-        description:
-          "Process engineers remain on site through the first full operating cycle after handover.",
-        icon: Layers,
-      },
-      {
-        title: "Regulatory compliance",
-        description:
-          "Drinking water, dam safety and grid connection standards evidenced and audited.",
-        icon: HardHat,
-      },
-    ],
-    deliverables: [
-      "Process and hydraulic design review",
-      "Dam safety and DoE clearance liaison",
-      "Civil, structural and MEICA integration",
-      "Factory and site acceptance testing",
-      "Operations and maintenance documentation",
-      "Post-handover performance monitoring",
-    ],
-    stats: [
-      { label: "Treatment capacity", value: "1.4M m³/d" },
-      { label: "Embankments & polders", value: "340 km" },
-      { label: "Renewable capacity", value: "1.6 GW" },
-    ],
-    faqs: [
-      {
-        question: "Are you pre-qualified with the utilities?",
-        answer:
-          "We are pre-qualified with Dhaka WASA, Chattogram WASA, BWDB, BPDB and PGCB, and have delivered contracts financed by the World Bank, ADB, JICA and the Government of Bangladesh.",
-      },
-      {
-        question: "How is commissioning handled?",
-        answer:
-          "Our process engineers remain embedded on site through the first full operating cycle, which typically means three to six months beyond practical completion at no additional cost under our standard terms.",
-      },
-      {
-        question: "What renewable experience do you have?",
-        answer:
-          "1.6 GW of installed capacity across offshore wind foundations, flood-resilient utility-scale solar and the country’s first pumped storage scheme.",
-      },
-    ],
-  },
-  {
-    slug: "industrial-and-buildings",
-    title: "Industrial & Buildings",
+    slug: "industrial-buildings",
+    title: "Industrial Buildings",
     shortTitle: "Industrial",
-    icon: Building2,
-    tagline: "Complex facilities where tolerance is measured in millimetres",
+    icon: Factory,
+    tagline: "Clear-span steel structures built for production, not just shelter",
     summary:
-      "Advanced manufacturing plants, data centres, logistics hubs and civic buildings delivered to operational standard.",
+      "Factory sheds, warehouses, godowns and process buildings engineered as pre-engineered steel structures — fast to erect, easy to expand, built to run.",
     description: [
-      "Industrial facilities carry engineering demands that ordinary construction does not: vibration-sensitive floor slabs, cleanroom envelopes, high-density power distribution and process integration that has to work on day one.",
-      "Meghna delivers these buildings as engineered systems rather than as shells. Structure, envelope, services and process are coordinated in a single federated model, clash-resolved before mobilisation, and commissioned against the operator's performance criteria — including the on-site generation that makes a tenant's production date credible when grid supply is still developing.",
+      "Industrial clients don't buy a building, they buy production days. A pre-engineered steel (PEB) structure goes from foundation to weathertight shell in a fraction of the time an equivalent RCC building takes, which is what lets a tenant's commissioning date hold.",
+      "We design and fabricate the primary portal frames, secondary members, roof and wall cladding as one coordinated system rather than assembling components from different suppliers, so tolerances, bolt patterns and load paths are resolved before anything reaches site.",
     ],
     image: "/images/services/industrial.svg",
     capabilities: [
       {
-        title: "Advanced manufacturing",
+        title: "Factory sheds & process buildings",
         description:
-          "Readymade garment and light engineering facilities with compliant fire and egress design.",
+          "Textile, garments, pharmaceutical, oil and ceramic production floors with clear internal spans free of intermediate columns.",
       },
       {
-        title: "Data centres",
+        title: "Warehousing & godowns",
         description:
-          "Tier III facilities with N+1 power, cooling and structured containment.",
+          "High-bay storage and distribution buildings sized for racking layout, dock access and forklift turning circles.",
       },
       {
-        title: "Logistics & distribution",
+        title: "Steel re-rolling & heavy process sheds",
         description:
-          "High-bay warehousing, superflat floors to FM2 and automated handling integration.",
+          "Crane-gantry buildings and re-rolling mill structures designed for overhead crane loading and vibration.",
       },
       {
-        title: "Civic & institutional",
+        title: "Machine towers",
         description:
-          "Hospitals, transport interchanges and education campuses under occupied-site constraints.",
+          "Elevated steel support towers and platforms for process and production equipment.",
+      },
+      {
+        title: "Expansion & mezzanine additions",
+        description:
+          "Bolted steel frames that let an existing facility add floor area or bay length without disrupting production.",
       },
     ],
     benefits: [
       {
-        title: "Model-first delivery",
+        title: "Faster to occupy",
         description:
-          "Federated BIM with clash resolution complete before the first delivery arrives on site.",
-        icon: Layers,
+          "Off-site fabrication and bolted site erection compress the construction programme well below a comparable RCC shed.",
+        icon: Clock,
       },
       {
-        title: "Operational readiness",
+        title: "Long clear spans",
         description:
-          "Soft landings approach with operator training delivered before handover, not after.",
+          "Portal-frame steel carries wide bays without intermediate columns, keeping the floor plate free for production layout.",
         icon: Compass,
       },
       {
-        title: "Programme certainty",
+        title: "Built to expand",
         description:
-          "94% of industrial facilities handed over on or ahead of contractual completion date.",
-        icon: Clock,
+          "Bolted connections and modular bay spacing mean a shed can be lengthened or heightened as the business grows.",
+        icon: TrendingUp,
       },
     ],
     deliverables: [
-      "Federated BIM model and clash report",
-      "Structural, envelope and services coordination",
-      "Vibration and floor flatness verification",
-      "Integrated systems testing",
-      "Soft landings and operator training",
-      "Digital twin and asset data handover",
+      "Site measurement and load assessment",
+      "Structural design & calculation per BNBC",
+      "Primary frame, purlin and cladding fabrication",
+      "Foundation and anchor bolt coordination",
+      "Site erection and quality inspection",
+      "Final inspection and handover",
     ],
     stats: [
-      { label: "Floor area delivered", value: "2.8M m²" },
-      { label: "On-time handover", value: "94%" },
-      { label: "On-site generation", value: "94 MW" },
+      { label: "Engineering turnaround", value: "24 hrs" },
+      { label: "Delivery process", value: "4 stages" },
+      { label: "Structure type", value: "Bolted steel" },
     ],
     faqs: [
       {
-        question: "Can you deliver on an occupied site?",
+        question: "How much faster is a steel shed than an RCC building?",
         answer:
-          "Regularly. We have extended live hospitals, railway stations and manufacturing plants without interrupting operations, using segregated logistics routes, phased possession plans and temporary arrangements sized for peak demand rather than average demand.",
+          "Because the frame, purlins and cladding are fabricated off-site while foundations are being cast, erection on site is largely a bolting operation rather than a wet-trade one — which is the main reason steel sheds reach weathertight condition well ahead of an equivalent RCC structure.",
       },
       {
-        question: "How do you guarantee floor flatness?",
+        question: "Can a steel building be extended later?",
         answer:
-          "Superflat slabs are laser-screeded and surveyed to FM2 or better, with results issued within 48 hours of pour so any remediation happens before the racking contractor mobilises.",
+          "Yes — bolted portal frames on a repeating bay grid are designed to be lengthened by adding further bays, and in many cases heightened, without demolishing what is already standing.",
       },
       {
-        question: "What does soft landings mean in practice?",
+        question: "Do you handle both design and construction?",
         answer:
-          "The operations team joins design reviews at concept stage, operator training runs before handover, and our commissioning engineers remain on site through a full monsoon cycle afterwards.",
+          "Yes. Measurement, structural calculation, fabrication and site erection are delivered under one contract, so there is a single point of accountability from concept to handover.",
+      },
+    ],
+  },
+  {
+    slug: "commercial-buildings",
+    title: "Commercial Buildings",
+    shortTitle: "Commercial",
+    icon: Building2,
+    tagline: "Steel-framed retail, office and fuel-service structures",
+    summary:
+      "Multi-storied steel buildings, retail and market structures, super shops and filling station canopies — framed for long spans and a fast fit-out.",
+    description: [
+      "Commercial developments need a shell that opens to trade quickly and adapts as tenants change. Structural steel framing gives wide, column-light floor plates for retail and market layouts, and a multi-storey frame that erects in a fraction of the time of cast-in-place concrete.",
+      "We coordinate the structural frame with the envelope and services from the outset, so the building is ready for fit-out contractors the day the shell is handed over.",
+    ],
+    image: "/images/services/commercial.svg",
+    capabilities: [
+      {
+        title: "Multi-storied steel buildings",
+        description:
+          "Composite steel-frame structures for office and mixed-use developments, engineered for future floor loading changes.",
+      },
+      {
+        title: "Retail & market buildings",
+        description:
+          "Column-light retail floors and super shop structures designed around merchandising and circulation layouts.",
+      },
+      {
+        title: "Filling station canopies",
+        description:
+          "Wide-span cantilevered and portal canopy structures for fuel and service stations.",
+      },
+      {
+        title: "Office & showroom shells",
+        description:
+          "Steel-framed office and showroom shells ready for glazing, partitioning and MEP fit-out on handover.",
+      },
+    ],
+    benefits: [
+      {
+        title: "Opens to trade sooner",
+        description:
+          "A steel shell reaches fit-out-ready condition far faster than an equivalent concrete frame, shortening time to first revenue.",
+        icon: Clock,
+      },
+      {
+        title: "Flexible floor plates",
+        description:
+          "Wide column spacing keeps retail and office layouts adaptable as tenants and merchandising plans change.",
+        icon: Layers,
+      },
+      {
+        title: "Predictable quality",
+        description:
+          "Factory-fabricated members arrive to fixed tolerances, reducing the on-site rework that concrete formwork is prone to.",
+        icon: ShieldCheck,
+      },
+    ],
+    deliverables: [
+      "Site measurement and structural survey",
+      "Structural design & calculation per BNBC",
+      "Steel frame and cladding fabrication",
+      "Foundation coordination with civil contractor",
+      "Site erection and quality inspection",
+      "Final inspection and handover",
+    ],
+    stats: [
+      { label: "Engineering turnaround", value: "24 hrs" },
+      { label: "Delivery process", value: "4 stages" },
+      { label: "Structure type", value: "Bolted steel" },
+    ],
+    faqs: [
+      {
+        question: "Can steel framing support a multi-storey building?",
+        answer:
+          "Yes — structural steel is a standard framing choice for multi-storey commercial buildings worldwide, typically combined with composite floor decking. We engineer the frame to the loading and code requirements of the specific project.",
+      },
+      {
+        question: "Do you work alongside our own civil or fit-out contractor?",
+        answer:
+          "Yes. We coordinate foundation interfaces with an existing civil contractor and hand the completed frame and envelope over ready for a separate fit-out team where that suits the client's programme.",
+      },
+      {
+        question: "What is included in the quoted price?",
+        answer:
+          "Structural design, fabrication, delivery and site erection of the steel frame and cladding package, following the measurement and calculation stages of our standard process.",
+      },
+    ],
+  },
+  {
+    slug: "residential-buildings",
+    title: "Residential & Other Structures",
+    shortTitle: "Residential",
+    icon: Home,
+    tagline: "Duplex homes, resorts and specialist steel structures",
+    summary:
+      "Duplex and triplex residences, resort buildings, foot-over bridges, emergency steel stairs and lift cores — engineered steel wherever an RCC solution isn't the right fit.",
+    description: [
+      "Steel framing suits residential and specialist structures where earthquake resistance, speed of construction or long-term resale flexibility matter — a duplex or resort building erected in weeks rather than months, on a frame that performs predictably under seismic loading.",
+      "This category also covers the smaller specialist structures every developer eventually needs: foot-over bridges, external emergency stairs and steel lift cores added to an existing building.",
+    ],
+    image: "/images/services/residential.svg",
+    capabilities: [
+      {
+        title: "Duplex & triplex residences",
+        description:
+          "Steel-framed homes designed for a faster build programme and strong earthquake performance relative to unreinforced masonry.",
+      },
+      {
+        title: "Resort & low-rise hospitality structures",
+        description:
+          "Steel frames for resort villas and low-rise hospitality buildings, suited to sites with tight construction windows.",
+      },
+      {
+        title: "Foot-over bridges",
+        description:
+          "Pedestrian steel bridge structures for factory campuses, institutions and public crossings.",
+      },
+      {
+        title: "Emergency stairs & steel lift cores",
+        description:
+          "Bolted external fire-escape stairs and standalone steel lift shafts added to existing buildings without major structural disruption.",
+      },
+    ],
+    benefits: [
+      {
+        title: "Earthquake resistance",
+        description:
+          "Steel's ductility gives it well-documented seismic performance advantages over unreinforced masonry construction.",
+        icon: ShieldCheck,
+      },
+      {
+        title: "Shorter build time",
+        description:
+          "A bolted steel frame reaches lock-up stage in weeks, shortening the return on a residential or hospitality investment.",
+        icon: Timer,
+      },
+      {
+        title: "Add-on friendly",
+        description:
+          "Stairs, lift cores and small bridge structures can be fitted to an existing building with minimal disruption to occupants.",
+        icon: Compass,
+      },
+    ],
+    deliverables: [
+      "Site measurement and structural assessment",
+      "Structural design & calculation per BNBC",
+      "Fabrication of frame, stair and cladding elements",
+      "Foundation and tie-in coordination",
+      "Site erection and quality inspection",
+      "Final inspection and handover",
+    ],
+    stats: [
+      { label: "Engineering turnaround", value: "24 hrs" },
+      { label: "Delivery process", value: "4 stages" },
+      { label: "Structure type", value: "Bolted steel" },
+    ],
+    faqs: [
+      {
+        question: "Is a steel-framed house as durable as an RCC one?",
+        answer:
+          "A properly engineered and maintained steel frame has a long service life and, unlike RCC, does not depend on rebar corrosion protection within the concrete — the trade-off is that cladding and finishes need to be selected and detailed for the local climate.",
+      },
+      {
+        question: "Can you add a lift core or emergency stair to a building we didn't build?",
+        answer:
+          "Yes — this is a common request. We survey the existing structure, design the new steel element to tie into it safely, and erect it with minimal disruption to the building's occupants.",
+      },
+      {
+        question: "Do you build resorts outside Dhaka?",
+        answer:
+          "Yes, we mobilise our fabrication and erection teams to sites across Bangladesh; remoteness mainly affects transport logistics and programme, not feasibility.",
+      },
+    ],
+  },
+  {
+    slug: "agro-based-buildings",
+    title: "Agro-Based Buildings",
+    shortTitle: "Agro-Based",
+    icon: Sprout,
+    tagline: "Purpose-built steel structures for farms, feed and grain",
+    summary:
+      "Poultry sheds, cattle farm structures, grain storage, feed mill and auto rice mill buildings, and auto brick field sheds — steel structures sized for ventilation, hygiene and throughput.",
+    description: [
+      "Agricultural buildings have their own engineering brief: ventilation and roof pitch for livestock welfare, clear spans for feed and grain handling equipment, and a structure that can be washed down and kept hygienic. A generic shed built for storage doesn't automatically meet those needs.",
+      "We size the frame, roof pitch and ventilation openings around the specific operation — poultry, dairy, grain or feed milling — rather than treating every agro-based building as an identical steel box.",
+    ],
+    image: "/images/services/agro.svg",
+    capabilities: [
+      {
+        title: "Poultry shed buildings",
+        description:
+          "Long, naturally ventilated steel sheds with roof pitch and eave detailing suited to poultry-house environmental control.",
+      },
+      {
+        title: "Cow & dairy farm sheds",
+        description:
+          "Open-sided steel structures for livestock housing with clear spans for feeding and milking equipment access.",
+      },
+      {
+        title: "Grain storage sheds",
+        description:
+          "Clear-span steel buildings engineered for bulk grain storage loads and equipment access.",
+      },
+      {
+        title: "Feed mill & auto rice mill sheds",
+        description:
+          "Process-building steel frames sized around milling equipment, conveyor runs and vehicle access.",
+      },
+      {
+        title: "Auto brick field sheds",
+        description:
+          "Steel structures for automatic brick field kilns and drying sheds, sized around the production line and vehicle access.",
+      },
+    ],
+    benefits: [
+      {
+        title: "Built for the operation",
+        description:
+          "Roof pitch, ventilation and bay spacing are sized around the specific agricultural process, not a generic shed template.",
+        icon: Compass,
+      },
+      {
+        title: "Fast to put into production",
+        description:
+          "A bolted steel frame gets a farm or mill building operational well ahead of an equivalent RCC structure.",
+        icon: Timer,
+      },
+      {
+        title: "Low-maintenance structure",
+        description:
+          "Coated steel cladding and framing hold up to wash-down and agricultural environments with straightforward upkeep.",
+        icon: Leaf,
+      },
+    ],
+    deliverables: [
+      "Site measurement and process requirements review",
+      "Structural design & calculation per BNBC",
+      "Frame, purlin and cladding fabrication",
+      "Foundation and floor coordination",
+      "Site erection and quality inspection",
+      "Final inspection and handover",
+    ],
+    stats: [
+      { label: "Engineering turnaround", value: "24 hrs" },
+      { label: "Delivery process", value: "4 stages" },
+      { label: "Structure type", value: "Bolted steel" },
+    ],
+    faqs: [
+      {
+        question: "Do you design around the equipment we're installing?",
+        answer:
+          "Yes — for feed mills and rice mills in particular, bay spacing, door and conveyor openings are set around the equipment layout you supply, rather than a standard building being adapted afterwards.",
+      },
+      {
+        question: "Can a poultry shed be designed for natural ventilation?",
+        answer:
+          "Yes. Roof pitch, ridge venting and eave height are the main levers for natural ventilation in an open-sided poultry shed, and we size these to the shed length and flock density you specify.",
+      },
+      {
+        question: "How do you handle sites in more remote agricultural areas?",
+        answer:
+          "Fabrication happens off-site, so the main logistics consideration is transporting frame sections and arranging a local erection crew — feasible across the districts we work in.",
       },
     ],
   },

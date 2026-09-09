@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ==========================================================================
-   MEGHNA CONSTRUCT — DESIGN TOKENS
+   UNIVERSAL STRUCTURAL STEEL — DESIGN TOKENS
    Industrial Luxury / Modern Enterprise
    ========================================================================== */
 
@@ -72,7 +72,7 @@
   --container-shell: 90rem; /* 1440px */
 
   --radius-card: 20px;
-  --radius-btn: 16px;
+  --radius-btn: 999px;
 
   /* ---- Elevation — engineered, never puffy ---- */
   --shadow-hairline: 0 0 0 1px rgb(15 23 42 / 0.06);
@@ -409,8 +409,17 @@
    THIRD-PARTY OVERRIDES (Swiper / Leaflet / LightGallery)
    ========================================================================== */
 
-.swiper-equipment .swiper-slide {
-  height: auto;
+.hero-carousel .hero-bullet {
+  width: 1.75rem;
+  height: 3px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+.hero-carousel .hero-bullet-active {
+  background: var(--color-accent);
 }
 
 .leaflet-container {

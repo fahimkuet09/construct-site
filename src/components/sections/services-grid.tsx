@@ -20,12 +20,12 @@ export function ServicesGrid() {
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <SectionHeading
               eyebrow="What we build"
-              title="Six capabilities, one delivery model"
-              lead="Design authority and self-performed construction under a single contract — so accountability never falls into the gap between designer and contractor."
+              title="Four categories, one delivery model"
+              lead="Site measurement through to handover under a single contract — so accountability never falls into the gap between design, fabrication and erection."
             />
             <Button asChild variant="outline" size="lg" className="shrink-0">
               <Link href="/services">
-                All capabilities
+                All services
                 <ArrowUpRight
                   className="size-4.5 transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5"
                   aria-hidden

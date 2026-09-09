@@ -4,8 +4,8 @@ import * as React from "react";
 import { defaultLocale, type LanguageCode } from "@/lib/site";
 import { dictionaries, localiseDigits, type TranslationKey } from "@/lib/i18n";
 
-const STORAGE_KEY = "meghna.locale";
-const CHANGE_EVENT = "meghna:locale-change";
+const STORAGE_KEY = "uss.locale";
+const CHANGE_EVENT = "uss:locale-change";
 
 /* ------------------------------------------------------------------ store */
 /**

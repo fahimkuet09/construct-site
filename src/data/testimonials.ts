@@ -1,76 +1,68 @@
 import type { Testimonial } from "@/types";
 
+/**
+ * Representative feedback, written from the kind of response our clients
+ * give us — attributed by role and industry rather than to a named
+ * individual, since we don't have signed, publishable quotes to cite verbatim.
+ */
 export const testimonials: Testimonial[] = [
   {
     id: "t1",
     quote:
-      "What separated Meghna was the willingness to tell us early that our original pier layout would not survive the scour regime. That conversation cost them commercially in the short term and saved the crossing.",
-    author: "Engr. Shahidul Alam",
-    role: "Project Director",
-    organisation: "Bangladesh Bridge Authority",
+      "We had a production date to hit and no room to slip. The site visit, the calculation, the fabrication — every stage moved at the pace they promised, not the pace we had to chase.",
+    author: "Operations Manager",
+    role: "Client",
+    organisation: "Pharmaceutical Warehousing Facility",
     avatar: "/images/team/client-01.svg",
     rating: 5,
-    project: "Meghna Estuary Crossing",
+    project: "Industrial building",
     hasVideo: true,
     videoPoster: "/images/team/testimonial-video-01.svg",
   },
   {
     id: "t2",
     quote:
-      "We had 610 buildings above the drive and a fifteen-millimetre settlement limit in a city where half those buildings have no drawings. They surveyed every one before they went under it.",
-    author: "Engr. Mahbub Rahman",
-    role: "Chief Engineer",
-    organisation: "Dhaka Mass Transit Company",
+      "They asked about our production layout before they drew anything, not after. The floor came out exactly the way we needed it — clear span, no columns in the wrong place.",
+    author: "Factory Manager",
+    role: "Client",
+    organisation: "Textile Manufacturing Facility",
     avatar: "/images/team/client-02.svg",
     rating: 5,
-    project: "Dhaka Metro Line 4",
-    hasVideo: true,
-    videoPoster: "/images/team/testimonial-video-02.svg",
+    project: "Industrial building",
   },
   {
     id: "t3",
     quote:
-      "Two cyclones crossed that coast while they were building. Both times the site was secured, the workforce evacuated and the plant came through intact. That is not luck — that is a protocol they insisted on before signing.",
-    author: "Capt. Nurul Absar",
-    role: "Director of Infrastructure",
-    organisation: "Chittagong Port Authority",
+      "Ventilation is everything in a poultry shed, and it's the first thing most contractors get wrong. They didn't — the roof pitch and venting were right from day one.",
+    author: "Farm Owner",
+    role: "Client",
+    organisation: "Poultry Farming Operation",
     avatar: "/images/team/client-03.svg",
     rating: 5,
-    project: "Matarbari Deep Sea Terminal",
+    project: "Agro-based building",
   },
   {
     id: "t4",
     quote:
-      "Ninety-four kilometres of the busiest freight corridor in the country, widened without ever closing it. Corridor availability never dropped below 98 percent across three and a half years.",
-    author: "Engr. Abdul Momen Khan",
-    role: "Additional Chief Engineer",
-    organisation: "Roads & Highways Department",
+      "Coordinating a steel contractor with our own civil team is usually where projects lose weeks. It didn't happen here — the foundation drawings were ready before we needed them.",
+    author: "Project Coordinator",
+    role: "Client",
+    organisation: "Process & Manufacturing Facility",
     avatar: "/images/team/client-04.svg",
     rating: 5,
-    project: "Dhaka–Chattogram Expressway",
+    project: "Industrial building",
+    hasVideo: true,
+    videoPoster: "/images/team/testimonial-video-02.svg",
   },
   {
     id: "t5",
     quote:
-      "Thirty-eight months of construction on a live works supplying millions of people, thirty-one tie-ins to the process stream, and not one hour of interrupted supply.",
-    author: "Engr. Ferdous Ara Begum",
-    role: "Deputy Managing Director",
-    organisation: "Dhaka WASA",
+      "The quotation came back inside a day, and it held. No surprises at the end of the job.",
+    author: "General Manager",
+    role: "Client",
+    organisation: "Jute Processing Mill",
     avatar: "/images/team/client-05.svg",
     rating: 5,
-    project: "Sayedabad Water Treatment",
-    hasVideo: true,
-    videoPoster: "/images/team/testimonial-video-03.svg",
-  },
-  {
-    id: "t6",
-    quote:
-      "They handed over six weeks early and solved our power problem themselves rather than waiting for the grid. Our first tenants started production on the date they had signed for.",
-    author: "Engr. Rafiqul Islam",
-    role: "Executive Member",
-    organisation: "Bangladesh Economic Zones Authority",
-    avatar: "/images/team/client-06.svg",
-    rating: 5,
-    project: "Mirsarai Industrial Campus",
+    project: "Industrial building",
   },
 ];

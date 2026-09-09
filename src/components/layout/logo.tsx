@@ -47,7 +47,7 @@ export function Logo({
             invert ? "text-white" : "text-heading",
           )}
         >
-          Meghna
+          Universal
         </span>
         <span
           className={cn(
@@ -55,7 +55,7 @@ export function Logo({
             invert ? "text-white/55" : "text-muted",
           )}
         >
-          Construct
+          Structural Steel
         </span>
       </span>
     </Link>

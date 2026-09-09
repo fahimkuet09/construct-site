@@ -18,8 +18,7 @@ export function ClientsMarquee() {
     >
       <div className="container-shell">
         <p className="text-center font-heading text-[0.75rem] font-bold tracking-[0.16em] text-muted uppercase">
-          Trusted by the authorities and operators who commission critical
-          infrastructure
+          Trusted by manufacturers and developers across Bangladesh
         </p>
       </div>
 

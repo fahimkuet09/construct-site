@@ -4,18 +4,18 @@ import { NewsExplorer } from "@/components/sections/news-explorer";
 import { CtaBand } from "@/components/sections/cta-band";
 
 export const metadata: Metadata = {
-  title: "Newsroom",
+  title: "News",
   description:
-    "Project milestones, engineering method notes and company announcements from Meghna Construct.",
+    "Engineering explainers, process notes and company announcements from Universal Structural Steel Ltd.",
 };
 
 export default function NewsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Newsroom"
-        title="What our teams are building and learning"
-        lead="Project milestones, method notes and engineering analysis — written by the people doing the work rather than by a communications agency."
+        eyebrow="News"
+        title="Notes from the workshop and the site"
+        lead="Engineering explainers and company updates — written by the team doing the work."
         image="/images/news/news-01.svg"
         crumbs={[{ label: "Home", href: "/" }, { label: "News" }]}
       />
@@ -23,9 +23,9 @@ export default function NewsPage() {
       <NewsExplorer />
 
       <CtaBand
-        eyebrow="Stay informed"
-        title="Get the quarterly briefing"
-        body="Project case studies, method notes and engineering analysis, four times a year. No marketing, no sales follow-up."
+        eyebrow="Planning a project?"
+        title="Start with a site visit"
+        body="Send us the rough size, use and site location, and we'll arrange a site visit — the first step in our four-stage process."
         primary={{ label: "Talk to our team", href: "/contact" }}
         secondary={{ label: "See our projects", href: "/projects" }}
       />

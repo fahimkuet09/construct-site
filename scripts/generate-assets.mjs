@@ -46,6 +46,8 @@ const PALETTES = {
   industrial: ["#0c111c", "#1e293b", "#3b4c66"],
   earth: ["#141210", "#2b2418", "#4a3b22"],
   light: ["#e6ecf3", "#d3dde8", "#c2cfdd"],
+  agro: ["#0b1710", "#1c3524", "#2f5738"],
+  steel: ["#0a1119", "#16283f", "#255177"],
 };
 
 const KIND_PALETTE = {
@@ -206,6 +208,8 @@ const MOTIFS = {
   industrial: motifIndustrial,
   crane: motifCrane,
   earth: motifRoad,
+  agro: motifIndustrial,
+  steel: motifIndustrial,
 };
 
 /* ---------- the main "photograph" placeholder --------------------------- */
@@ -215,7 +219,7 @@ function scene({ w, h, seed, palette = "bridge", motif, label, sub }) {
   const m = MOTIFS[motif ?? palette] ?? motifCableStay;
   const id = seed.replace(/[^a-z0-9]/gi, "");
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${label ?? "Meridian Construct"}">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${label ?? "Universal Structural Steel"}">
   <defs>
     <linearGradient id="g${id}" x1="0" y1="0" x2="0.35" y2="1">
       <stop offset="0%" stop-color="${c2}"/>
@@ -303,19 +307,18 @@ const PORT = { w: 1200, h: 1500 };
 const WIDE = { w: 2400, h: 1350 };
 const THUMB = { w: 1200, h: 900 };
 
+
 const PROJECTS = [
-  ["meghna-estuary", "bridge"],
-  ["dhaka-metro", "tunnel"],
-  ["matarbari", "marine"],
-  ["dhaka-ctg", "highway"],
-  ["sayedabad", "energy"],
-  ["mirsarai", "industrial"],
-  ["ctg-rail", "highway"],
-  ["kaptai", "energy"],
-  ["buriganga", "bridge"],
-  ["payra-wind", "marine"],
-  ["kamalapur", "industrial"],
-  ["teesta-solar", "energy"],
+  ["navana", "steel"],
+  ["amber", "industrial"],
+  ["soleman-khan", "industrial"],
+  ["sigma-oil", "steel"],
+  ["nourish", "agro"],
+  ["qsl-s", "industrial"],
+  ["windy", "steel"],
+  ["uk-dyeing", "industrial"],
+  ["standard-group", "steel"],
+  ["silver-line", "industrial"],
 ];
 
 let count = 0;
@@ -324,19 +327,19 @@ const emit = (rel, svg) => {
   count++;
 };
 
-/* Projects: hero, thumb, 6 gallery frames */
+/* Projects: hero, thumb, 4 gallery frames (matches gallery() in projects.ts) */
 for (const [base, palette] of PROJECTS) {
   emit(
     `images/projects/${base}-hero.svg`,
-    scene({ ...WIDE, seed: `${base}-hero`, palette }),
+    scene({ ...WIDE, seed: `${base}-hero`, palette, motif: "crane" }),
   );
   emit(
     `images/projects/${base}-thumb.svg`,
     scene({ ...THUMB, seed: `${base}-thumb`, palette }),
   );
-  const motifs = [palette, "crane", palette, "crane", palette, palette];
-  for (let i = 1; i <= 6; i++) {
-    const portrait = i === 3 || i === 5;
+  const motifs = [palette, "crane", palette, palette];
+  for (let i = 1; i <= 4; i++) {
+    const portrait = i === 3;
     emit(
       `images/projects/${base}-0${i}.svg`,
       scene({
@@ -349,54 +352,41 @@ for (const [base, palette] of PROJECTS) {
   }
 }
 
-/* Before / after sliders */
-for (const [base, palette] of [
-  ["meghna-estuary", "bridge"],
-  ["matarbari", "marine"],
-]) {
-  emit(
-    `images/projects/${base}-before.svg`,
-    scene({
-      ...LAND,
-      seed: `${base}-before`,
-      palette: "earth",
-      motif: palette,
-    }),
-  );
-  emit(
-    `images/projects/${base}-after.svg`,
-    scene({ ...LAND, seed: `${base}-after`, palette }),
-  );
-}
-
 /* Services */
 const SERVICE_IMAGES = [
-  ["bridges", "bridge", "Bridges & Viaducts"],
-  ["highways", "highway", "Highways & Rail"],
-  ["tunnelling", "tunnel", "Tunnelling & Underground"],
-  ["marine", "marine", "Marine & Ports"],
-  ["water-energy", "energy", "Water & Energy"],
-  ["industrial", "industrial", "Industrial & Buildings"],
+  ["industrial", "industrial", "Industrial Buildings"],
+  ["commercial", "steel", "Commercial Buildings"],
+  ["residential", "bridge", "Residential & Other"],
+  ["agro", "agro", "Agro-Based Buildings"],
 ];
 for (const [file, palette, label] of SERVICE_IMAGES) {
   emit(
     `images/services/${file}.svg`,
-    scene({ ...LAND, seed: `svc-${file}`, palette, label, sub: "Capability" }),
+    // Every service is a steel-frame building, so the skyline/portal-frame
+    // motif applies across the board — an explicit motif keeps that true
+    // even for palettes (like "bridge") whose own default motif is a
+    // cable-stay diagram, which has nothing to do with any of these.
+    scene({
+      ...LAND,
+      seed: `svc-${file}`,
+      palette,
+      motif: "industrial",
+      label,
+      sub: "Service",
+    }),
   );
 }
 emit(
   "images/services/nav-featured.svg",
-  scene({ w: 800, h: 600, seed: "nav-featured", palette: "bridge", motif: "crane" }),
+  scene({ w: 800, h: 600, seed: "nav-featured", palette: "steel", motif: "industrial" }),
 );
 
-/* Process steps */
+/* Process steps (measurement, calculation, execution, handover) */
 const PROCESS = [
-  ["planning", "highway", "Planning"],
-  ["design", "bridge", "Design"],
-  ["engineering", "industrial", "Engineering"],
-  ["construction", "bridge", "Construction"],
-  ["inspection", "tunnel", "Inspection"],
-  ["completion", "marine", "Completion"],
+  ["planning", "highway", "Measurement"],
+  ["design", "steel", "Engineering & Calculation"],
+  ["construction", "industrial", "Fabrication & Execution"],
+  ["completion", "agro", "Final Inspection & Handover"],
 ];
 for (const [file, palette, label] of PROCESS) {
   emit(
@@ -412,74 +402,24 @@ for (const [file, palette, label] of PROCESS) {
   );
 }
 
-/* Hero stills + poster */
-emit(
-  "images/hero/hero-poster.svg",
-  scene({
-    w: 2560,
-    h: 1440,
-    seed: "hero-poster",
-    palette: "bridge",
-    motif: "crane",
-  }),
-);
-emit(
-  "images/hero/hero-fallback.svg",
-  scene({ w: 2560, h: 1440, seed: "hero-fallback", palette: "bridge" }),
-);
-emit(
-  "images/hero/og-default.svg",
-  scene({
-    w: 1200,
-    h: 630,
-    seed: "og",
-    palette: "bridge",
-    label: "Meridian Construct",
-    sub: "Civil engineering since 1974",
-  }),
-);
-
-/* About / history */
-const HISTORY = [
-  ["1974", "industrial"],
-  ["1983", "bridge"],
-  ["1992", "tunnel"],
-  ["2001", "marine"],
-  ["2009", "highway"],
-  ["2016", "industrial"],
-  ["2021", "energy"],
-  ["2025", "bridge"],
-];
-for (const [year, palette] of HISTORY) {
-  emit(
-    `images/about/history-${year}.svg`,
-    scene({
-      w: 1200,
-      h: 900,
-      seed: `hist-${year}`,
-      palette,
-      label: year,
-      sub: "Milestone",
-    }),
-  );
-}
+/* About */
 emit(
   "images/about/about-hero.svg",
   scene({ ...WIDE, seed: "about-hero", palette: "industrial", motif: "crane" }),
 );
 emit(
   "images/about/mission.svg",
-  scene({ ...PORT, seed: "mission", palette: "bridge", label: "Our mission" }),
+  scene({ ...PORT, seed: "mission", palette: "steel", label: "Our mission" }),
 );
 emit(
   "images/about/values.svg",
-  scene({ ...LAND, seed: "values", palette: "tunnel", label: "Our values" }),
+  scene({ ...LAND, seed: "values", palette: "industrial", label: "Our values" }),
 );
 
-/* Careers / offices / news */
+/* Careers / office / news */
 emit(
   "images/careers/careers-hero.svg",
-  scene({ ...WIDE, seed: "careers-hero", palette: "highway", motif: "crane" }),
+  scene({ ...WIDE, seed: "careers-hero", palette: "steel", motif: "crane" }),
 );
 emit(
   "images/careers/culture-01.svg",
@@ -487,132 +427,94 @@ emit(
 );
 emit(
   "images/careers/culture-02.svg",
-  scene({ ...PORT, seed: "culture-02", palette: "bridge", label: "In design" }),
+  scene({ ...PORT, seed: "culture-02", palette: "steel", label: "In design" }),
 );
 emit(
   "images/careers/culture-03.svg",
-  scene({ ...LAND, seed: "culture-03", palette: "tunnel", label: "Underground" }),
+  scene({ ...LAND, seed: "culture-03", palette: "agro", label: "On site" }),
 );
 emit(
   "images/office/office-hero.svg",
   scene({ ...WIDE, seed: "office-hero", palette: "industrial" }),
 );
-emit(
-  "images/office/london.svg",
-  scene({ ...LAND, seed: "office-london", palette: "industrial", label: "London" }),
-);
 
-for (let i = 1; i <= 6; i++) {
-  const p = ["bridge", "tunnel", "energy", "highway", "marine", "industrial"][i - 1];
+const NEWS_PALETTES = ["industrial", "steel", "agro", "highway"];
+for (let i = 1; i <= 4; i++) {
   emit(
     `images/news/news-0${i}.svg`,
-    scene({ ...LAND, seed: `news-0${i}`, palette: p }),
+    scene({ ...LAND, seed: `news-0${i}`, palette: NEWS_PALETTES[i - 1] }),
   );
 }
 
-/* Equipment */
+/* Fabrication capability (equipment slider) */
 const EQUIP = [
-  ["tbm", "tunnel", "Earth Pressure Balance TBM"],
-  ["crawler-crane", "bridge", "Heavy Lift Crawler Crane"],
-  ["jack-up-barge", "marine", "Self-Elevating Jack-Up Barge"],
-  ["form-traveller", "bridge", "Form Traveller"],
-  ["dredger", "marine", "Cutter Suction Dredger"],
-  ["launching-gantry", "bridge", "Launching Gantry"],
-  ["spmt", "highway", "Modular Transporter"],
-  ["diaphragm-rig", "industrial", "Diaphragm Wall Rig"],
+  ["cnc-cutting", "steel"],
+  ["roll-forming", "industrial"],
+  ["welding", "steel"],
+  ["paint-line", "industrial"],
+  ["erection-crew", "highway"],
+  ["transport", "steel"],
 ];
-// Equipment cards overlay their own category badge and fleet count, so the
-// artwork itself carries no label.
 for (const [file, palette] of EQUIP) {
   emit(
     `images/equipment/${file}.svg`,
-    scene({
-      w: 1400,
-      h: 1050,
-      seed: `eq-${file}`,
-      palette,
-      motif: file.includes("crane") || file === "launching-gantry" ? "crane" : undefined,
-    }),
+    scene({ w: 1400, h: 1050, seed: `eq-${file}`, palette }),
   );
 }
 
-/* People */
-const LEADERS = ["AO", "HL", "MH", "TF", "YT", "RW"];
-LEADERS.forEach((ini, i) =>
-  emit(`images/team/leader-0${i + 1}.svg`, avatar(`leader-${i}`, ini)),
-);
-const CLIENTS_INI = ["PR", "KB", "FA", "SB", "EW", "MD"];
+/* People — five avatars, matching the five testimonial entries */
+emit("images/team/leader-01.svg", avatar("leader-0", "SM"));
+const CLIENTS_INI = ["OM", "FM", "FO", "PC", "GM"];
 CLIENTS_INI.forEach((ini, i) =>
   emit(`images/team/client-0${i + 1}.svg`, avatar(`client-${i}`, ini)),
 );
-emit("images/team/author-01.svg", avatar("author-1", "MC"));
-emit("images/team/author-02.svg", avatar("author-2", "PT"));
-for (let i = 1; i <= 3; i++) {
+emit("images/team/author-01.svg", avatar("author-1", "USS"));
+for (let i = 1; i <= 2; i++) {
   emit(
     `images/team/testimonial-video-0${i}.svg`,
-    scene({
-      ...LAND,
-      seed: `vid-0${i}`,
-      palette: ["bridge", "tunnel", "energy"][i - 1],
-    }),
+    scene({ ...LAND, seed: `vid-0${i}`, palette: ["industrial", "steel"][i - 1] }),
   );
 }
 
-/* Client wordmarks */
+/* Client wordmarks — real project clients, in the order data/company.ts lists them */
 const CLIENT_NAMES = [
-  "Department for Transport",
-  "Metropolitan Transit Authority",
-  "Gulf Ports Authority",
-  "National Grid Ventures",
-  "Regional Water Authority",
-  "National Railways",
-  "City Transit Board",
-  "Atlantic Renewables",
-  "Northgate Industrial",
-  "National Roads Directorate",
-  "Metropolitan Highways",
-  "Regional Energy Authority",
+  "Navana Pharmaceuticals Ltd.",
+  "Amber Group",
+  "Soleman Khan Jute Mills Ltd.",
+  "Sigma Oil Factory",
+  "Nourish Poultry",
+  "Windy Group",
+  "Universal Knitting and Dyeing Ltd.",
+  "Standard Group",
+  "Silver Line Composite and Textile Mills Ltd.",
+  "QSL.S",
 ];
 CLIENT_NAMES.forEach((n, i) =>
   emit(`images/logos/clients/client-${String(i + 1).padStart(2, "0")}.svg`, wordmark(n)),
 );
 
-const PARTNER_NAMES = [
-  "Institution of Civil Engineers",
-  "Considerate Constructors",
-  "Build UK",
-  "FIDIC",
-  "Global Infrastructure Hub",
-  "Science Based Targets",
-];
-PARTNER_NAMES.forEach((n, i) =>
-  emit(`images/logos/partners/partner-0${i + 1}.svg`, wordmark(n)),
-);
-
-/* Certifications */
-const CERTS = [
-  ["ISO 9001", "Quality"],
-  ["ISO 14001", "Environment"],
-  ["ISO 45001", "Safety"],
-  ["ISO 19650", "Information"],
-  ["ISO 27001", "Security"],
-  ["ISO 50001", "Energy"],
-];
-CERTS.forEach(([std, name]) =>
-  emit(
-    `images/logos/certifications/${std.toLowerCase().replace(/\s+/g, "-")}.svg`,
-    certBadge(std, name),
-  ),
-);
-
 /* Brand mark + favicon */
 emit(
   "icons/logo-mark.svg",
-  `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-label="Meridian Construct">
+  `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-label="Universal Structural Steel">
   <rect width="48" height="48" rx="11" fill="#0F4C81"/>
   <path d="M10 34 L19 17 L24 26 L29 17 L38 34" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
   <circle cx="24" cy="26" r="2.6" fill="#F59E0B"/>
 </svg>`,
+);
+
+/* OG default image */
+emit(
+  "images/hero/og-default.svg",
+  scene({
+    w: 1200,
+    h: 630,
+    seed: "og",
+    palette: "steel",
+    motif: "industrial",
+    label: "Universal Structural Steel",
+    sub: "Concept to construction, since 2017",
+  }),
 );
 
 console.log(`Generated ${count} placeholder assets.`);

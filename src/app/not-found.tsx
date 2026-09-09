@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { site } from "@/lib/site";
 
 const routes = [
-  { label: "Projects", href: "/projects", description: "The full portfolio, filterable by sector" },
-  { label: "Capabilities", href: "/services", description: "The six disciplines we deliver" },
-  { label: "About", href: "/about", description: "History, leadership and certifications" },
-  { label: "Careers", href: "/careers", description: "Open positions across every division" },
+  { label: "Projects", href: "/projects", description: "The full portfolio, filterable by category" },
+  { label: "Services", href: "/services", description: "The four building categories we deliver" },
+  { label: "About", href: "/about", description: "Mission, leadership and engineering standards" },
+  { label: "Careers", href: "/careers", description: "Open positions at Universal Structural Steel" },
 ];
 
 export default function NotFound() {

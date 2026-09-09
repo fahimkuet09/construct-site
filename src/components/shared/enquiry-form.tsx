@@ -241,7 +241,7 @@ export function EnquiryForm({ className }: { className?: string }) {
         <div className="flex items-start gap-3">
           <Checkbox
             id="consent"
-            aria-label="I am happy for Meghna Construct to use these details to respond to my enquiry"
+            aria-label="I am happy for Universal Structural Steel Ltd. to use these details to respond to my enquiry"
             checked={Boolean(consent)}
             onCheckedChange={(checked) =>
               setValue("consent", checked === true ? true : (false as never), {
@@ -251,8 +251,8 @@ export function EnquiryForm({ className }: { className?: string }) {
             aria-describedby={errors.consent ? "consent-error" : undefined}
           />
           <Label htmlFor="consent" className="font-body text-[0.875rem] leading-relaxed font-normal text-body">
-            I am happy for Meghna Construct to use these details to respond to
-            my enquiry, in line with the privacy notice.
+            I am happy for Universal Structural Steel Ltd. to use these details
+            to respond to my enquiry, in line with the privacy notice.
           </Label>
         </div>
         <span id="consent-error">

@@ -49,8 +49,8 @@ export function ProcessTimeline() {
             invert
             align="center"
             eyebrow="How we deliver"
-            title="Six stages, one accountable team"
-            lead="Every project runs the same governed sequence — from the constraint that decides everything, through to the first full operating cycle after handover."
+            title="Four stages, one accountable team"
+            lead="Every project runs the same sequence — from the first site visit through to a finished structure signed over to the client."
             className="mx-auto"
           />
         </Reveal>
@@ -61,7 +61,7 @@ export function ProcessTimeline() {
             role="tablist"
             aria-label="Construction process stages"
             onKeyDown={onKeyDown}
-            className="relative mt-16 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:mt-20 lg:grid-cols-6 lg:gap-0"
+            className="relative mt-16 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:mt-20 lg:grid-cols-4 lg:gap-0"
           >
             {/* Connecting datum line */}
             <span

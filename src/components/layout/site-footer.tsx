@@ -1,10 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { footerNav, legalLinks } from "@/data/navigation";
-import { certifications } from "@/data/company";
 import { site } from "@/lib/site";
 import { Logo } from "./logo";
 import { NewsletterForm } from "./newsletter-form";
@@ -48,8 +46,8 @@ export function SiteFooter() {
                 {t("footer.briefingTitle")}
               </h2>
               <p className="mt-4 max-w-[52ch] text-[1rem] leading-relaxed text-white/60">
-                Project case studies, method notes and engineering analysis from
-                our delivery teams. No marketing, no sales follow-up.
+                New projects, engineering notes and company updates from our
+                team. No marketing, no sales follow-up.
               </p>
             </div>
             <div>
@@ -68,9 +66,9 @@ export function SiteFooter() {
             <div className="max-w-sm">
               <Logo invert />
               <p className="mt-6 text-[0.9375rem] leading-relaxed text-white/60">
-                A Bangladeshi civil engineering and infrastructure contractor.
-                Delivering river crossings, corridors, tunnels, ports and utilities
-                across Bangladesh since {site.founded}.
+                A Dhaka-based structural steel company. Designing, fabricating and
+                erecting pre-engineered steel buildings across Bangladesh since{" "}
+                {site.founded}.
               </p>
 
               <address className="mt-7 flex flex-col gap-3.5 not-italic">
@@ -80,6 +78,13 @@ export function SiteFooter() {
                 >
                   <Phone className="mt-0.5 size-4 shrink-0 text-accent" aria-hidden />
                   {site.phone}
+                </a>
+                <a
+                  href={`tel:${site.phoneSecondaryHref}`}
+                  className="group flex items-start gap-3 text-[0.9375rem] transition-colors hover:text-white"
+                >
+                  <Phone className="mt-0.5 size-4 shrink-0 text-accent" aria-hidden />
+                  {site.phoneSecondary}
                 </a>
                 <a
                   href={`mailto:${site.email}`}
@@ -107,32 +112,16 @@ export function SiteFooter() {
           </div>
         </div>
 
-        {/* ---------------------------------------------- certifications */}
+        {/* ------------------------------------------------- standards */}
         <div className="container-shell border-t border-white/10 py-9">
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
             <p className="font-heading text-[0.6875rem] font-bold tracking-[0.16em] text-white/45 uppercase">
               {t("footer.certified")}
             </p>
-            <ul className="flex flex-wrap items-center gap-x-8 gap-y-4">
-              {certifications.map((cert) => (
-                <li
-                  key={cert.id}
-                  className="flex items-center gap-2.5"
-                  title={`${cert.standard} — ${cert.name}`}
-                >
-                  <Image
-                    src={cert.logo}
-                    alt=""
-                    width={34}
-                    height={34}
-                    className="opacity-55 brightness-0 invert"
-                  />
-                  <span className="font-heading text-[0.8125rem] font-bold text-white/55">
-                    {cert.standard}
-                  </span>
-                </li>
-              ))}
-            </ul>
+            <p className="text-[0.8125rem] text-white/50">
+              Structural design engineered to Bangladesh National Building Code
+              (BNBC) &middot; Concept to construction under one accountable team
+            </p>
           </div>
         </div>
 

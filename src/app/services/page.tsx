@@ -4,6 +4,14 @@ import Image from "next/image";
 import { ArrowUpRight, Check } from "lucide-react";
 import { services } from "@/data/services";
 import { processSteps } from "@/data/process";
+import type { ProjectSector } from "@/types";
+
+const sectorBySlug: Record<string, ProjectSector> = {
+  "industrial-buildings": "Industrial Buildings",
+  "commercial-buildings": "Commercial Buildings",
+  "residential-buildings": "Residential & Other",
+  "agro-based-buildings": "Agro-Based Buildings",
+};
 import { PageHero } from "@/components/shared/page-hero";
 import { FaqSection } from "@/components/shared/faq-section";
 import { CtaBand } from "@/components/sections/cta-band";
@@ -12,36 +20,36 @@ import { SectionHeading } from "@/components/ui";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
 
 export const metadata: Metadata = {
-  title: "Capabilities",
+  title: "Services",
   description:
-    "Bridges, highways and rail, tunnelling, marine and ports, water and energy, and industrial facilities — delivered design-and-build under a single contract.",
+    "Industrial, commercial, residential and agro-based steel buildings — designed, fabricated and erected under a single contract.",
 };
 
 const generalFaqs = [
   {
-    question: "Do you take on design-and-build contracts?",
+    question: "Do you handle design and construction under one contract?",
     answer:
-      "Yes, and it is our preferred model. We hold in-house design authority across structures, geotechnics and process engineering, which removes the interface risk that sits between designer and contractor on traditional contracts.",
+      "Yes — that's the whole point of the process. Site measurement, structural design, fabrication and site erection are delivered by the same team, so there's a single point of accountability from the first visit to handover.",
   },
   {
-    question: "What contract size do you work at?",
+    question: "What size of project do you take on?",
     answer:
-      "Our typical range is ৳500 crore to ৳25,000 crore. We will consider smaller values where the engineering is genuinely complex or the work forms part of a longer programme with an existing client.",
+      "From a single agro-based shed to a multi-bay industrial facility. Send us the rough dimensions and use, and we'll tell you honestly whether it's a fit.",
   },
   {
-    question: "How much of the work do you self-perform?",
+    question: "Do you handle foundations as well as the steel structure?",
     answer:
-      "We self-perform the structural core of every project — piling, concrete, steel erection, tunnelling and marine works — using directly employed operatives and owned plant. Specialist packages are subcontracted, but never the critical path.",
+      "We design and supply the foundation loading for your civil contractor, and coordinate directly with them. Foundation and floor slab construction is usually run by a separate civil contractor working alongside us.",
   },
   {
-    question: "Can you work across multiple sectors on one programme?",
+    question: "Can a project combine more than one building type?",
     answer:
-      "Regularly. Interface points between disciplines are where most programmes slip, so holding several scopes under one delivery team removes coordination risk rather than distributing it.",
+      "Yes — an industrial site with an attached office block, for example. We size and coordinate each part of the structure together rather than treating them as separate jobs.",
   },
   {
-    question: "What forms of contract do you work under?",
+    question: "How fast is the engineering turnaround?",
     answer:
-      "FIDIC Red, Yellow and Silver Book, Bangladesh PPR item-rate and design-and-build contracts, and PPP arrangements. We have delivered schemes financed by the World Bank, ADB, JICA and the Government of Bangladesh.",
+      "Structural calculation and a firm quotation are typically returned within 24 hours of the site visit, so you're not waiting weeks for a number to plan around.",
   },
 ];
 
@@ -49,11 +57,11 @@ export default function ServicesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Capabilities"
-        title="Six capabilities, delivered under one accountable contract"
-        lead="From estuary crossings to metro tunnels, deep-water quays to economic zone campuses — with the design authority and the plant to deliver them ourselves."
-        image="/images/services/bridges.svg"
-        crumbs={[{ label: "Home", href: "/" }, { label: "Capabilities" }]}
+        eyebrow="Services"
+        title="Four building categories, one accountable contract"
+        lead="Industrial sheds to agro-based structures — with the engineering, fabrication and erection team to deliver them ourselves."
+        image="/images/services/industrial.svg"
+        crumbs={[{ label: "Home", href: "/" }, { label: "Services" }]}
       />
 
       {/* ========================================= detailed sections */}
@@ -78,7 +86,7 @@ export default function ServicesPage() {
                     <div className="relative aspect-[4/3] overflow-hidden rounded-[var(--radius-card)] border border-line bg-primary-950">
                       <Image
                         src={service.image}
-                        alt={`${service.title} — a Meghna project under construction`}
+                        alt={`${service.title} — a Universal Structural Steel project under construction`}
                         fill
                         sizes="(max-width: 1024px) 100vw, 620px"
                         className="object-cover"
@@ -164,9 +172,7 @@ export default function ServicesPage() {
                       <Button asChild variant="outline" size="lg">
                         <Link
                           href={`/projects?sector=${encodeURIComponent(
-                            service.title === "Tunnelling & Underground"
-                              ? "Tunnelling"
-                              : service.title,
+                            sectorBySlug[service.slug] ?? service.title,
                           )}`}
                         >
                           Related projects
@@ -189,9 +195,9 @@ export default function ServicesPage() {
             <SectionHeading
               invert
               align="center"
-              eyebrow="Why design-and-build"
-              title="One contract removes the gap where projects usually fail"
-              lead="On a traditional contract, the space between designer and contractor is where programme, cost and buildability quietly leak. We close it by holding both."
+              eyebrow="Why one contract"
+              title="One accountable team removes the gap where projects usually go wrong"
+              lead="On a split contract, the space between designer, fabricator and erector is where programme and quality quietly leak. We close it by holding all three."
               className="mx-auto"
             />
           </Reveal>
@@ -204,27 +210,27 @@ export default function ServicesPage() {
             {[
               {
                 title: "No interface risk",
-                body: "Design and construction sit inside one accountable team, so buildability is resolved before it becomes a variation.",
+                body: "Design, fabrication and erection sit inside one team, so a buildability issue is resolved before it reaches site.",
               },
               {
-                title: "Programme built from first principles",
-                body: "Sequences are modelled in 4D and resourced honestly before we commit to a date, not reverse-engineered from one.",
+                title: "Fast, honest calculation",
+                body: "Structural design and a firm quotation are typically returned within 24 hours — not weeks of back-and-forth.",
               },
               {
-                title: "Owned plant, owned dates",
-                body: "TBMs, marine vessels, gantries and cranes are ours. The programme answers to the project, not the charter market.",
+                title: "In-house fabrication",
+                body: "Cutting, roll-forming, welding and coating happen in our own workshop, not a third-party subcontractor's queue.",
               },
               {
-                title: "Independent checking",
-                body: "Category III design checks are commissioned by us and reported directly to the client, not filtered through us.",
+                title: "Our own erection crews",
+                body: "The team that bolts the frame together on site works for us — the programme answers to the project.",
               },
               {
-                title: "Evidence at handover",
-                body: "Assets transfer with as-built models, test records and structured asset data — not a box of drawings.",
+                title: "Checked before handover",
+                body: "Every structure is inspected against its approved drawings before it's signed over — not assumed correct.",
               },
               {
-                title: "Support past completion",
-                body: "Our engineers remain on site through the first full operating cycle, under standard terms.",
+                title: "One coordinated set of drawings",
+                body: "Foundation loading and anchor bolt information are issued directly to your civil contractor from our own design.",
               },
             ].map((item) => (
               <RevealItem
@@ -253,15 +259,15 @@ export default function ServicesPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Our process"
-              title="The same governed sequence on every contract"
-              lead="Whatever the sector, delivery runs through six stages with a named owner, a defined deliverable and an acceptance criterion for each."
+              title="The same four stages on every project"
+              lead="Whatever the building type, delivery runs through the same sequence — measurement, calculation, fabrication and erection, then final inspection."
             />
           </Reveal>
 
           <RevealGroup
             as="ul"
             stagger={0.06}
-            className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8"
+            className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8"
           >
             {processSteps.map((step) => {
               const Icon = step.icon;

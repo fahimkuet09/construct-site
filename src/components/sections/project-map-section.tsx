@@ -1,9 +1,10 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { Globe2, Layers, MapPin, Users } from "lucide-react";
+import { Building2, Layers, MapPin, Calendar } from "lucide-react";
 import { projects } from "@/data/projects";
 import { pinsFromProjects } from "@/lib/map";
+import { impactStats } from "@/data/company";
 import { SectionHeading, Skeleton } from "@/components/ui";
 import { Reveal } from "@/components/motion/reveal";
 import { Counter } from "@/components/motion/counter";
@@ -22,12 +23,8 @@ const ProjectMap = dynamic(
   },
 );
 
-const mapStats = [
-  { icon: Globe2, value: 61, suffix: "", label: "Districts" },
-  { icon: Layers, value: 1140, suffix: "+", label: "Projects delivered" },
-  { icon: MapPin, value: 7, suffix: "", label: "Regional offices" },
-  { icon: Users, value: 12800, suffix: "+", label: "People" },
-];
+const mapIcons = [Building2, Layers, MapPin, Calendar];
+const mapStats = impactStats.map((stat, i) => ({ ...stat, icon: mapIcons[i] }));
 
 export function ProjectMapSection() {
   const pins = pinsFromProjects(projects);
@@ -38,15 +35,15 @@ export function ProjectMapSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Where we work"
-            title="Sixty-one districts, one delivery standard"
-            lead="Every marker is a live or completed contract. Wherever we hold no permanent presence, a delivery team mobilises from the nearest regional office."
+            title="Across Dhaka's industrial belt, and beyond"
+            lead="Every marker is a live or completed project. Our fabrication and erection teams mobilise to sites across Bangladesh."
           />
         </Reveal>
 
         <Reveal delay={0.08}>
           <div className="mt-12 overflow-hidden rounded-[var(--radius-card)] border border-line shadow-[var(--shadow-raise)] lg:mt-14">
             <div className="h-[26rem] w-full sm:h-[32rem] lg:h-[38rem]">
-              <ProjectMap pins={pins} center={[23.7, 90.4]} zoom={7} />
+              <ProjectMap pins={pins} center={[23.78, 90.42]} zoom={10} />
             </div>
 
             <dl className="grid grid-cols-2 gap-px border-t border-line bg-line lg:grid-cols-4">

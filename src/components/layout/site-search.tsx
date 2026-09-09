@@ -16,14 +16,21 @@ import { cn } from "@/lib/utils";
 import { useLocale } from "@/components/locale-provider";
 
 const SUGGESTIONS = [
-  "Tunnelling",
-  "Bridges",
-  "Meghna Estuary",
-  "Graduate programme",
-  "Offshore wind",
+  "Industrial buildings",
+  "Agro-based buildings",
+  "Navana Pharmaceuticals",
+  "Careers",
+  "Our process",
 ];
 
-export function SiteSearch({ invert = false }: { invert?: boolean }) {
+export function SiteSearch({
+  invert = false,
+  trigger,
+}: {
+  invert?: boolean;
+  /** Replaces the default icon-button trigger, e.g. a hero search bar. */
+  trigger?: React.ReactNode;
+}) {
   const router = useRouter();
   const { t } = useLocale();
   const [open, setOpen] = React.useState(false);
@@ -91,18 +98,20 @@ export function SiteSearch({ invert = false }: { invert?: boolean }) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <button
-          type="button"
-          aria-label={t("search.open")}
-          className={cn(
-            "flex size-11 cursor-pointer items-center justify-center rounded-full transition-colors",
-            invert
-              ? "text-white/80 hover:bg-white/12 hover:text-white"
-              : "text-body hover:bg-primary-50 hover:text-primary",
-          )}
-        >
-          <Search className="size-[1.15rem]" strokeWidth={2.2} />
-        </button>
+        {trigger ?? (
+          <button
+            type="button"
+            aria-label={t("search.open")}
+            className={cn(
+              "flex size-11 cursor-pointer items-center justify-center rounded-full transition-colors",
+              invert
+                ? "text-white/80 hover:bg-white/12 hover:text-white"
+                : "text-body hover:bg-primary-50 hover:text-primary",
+            )}
+          >
+            <Search className="size-[1.15rem]" strokeWidth={2.2} />
+          </button>
+        )}
       </DialogTrigger>
 
       <DialogContent

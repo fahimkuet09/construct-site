@@ -1,14 +1,12 @@
 import type { LucideIcon } from "lucide-react";
 
 export type ProjectSector =
-  | "Bridges & Viaducts"
-  | "Highways & Rail"
-  | "Tunnelling"
-  | "Marine & Ports"
-  | "Water & Energy"
-  | "Industrial & Buildings";
+  | "Industrial Buildings"
+  | "Commercial Buildings"
+  | "Residential & Other"
+  | "Agro-Based Buildings";
 
-export type ProjectStatus = "Completed" | "In Progress" | "Handover";
+export type ProjectStatus = "Completed" | "Ongoing";
 
 export interface ProjectStat {
   label: string;
@@ -38,9 +36,6 @@ export interface Project {
   location: string;
   country: string;
   coordinates: [number, number];
-  year: string;
-  durationMonths: number;
-  contractValueCrore: number;
   summary: string;
   overview: string[];
   heroImage: string;
@@ -51,9 +46,7 @@ export interface Project {
   solutions: { title: string; body: string }[];
   phases: ProjectPhase[];
   gallery: GalleryImage[];
-  beforeAfter?: { before: string; after: string; label: string };
   featured?: boolean;
-  awards?: string[];
 }
 
 export interface ServiceCapability {
@@ -147,6 +140,10 @@ export interface Leader {
   name: string;
   role: string;
   image: string;
+  /** A short greeting line, shown above the welcome/bio quote. */
+  greeting?: string;
+  /** A one-line welcome statement, shown before the main bio quote. */
+  welcome?: string;
   bio: string;
   credentials: string;
   linkedin?: string;

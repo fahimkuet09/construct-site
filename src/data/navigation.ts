@@ -1,6 +1,9 @@
 import type { NavItem } from "@/types";
 import { services } from "./services";
-import { projectSectors } from "./projects";
+import { projectSectors, projects } from "./projects";
+import { site } from "@/lib/site";
+
+const featuredProject = projects.find((p) => p.featured) ?? projects[0];
 
 export const navigation: NavItem[] = [
   {
@@ -11,16 +14,16 @@ export const navigation: NavItem[] = [
       {
         heading: "Capabilities",
         headingKey: "nav.capabilities",
-        links: services.slice(0, 3).map((s) => ({
+        links: services.slice(0, 2).map((s) => ({
           label: s.title,
           href: `/services/${s.slug}`,
           description: s.tagline,
         })),
       },
       {
-        heading: "Sectors",
+        heading: "More capabilities",
         headingKey: "nav.sectors",
-        links: services.slice(3).map((s) => ({
+        links: services.slice(2).map((s) => ({
           label: s.title,
           href: `/services/${s.slug}`,
           description: s.tagline,
@@ -29,9 +32,9 @@ export const navigation: NavItem[] = [
     ],
     featured: {
       eyebrow: "How we work",
-      title: "Six stages, one accountable team",
+      title: "Four stages, one accountable team",
       description:
-        "Design authority and self-performed construction under a single contract — from feasibility through to the first operating cycle.",
+        "Measurement, engineering, fabrication and handover — under a single contract, with a 24-hour design turnaround.",
       href: "/#process",
       image: "/images/services/nav-featured.svg",
     },
@@ -42,17 +45,17 @@ export const navigation: NavItem[] = [
     href: "/projects",
     columns: [
       {
-        heading: "By sector",
+        heading: "By category",
         headingKey: "nav.bySector",
-        links: projectSectors.slice(0, 3).map((sector) => ({
+        links: projectSectors.slice(0, 2).map((sector) => ({
           label: sector,
           href: `/projects?sector=${encodeURIComponent(sector)}`,
         })),
       },
       {
-        heading: "More sectors",
+        heading: "More categories",
         headingKey: "nav.moreSectors",
-        links: projectSectors.slice(3).map((sector) => ({
+        links: projectSectors.slice(2).map((sector) => ({
           label: sector,
           href: `/projects?sector=${encodeURIComponent(sector)}`,
         })),
@@ -60,11 +63,10 @@ export const navigation: NavItem[] = [
     ],
     featured: {
       eyebrow: "Featured project",
-      title: "Meghna Estuary Crossing",
-      description:
-        "A 4.8-kilometre cable-stayed crossing that ended Bhola's isolation, founded on 122-metre piles through delta silt.",
-      href: "/projects/meghna-estuary-crossing",
-      image: "/images/projects/meghna-estuary-thumb.svg",
+      title: featuredProject.title,
+      description: featuredProject.summary,
+      href: `/projects/${featuredProject.slug}`,
+      image: featuredProject.thumbnail,
     },
   },
   {
@@ -79,17 +81,17 @@ export const navigation: NavItem[] = [
           {
             label: "Who we are",
             href: "/about",
-            description: "Fifty-one years of heavy civil engineering",
+            description: `Structural steel, concept to construction, since ${site.founded}`,
           },
           {
-            label: "Leadership",
+            label: "Managing Director's message",
             href: "/about#leadership",
-            description: "The people accountable for delivery",
+            description: "The vision behind the company",
           },
           {
-            label: "Our history",
-            href: "/about#history",
-            description: "From fourteen employees to 61 districts",
+            label: "Why choose us",
+            href: "/about",
+            description: "What clients get from working with us",
           },
         ],
       },
@@ -98,19 +100,14 @@ export const navigation: NavItem[] = [
         headingKey: "nav.standards",
         links: [
           {
-            label: "Safety & quality",
-            href: "/about#certifications",
-            description: "ISO certification and assurance",
-          },
-          {
-            label: "Awards",
-            href: "/about#awards",
-            description: "Industry recognition",
+            label: "Engineering standards",
+            href: "/about#standards",
+            description: "BNBC design, computer-aided analysis",
           },
           {
             label: "Sustainability",
             href: "/about#sustainability",
-            description: "Net zero by 2035",
+            description: "Why steel is resource-efficient",
           },
         ],
       },
@@ -134,11 +131,10 @@ export const footerNav = [
     heading: "Company",
     headingKey: "footer.company",
     links: [
-      { label: "About Meghna", href: "/about" },
-      { label: "Leadership", href: "/about#leadership" },
-      { label: "Our history", href: "/about#history" },
+      { label: `About ${site.shortName}`, href: "/about" },
+      { label: "Managing Director's message", href: "/about#leadership" },
+      { label: "Engineering standards", href: "/about#standards" },
       { label: "Sustainability", href: "/about#sustainability" },
-      { label: "Awards", href: "/about#awards" },
       { label: "Newsroom", href: "/news" },
     ],
   },
@@ -148,8 +144,6 @@ export const footerNav = [
     links: [
       { label: "All projects", href: "/projects" },
       { label: "Open positions", href: "/careers#positions" },
-      { label: "Graduate programme", href: "/careers#positions" },
-      { label: "Supply chain", href: "/contact" },
       { label: "Contact us", href: "/contact" },
     ],
   },
@@ -158,7 +152,5 @@ export const footerNav = [
 export const legalLinks = [
   { label: "Privacy notice", href: "/contact" },
   { label: "Terms of use", href: "/contact" },
-  { label: "Modern slavery statement", href: "/about" },
-  { label: "Gender pay gap report", href: "/careers" },
   { label: "Accessibility", href: "/contact" },
 ];

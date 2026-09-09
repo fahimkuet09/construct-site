@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { mission, visionValues, impactStats } from "@/data/company";
+import { site } from "@/lib/site";
 import { Button } from "@/components/ui/button";
 import { Eyebrow } from "@/components/ui";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
@@ -22,7 +23,7 @@ export function AboutIntro() {
               >
                 <Image
                   src="/images/about/mission.svg"
-                  alt="Meghna engineers reviewing setting-out data on a bridge deck"
+                  alt="Steel structure frame under erection on site"
                   fill
                   sizes="(max-width: 1024px) 100vw, 620px"
                   className="object-cover"
@@ -34,7 +35,7 @@ export function AboutIntro() {
                 <div className="relative aspect-[4/3]">
                   <Image
                     src="/images/about/values.svg"
-                    alt="Tunnel boring machine cutterhead during a shift change"
+                    alt="Close-up of a fabricated steel connection"
                     fill
                     sizes="300px"
                     className="object-cover"
@@ -48,7 +49,7 @@ export function AboutIntro() {
                   Established
                 </p>
                 <p className="mt-1 font-heading text-[2rem] leading-none font-extrabold text-white tabular-nums">
-                  1974
+                  {site.founded}
                 </p>
               </div>
             </div>
@@ -94,7 +95,7 @@ export function AboutIntro() {
             <Reveal delay={0.1}>
               <Button asChild variant="outline" size="lg" className="mt-9">
                 <Link href="/about">
-                  More about Meghna
+                  More about {site.shortName}
                   <ArrowUpRight
                     className="size-4.5 transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5"
                     aria-hidden

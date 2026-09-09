@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1067" viewBox="0 0 1600 1067" role="img" aria-label="Universal Structural Steel">
+  <defs>
+    <linearGradient id="gukdyeing02" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#3b4c66"/>
+      <stop offset="55%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0c111c"/>
+    </linearGradient>
+    <radialGradient id="vukdyeing02" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="pukdyeing02" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nukdyeing02"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#gukdyeing02)"/>
+  <rect width="1600" height="1067" fill="url(#pukdyeing02)"/>
+  <line x1="280.67921963194385" y1="874.9399999999999" x2="280.67921963194385" y2="268.21672152634244" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="159.29955800512806" y1="268.21672152634244" x2="659.9906622157432" y2="268.21672152634244" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="280.67921963194385" y1="238.21672152634244" x2="659.9906622157432" y2="268.21672152634244" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="280.67921963194385" y1="238.21672152634244" x2="159.29955800512806" y2="268.21672152634244" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="280.67921963194385" y1="268.21672152634244" x2="280.67921963194385" y2="238.21672152634244" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="553.7834582922794" y1="268.21672152634244" x2="553.7834582922794" y2="533.81345664375" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="743.458750566002" y1="874.9399999999999" x2="743.458750566002" y2="505.35608033754863" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="654.857070134636" y1="505.35608033754863" x2="1020.3390019140206" y2="505.35608033754863" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="743.458750566002" y1="475.35608033754863" x2="1020.3390019140206" y2="505.35608033754863" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="743.458750566002" y1="475.35608033754863" x2="654.857070134636" y2="505.35608033754863" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="743.458750566002" y1="505.35608033754863" x2="743.458750566002" y2="475.35608033754863" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="942.8125315365754" y1="505.35608033754863" x2="942.8125315365754" y2="682.4456252008583" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="1228.77789514279" y1="874.9399999999999" x2="1228.77789514279" y2="321.61929295950563" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="1141.5522415993175" y1="321.61929295950563" x2="1501.3580624661408" y2="321.61929295950563" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="1228.77789514279" y1="291.61929295950563" x2="1501.3580624661408" y2="321.61929295950563" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1228.77789514279" y1="291.61929295950563" x2="1141.5522415993175" y2="321.61929295950563" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1228.77789514279" y1="321.61929295950563" x2="1228.77789514279" y2="291.61929295950563" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="1425.0356156156026" y1="321.61929295950563" x2="1425.0356156156026" y2="645.1844806017261" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="0" y1="874.9399999999999" x2="1600" y2="874.9399999999999" stroke="rgba(255,255,255,.5)" stroke-width="2.5"/>
+  <rect width="1600" height="1067" fill="url(#vukdyeing02)"/>
+  <rect width="1600" height="1067" filter="url(#nukdyeing02)" opacity="0.045"/>
+  
+</svg>

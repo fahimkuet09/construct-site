@@ -23,26 +23,6 @@ export function formatDate(
   );
 }
 
-/**
- * Contract values are held in crore taka, which is how they are reported and
- * tendered in Bangladesh. 1 crore = 10 million, so ৳12,400 crore reads the way
- * a procurement notice would rather than as an abstract 124,000,000,000.
- */
-export function formatCrore(valueInCrore: number) {
-  const formatted = new Intl.NumberFormat("en-IN", {
-    maximumFractionDigits: valueInCrore < 100 ? 1 : 0,
-  }).format(valueInCrore);
-  return `৳${formatted} cr`;
-}
-
-/** Long form for body copy and fact sheets. */
-export function formatCroreLong(valueInCrore: number) {
-  const formatted = new Intl.NumberFormat("en-IN", {
-    maximumFractionDigits: valueInCrore < 100 ? 1 : 0,
-  }).format(valueInCrore);
-  return `৳${formatted} crore`;
-}
-
 /** Deterministic slug — used for anchors and route params. */
 export function slugify(input: string) {
   return input

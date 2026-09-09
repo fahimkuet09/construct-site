@@ -20,15 +20,15 @@ export function OfficesMap() {
         <Reveal>
           <SectionHeading
             eyebrow="Find us"
-            title="Where our regional teams are based"
-            lead="Select any marker to see which office covers that region and how much work it has delivered."
+            title="Head office and fabrication workshop"
+            lead="Select a marker to see what each location handles."
           />
         </Reveal>
 
         <Reveal delay={0.08}>
           <div className="mt-12 overflow-hidden rounded-[var(--radius-card)] border border-line shadow-[var(--shadow-raise)]">
             <div className="h-[24rem] w-full sm:h-[30rem] lg:h-[34rem]">
-              <ProjectMap pins={pins} center={[23.7, 90.3]} zoom={6.8} />
+              <ProjectMap pins={pins} center={[23.8, 90.39]} zoom={11} />
             </div>
           </div>
         </Reveal>

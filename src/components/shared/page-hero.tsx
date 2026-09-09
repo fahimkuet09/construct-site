@@ -50,7 +50,6 @@ export function PageHero({
         aria-hidden
         className="absolute inset-0 bg-gradient-to-r from-primary-950/88 via-primary-950/38 to-transparent"
       />
-      <div aria-hidden className="blueprint-grid-dark absolute inset-0 opacity-35" />
 
       <div className="relative">
         <div

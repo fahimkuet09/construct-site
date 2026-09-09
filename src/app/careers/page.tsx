@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { jobs, benefits, culture, hiringProcess, careersFaqs } from "@/data/careers";
+import { impactStats } from "@/data/company";
+import { site } from "@/lib/site";
 import { PageHero } from "@/components/shared/page-hero";
 import { JobsBoard } from "@/components/sections/jobs-board";
 import { ApplicationForm } from "@/components/shared/application-form";
@@ -14,28 +16,21 @@ import { Counter } from "@/components/motion/counter";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Open engineering, delivery and commercial positions at Meghna Construct, plus our graduate programme, benefits and hiring process.",
+    "Open engineering, site and commercial positions at Universal Structural Steel Ltd., plus our culture, benefits and hiring process.",
 };
-
-const peopleStats = [
-  { value: 12800, suffix: "+", label: "People nationwide" },
-  { value: 84, suffix: "%", label: "Graduate retention at 5 years" },
-  { value: 140, suffix: "", label: "Graduate places for 2026" },
-  { value: 7, suffix: "", label: "Regional offices" },
-];
 
 export default function CareersPage() {
   return (
     <>
       <PageHero
         eyebrow="Careers"
-        title="Build things that outlive everyone who worked on them"
-        lead="We are a technical business run by engineers. Graduates contribute to live projects in their first week, and technical excellence is a route to senior leadership rather than away from it."
+        title="Build structures that stand on your calculations"
+        lead="We are a small, technical business run by engineers. You'll work directly on live projects from day one, alongside people who know structural steel inside out."
         image="/images/careers/careers-hero.svg"
         crumbs={[{ label: "Home", href: "/" }, { label: "Careers" }]}
       >
         <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:grid-cols-4">
-          {peopleStats.map((stat) => (
+          {impactStats.map((stat) => (
             <div key={stat.label}>
               <dd className="font-heading text-[1.75rem] leading-none font-extrabold text-white tabular-nums">
                 <Counter value={stat.value} suffix={stat.suffix} />
@@ -93,7 +88,7 @@ export default function CareersPage() {
                 >
                   <Image
                     src="/images/careers/culture-02.svg"
-                    alt="A design engineer reviewing a federated model"
+                    alt="A design engineer reviewing a structural drawing"
                     fill
                     sizes="(max-width: 640px) 100vw, 300px"
                     className="object-cover"
@@ -105,7 +100,7 @@ export default function CareersPage() {
                 >
                   <Image
                     src="/images/careers/culture-03.svg"
-                    alt="A tunnelling team during a shift changeover underground"
+                    alt="An erection crew working on a steel frame on site"
                     fill
                     sizes="(max-width: 640px) 100vw, 300px"
                     className="object-cover"
@@ -169,7 +164,7 @@ export default function CareersPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Hiring process"
-              title="Five steps, no timed tests, no ghosting"
+              title="Four steps, no ghosting"
               lead="Every application is read by a person. You will get a decision at every stage, whichever way it goes."
             />
           </Reveal>
@@ -177,7 +172,7 @@ export default function CareersPage() {
           <RevealGroup
             as="ol"
             stagger={0.07}
-            className="mt-14 grid gap-6 md:grid-cols-2 lg:mt-16 lg:grid-cols-5 lg:gap-4"
+            className="mt-14 grid gap-6 md:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-4"
           >
             {hiringProcess.map((step, i) => (
               <RevealItem
@@ -260,7 +255,7 @@ export default function CareersPage() {
         title="We recruit continuously across every discipline"
         body="If nothing above fits but you think you would do well here, send a speculative application. We keep good people on file and we do come back to them."
         primary={{ label: "Speculative application", href: "/careers#apply" }}
-        secondary={{ label: "About Meghna", href: "/about" }}
+        secondary={{ label: `About ${site.shortName}`, href: "/about" }}
       />
     </>
   );

@@ -217,7 +217,7 @@ export function ApplicationForm() {
 
       <Field>
         <Label htmlFor="app-message" required>
-          Why Meghna?
+          Why work with us?
         </Label>
         <Textarea
           id="app-message"
@@ -236,7 +236,7 @@ export function ApplicationForm() {
         <div className="flex items-start gap-3">
           <Checkbox
             id="app-consent"
-            aria-label="I am happy for Meghna Construct to process my application"
+            aria-label="I am happy for Universal Structural Steel Ltd. to process my application"
             checked={Boolean(consent)}
             onCheckedChange={(checked) =>
               setValue("consent", checked === true ? true : (false as never), {
@@ -248,7 +248,7 @@ export function ApplicationForm() {
             htmlFor="app-consent"
             className="font-body text-[0.875rem] leading-relaxed font-normal text-body"
           >
-            I am happy for Meghna Construct to process my application and retain my
+            I am happy for Universal Structural Steel Ltd. to process my application and retain my
             details for twelve months.
           </Label>
         </div>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1067" viewBox="0 0 1600 1067" role="img" aria-label="Universal Structural Steel">
+  <defs>
+    <linearGradient id="gsigmaoil02" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#255177"/>
+      <stop offset="55%" stop-color="#16283f"/>
+      <stop offset="100%" stop-color="#0a1119"/>
+    </linearGradient>
+    <radialGradient id="vsigmaoil02" cx="50%" cy="38%" r="78%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.5"/>
+    </radialGradient>
+    <pattern id="psigmaoil02" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0 L0 0 0 72" fill="none" stroke="rgba(255,255,255,.055)" stroke-width="1"/>
+    </pattern>
+    <filter id="nsigmaoil02"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1600" height="1067" fill="url(#gsigmaoil02)"/>
+  <rect width="1600" height="1067" fill="url(#psigmaoil02)"/>
+  <line x1="260.4774788012728" y1="874.9399999999999" x2="260.4774788012728" y2="205.31201212887174" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="178.47310470726342" y1="205.31201212887174" x2="516.7411478450522" y2="205.31201212887174" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="260.4774788012728" y1="175.31201212887174" x2="516.7411478450522" y2="205.31201212887174" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="260.4774788012728" y1="175.31201212887174" x2="178.47310470726342" y2="205.31201212887174" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="260.4774788012728" y1="205.31201212887174" x2="260.4774788012728" y2="175.31201212887174" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="444.987320512794" y1="205.31201212887174" x2="444.987320512794" y2="544.5884280037367" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="741.1078310143203" y1="874.9399999999999" x2="741.1078310143203" y2="226.4586433367757" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="627.9055787979811" y1="226.4586433367757" x2="1094.86486919038" y2="226.4586433367757" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="741.1078310143203" y1="196.4586433367757" x2="1094.86486919038" y2="226.4586433367757" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="741.1078310143203" y1="196.4586433367757" x2="627.9055787979811" y2="226.4586433367757" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="741.1078310143203" y1="226.4586433367757" x2="741.1078310143203" y2="196.4586433367757" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="995.8128985010833" y1="226.4586433367757" x2="995.8128985010833" y2="527.9697525531565" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="1223.4348754552193" y1="874.9399999999999" x2="1223.4348754552193" y2="283.43627300143714" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/><line x1="1130.0541549733468" y1="283.43627300143714" x2="1515.249626961071" y2="283.43627300143714" stroke="rgba(245,158,11,.62)" stroke-width="3"/><line x1="1223.4348754552193" y1="253.43627300143714" x2="1515.249626961071" y2="283.43627300143714" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1223.4348754552193" y1="253.43627300143714" x2="1130.0541549733468" y2="283.43627300143714" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/><line x1="1223.4348754552193" y1="283.43627300143714" x2="1223.4348754552193" y2="253.43627300143714" stroke="rgba(255,255,255,.4)" stroke-width="2"/><line x1="1433.5414965394325" y1="283.43627300143714" x2="1433.5414965394325" y2="550.2698235187074" stroke="rgba(255,255,255,.3)" stroke-width="1.1"/><line x1="0" y1="874.9399999999999" x2="1600" y2="874.9399999999999" stroke="rgba(255,255,255,.5)" stroke-width="2.5"/>
+  <rect width="1600" height="1067" fill="url(#vsigmaoil02)"/>
+  <rect width="1600" height="1067" filter="url(#nsigmaoil02)" opacity="0.045"/>
+  
+</svg>
