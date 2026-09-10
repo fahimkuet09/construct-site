@@ -7,36 +7,21 @@ export const projectSectors: ProjectSector[] = [
   "Agro-Based Buildings",
 ];
 
-const gallery = (base: string, alt: string) => [
-  {
-    src: `/images/projects/${base}-01.svg`,
-    alt: `${alt} — completed steel structure`,
-    caption: "Completed structure",
+const PORTFOLIO = "/images/Portfolio";
+
+/** Real site photography, reused across projects — captions describe what is
+ * actually visible rather than a fixed per-project template. */
+function photoGallery(
+  entries: { file: string; alt: string; caption: string }[],
+): { src: string; alt: string; caption: string; width: number; height: number }[] {
+  return entries.map((e) => ({
+    src: `${PORTFOLIO}/${e.file}`,
+    alt: e.alt,
+    caption: e.caption,
     width: 1600,
     height: 1067,
-  },
-  {
-    src: `/images/projects/${base}-02.svg`,
-    alt: `${alt} — primary frame under erection`,
-    caption: "Primary frame erection",
-    width: 1600,
-    height: 1067,
-  },
-  {
-    src: `/images/projects/${base}-03.svg`,
-    alt: `${alt} — steel connection detail`,
-    caption: "Connection detail",
-    width: 1200,
-    height: 1500,
-  },
-  {
-    src: `/images/projects/${base}-04.svg`,
-    alt: `${alt} — roof and cladding installation`,
-    caption: "Roof and wall cladding",
-    width: 1600,
-    height: 1067,
-  },
-];
+  }));
+}
 
 /** Generic, category-level challenge/solution pairs — not project-specific claims. */
 const industrialChallenges = [
@@ -156,8 +141,8 @@ export const projects: Project[] = [
       "Navana Pharmaceuticals needed a clear-span steel shed for warehousing and light processing, with a floor plate free of intermediate columns to keep racking and material flow unconstrained.",
       "We ran the project through our standard four-stage process — site measurement, structural calculation, fabrication, and site erection — coordinating foundation loading with the client's civil contractor throughout.",
     ],
-    heroImage: "/images/projects/navana-hero.svg",
-    thumbnail: "/images/projects/navana-thumb.svg",
+    heroImage: "/images/Portfolio/factory-shed-exterior-urban.jpg",
+    thumbnail: "/images/Portfolio/factory-shed-exterior-urban.jpg",
     stats: [
       { label: "Building type", value: "Industrial shed" },
       { label: "Structure", value: "Bolted steel frame" },
@@ -167,7 +152,11 @@ export const projects: Project[] = [
     challenges: industrialChallenges,
     solutions: industrialSolutions,
     phases: standardPhases,
-    gallery: gallery("navana", "Navana Pharmaceuticals Shed"),
+    gallery: photoGallery([
+      { file: "factory-shed-exterior-urban.jpg", alt: "Navana Pharmaceuticals Shed — completed steel shed exterior next to the surrounding streetscape", caption: "Completed exterior" },
+      { file: "wide-span-frame-erection.jpg", alt: "Navana Pharmaceuticals Shed — wide-span primary steel frame under erection on an open site", caption: "Primary frame erection" },
+      { file: "industrial-shed-interior-completed.jpg", alt: "Navana Pharmaceuticals Shed — completed shed interior showing the primary frame and roof purlins", caption: "Interior — frame and roof structure" },
+    ]),
     featured: true,
   },
   {
@@ -185,8 +174,8 @@ export const projects: Project[] = [
       "Amber Group's facility is being delivered as a clear-span steel structure sized around the client's production floor requirements.",
       "The project is progressing through fabrication and site erection, coordinated with the client's civil works on the same programme.",
     ],
-    heroImage: "/images/projects/amber-hero.svg",
-    thumbnail: "/images/projects/amber-thumb.svg",
+    heroImage: "/images/Portfolio/urban-infill-steel-erection.jpg",
+    thumbnail: "/images/Portfolio/urban-infill-steel-erection.jpg",
     stats: [
       { label: "Building type", value: "Industrial facility" },
       { label: "Structure", value: "Bolted steel frame" },
@@ -196,7 +185,11 @@ export const projects: Project[] = [
     challenges: industrialChallenges,
     solutions: industrialSolutions,
     phases: standardPhases,
-    gallery: gallery("amber", "Amber Group Facility"),
+    gallery: photoGallery([
+      { file: "urban-infill-steel-erection.jpg", alt: "Amber Group Facility — steel frame under erection on a tight infill site, crew at height", caption: "Site erection in progress" },
+      { file: "wide-span-frame-erection.jpg", alt: "Amber Group Facility — wide-span primary steel frame under erection on an open site", caption: "Primary frame erection" },
+      { file: "open-sided-shed-erection.jpg", alt: "Amber Group Facility — open-sided steel frame under erection", caption: "Open-bay frame erection" },
+    ]),
     featured: true,
   },
   {
@@ -214,8 +207,8 @@ export const projects: Project[] = [
       "Soleman Khan Jute Mills Ltd., part of the Rising Group, required a wide-bay steel structure to house jute processing lines with clear internal access for material handling.",
       "Frame spacing and clear height were set around the mill's process equipment and internal vehicle movement rather than a standard shed template.",
     ],
-    heroImage: "/images/projects/soleman-khan-hero.svg",
-    thumbnail: "/images/projects/soleman-khan-thumb.svg",
+    heroImage: "/images/Portfolio/riverside-frame-erection.jpg",
+    thumbnail: "/images/Portfolio/riverside-frame-erection.jpg",
     stats: [
       { label: "Building type", value: "Process mill shed" },
       { label: "Structure", value: "Bolted steel frame" },
@@ -225,7 +218,11 @@ export const projects: Project[] = [
     challenges: industrialChallenges,
     solutions: industrialSolutions,
     phases: standardPhases,
-    gallery: gallery("soleman-khan", "Soleman Khan Jute Mills"),
+    gallery: photoGallery([
+      { file: "riverside-frame-erection.jpg", alt: "Soleman Khan Jute Mills — primary steel frame under erection alongside existing brick buildings", caption: "Primary frame erection" },
+      { file: "wide-span-frame-erection.jpg", alt: "Soleman Khan Jute Mills — wide-span primary steel frame under erection on an open site", caption: "Primary frame erection" },
+      { file: "urban-infill-steel-erection.jpg", alt: "Soleman Khan Jute Mills — steel frame under erection on a tight infill site, crew at height", caption: "Site erection in progress" },
+    ]),
   },
   {
     slug: "sigma-oil-factory",
@@ -242,8 +239,8 @@ export const projects: Project[] = [
       "Sigma Oil Factory's building houses oil processing plant and storage, requiring clear spans free of intermediate columns around the equipment layout.",
       "The structure is being delivered through our standard process, with fabrication drawings coordinated directly against the client's equipment supplier layout.",
     ],
-    heroImage: "/images/projects/sigma-oil-hero.svg",
-    thumbnail: "/images/projects/sigma-oil-thumb.svg",
+    heroImage: "/images/Portfolio/wide-span-frame-erection.jpg",
+    thumbnail: "/images/Portfolio/wide-span-frame-erection.jpg",
     stats: [
       { label: "Building type", value: "Process building" },
       { label: "Structure", value: "Bolted steel frame" },
@@ -253,7 +250,11 @@ export const projects: Project[] = [
     challenges: industrialChallenges,
     solutions: industrialSolutions,
     phases: standardPhases,
-    gallery: gallery("sigma-oil", "Sigma Oil Factory Building"),
+    gallery: photoGallery([
+      { file: "wide-span-frame-erection.jpg", alt: "Sigma Oil Factory Building — wide-span primary steel frame under erection on an open site", caption: "Primary frame erection" },
+      { file: "riverside-frame-erection.jpg", alt: "Sigma Oil Factory Building — primary steel frame under erection alongside existing brick buildings", caption: "Primary frame erection" },
+      { file: "urban-infill-steel-erection.jpg", alt: "Sigma Oil Factory Building — steel frame under erection on a tight infill site, crew at height", caption: "Site erection in progress" },
+    ]),
   },
   {
     slug: "nourish-poultry-facility",
@@ -270,8 +271,8 @@ export const projects: Project[] = [
       "Nourish Poultry's facility required an open-sided steel shed with the ventilation characteristics a poultry house depends on — roof pitch, ridge venting and eave height sized to the shed length and flock density.",
       "Steel framing and wash-down rated cladding were specified for the long-term hygiene and maintenance demands of a working poultry operation.",
     ],
-    heroImage: "/images/projects/nourish-hero.svg",
-    thumbnail: "/images/projects/nourish-thumb.svg",
+    heroImage: "/images/Portfolio/open-sided-shed-erection.jpg",
+    thumbnail: "/images/Portfolio/open-sided-shed-erection.jpg",
     stats: [
       { label: "Building type", value: "Poultry shed" },
       { label: "Structure", value: "Open-sided steel frame" },
@@ -281,7 +282,11 @@ export const projects: Project[] = [
     challenges: agroChallenges,
     solutions: agroSolutions,
     phases: standardPhases,
-    gallery: gallery("nourish", "Nourish Poultry Facility"),
+    gallery: photoGallery([
+      { file: "open-sided-shed-erection.jpg", alt: "Nourish Poultry Facility — open-sided steel frame under erection", caption: "Open-bay frame erection" },
+      { file: "wide-span-frame-erection.jpg", alt: "Nourish Poultry Facility — wide-span primary steel frame under erection on an open site", caption: "Primary frame erection" },
+      { file: "riverside-frame-erection.jpg", alt: "Nourish Poultry Facility — primary steel frame under erection alongside existing brick buildings", caption: "Primary frame erection" },
+    ]),
     featured: true,
   },
   {
@@ -299,8 +304,8 @@ export const projects: Project[] = [
       "QSL.S's factory building is being engineered as a column-light manufacturing shell, sized to the client's production floor requirements.",
       "The project follows our standard measurement-to-handover process, with foundation coordination running alongside the client's civil contractor.",
     ],
-    heroImage: "/images/projects/qsl-s-hero.svg",
-    thumbnail: "/images/projects/qsl-s-thumb.svg",
+    heroImage: "/images/Portfolio/wide-span-frame-erection.jpg",
+    thumbnail: "/images/Portfolio/wide-span-frame-erection.jpg",
     stats: [
       { label: "Building type", value: "Manufacturing facility" },
       { label: "Structure", value: "Bolted steel frame" },
@@ -310,7 +315,11 @@ export const projects: Project[] = [
     challenges: industrialChallenges,
     solutions: industrialSolutions,
     phases: standardPhases,
-    gallery: gallery("qsl-s", "QSL.S Factory Building"),
+    gallery: photoGallery([
+      { file: "wide-span-frame-erection.jpg", alt: "QSL.S Factory Building — wide-span primary steel frame under erection on an open site", caption: "Primary frame erection" },
+      { file: "urban-infill-steel-erection.jpg", alt: "QSL.S Factory Building — steel frame under erection on a tight infill site, crew at height", caption: "Site erection in progress" },
+      { file: "riverside-frame-erection.jpg", alt: "QSL.S Factory Building — primary steel frame under erection alongside existing brick buildings", caption: "Primary frame erection" },
+    ]),
   },
   {
     slug: "windy-group-shed",
@@ -327,8 +336,8 @@ export const projects: Project[] = [
       "Windy Group's factory shed was delivered as a clear-span steel structure, sized around the production layout the client specified at the measurement stage.",
       "The finished structure was inspected against its approved drawings before handover, with the client's civil contractor completing foundations and flooring in parallel.",
     ],
-    heroImage: "/images/projects/windy-hero.svg",
-    thumbnail: "/images/projects/windy-thumb.svg",
+    heroImage: "/images/Portfolio/factory-shed-exterior-handover.jpg",
+    thumbnail: "/images/Portfolio/factory-shed-exterior-handover.jpg",
     stats: [
       { label: "Building type", value: "Factory shed" },
       { label: "Structure", value: "Bolted steel frame" },
@@ -338,7 +347,11 @@ export const projects: Project[] = [
     challenges: industrialChallenges,
     solutions: industrialSolutions,
     phases: standardPhases,
-    gallery: gallery("windy", "Windy Group Factory Shed"),
+    gallery: photoGallery([
+      { file: "factory-shed-exterior-handover.jpg", alt: "Windy Group Factory Shed — completed steel shed exterior with large sliding access doors", caption: "Completed exterior" },
+      { file: "riverside-frame-erection.jpg", alt: "Windy Group Factory Shed — primary steel frame under erection alongside existing brick buildings", caption: "Primary frame erection" },
+      { file: "industrial-shed-interior-completed.jpg", alt: "Windy Group Factory Shed — completed shed interior showing the primary frame and roof purlins", caption: "Interior — frame and roof structure" },
+    ]),
   },
   {
     slug: "universal-knitting-dyeing",
@@ -355,8 +368,8 @@ export const projects: Project[] = [
       "Universal Knitting and Dyeing Ltd.'s facility required wide-bay steel framing to accommodate knitting and dyeing production lines without intermediate columns interrupting the floor.",
       "The structure was delivered and handed over on our standard process, with fabrication drawings coordinated against the client's process equipment layout.",
     ],
-    heroImage: "/images/projects/uk-dyeing-hero.svg",
-    thumbnail: "/images/projects/uk-dyeing-thumb.svg",
+    heroImage: "/images/Portfolio/industrial-shed-interior-completed.jpg",
+    thumbnail: "/images/Portfolio/industrial-shed-interior-completed.jpg",
     stats: [
       { label: "Building type", value: "Textile mill shed" },
       { label: "Structure", value: "Bolted steel frame" },
@@ -366,7 +379,11 @@ export const projects: Project[] = [
     challenges: industrialChallenges,
     solutions: industrialSolutions,
     phases: standardPhases,
-    gallery: gallery("uk-dyeing", "Universal Knitting and Dyeing Facility"),
+    gallery: photoGallery([
+      { file: "industrial-shed-interior-completed.jpg", alt: "Universal Knitting and Dyeing Facility — completed shed interior showing the primary frame and roof purlins", caption: "Interior — frame and roof structure" },
+      { file: "factory-shed-exterior-handover.jpg", alt: "Universal Knitting and Dyeing Facility — completed steel shed exterior with large sliding access doors", caption: "Completed exterior" },
+      { file: "riverside-frame-erection.jpg", alt: "Universal Knitting and Dyeing Facility — primary steel frame under erection alongside existing brick buildings", caption: "Primary frame erection" },
+    ]),
   },
   {
     slug: "standard-group-shed",
@@ -383,8 +400,8 @@ export const projects: Project[] = [
       "Standard Group's shed was engineered and fabricated to the client's production floor requirements, with erection completed by our own site crew.",
       "Final inspection against the approved drawings was carried out before the structure was signed over.",
     ],
-    heroImage: "/images/projects/standard-group-hero.svg",
-    thumbnail: "/images/projects/standard-group-thumb.svg",
+    heroImage: "/images/Portfolio/factory-shed-exterior-completed.jpg",
+    thumbnail: "/images/Portfolio/factory-shed-exterior-completed.jpg",
     stats: [
       { label: "Building type", value: "Factory shed" },
       { label: "Structure", value: "Bolted steel frame" },
@@ -394,7 +411,11 @@ export const projects: Project[] = [
     challenges: industrialChallenges,
     solutions: industrialSolutions,
     phases: standardPhases,
-    gallery: gallery("standard-group", "Standard Group Factory Shed"),
+    gallery: photoGallery([
+      { file: "factory-shed-exterior-completed.jpg", alt: "Standard Group Factory Shed — completed steel shed exterior with red trim and ribbon windows", caption: "Completed exterior" },
+      { file: "wide-span-frame-erection.jpg", alt: "Standard Group Factory Shed — wide-span primary steel frame under erection on an open site", caption: "Primary frame erection" },
+      { file: "industrial-shed-interior-completed.jpg", alt: "Standard Group Factory Shed — completed shed interior showing the primary frame and roof purlins", caption: "Interior — frame and roof structure" },
+    ]),
   },
   {
     slug: "silver-line-composite-textile",
@@ -411,8 +432,8 @@ export const projects: Project[] = [
       "Silver Line Composite and Textile Mills Ltd. needed a large clear-span shed for its textile production lines, with bay spacing set around the equipment and material flow.",
       "The project ran through our full process from site measurement to final inspection, with the finished structure handed over on programme.",
     ],
-    heroImage: "/images/projects/silver-line-hero.svg",
-    thumbnail: "/images/projects/silver-line-thumb.svg",
+    heroImage: "/images/Portfolio/factory-shed-exterior-completed.jpg",
+    thumbnail: "/images/Portfolio/factory-shed-exterior-completed.jpg",
     stats: [
       { label: "Building type", value: "Textile mill shed" },
       { label: "Structure", value: "Bolted steel frame" },
@@ -422,7 +443,11 @@ export const projects: Project[] = [
     challenges: industrialChallenges,
     solutions: industrialSolutions,
     phases: standardPhases,
-    gallery: gallery("silver-line", "Silver Line Composite and Textile Mills"),
+    gallery: photoGallery([
+      { file: "factory-shed-exterior-completed.jpg", alt: "Silver Line Composite and Textile Mills — completed steel shed exterior with red trim and ribbon windows", caption: "Completed exterior" },
+      { file: "riverside-frame-erection.jpg", alt: "Silver Line Composite and Textile Mills — primary steel frame under erection alongside existing brick buildings", caption: "Primary frame erection" },
+      { file: "factory-shed-exterior-handover.jpg", alt: "Silver Line Composite and Textile Mills — completed steel shed exterior with large sliding access doors", caption: "Completed exterior" },
+    ]),
   },
 ];
 

@@ -26,7 +26,7 @@ export const services: Service[] = [
       "Industrial clients don't buy a building, they buy production days. A pre-engineered steel (PEB) structure goes from foundation to weathertight shell in a fraction of the time an equivalent RCC building takes, which is what lets a tenant's commissioning date hold.",
       "We design and fabricate the primary portal frames, secondary members, roof and wall cladding as one coordinated system rather than assembling components from different suppliers, so tolerances, bolt patterns and load paths are resolved before anything reaches site.",
     ],
-    image: "/images/services/industrial.svg",
+    image: "/images/Portfolio/factory-shed-exterior-completed.jpg",
     capabilities: [
       {
         title: "Factory sheds & process buildings",
@@ -117,7 +117,7 @@ export const services: Service[] = [
       "Commercial developments need a shell that opens to trade quickly and adapts as tenants change. Structural steel framing gives wide, column-light floor plates for retail and market layouts, and a multi-storey frame that erects in a fraction of the time of cast-in-place concrete.",
       "We coordinate the structural frame with the envelope and services from the outset, so the building is ready for fit-out contractors the day the shell is handed over.",
     ],
-    image: "/images/services/commercial.svg",
+    image: "/images/Portfolio/commercial-building-dusk.jpg",
     capabilities: [
       {
         title: "Multi-storied steel buildings",
@@ -203,7 +203,7 @@ export const services: Service[] = [
       "Steel framing suits residential and specialist structures where earthquake resistance, speed of construction or long-term resale flexibility matter — a duplex or resort building erected in weeks rather than months, on a frame that performs predictably under seismic loading.",
       "This category also covers the smaller specialist structures every developer eventually needs: foot-over bridges, external emergency stairs and steel lift cores added to an existing building.",
     ],
-    image: "/images/services/residential.svg",
+    image: "/images/Portfolio/institutional-building-exterior.jpg",
     capabilities: [
       {
         title: "Duplex & triplex residences",
@@ -289,7 +289,7 @@ export const services: Service[] = [
       "Agricultural buildings have their own engineering brief: ventilation and roof pitch for livestock welfare, clear spans for feed and grain handling equipment, and a structure that can be washed down and kept hygienic. A generic shed built for storage doesn't automatically meet those needs.",
       "We size the frame, roof pitch and ventilation openings around the specific operation — poultry, dairy, grain or feed milling — rather than treating every agro-based building as an identical steel box.",
     ],
-    image: "/images/services/agro.svg",
+    image: "/images/Portfolio/open-sided-shed-erection.jpg",
     capabilities: [
       {
         title: "Poultry shed buildings",

@@ -18,7 +18,7 @@ export const processSteps: ProcessStep[] = [
       "Preliminary layout sketch",
     ],
     icon: Ruler,
-    image: "/images/services/process-planning.svg",
+    image: "/images/Portfolio/wide-span-frame-erection.jpg",
   },
   {
     id: "calculation",
@@ -36,7 +36,7 @@ export const processSteps: ProcessStep[] = [
       "Firm quotation and specification",
     ],
     icon: DraftingCompass,
-    image: "/images/services/process-design.svg",
+    image: "/images/Portfolio/concept-render-blue-roof-shed.jpg",
   },
   {
     id: "execution",
@@ -54,7 +54,7 @@ export const processSteps: ProcessStep[] = [
       "Roof and wall cladding installation",
     ],
     icon: HardHat,
-    image: "/images/services/process-construction.svg",
+    image: "/images/Portfolio/urban-infill-steel-erection.jpg",
   },
   {
     id: "handover",
@@ -72,6 +72,6 @@ export const processSteps: ProcessStep[] = [
       "Project sign-off and payment close-out",
     ],
     icon: ClipboardCheck,
-    image: "/images/services/process-completion.svg",
+    image: "/images/Portfolio/factory-shed-exterior-handover.jpg",
   },
 ];

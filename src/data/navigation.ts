@@ -36,7 +36,7 @@ export const navigation: NavItem[] = [
       description:
         "Measurement, engineering, fabrication and handover — under a single contract, with a 24-hour design turnaround.",
       href: "/#process",
-      image: "/images/services/nav-featured.svg",
+      image: "/images/Portfolio/factory-shed-exterior-completed.jpg",
     },
   },
   {

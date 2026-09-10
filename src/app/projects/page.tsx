@@ -20,7 +20,7 @@ export default function ProjectsPage() {
         eyebrow="Portfolio"
         title="Ongoing and completed steel structures"
         lead="Industrial sheds, textile mills, process buildings and agro-based structures — delivered under our standard measurement-to-handover process. Filter by category or status to find work like yours."
-        image="/images/projects/navana-hero.svg"
+        image="/images/Portfolio/factory-shed-exterior-completed.jpg"
         crumbs={[{ label: "Home", href: "/" }, { label: "Projects" }]}
       >
         <dl className="mt-10 flex flex-wrap gap-x-12 gap-y-6">

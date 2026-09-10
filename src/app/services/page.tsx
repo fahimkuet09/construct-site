@@ -60,7 +60,7 @@ export default function ServicesPage() {
         eyebrow="Services"
         title="Four building categories, one accountable contract"
         lead="Industrial sheds to agro-based structures — with the engineering, fabrication and erection team to deliver them ourselves."
-        image="/images/services/industrial.svg"
+        image="/images/Portfolio/wide-span-frame-erection.jpg"
         crumbs={[{ label: "Home", href: "/" }, { label: "Services" }]}
       />
 
