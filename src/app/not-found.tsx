@@ -92,7 +92,7 @@ export default function NotFound() {
                     </span>
                     <span
                       aria-hidden
-                      className="flex size-11 shrink-0 items-center justify-center rounded-full border border-white/15 text-white/60 transition-all duration-400 group-hover:border-accent group-hover:bg-accent group-hover:text-primary-950"
+                      className="flex size-11 shrink-0 items-center justify-center rounded-full border border-white/15 text-white/60 transition-all duration-400 group-hover:border-accent group-hover:bg-accent group-hover:text-white"
                     >
                       <ArrowRight className="size-4.5" />
                     </span>

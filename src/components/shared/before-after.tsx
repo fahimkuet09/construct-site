@@ -88,7 +88,7 @@ export function BeforeAfter({
         <span className="pointer-events-none absolute top-5 left-5 rounded-full border border-white/20 bg-primary-950/70 px-3.5 py-1.5 font-heading text-[0.6875rem] font-bold tracking-[0.1em] text-white uppercase backdrop-blur-sm">
           Before
         </span>
-        <span className="pointer-events-none absolute top-5 right-5 rounded-full border border-accent/40 bg-accent/85 px-3.5 py-1.5 font-heading text-[0.6875rem] font-bold tracking-[0.1em] text-primary-950 uppercase backdrop-blur-sm">
+        <span className="pointer-events-none absolute top-5 right-5 rounded-full border border-accent/40 bg-accent/85 px-3.5 py-1.5 font-heading text-[0.6875rem] font-bold tracking-[0.1em] text-white uppercase backdrop-blur-sm">
           After
         </span>
 

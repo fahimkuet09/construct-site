@@ -134,7 +134,7 @@ export function HeroCarouselControls({
           type="button"
           aria-label={playing ? "Pause slideshow" : "Play slideshow"}
           onClick={togglePlay}
-          className="flex size-9 shrink-0 cursor-pointer items-center justify-center rounded-full bg-accent text-primary-950 transition-colors duration-300 hover:bg-accent-600"
+          className="flex size-9 shrink-0 cursor-pointer items-center justify-center rounded-full bg-accent text-white transition-colors duration-300 hover:bg-accent-600"
         >
           {playing ? (
             <Pause className="size-3.5 fill-current" aria-hidden />

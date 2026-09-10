@@ -120,7 +120,7 @@ export function ProjectsExplorer() {
                       className={cn(
                         "cursor-pointer rounded-full border px-4 py-2 font-heading text-[0.8125rem] font-bold transition-all duration-300",
                         active
-                          ? "border-accent bg-accent text-primary-950"
+                          ? "border-accent bg-accent text-white"
                           : "border-line bg-surface text-body hover:border-accent/50 hover:text-accent-700",
                       )}
                     >

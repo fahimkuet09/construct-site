@@ -54,7 +54,7 @@ export function SiteHeader() {
           solid ? "h-19" : "h-22",
         )}
       >
-        <Logo invert={invert} />
+        <Logo invert={invert} priority />
 
         {/* ------------------------------------------------ desktop nav */}
         <NavigationMenu.Root

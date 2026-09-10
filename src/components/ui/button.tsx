@@ -16,9 +16,9 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-primary text-white shadow-[var(--shadow-raise)] hover:bg-primary-600 hover:shadow-[var(--shadow-lift)] hover:-translate-y-0.5 active:translate-y-0",
+          "bg-gradient-to-b from-primary-400 to-primary text-white shadow-[var(--shadow-raise)] hover:from-primary hover:to-primary-600 hover:shadow-[var(--shadow-lift)] hover:-translate-y-0.5 active:translate-y-0",
         accent:
-          "bg-accent text-primary-950 shadow-[var(--shadow-raise)] hover:bg-accent-600 hover:text-white hover:shadow-[var(--shadow-lift)] hover:-translate-y-0.5 active:translate-y-0",
+          "bg-gradient-to-b from-accent-400 to-accent text-white shadow-[var(--shadow-raise)] hover:from-accent hover:to-accent-600 hover:shadow-[var(--shadow-lift)] hover:-translate-y-0.5 active:translate-y-0",
         outline:
           "border border-line bg-surface text-heading hover:border-primary hover:text-primary hover:-translate-y-0.5 active:translate-y-0",
         ghost:
@@ -26,7 +26,7 @@ const buttonVariants = cva(
         light:
           "border border-white/25 bg-white/10 text-white backdrop-blur-md hover:bg-white hover:text-primary hover:-translate-y-0.5 active:translate-y-0",
         solidLight:
-          "bg-white text-primary shadow-[var(--shadow-lift)] hover:bg-accent hover:text-primary-950 hover:-translate-y-0.5 active:translate-y-0",
+          "bg-white text-primary shadow-[var(--shadow-lift)] hover:bg-gradient-to-b hover:from-accent-400 hover:to-accent hover:text-white hover:-translate-y-0.5 active:translate-y-0",
         link: "text-primary underline-offset-4 hover:underline px-0",
       },
       size: {

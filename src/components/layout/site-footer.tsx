@@ -64,7 +64,7 @@ export function SiteFooter() {
         <div className="container-shell py-16 lg:py-20">
           <div className="grid gap-8 lg:grid-cols-[1.25fr_repeat(3,1fr)] lg:gap-10">
             <div className="max-w-sm">
-              <Logo invert />
+              <Logo invert size="lg" />
               <p className="mt-6 text-[0.9375rem] leading-relaxed text-white/60">
                 A Dhaka-based structural steel company. Designing, fabricating and
                 erecting pre-engineered steel buildings across Bangladesh since{" "}
@@ -153,7 +153,7 @@ export function SiteFooter() {
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-label={`${site.name} on ${label}`}
-                    className="flex size-11 items-center justify-center rounded-full border border-white/12 text-white/60 transition-all duration-300 hover:border-accent hover:bg-accent hover:text-primary-950"
+                    className="flex size-11 items-center justify-center rounded-full border border-white/12 text-white/60 transition-all duration-300 hover:border-accent hover:bg-accent hover:text-white"
                   >
                     <Icon />
                   </a>

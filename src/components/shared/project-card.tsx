@@ -68,7 +68,7 @@ export function ProjectCard({
             </span>
             <span
               aria-hidden
-              className="flex size-11 shrink-0 translate-y-2 items-center justify-center rounded-full bg-accent text-primary-950 opacity-0 transition-all duration-500 ease-[var(--ease-out-quint)] group-hover:translate-y-0 group-hover:opacity-100"
+              className="flex size-11 shrink-0 translate-y-2 items-center justify-center rounded-full bg-accent text-white opacity-0 transition-all duration-500 ease-[var(--ease-out-quint)] group-hover:translate-y-0 group-hover:opacity-100"
             >
               <ArrowUpRight className="size-5" strokeWidth={2.5} />
             </span>

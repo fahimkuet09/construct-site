@@ -51,7 +51,7 @@ export function ProjectGallery({ images }: { images: GalleryImage[] }) {
             />
             <span
               aria-hidden
-              className="absolute top-1/2 left-1/2 flex size-13 -translate-x-1/2 -translate-y-1/2 scale-90 items-center justify-center rounded-full bg-accent text-primary-950 opacity-0 transition-all duration-400 ease-[var(--ease-out-quint)] group-hover:scale-100 group-hover:opacity-100"
+              className="absolute top-1/2 left-1/2 flex size-13 -translate-x-1/2 -translate-y-1/2 scale-90 items-center justify-center rounded-full bg-accent text-white opacity-0 transition-all duration-400 ease-[var(--ease-out-quint)] group-hover:scale-100 group-hover:opacity-100"
             >
               <Expand className="size-5" strokeWidth={2.2} />
             </span>

@@ -76,8 +76,8 @@ export function NewsletterForm() {
           disabled={isSubmitting}
           className={cn(
             "flex h-13 shrink-0 cursor-pointer items-center justify-center gap-2 rounded-[var(--radius-btn)] px-6",
-            "bg-accent font-heading text-[0.9375rem] font-bold text-primary-950",
-            "transition-all duration-300 hover:bg-white disabled:opacity-60",
+            "bg-gradient-to-b from-accent-400 to-accent font-heading text-[0.9375rem] font-bold text-white",
+            "transition-all duration-300 hover:bg-white hover:bg-none hover:text-primary disabled:opacity-60",
           )}
         >
           {isSubmitting ? (

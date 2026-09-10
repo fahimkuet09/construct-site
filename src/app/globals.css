@@ -6,31 +6,42 @@
    ========================================================================== */
 
 @theme {
-  /* ---- Brand palette ---- */
-  --color-primary: #0f4c81;
-  --color-primary-50: #eef5fb;
-  --color-primary-100: #d6e6f4;
-  --color-primary-200: #adcce9;
-  --color-primary-300: #7aabd8;
-  --color-primary-400: #3f7fbb;
-  --color-primary-500: #0f4c81;
-  --color-primary-600: #0d436f;
-  --color-primary-700: #0a3459;
-  --color-primary-800: #082943;
-  --color-primary-900: #061d30;
-  --color-primary-950: #04121e;
+  /* ---- Brand palette ----
+     Derived directly from the Universal Structural Steel Ltd. logo:
+     deep navy wordmark, safety-red frame, neutral graphite tagline bar. */
+  --color-primary: #0b1051;
+  --color-primary-50: #f1f2fb;
+  --color-primary-100: #dcdef4;
+  --color-primary-200: #b5b9ea;
+  --color-primary-300: #747bdc;
+  --color-primary-400: #2832c3;
+  --color-primary-500: #0b1051;
+  --color-primary-600: #0a0d40;
+  --color-primary-700: #080b32;
+  --color-primary-800: #070925;
+  --color-primary-900: #050619;
+  --color-primary-950: #03040f;
 
-  --color-secondary: #1e293b;
-  --color-accent: #f59e0b;
-  --color-accent-600: #d97e06;
-  --color-accent-700: #b45309;
+  /* Deep navy-graphite surface for large dark sections — distinct from the
+     hero's pure primary-950 so stacked dark sections don't read as flat. */
+  --color-secondary: #131a3d;
 
-  --color-background: #f8fafc;
+  --color-accent: #d70012;
+  --color-accent-50: #feeeef;
+  --color-accent-100: #fcd9dc;
+  --color-accent-200: #fab2b8;
+  --color-accent-300: #f96c78;
+  --color-accent-400: #fa1e30;
+  --color-accent-600: #ac0412;
+  --color-accent-700: #86040f;
+  --color-accent-800: #61050d;
+
+  --color-background: #f7f8fa;
   --color-surface: #ffffff;
-  --color-heading: #0f172a;
-  --color-body: #334155;
-  --color-muted: #64748b;
-  --color-line: #e2e8f0;
+  --color-heading: #0a0e2e;
+  --color-body: #40434f;
+  --color-muted: #5c5e66;
+  --color-line: #e3e3e8;
   --color-success: #16a34a;
   /* Text-safe green: 16a34a is only 3.3:1 on white, below AA for body text. */
   --color-success-700: #15803d;
@@ -204,7 +215,7 @@
     background: var(--color-background);
   }
   ::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
+    background: #cdced6;
     border-radius: 99px;
     border: 3px solid var(--color-background);
   }
@@ -257,8 +268,8 @@
 /* Blueprint grid — the signature engineering texture */
 @utility blueprint-grid {
   background-image:
-    linear-gradient(to right, rgb(15 76 129 / 0.055) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(15 76 129 / 0.055) 1px, transparent 1px);
+    linear-gradient(to right, rgb(11 16 81 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(11 16 81 / 0.06) 1px, transparent 1px);
   background-size: 88px 88px;
 }
 

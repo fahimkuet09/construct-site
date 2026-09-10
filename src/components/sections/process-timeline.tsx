@@ -100,7 +100,7 @@ export function ProcessTimeline() {
                     className={cn(
                       "relative z-1 flex size-14 items-center justify-center rounded-full border-2 transition-all duration-400 ease-[var(--ease-out-quint)]",
                       isActive
-                        ? "scale-110 border-accent bg-accent text-primary-950"
+                        ? "scale-110 border-accent bg-accent text-white"
                         : isDone
                           ? "border-accent/60 bg-secondary text-accent"
                           : "border-white/20 bg-secondary text-white/50 group-hover:border-white/45 group-hover:text-white",

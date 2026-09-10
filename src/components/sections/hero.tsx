@@ -83,7 +83,7 @@ export function Hero() {
             transition={{ duration: 0.8, ease: EASE }}
             className="mb-7 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.07] py-2 pr-5 pl-2 backdrop-blur-md"
           >
-            <span className="rounded-full bg-accent px-3 py-1 font-heading text-[0.6875rem] font-extrabold tracking-[0.1em] whitespace-nowrap text-primary-950 uppercase">
+            <span className="rounded-full bg-accent px-3 py-1 font-heading text-[0.6875rem] font-extrabold tracking-[0.1em] whitespace-nowrap text-white uppercase">
               {t("hero.badge")}
             </span>
             <span className="text-[0.8125rem] font-medium text-white/75">

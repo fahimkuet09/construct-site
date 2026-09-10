@@ -13,8 +13,8 @@ import type { MapPin } from "@/lib/map";
  * styling and an accent state.
  */
 function buildIcon(accent: boolean) {
-  const fill = accent ? "#F59E0B" : "#0F4C81";
-  const ring = accent ? "rgba(245,158,11,.28)" : "rgba(15,76,129,.22)";
+  const fill = accent ? "#D70012" : "#0B1051";
+  const ring = accent ? "rgba(215,0,18,.28)" : "rgba(11,16,81,.22)";
 
   return L.divIcon({
     className: "uss-pin",
@@ -84,7 +84,7 @@ export function ProjectMap({
                   fontWeight: 700,
                   letterSpacing: "0.14em",
                   textTransform: "uppercase",
-                  color: "#64748B",
+                  color: "#5C5E66",
                 }}
               >
                 {pin.subtitle}
@@ -96,7 +96,7 @@ export function ProjectMap({
                   fontSize: "15px",
                   fontWeight: 800,
                   lineHeight: 1.3,
-                  color: "#0F172A",
+                  color: "#0A0E2E",
                 }}
               >
                 {pin.title}
@@ -106,7 +106,7 @@ export function ProjectMap({
                   style={{
                     margin: "6px 0 0",
                     fontSize: "12.5px",
-                    color: "#334155",
+                    color: "#40434F",
                   }}
                 >
                   {pin.meta}
@@ -121,7 +121,7 @@ export function ProjectMap({
                     fontFamily: "var(--font-heading)",
                     fontSize: "12.5px",
                     fontWeight: 700,
-                    color: "#0F4C81",
+                    color: "#0B1051",
                   }}
                 >
                   View project →

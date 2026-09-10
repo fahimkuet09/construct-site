@@ -38,7 +38,7 @@ const write = (rel, content) => {
 
 /* ---------- palettes per subject, all inside the brand range ----------- */
 const PALETTES = {
-  bridge: ["#04121e", "#0a3459", "#0f4c81"],
+  bridge: ["#03040f", "#080b32", "#0b1051"],
   tunnel: ["#050d16", "#0a2a45", "#123f63"],
   marine: ["#04141f", "#0b3a55", "#12557a"],
   highway: ["#0b1220", "#1e293b", "#33465f"],
@@ -72,8 +72,8 @@ function motifCableStay(w, h, rnd) {
     for (let i = 1; i <= 9; i++) {
       const spread = (i / 9) * w * 0.24;
       const y = topY + (i / 9) * (deckY - topY) * 0.42;
-      s += `<line x1="${tx}" y1="${y}" x2="${tx - spread}" y2="${deckY}" stroke="rgba(245,158,11,.4)" stroke-width="1.1"/>`;
-      s += `<line x1="${tx}" y1="${y}" x2="${tx + spread}" y2="${deckY}" stroke="rgba(245,158,11,.4)" stroke-width="1.1"/>`;
+      s += `<line x1="${tx}" y1="${y}" x2="${tx - spread}" y2="${deckY}" stroke="rgba(215,0,18,.4)" stroke-width="1.1"/>`;
+      s += `<line x1="${tx}" y1="${y}" x2="${tx + spread}" y2="${deckY}" stroke="rgba(215,0,18,.4)" stroke-width="1.1"/>`;
     }
   }
   s += `<line x1="0" y1="${deckY}" x2="${w}" y2="${deckY}" stroke="rgba(255,255,255,.72)" stroke-width="4"/>`;
@@ -94,9 +94,9 @@ function motifTunnel(w, h, rnd) {
     const a = (i / 12) * Math.PI * 2 + rnd() * 0.1;
     const r1 = Math.min(w, h) * 0.2;
     const r2 = Math.min(w, h) * 0.46;
-    s += `<line x1="${cx + Math.cos(a) * r1}" y1="${cy + Math.sin(a) * r1}" x2="${cx + Math.cos(a) * r2}" y2="${cy + Math.sin(a) * r2}" stroke="rgba(245,158,11,.34)" stroke-width="1.2"/>`;
+    s += `<line x1="${cx + Math.cos(a) * r1}" y1="${cy + Math.sin(a) * r1}" x2="${cx + Math.cos(a) * r2}" y2="${cy + Math.sin(a) * r2}" stroke="rgba(215,0,18,.34)" stroke-width="1.2"/>`;
   }
-  s += `<circle cx="${cx}" cy="${cy}" r="${Math.min(w, h) * 0.075}" fill="rgba(245,158,11,.5)"/>`;
+  s += `<circle cx="${cx}" cy="${cy}" r="${Math.min(w, h) * 0.075}" fill="rgba(215,0,18,.5)"/>`;
   return s;
 }
 
@@ -109,7 +109,7 @@ function motifCrane(w, h, rnd) {
     const by = h * 0.82;
     s += `<line x1="${bx}" y1="${by}" x2="${bx}" y2="${by - th}" stroke="rgba(255,255,255,.46)" stroke-width="3.5"/>`;
     const jib = w * (0.16 + rnd() * 0.08);
-    s += `<line x1="${bx - jib * 0.32}" y1="${by - th}" x2="${bx + jib}" y2="${by - th}" stroke="rgba(245,158,11,.62)" stroke-width="3"/>`;
+    s += `<line x1="${bx - jib * 0.32}" y1="${by - th}" x2="${bx + jib}" y2="${by - th}" stroke="rgba(215,0,18,.62)" stroke-width="3"/>`;
     s += `<line x1="${bx}" y1="${by - th - 30}" x2="${bx + jib}" y2="${by - th}" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/>`;
     s += `<line x1="${bx}" y1="${by - th - 30}" x2="${bx - jib * 0.32}" y2="${by - th}" stroke="rgba(255,255,255,.26)" stroke-width="1.3"/>`;
     s += `<line x1="${bx}" y1="${by - th}" x2="${bx}" y2="${by - th - 30}" stroke="rgba(255,255,255,.4)" stroke-width="2"/>`;
@@ -130,7 +130,7 @@ function motifRoad(w, h) {
     const t = i / 7;
     const y = hz + (h - hz) * (t * t + 0.04);
     const seg = 10 + t * 70;
-    s += `<line x1="${w * 0.36 - t * w * 0.24}" y1="${y}" x2="${w * 0.36 - t * w * 0.24 + seg}" y2="${y}" stroke="rgba(245,158,11,.7)" stroke-width="${2 + t * 5}"/>`;
+    s += `<line x1="${w * 0.36 - t * w * 0.24}" y1="${y}" x2="${w * 0.36 - t * w * 0.24 + seg}" y2="${y}" stroke="rgba(215,0,18,.7)" stroke-width="${2 + t * 5}"/>`;
   }
   for (let i = 0; i < 5; i++) {
     const gx = w * (0.12 + i * 0.2);
@@ -158,7 +158,7 @@ function motifMarine(w, h, rnd) {
   for (let i = 0; i < 4; i++) {
     const cx = w * (0.2 + i * 0.2);
     const ch = h * (0.16 + rnd() * 0.1);
-    s += `<rect x="${cx}" y="${wl - h * 0.1 - ch}" width="${w * 0.07}" height="${ch}" fill="none" stroke="rgba(245,158,11,.5)" stroke-width="2"/>`;
+    s += `<rect x="${cx}" y="${wl - h * 0.1 - ch}" width="${w * 0.07}" height="${ch}" fill="none" stroke="rgba(215,0,18,.5)" stroke-width="2"/>`;
   }
   return s;
 }
@@ -176,7 +176,7 @@ function motifIndustrial(w, h, rnd) {
       s += `<line x1="${bx}" y1="${y}" x2="${bx + w * 0.11}" y2="${y}" stroke="rgba(255,255,255,.13)" stroke-width="1"/>`;
     }
   }
-  s += `<line x1="0" y1="${base}" x2="${w}" y2="${base}" stroke="rgba(245,158,11,.55)" stroke-width="3"/>`;
+  s += `<line x1="0" y1="${base}" x2="${w}" y2="${base}" stroke="rgba(215,0,18,.55)" stroke-width="3"/>`;
   return s;
 }
 
@@ -189,7 +189,7 @@ function motifEnergy(w, h, rnd) {
     s += `<line x1="${cx}" y1="${base}" x2="${cx}" y2="${base - th}" stroke="rgba(255,255,255,.44)" stroke-width="3"/>`;
     for (let b = 0; b < 3; b++) {
       const a = (b / 3) * Math.PI * 2 + rnd();
-      s += `<line x1="${cx}" y1="${base - th}" x2="${cx + Math.cos(a) * w * 0.075}" y2="${base - th + Math.sin(a) * w * 0.075}" stroke="rgba(245,158,11,.55)" stroke-width="2.4"/>`;
+      s += `<line x1="${cx}" y1="${base - th}" x2="${cx + Math.cos(a) * w * 0.075}" y2="${base - th + Math.sin(a) * w * 0.075}" stroke="rgba(215,0,18,.55)" stroke-width="2.4"/>`;
     }
   }
   for (let i = 0; i < 4; i++) {
@@ -243,7 +243,7 @@ function scene({ w, h, seed, palette = "bridge", motif, label, sub }) {
   ${
     label
       ? `<g font-family="Manrope, ui-sans-serif, system-ui, sans-serif">
-    <rect x="${w * 0.055}" y="${h - h * 0.055 - 46}" width="4" height="46" fill="#F59E0B"/>
+    <rect x="${w * 0.055}" y="${h - h * 0.055 - 46}" width="4" height="46" fill="#D70012"/>
     <text x="${w * 0.055 + 18}" y="${h - h * 0.055 - 24}" fill="#ffffff" font-size="${Math.max(13, w * 0.019).toFixed(0)}" font-weight="700" letter-spacing="0.5">${label}</text>
     ${sub ? `<text x="${w * 0.055 + 18}" y="${h - h * 0.055 - 4}" fill="rgba(255,255,255,.62)" font-size="${Math.max(10, w * 0.012).toFixed(0)}" font-weight="600" letter-spacing="2.4">${sub.toUpperCase()}</text>` : ""}
   </g>`
@@ -255,17 +255,17 @@ function scene({ w, h, seed, palette = "bridge", motif, label, sub }) {
 /* ---------- monogram avatar -------------------------------------------- */
 function avatar(seed, initials) {
   const rnd = seeded(seed);
-  const hues = ["#0f4c81", "#1e293b", "#0a3459", "#33465f", "#12557a"];
+  const hues = ["#0b1051", "#131a3d", "#080b32", "#2832c3", "#12557a"];
   const bg = hues[Math.floor(rnd() * hues.length)];
   return `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-label="${initials}">
   <defs><linearGradient id="a${seed.replace(/\W/g, "")}" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="${bg}"/><stop offset="100%" stop-color="#04121e"/>
+    <stop offset="0%" stop-color="${bg}"/><stop offset="100%" stop-color="#03040f"/>
   </linearGradient></defs>
   <rect width="400" height="400" fill="url(#a${seed.replace(/\W/g, "")})"/>
   <path d="M400 0 L0 0 0 400" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
   <circle cx="200" cy="158" r="62" fill="rgba(255,255,255,.16)"/>
   <path d="M78 400 C78 300 130 254 200 254 C270 254 322 300 322 400 Z" fill="rgba(255,255,255,.16)"/>
-  <text x="200" y="372" text-anchor="middle" fill="rgba(245,158,11,.9)" font-family="Manrope, sans-serif" font-size="30" font-weight="800" letter-spacing="3">${initials}</text>
+  <text x="200" y="372" text-anchor="middle" fill="rgba(215,0,18,.9)" font-family="Manrope, sans-serif" font-size="30" font-weight="800" letter-spacing="3">${initials}</text>
 </svg>`;
 }
 
@@ -279,22 +279,22 @@ function wordmark(name) {
     .toUpperCase();
   const short = name.length > 22 ? name.slice(0, 20) + "…" : name;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="280" height="80" viewBox="0 0 280 80" role="img" aria-label="${name}">
-  <rect x="4" y="18" width="44" height="44" rx="10" fill="none" stroke="#64748B" stroke-width="2.5" opacity=".85"/>
-  <path d="M14 50 L26 30 L38 50" fill="none" stroke="#64748B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
-  <text x="60" y="40" font-family="Manrope, sans-serif" font-size="19" font-weight="800" fill="#64748B" letter-spacing="-0.3">${initials}</text>
-  <text x="60" y="58" font-family="Inter, sans-serif" font-size="11.5" font-weight="600" fill="#64748B" opacity=".72" letter-spacing="0.4">${short}</text>
+  <rect x="4" y="18" width="44" height="44" rx="10" fill="none" stroke="#5C5E66" stroke-width="2.5" opacity=".85"/>
+  <path d="M14 50 L26 30 L38 50" fill="none" stroke="#5C5E66" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
+  <text x="60" y="40" font-family="Manrope, sans-serif" font-size="19" font-weight="800" fill="#5C5E66" letter-spacing="-0.3">${initials}</text>
+  <text x="60" y="58" font-family="Inter, sans-serif" font-size="11.5" font-weight="600" fill="#5C5E66" opacity=".72" letter-spacing="0.4">${short}</text>
 </svg>`;
 }
 
 /* ---------- ISO certification badge ------------------------------------ */
 function certBadge(standard, name) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="${standard}">
-  <circle cx="120" cy="120" r="112" fill="none" stroke="#0F4C81" stroke-width="2" opacity=".28"/>
-  <circle cx="120" cy="120" r="96" fill="none" stroke="#0F4C81" stroke-width="1" opacity=".2"/>
-  <path d="M120 44 L176 72 L176 128 C176 166 152 188 120 198 C88 188 64 166 64 128 L64 72 Z" fill="none" stroke="#0F4C81" stroke-width="3" opacity=".8"/>
-  <path d="M96 122 L113 139 L148 100" fill="none" stroke="#F59E0B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="120" y="166" text-anchor="middle" font-family="Manrope, sans-serif" font-size="17" font-weight="800" fill="#0F172A">${standard}</text>
-  <text x="120" y="184" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#64748B" letter-spacing="1.4">${name.toUpperCase()}</text>
+  <circle cx="120" cy="120" r="112" fill="none" stroke="#0B1051" stroke-width="2" opacity=".28"/>
+  <circle cx="120" cy="120" r="96" fill="none" stroke="#0B1051" stroke-width="1" opacity=".2"/>
+  <path d="M120 44 L176 72 L176 128 C176 166 152 188 120 198 C88 188 64 166 64 128 L64 72 Z" fill="none" stroke="#0B1051" stroke-width="3" opacity=".8"/>
+  <path d="M96 122 L113 139 L148 100" fill="none" stroke="#D70012" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="120" y="166" text-anchor="middle" font-family="Manrope, sans-serif" font-size="17" font-weight="800" fill="#0A0E2E">${standard}</text>
+  <text x="120" y="184" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#5C5E66" letter-spacing="1.4">${name.toUpperCase()}</text>
 </svg>`;
 }
 
@@ -497,9 +497,9 @@ CLIENT_NAMES.forEach((n, i) =>
 emit(
   "icons/logo-mark.svg",
   `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-label="Universal Structural Steel">
-  <rect width="48" height="48" rx="11" fill="#0F4C81"/>
+  <rect width="48" height="48" rx="11" fill="#0B1051"/>
   <path d="M10 34 L19 17 L24 26 L29 17 L38 34" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="24" cy="26" r="2.6" fill="#F59E0B"/>
+  <circle cx="24" cy="26" r="2.6" fill="#D70012"/>
 </svg>`,
 );
 

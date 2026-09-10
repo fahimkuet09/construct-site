@@ -115,7 +115,7 @@ export function Testimonials() {
                 />
                 <span
                   aria-hidden
-                  className="absolute top-1/2 left-1/2 flex size-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-accent text-primary-950 shadow-[var(--shadow-lift)] transition-transform duration-400 ease-[var(--ease-out-quint)] group-hover:scale-110"
+                  className="absolute top-1/2 left-1/2 flex size-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-accent text-white shadow-[var(--shadow-lift)] transition-transform duration-400 ease-[var(--ease-out-quint)] group-hover:scale-110"
                 >
                   <Play className="size-7 translate-x-0.5 fill-current" />
                 </span>
