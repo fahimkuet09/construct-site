@@ -52,7 +52,7 @@ export const site = {
   social: {
     linkedin: "https://www.linkedin.com/company/universal-structural-steel",
     x: "https://x.com/universalsteelbd",
-    youtube: "https://www.youtube.com/@universalsteelbd",
+    youtube: "https://www.youtube.com/@universalstructuralsteelltd.",
     facebook: "https://www.facebook.com/universalsteelbd",
   },
   ogImage: "/images/hero/og-default.svg",

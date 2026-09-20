@@ -6,6 +6,8 @@ import { Play, Quote, Star } from "lucide-react";
 import { testimonials } from "@/data/testimonials";
 import type { Testimonial } from "@/types";
 import { SectionHeading } from "@/components/ui";
+import { Button } from "@/components/ui/button";
+import { YouTubeIcon } from "@/components/ui/social-icon";
 import {
   Dialog,
   DialogContent,
@@ -14,6 +16,7 @@ import {
 } from "@/components/ui/dialog";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
 import { cn } from "@/lib/utils";
+import { site } from "@/lib/site";
 
 function Rating({ value, invert = false }: { value: number; invert?: boolean }) {
   return (
@@ -55,6 +58,14 @@ export function Testimonials() {
             lead="Representative feedback from the kind of clients we build for — factory owners, plant managers and operators across Bangladesh."
             className="mx-auto"
           />
+          <div className="mt-7 flex justify-center">
+            <Button asChild variant="outline" size="md">
+              <a href={site.social.youtube} target="_blank" rel="noreferrer noopener">
+                <YouTubeIcon className="size-4.5" aria-hidden />
+                Watch more on YouTube
+              </a>
+            </Button>
+          </div>
         </Reveal>
 
         {/* ---------------------------------------------- lead quote */}
@@ -193,7 +204,15 @@ export function Testimonials() {
           </DialogDescription>
 
           <div className="relative aspect-video overflow-hidden rounded-t-[var(--radius-card)] bg-primary-950">
-            {playing ? (
+            {playing?.youtubeId ? (
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${playing.youtubeId}?autoplay=1&rel=0`}
+                title={`Video testimonial from ${playing.author}`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="size-full"
+              />
+            ) : playing ? (
               <video
                 controls
                 autoPlay
@@ -221,9 +240,11 @@ export function Testimonials() {
                 {playing?.role}, {playing?.organisation}
               </span>
             </p>
-            <p className="mt-4 rounded-xl bg-background px-4 py-3 text-[0.8125rem] text-muted">
-              Demo build — the showreel stands in for the client film.
-            </p>
+            {!playing?.youtubeId ? (
+              <p className="mt-4 rounded-xl bg-background px-4 py-3 text-[0.8125rem] text-muted">
+                Demo build — the showreel stands in for the client film.
+              </p>
+            ) : null}
           </div>
         </DialogContent>
       </Dialog>

@@ -17,7 +17,8 @@ export const testimonials: Testimonial[] = [
     rating: 5,
     project: "Industrial building",
     hasVideo: true,
-    videoPoster: "/images/team/testimonial-video-01.svg",
+    videoPoster: "https://i.ytimg.com/vi/bVWmlCSzBPw/maxresdefault.jpg",
+    youtubeId: "bVWmlCSzBPw",
   },
   {
     id: "t2",
@@ -51,8 +52,6 @@ export const testimonials: Testimonial[] = [
     avatar: "/images/team/client-04.svg",
     rating: 5,
     project: "Industrial building",
-    hasVideo: true,
-    videoPoster: "/images/team/testimonial-video-02.svg",
   },
   {
     id: "t5",

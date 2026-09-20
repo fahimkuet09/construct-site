@@ -7,7 +7,10 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [360, 480, 640, 768, 1024, 1280, 1440, 1920, 2560],
     imageSizes: [64, 96, 128, 200, 256, 384],
-    remotePatterns: [{ protocol: "https", hostname: "images.unsplash.com" }],
+    remotePatterns: [
+      { protocol: "https", hostname: "images.unsplash.com" },
+      { protocol: "https", hostname: "i.ytimg.com" },
+    ],
     // Placeholder art direction ships as SVG. These are first-party assets in
     // /public only; swap for photography and this flag can be removed.
     dangerouslyAllowSVG: true,

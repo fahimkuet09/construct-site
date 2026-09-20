@@ -110,6 +110,9 @@ export interface Testimonial {
   project: string;
   videoPoster?: string;
   hasVideo?: boolean;
+  /** YouTube video ID — when present, the video modal embeds this instead
+   * of playing a local placeholder clip. */
+  youtubeId?: string;
 }
 
 export interface NewsArticle {

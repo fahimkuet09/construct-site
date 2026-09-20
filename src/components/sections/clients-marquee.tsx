@@ -28,7 +28,7 @@ export function ClientsMarquee() {
       >
         <ul
           className="animate-marquee flex w-max items-center gap-10 lg:gap-14"
-          style={{ ["--marquee-duration" as string]: "64s" }}
+          style={{ ["--marquee-duration" as string]: "150s" }}
         >
           {track.map((logo, i) => (
             <li
@@ -41,7 +41,7 @@ export function ClientsMarquee() {
                 alt={i < clients.length ? logo.name : ""}
                 width={220}
                 height={130}
-                className="h-full max-h-14 w-auto max-w-full object-contain opacity-80 grayscale transition-all duration-500 hover:opacity-100 hover:grayscale-0"
+                className="h-full max-h-14 w-auto max-w-full object-contain opacity-90 transition-opacity duration-500 hover:opacity-100"
               />
             </li>
           ))}
