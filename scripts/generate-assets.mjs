@@ -269,23 +269,6 @@ function avatar(seed, initials) {
 </svg>`;
 }
 
-/* ---------- client wordmark -------------------------------------------- */
-function wordmark(name) {
-  const initials = name
-    .split(/\s+/)
-    .slice(0, 2)
-    .map((w) => w[0])
-    .join("")
-    .toUpperCase();
-  const short = name.length > 22 ? name.slice(0, 20) + "…" : name;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="280" height="80" viewBox="0 0 280 80" role="img" aria-label="${name}">
-  <rect x="4" y="18" width="44" height="44" rx="10" fill="none" stroke="#5C5E66" stroke-width="2.5" opacity=".85"/>
-  <path d="M14 50 L26 30 L38 50" fill="none" stroke="#5C5E66" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
-  <text x="60" y="40" font-family="Manrope, sans-serif" font-size="19" font-weight="800" fill="#5C5E66" letter-spacing="-0.3">${initials}</text>
-  <text x="60" y="58" font-family="Inter, sans-serif" font-size="11.5" font-weight="600" fill="#5C5E66" opacity=".72" letter-spacing="0.4">${short}</text>
-</svg>`;
-}
-
 /* ---------- ISO certification badge ------------------------------------ */
 function certBadge(standard, name) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-label="${standard}">
@@ -476,49 +459,6 @@ for (let i = 1; i <= 2; i++) {
   );
 }
 
-/* Client wordmarks — real project clients, in the order data/company.ts lists them */
-const CLIENT_NAMES = [
-  "Navana Pharmaceuticals Ltd.",
-  "Amber Group",
-  "Soleman Khan Jute Mills Ltd.",
-  "Sigma Oil Factory",
-  "Nourish Poultry",
-  "Windy Group",
-  "AKH Knitting & Dyeing Ltd.",
-  "Standard Group",
-  "Silver Line Composite and Textile Mills Ltd.",
-  "QSL.S",
-  "Bangladesh Army",
-  "UNICEF Bangladesh",
-  "Embassy of Japan",
-  "JMI Group",
-  "Sparrow",
-  "Beximco",
-  "Shimizu Corporation",
-  "Unique Group",
-  "Daffodil International University",
-  "Odyssey Craft (Pvt.) Ltd.",
-  "Gazi Tyres",
-  "Keya",
-  "Bay Power Technology",
-  "Public Works Department",
-  "Hazrat Amanat Shah Spinning Mills Ltd.",
-  "S.A Group",
-  "Libra Group",
-  "Osman Group of Industries",
-  "Ha-Meem Group",
-  "Mumtaz",
-  "Rising Group",
-  "Fortune Shoes Ltd.",
-  "AMC Knit Composite Ltd.",
-  "Ispahani Agro Ltd.",
-  "Laila Group",
-  "MNR Group",
-  "Japfa",
-];
-CLIENT_NAMES.forEach((n, i) =>
-  emit(`images/logos/clients/client-${String(i + 1).padStart(2, "0")}.svg`, wordmark(n)),
-);
 
 /* Brand mark + favicon */
 emit(

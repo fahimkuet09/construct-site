@@ -49,7 +49,7 @@ export function Hero() {
         style={reduced ? undefined : { y: mediaY, scale: 1.12 }}
       >
         <Image
-          src="/images/hero/hero-poster.jpg"
+          src="/images/hero/hero-banner.jpg"
           alt=""
           fill
           priority
@@ -62,7 +62,7 @@ export function Hero() {
           loop
           playsInline
           preload="metadata"
-          poster="/images/hero/hero-poster.jpg"
+          poster="/images/hero/hero-banner.jpg"
           aria-hidden
           tabIndex={-1}
           onCanPlay={() => setVideoReady(true)}

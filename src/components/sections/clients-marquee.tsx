@@ -1,14 +1,9 @@
 import Image from "next/image";
 import { clients } from "@/data/company";
 
-const logos = clients.map((name, i) => ({
-  name,
-  src: `/images/logos/clients/client-${String(i + 1).padStart(2, "0")}.svg`,
-}));
-
 export function ClientsMarquee() {
   // Rendered twice so the -50% keyframe loops seamlessly.
-  const track = [...logos, ...logos];
+  const track = [...clients, ...clients];
 
   return (
     <section
@@ -32,21 +27,21 @@ export function ClientsMarquee() {
         }}
       >
         <ul
-          className="animate-marquee flex w-max items-center gap-14 lg:gap-20"
-          style={{ ["--marquee-duration" as string]: "54s" }}
+          className="animate-marquee flex w-max items-center gap-10 lg:gap-14"
+          style={{ ["--marquee-duration" as string]: "64s" }}
         >
           {track.map((logo, i) => (
             <li
               key={`${logo.name}-${i}`}
-              className="shrink-0 text-muted/70 transition-colors duration-500 hover:text-primary"
-              aria-hidden={i >= logos.length}
+              className="flex h-16 w-36 shrink-0 items-center justify-center"
+              aria-hidden={i >= clients.length}
             >
               <Image
-                src={logo.src}
-                alt={i < logos.length ? logo.name : ""}
-                width={200}
-                height={57}
-                className="h-13 w-auto opacity-75 transition-opacity duration-500 hover:opacity-100"
+                src={logo.logo}
+                alt={i < clients.length ? logo.name : ""}
+                width={220}
+                height={130}
+                className="h-full max-h-14 w-auto max-w-full object-contain opacity-80 grayscale transition-all duration-500 hover:opacity-100 hover:grayscale-0"
               />
             </li>
           ))}

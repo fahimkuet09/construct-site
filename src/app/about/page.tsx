@@ -379,14 +379,25 @@ export default function AboutPage() {
               <RevealItem
                 key={concern.name}
                 as="li"
-                className="rounded-[var(--radius-card)] border border-line bg-background p-6 text-center"
+                className="flex flex-col items-center gap-4 rounded-[var(--radius-card)] border border-line bg-background p-6 text-center"
               >
-                <p className="font-heading text-[1.0625rem] font-bold text-heading">
-                  {concern.name}
-                </p>
-                <p className="mt-1.5 text-[0.875rem] text-muted">
-                  {concern.description}
-                </p>
+                <span className="relative h-12 w-full">
+                  <Image
+                    src={concern.logo}
+                    alt={concern.name}
+                    fill
+                    sizes="200px"
+                    className="object-contain"
+                  />
+                </span>
+                <span>
+                  <p className="font-heading text-[1.0625rem] font-bold text-heading">
+                    {concern.name}
+                  </p>
+                  <p className="mt-1.5 text-[0.875rem] text-muted">
+                    {concern.description}
+                  </p>
+                </span>
               </RevealItem>
             ))}
           </RevealGroup>
