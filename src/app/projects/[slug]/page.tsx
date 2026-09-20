@@ -48,7 +48,14 @@ export default async function ProjectDetailPage({
 
   const factSheet = [
     { icon: Building2, label: "Client", value: project.client },
-    { icon: MapPin, label: "Location", value: `${project.location}, ${project.country}` },
+    {
+      icon: MapPin,
+      label: "Location",
+      value:
+        project.location === project.country
+          ? project.location
+          : `${project.location}, ${project.country}`,
+    },
     { icon: Building2, label: "Category", value: project.sector },
   ];
 

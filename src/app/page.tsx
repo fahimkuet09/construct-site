@@ -1,5 +1,4 @@
 import { Hero } from "@/components/sections/hero";
-import { HeroQuickActions } from "@/components/sections/hero-quick-actions";
 import { ClientsMarquee } from "@/components/sections/clients-marquee";
 import { AboutIntro } from "@/components/sections/about-intro";
 import { ServicesGrid } from "@/components/sections/services-grid";
@@ -14,7 +13,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <HeroQuickActions />
       <ClientsMarquee />
       <AboutIntro />
       <ServicesGrid />

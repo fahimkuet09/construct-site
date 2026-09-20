@@ -19,11 +19,15 @@ export function pinsFromProjects(
     sector: string;
     client: string;
     status: string;
-    coordinates: [number, number];
+    coordinates?: [number, number];
     featured?: boolean;
   }[],
 ): MapPin[] {
-  return items.map((p) => ({
+  return items
+    .filter(
+      (p): p is typeof p & { coordinates: [number, number] } => !!p.coordinates,
+    )
+    .map((p) => ({
     id: p.slug,
     title: p.title,
     subtitle: p.sector,

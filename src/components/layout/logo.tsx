@@ -7,9 +7,9 @@ const LOGO_WIDTH = 817;
 const LOGO_HEIGHT = 515;
 
 const SIZE_CLASSES = {
-  sm: "h-9",
-  md: "h-11",
-  lg: "h-13 lg:h-15",
+  sm: "h-12",
+  md: "h-15",
+  lg: "h-16 lg:h-20",
 } as const;
 
 export function Logo({

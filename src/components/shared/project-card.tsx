@@ -32,7 +32,7 @@ export function ProjectCard({
         >
           <Image
             src={project.thumbnail}
-            alt={`${project.title} — ${project.location}, ${project.country}`}
+            alt={`${project.title} — ${project.location === project.country ? project.location : `${project.location}, ${project.country}`}`}
             fill
             priority={priority}
             sizes={
@@ -64,7 +64,9 @@ export function ProjectCard({
           <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5">
             <span className="flex items-center gap-1.5 text-[0.8125rem] font-semibold text-white/85">
               <MapPin className="size-3.5 shrink-0 text-accent" aria-hidden />
-              {project.location}, {project.country}
+              {project.location === project.country
+                ? project.location
+                : `${project.location}, ${project.country}`}
             </span>
             <span
               aria-hidden

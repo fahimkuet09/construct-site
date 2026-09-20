@@ -99,7 +99,10 @@ export function FeaturedProjects() {
                     {featured.title}
                   </span>
                   <span className="mt-2 block text-[0.9375rem] text-white/70">
-                    {featured.client} — {featured.location}, {featured.country}
+                    {featured.client} —{" "}
+                    {featured.location === featured.country
+                      ? featured.location
+                      : `${featured.location}, ${featured.country}`}
                   </span>
                 </span>
                 <span className="flex shrink-0 items-center gap-2 font-heading text-[0.9375rem] font-bold text-white transition-colors group-hover:text-accent">

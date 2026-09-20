@@ -10,7 +10,7 @@ import {
   Target,
   Users,
 } from "lucide-react";
-import type { Leader, Stat, ValuePillar } from "@/types";
+import type { Leader, Stat, TeamMember, ValuePillar } from "@/types";
 import { site } from "@/lib/site";
 
 const yearsOfExperience = Math.max(
@@ -80,8 +80,8 @@ export const mission = {
   eyebrow: "Our Mission",
   title: "Safe, economical steel structures — built without compromise",
   body: [
-    "Universal Structural Steel Ltd. exists to give Bangladeshi businesses a faster, more resilient alternative to conventional RCC construction: pre-engineered steel buildings that are safe, economical, and engineered for long-term stability.",
-    "Every structure we deliver — an industrial shed, a commercial building, a residence or an agro-based facility — is designed to the same standard: proper synchronisation of planning, structural design, fabrication and site supervision, so the finished building performs exactly as calculated.",
+    "Our mission is to provide workmanship and customer service that maintains the highest level of professionalism and honesty. We keep professionalism and fairness in our relationship with our customers, employees and vendors.",
+    "We grow by continually providing useful and significant products, services and solutions to the markets we already serve, and by expanding into new areas that build on our competencies and our customers' interests.",
   ],
 };
 
@@ -89,13 +89,13 @@ export const visionValues: ValuePillar[] = [
   {
     title: "Mission",
     description:
-      "To provide clients safe, economical, stable and earthquake-resistant steel structures — at a price that makes sense for the project.",
+      "To provide workmanship and customer service that maintains the highest level of professionalism and honesty, growing by continually providing useful, significant products and solutions to our markets.",
     icon: Target,
   },
   {
     title: "Vision",
     description:
-      "To be the structural steel partner Bangladeshi businesses turn to first, for high-tech, high-quality metal buildings across every sector of construction.",
+      "To be the preferred contractor of choice — a company our customers want to work with, and our employees are proud to work for.",
     icon: Eye,
   },
   {
@@ -138,7 +138,7 @@ export const leadership: Leader[] = [
   {
     name: "Engr. Md. Sultan Mahmud",
     role: "Managing Director",
-    image: "/images/team/leader-01.svg",
+    image: "/images/team/md-sultan-mahmud.png",
     greeting: "Assalamu Alaikum",
     welcome:
       "Dear valued clients, take my warmest welcome to my company “Universal Structural Steel Ltd.”",
@@ -175,7 +175,8 @@ export const engineeringStandards = [
   },
 ];
 
-/** Real client / project names drawn from completed and ongoing work. */
+/** Real client / project names drawn from completed and ongoing work, and
+ * from the company profile's client roster. */
 export const clients = [
   "Navana Pharmaceuticals Ltd.",
   "Amber Group",
@@ -183,10 +184,63 @@ export const clients = [
   "Sigma Oil Factory",
   "Nourish Poultry",
   "Windy Group",
-  "Universal Knitting and Dyeing Ltd.",
+  "AKH Knitting & Dyeing Ltd.",
   "Standard Group",
   "Silver Line Composite and Textile Mills Ltd.",
   "QSL.S",
+  "Bangladesh Army",
+  "UNICEF Bangladesh",
+  "Embassy of Japan",
+  "JMI Group",
+  "Sparrow",
+  "Beximco",
+  "Shimizu Corporation",
+  "Unique Group",
+  "Daffodil International University",
+  "Odyssey Craft (Pvt.) Ltd.",
+  "Gazi Tyres",
+  "Keya",
+  "Bay Power Technology",
+  "Public Works Department",
+  "Hazrat Amanat Shah Spinning Mills Ltd.",
+  "S.A Group",
+  "Libra Group",
+  "Osman Group of Industries",
+  "Ha-Meem Group",
+  "Mumtaz",
+  "Rising Group",
+  "Fortune Shoes Ltd.",
+  "AMC Knit Composite Ltd.",
+  "Ispahani Agro Ltd.",
+  "Laila Group",
+  "MNR Group",
+  "Japfa",
+];
+
+/** Full roster from the company profile's "Our Team of Professionals" table. */
+export const team: TeamMember[] = [
+  { name: "Engr. Md. Sultan Mahmud", role: "Managing Director", qualification: "B.Sc. Engg. Civil (KUET), MIEB" },
+  { name: "Masachige Don Nihal Weheragoda", role: "Executive Director", qualification: "B.Sc. Engg. Civil (Sri Lanka)" },
+  { name: "Engr. Md. Sanjid Islam", role: "Structural Design Engineer", qualification: "B.Sc. Engg. Civil (IUT)" },
+  { name: "Engr. Md Kaosar Ali", role: "Executive Engineer", qualification: "B.Sc. Engg. Civil (EUB)" },
+  { name: "Engr. Nirmal Kumar", role: "Deputy General Manager", qualification: "B.Sc. Engg. (Civil)" },
+  { name: "Engr. Md. Kawsar Sikder", role: "Asst. General Manager", qualification: "B.Sc. Engg. (Civil), (EUB)" },
+  { name: "Engr. Md. Sujan Miah", role: "Project Coordinator", qualification: "B.Sc. Engg. (Civil), (SU)" },
+  { name: "Engr. Md. Sujan Miah", role: "Project Engineer", qualification: "B.Sc. Engg. (Civil)" },
+  { name: "Engr. Md. Tariqul Islam", role: "Project Engineer", qualification: "B.Sc. Engg. (Civil)" },
+  { name: "Md. Ripon Miah", role: "CAD Detailer", qualification: "Architecture and Interior" },
+  { name: "Debashis Ray", role: "General Manager", qualification: "Degree Pass (B.A)" },
+  { name: "Engr. Iftekhar Hossain", role: "Assistant General Manager", qualification: "B.Sc. Engg. (Civil), (CUET), MIEB" },
+  { name: "Engr. Md Enamul Hoque", role: "Assistant Engineer", qualification: "B.Sc. Engr. (Civil), (SU)" },
+  { name: "Md. Raqibul Islam", role: "Assistant Engineer", qualification: "B.Sc. Engg. (Civil), (EUB)" },
+  { name: "Engr. Md. Rayhan Uddin", role: "Assistant Engineer", qualification: "B.Sc. Engr. Civil, (EUB)" },
+  { name: "Sultana Rabeya", role: "Marketing Officer", qualification: "Honr's, Masters" },
+  { name: "Farida Akter", role: "Marketing Officer", qualification: "Bachelor of Social Science (BSS)" },
+  { name: "Md. Shafiqul Islam", role: "Senior Executive", qualification: "Degree Pass (B.Com)" },
+  { name: "Md. Ashraful Haque", role: "VAT Officer", qualification: "Honr's, Masters" },
+  { name: "Foysal Ahmed", role: "Senior Officer", qualification: "Honr's" },
+  { name: "Atikur Rahman", role: "Senior Officer", qualification: "Honr's" },
+  { name: "Toufiq Khan", role: "Senior Officer", qualification: "Honr's" },
 ];
 
 /** Qualitative, verifiable points about steel construction — no invented metrics. */

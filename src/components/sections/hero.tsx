@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   motion,
   useScroll,
@@ -11,13 +12,10 @@ import {
 import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Magnetic } from "@/components/motion/magnetic";
-import { heroSlides } from "@/data/hero-slides";
-import {
-  HeroCarouselMedia,
-  HeroCarouselControls,
-} from "@/components/sections/hero-carousel";
+import { Counter } from "@/components/motion/counter";
+import { heroStats } from "@/data/company";
 import { useLocale } from "@/components/locale-provider";
-import type { Swiper as SwiperClass } from "swiper";
+import type { TranslationKey } from "@/lib/i18n";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -25,9 +23,9 @@ export function Hero() {
   const ref = React.useRef<HTMLElement>(null);
   const reduced = useReducedMotion();
   const { t } = useLocale();
-
-  const heroSwiperRef = React.useRef<SwiperClass | null>(null);
-  const [activeSlide, setActiveSlide] = React.useState(0);
+  const tk = (key: string | undefined, fallback: string) =>
+    key ? t(key as TranslationKey) : fallback;
+  const [videoReady, setVideoReady] = React.useState(false);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -50,13 +48,31 @@ export function Hero() {
         className="absolute inset-0"
         style={reduced ? undefined : { y: mediaY, scale: 1.12 }}
       >
-        <HeroCarouselMedia
-          slides={heroSlides}
-          onSwiper={(s) => {
-            heroSwiperRef.current = s;
-          }}
-          onSlideChange={setActiveSlide}
+        <Image
+          src="/images/hero/hero-poster.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/images/hero/hero-poster.jpg"
+          aria-hidden
+          tabIndex={-1}
+          onCanPlay={() => setVideoReady(true)}
+          className={`absolute inset-0 size-full object-cover transition-opacity duration-1000 ${
+            videoReady ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <source src="/videos/hero.webm" type="video/webm" />
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
       </motion.div>
 
       {/* ----------------------------------------------------- overlays */}
@@ -70,20 +86,21 @@ export function Hero() {
         aria-hidden
         className="absolute inset-0 bg-gradient-to-r from-primary-950/88 via-primary-950/35 to-transparent"
       />
+      <div aria-hidden className="blueprint-grid-dark absolute inset-0 opacity-40" />
 
       {/* ----------------------------------------------------- content */}
       <motion.div
         className="relative"
         style={reduced ? undefined : { y: contentY, opacity: contentOpacity }}
       >
-        <div className="container-shell pt-36 pb-48 lg:pt-40 lg:pb-56">
+        <div className="container-shell pt-36 pb-12 lg:pt-40 lg:pb-16">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: EASE }}
             className="mb-7 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.07] py-2 pr-5 pl-2 backdrop-blur-md"
           >
-            <span className="rounded-full bg-accent px-3 py-1 font-heading text-[0.6875rem] font-extrabold tracking-[0.1em] whitespace-nowrap text-white uppercase">
+            <span className="rounded-full bg-accent px-3 py-1 font-heading text-[0.6875rem] font-extrabold tracking-[0.1em] whitespace-nowrap text-primary-950 uppercase">
               {t("hero.badge")}
             </span>
             <span className="text-[0.8125rem] font-medium text-white/75">
@@ -148,20 +165,47 @@ export function Hero() {
               </Button>
             </Magnetic>
           </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.85, delay: 0.85, ease: EASE }}
-            className="mt-8"
-          >
-            <HeroCarouselControls
-              count={heroSlides.length}
-              activeIndex={activeSlide}
-              swiperRef={heroSwiperRef}
-            />
-          </motion.div>
         </div>
+
+        {/* ------------------------------------------------ stats rail */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.95, ease: EASE }}
+          className="border-t border-white/12 bg-primary-950/40 backdrop-blur-md"
+        >
+          <div className="container-shell">
+            <dl className="grid grid-cols-2 divide-white/10 lg:grid-cols-4 lg:divide-x">
+              {heroStats.map((stat, i) => (
+                <div
+                  key={stat.label}
+                  className={`px-0 py-6 lg:px-8 lg:py-8 ${
+                    i === 0 ? "lg:pl-0" : ""
+                  } ${i % 2 === 0 ? "pr-4" : "pl-4 lg:pl-8"} ${
+                    i < 2 ? "border-b border-white/10 lg:border-b-0" : ""
+                  }`}
+                >
+                  <dd className="font-heading text-[clamp(1.75rem,1.2rem+1.8vw,2.5rem)] leading-none font-extrabold text-white tabular-nums">
+                    <Counter
+                      value={stat.value}
+                      prefix={stat.prefix}
+                      suffix={tk(stat.suffixKey, stat.suffix ?? "")}
+                      decimals={stat.decimals}
+                    />
+                  </dd>
+                  <dt className="mt-2.5 font-heading text-[0.875rem] font-bold text-accent">
+                    {tk(stat.labelKey, stat.label)}
+                  </dt>
+                  {stat.description ? (
+                    <p className="mt-1 text-[0.8125rem] text-white/45">
+                      {tk(stat.descriptionKey, stat.description)}
+                    </p>
+                  ) : null}
+                </div>
+              ))}
+            </dl>
+          </div>
+        </motion.div>
       </motion.div>
 
       {/* --------------------------------------------- scroll indicator */}

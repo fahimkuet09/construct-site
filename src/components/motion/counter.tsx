@@ -3,7 +3,6 @@
 import * as React from "react";
 import { useInView, useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { useLocale } from "@/components/locale-provider";
 
 /**
  * Counts up once when scrolled into view. Uses rAF against a real elapsed
@@ -27,7 +26,6 @@ export function Counter({
   const ref = React.useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, amount: 0.4 });
   const reduced = useReducedMotion();
-  const { n } = useLocale();
   const [display, setDisplay] = React.useState(reduced ? value : 0);
 
   React.useEffect(() => {
@@ -56,7 +54,7 @@ export function Counter({
   return (
     <span ref={ref} className={cn("tabular-nums", className)}>
       {prefix}
-      {n(formatted)}
+      {formatted}
       {suffix}
     </span>
   );

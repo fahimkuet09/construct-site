@@ -35,7 +35,9 @@ export interface Project {
   status: ProjectStatus;
   location: string;
   country: string;
-  coordinates: [number, number];
+  /** Omitted when the client's precise site location isn't confirmed —
+   * such projects appear in listings but not on the project map. */
+  coordinates?: [number, number];
   summary: string;
   overview: string[];
   heroImage: string;
@@ -147,6 +149,12 @@ export interface Leader {
   bio: string;
   credentials: string;
   linkedin?: string;
+}
+
+export interface TeamMember {
+  name: string;
+  role: string;
+  qualification: string;
 }
 
 export interface Milestone {

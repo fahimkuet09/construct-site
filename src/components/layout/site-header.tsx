@@ -9,7 +9,6 @@ import { ArrowUpRight, ChevronDown } from "lucide-react";
 import { navigation } from "@/data/navigation";
 import { Logo } from "./logo";
 import { SiteSearch } from "./site-search";
-import { LanguageSwitcher } from "./language-switcher";
 import { MobileNav } from "./mobile-nav";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -222,9 +221,6 @@ export function SiteHeader() {
         {/* ---------------------------------------------------- actions */}
         <div className="flex items-center gap-1 md:gap-1.5">
           <SiteSearch invert={invert} />
-          <div className="hidden md:block">
-            <LanguageSwitcher invert={invert} />
-          </div>
           <Button
             asChild
             variant={invert ? "light" : "primary"}

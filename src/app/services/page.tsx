@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ArrowUpRight, Check } from "lucide-react";
 import { services } from "@/data/services";
 import { processSteps } from "@/data/process";
+import { consultancyServices, constructionSolutions } from "@/data/capabilities";
 import type { ProjectSector } from "@/types";
 
 const sectorBySlug: Record<string, ProjectSector> = {
@@ -186,6 +187,63 @@ export default function ServicesPage() {
           </section>
         );
       })}
+
+      {/* ============================================ full capability list */}
+      <section className="section-y bg-background">
+        <div className="container-shell">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Beyond steel buildings"
+              title="Our full range of consultancy and construction capabilities"
+              lead="Delivered directly or through our sister concerns, Versatile Design Consultants and Versatile Construction Solutions Ltd."
+            />
+          </Reveal>
+
+          <div className="mt-14 grid gap-10 lg:grid-cols-2 lg:gap-14">
+            <Reveal>
+              <h3 className="font-heading text-[1.0625rem] font-bold text-heading">
+                Consultancy services
+              </h3>
+              <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+                {consultancyServices.map((item) => (
+                  <li
+                    key={item}
+                    className="flex items-start gap-2.5 text-[0.9375rem] text-body"
+                  >
+                    <Check
+                      className="mt-1 size-4 shrink-0 text-primary"
+                      strokeWidth={2.6}
+                      aria-hidden
+                    />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+
+            <Reveal delay={0.05}>
+              <h3 className="font-heading text-[1.0625rem] font-bold text-heading">
+                Construction solutions services
+              </h3>
+              <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+                {constructionSolutions.map((item) => (
+                  <li
+                    key={item}
+                    className="flex items-start gap-2.5 text-[0.9375rem] text-body"
+                  >
+                    <Check
+                      className="mt-1 size-4 shrink-0 text-primary"
+                      strokeWidth={2.6}
+                      aria-hidden
+                    />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
+        </div>
+      </section>
 
       {/* =================================================== benefits */}
       <section className="section-y relative overflow-hidden bg-secondary text-white">

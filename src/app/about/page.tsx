@@ -13,6 +13,7 @@ import {
   leadership,
   mission,
   sustainability,
+  team,
   values,
   visionValues,
 } from "@/data/company";
@@ -168,22 +169,20 @@ export default function AboutPage() {
         <div className="container-shell">
           <div className="grid gap-16 lg:grid-cols-[0.72fr_1.28fr] lg:items-center lg:gap-24">
             <Reveal>
-              <div className="overflow-hidden rounded-[var(--radius-card)] border border-white/10">
-                <div className="relative aspect-[4/5]">
+              <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+                <div className="relative size-56 shrink-0 overflow-hidden rounded-full border-4 border-white/10 shadow-[var(--shadow-deep)] sm:size-64 lg:size-72">
                   <Image
                     src={md.image}
                     alt={`Portrait of ${md.name}`}
                     fill
-                    sizes="(max-width: 1024px) 100vw, 480px"
+                    sizes="(max-width: 640px) 224px, (max-width: 1024px) 256px, 288px"
                     className="object-cover"
                   />
                 </div>
-                <div className="border-t border-white/10 bg-white/[0.04] p-6">
-                  <p className="font-heading text-[1.0625rem] font-bold text-white">
-                    {md.name}
-                  </p>
-                  <p className="mt-1 text-[0.875rem] text-white/65">{md.role}</p>
-                </div>
+                <p className="mt-7 font-heading text-[1.0625rem] font-bold text-white">
+                  {md.name}
+                </p>
+                <p className="mt-1 text-[0.875rem] text-white/65">{md.role}</p>
               </div>
             </Reveal>
 
@@ -220,6 +219,57 @@ export default function AboutPage() {
               </p>
             </Reveal>
           </div>
+        </div>
+      </section>
+
+      {/* =========================================== team of professionals */}
+      <section className="section-y bg-background">
+        <div className="container-shell">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Our people"
+              title="Our team of professionals"
+              lead="The engineers and staff behind measurement, calculation, fabrication and site delivery."
+            />
+          </Reveal>
+
+          <Reveal delay={0.05}>
+            <div className="mt-12 overflow-x-auto rounded-[var(--radius-card)] border border-line">
+              <table className="w-full min-w-[560px] border-collapse text-left text-[0.9375rem]">
+                <thead>
+                  <tr className="border-b border-line bg-surface">
+                    <th className="px-6 py-4 font-heading text-[0.75rem] font-bold tracking-[0.08em] text-muted uppercase">
+                      Name
+                    </th>
+                    <th className="px-6 py-4 font-heading text-[0.75rem] font-bold tracking-[0.08em] text-muted uppercase">
+                      Designation
+                    </th>
+                    <th className="px-6 py-4 font-heading text-[0.75rem] font-bold tracking-[0.08em] text-muted uppercase">
+                      Qualification
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {team.map((member, i) => (
+                    <tr
+                      key={`${member.name}-${member.role}`}
+                      className={i % 2 === 1 ? "bg-surface/60" : "bg-surface"}
+                    >
+                      <td className="border-t border-line px-6 py-4 font-heading font-bold text-heading">
+                        {member.name}
+                      </td>
+                      <td className="border-t border-line px-6 py-4 text-primary">
+                        {member.role}
+                      </td>
+                      <td className="border-t border-line px-6 py-4 text-body">
+                        {member.qualification}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -305,6 +355,37 @@ export default function AboutPage() {
                 </p>
                 <p className="mt-2 text-[0.875rem] leading-relaxed text-white/55">
                   {item.detail}
+                </p>
+              </RevealItem>
+            ))}
+          </RevealGroup>
+        </div>
+      </section>
+
+      {/* =============================================== sister concerns */}
+      <section className="section-y-sm bg-surface">
+        <div className="container-shell">
+          <Reveal>
+            <p className="text-center font-heading text-[0.75rem] font-bold tracking-[0.16em] text-muted uppercase">
+              Sister concerns
+            </p>
+          </Reveal>
+          <RevealGroup
+            as="ul"
+            stagger={0.06}
+            className="mt-8 grid gap-5 sm:grid-cols-3"
+          >
+            {site.sisterConcerns.map((concern) => (
+              <RevealItem
+                key={concern.name}
+                as="li"
+                className="rounded-[var(--radius-card)] border border-line bg-background p-6 text-center"
+              >
+                <p className="font-heading text-[1.0625rem] font-bold text-heading">
+                  {concern.name}
+                </p>
+                <p className="mt-1.5 text-[0.875rem] text-muted">
+                  {concern.description}
                 </p>
               </RevealItem>
             ))}

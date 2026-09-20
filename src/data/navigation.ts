@@ -113,7 +113,7 @@ export const navigation: NavItem[] = [
       },
     ],
   },
-  { label: "Careers", labelKey: "nav.careers", href: "/careers" },
+  { label: "Factory", labelKey: "nav.factory", href: "/factory" },
   { label: "News", labelKey: "nav.news", href: "/news" },
   { label: "Contact", labelKey: "nav.contact", href: "/contact" },
 ];

@@ -16,7 +16,7 @@ const staticPages: SearchDoc[] = [
   {
     id: "page-about",
     title: "About Universal Structural Steel",
-    description: "Mission, leadership and engineering standards, since 2017.",
+    description: "Mission, leadership and engineering standards, since 2016.",
     href: "/about",
     group: "Pages",
     keywords: "about mission leadership values managing director engineering standards",

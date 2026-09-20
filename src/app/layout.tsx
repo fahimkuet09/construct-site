@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Manrope, Noto_Sans_Bengali } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 import { LocaleProvider } from "@/components/locale-provider";
 import { SmoothScroll } from "@/components/motion/smooth-scroll";
 import { ScrollProgress } from "@/components/motion/scroll-progress";
@@ -19,14 +19,6 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
-});
-
-// Bangla needs its own family — Manrope and Inter have no Bengali glyphs.
-const bengali = Noto_Sans_Bengali({
-  subsets: ["bengali"],
-  variable: "--font-bengali",
-  display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -49,10 +41,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="en"
-      className={`${manrope.variable} ${inter.variable} ${bengali.variable}`}
-    >
+    <html lang="en" className={`${manrope.variable} ${inter.variable}`}>
       <body className="min-h-dvh antialiased">
         <a
           href="#main"
