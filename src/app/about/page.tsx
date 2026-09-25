@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Quote } from "lucide-react";
 import { PageHero } from "@/components/shared/page-hero";
 import { CtaBand } from "@/components/sections/cta-band";
+import { SisterConcerns } from "@/components/sections/sister-concerns";
 import { SectionHeading } from "@/components/ui";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
 import { Counter } from "@/components/motion/counter";
@@ -34,7 +35,7 @@ export default function AboutPage() {
         eyebrow={`About ${site.shortName}`}
         title="Concept to construction, in structural steel"
         lead={`A Dhaka-based structural steel company delivering pre-engineered buildings across Bangladesh since ${site.founded} — one accountable team from site measurement through to handover.`}
-        image="/images/about/about-hero.svg"
+        image="/images/Portfolio/commercial-building-dusk.jpg"
         crumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
         size="tall"
       />
@@ -210,9 +211,14 @@ export default function AboutPage() {
                 </p>
               ) : null}
 
-              <p className="mt-5 max-w-[60ch] text-[1.0625rem] leading-relaxed text-white/70">
-                {md.bio}
-              </p>
+              {md.bio.split("\n\n").map((para) => (
+                <p
+                  key={para}
+                  className="mt-5 max-w-[60ch] text-[1.0625rem] leading-relaxed text-white/70"
+                >
+                  {para}
+                </p>
+              ))}
 
               <p className="mt-8 border-t border-white/12 pt-6 font-heading text-[0.8125rem] font-bold tracking-[0.08em] text-accent uppercase">
                 {md.credentials}
@@ -362,47 +368,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* =============================================== sister concerns */}
-      <section className="section-y-sm bg-surface">
-        <div className="container-shell">
-          <Reveal>
-            <p className="text-center font-heading text-[0.75rem] font-bold tracking-[0.16em] text-muted uppercase">
-              Sister concerns
-            </p>
-          </Reveal>
-          <RevealGroup
-            as="ul"
-            stagger={0.06}
-            className="mt-8 grid gap-5 sm:grid-cols-3"
-          >
-            {site.sisterConcerns.map((concern) => (
-              <RevealItem
-                key={concern.name}
-                as="li"
-                className="flex flex-col items-center gap-4 rounded-[var(--radius-card)] border border-line bg-background p-6 text-center"
-              >
-                <span className="relative h-12 w-full">
-                  <Image
-                    src={concern.logo}
-                    alt={concern.name}
-                    fill
-                    sizes="200px"
-                    className="object-contain"
-                  />
-                </span>
-                <span>
-                  <p className="font-heading text-[1.0625rem] font-bold text-heading">
-                    {concern.name}
-                  </p>
-                  <p className="mt-1.5 text-[0.875rem] text-muted">
-                    {concern.description}
-                  </p>
-                </span>
-              </RevealItem>
-            ))}
-          </RevealGroup>
-        </div>
-      </section>
+      <SisterConcerns />
 
       <CtaBand
         eyebrow="Work with us"

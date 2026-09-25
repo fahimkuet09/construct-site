@@ -16,7 +16,7 @@ export default function NewsPage() {
         eyebrow="News"
         title="Notes from the workshop and the site"
         lead="Engineering explainers and company updates — written by the team doing the work."
-        image="/images/news/news-01.svg"
+        image="/images/Portfolio/riverside-frame-erection.jpg"
         crumbs={[{ label: "Home", href: "/" }, { label: "News" }]}
       />
 

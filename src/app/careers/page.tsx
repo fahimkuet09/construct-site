@@ -26,7 +26,7 @@ export default function CareersPage() {
         eyebrow="Careers"
         title="Build structures that stand on your calculations"
         lead="We are a small, technical business run by engineers. You'll work directly on live projects from day one, alongside people who know structural steel inside out."
-        image="/images/careers/careers-hero.svg"
+        image="/images/Portfolio/urban-infill-steel-erection.jpg"
         crumbs={[{ label: "Home", href: "/" }, { label: "Careers" }]}
       >
         <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:grid-cols-4">

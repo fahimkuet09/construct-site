@@ -1,6 +1,8 @@
 import { Hero } from "@/components/sections/hero";
 import { ClientsMarquee } from "@/components/sections/clients-marquee";
 import { AboutIntro } from "@/components/sections/about-intro";
+import { MdMessage } from "@/components/sections/md-message";
+import { SisterConcerns } from "@/components/sections/sister-concerns";
 import { ServicesGrid } from "@/components/sections/services-grid";
 import { FeaturedProjects } from "@/components/sections/featured-projects";
 import { ProcessTimeline } from "@/components/sections/process-timeline";
@@ -15,6 +17,8 @@ export default function HomePage() {
       <Hero />
       <ClientsMarquee />
       <AboutIntro />
+      <MdMessage />
+      <SisterConcerns />
       <ServicesGrid />
       <FeaturedProjects />
       <ProcessTimeline />

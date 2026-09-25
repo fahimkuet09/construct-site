@@ -24,7 +24,7 @@ export default function ContactPage() {
         eyebrow="Contact"
         title="Tell us about the building you're planning"
         lead="Send us the rough size, use and site location, and we'll arrange a site visit — the first step in our four-stage process."
-        image="/images/office/office-hero.svg"
+        image="/images/Portfolio/institutional-building-exterior.jpg"
         crumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
       >
         <div className="mt-10 flex flex-wrap gap-x-10 gap-y-5">

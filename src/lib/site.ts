@@ -36,17 +36,17 @@ export const site = {
     {
       name: "Versatile Construction Solutions Ltd.",
       description: "Construction solutions",
-      logo: "/images/logos/sister/versatile-construction-solutions-ltd.png",
+      logo: "/images/sister_concerns/concern2.png",
     },
     {
       name: "Versatile Design Consultants",
       description: "Architectural & design consultancy",
-      logo: "/images/logos/sister/versatile-design-consultants.png",
+      logo: "/images/sister_concerns/concern1.png",
     },
     {
       name: "Universal Energy",
       description: "Empowering a sustainable tomorrow",
-      logo: "/images/logos/sister/universal-energy.png",
+      logo: "/images/sister_concerns/concern3.png",
     },
   ],
   social: {

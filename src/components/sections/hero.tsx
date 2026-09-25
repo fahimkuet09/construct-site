@@ -25,7 +25,6 @@ export function Hero() {
   const { t } = useLocale();
   const tk = (key: string | undefined, fallback: string) =>
     key ? t(key as TranslationKey) : fallback;
-  const [videoReady, setVideoReady] = React.useState(false);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -49,30 +48,13 @@ export function Hero() {
         style={reduced ? undefined : { y: mediaY, scale: 1.12 }}
       >
         <Image
-          src="/images/hero/hero-banner.jpg"
+          src="/images/hero/hero_banner_upgrade.jpeg"
           alt=""
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover object-center"
         />
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster="/images/hero/hero-banner.jpg"
-          aria-hidden
-          tabIndex={-1}
-          onCanPlay={() => setVideoReady(true)}
-          className={`absolute inset-0 size-full object-cover transition-opacity duration-1000 ${
-            videoReady ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <source src="/videos/hero.webm" type="video/webm" />
-          <source src="/videos/hero.mp4" type="video/mp4" />
-        </video>
       </motion.div>
 
       {/* ----------------------------------------------------- overlays */}

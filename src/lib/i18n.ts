@@ -10,7 +10,7 @@ export const en = {
   "hero.line2": "construction,",
   "hero.line3": "in steel",
   "hero.lead":
-    "We design, fabricate and erect pre-engineered steel buildings — industrial, commercial, residential and agro-based — under one accountable team, from the first site visit to handover.",
+    "Universal Structural Steel Ltd. — engineered for excellence, built for strength. Delivering world-class structural steel solutions with precision, innovation, quality craftsmanship, and global standards to build lasting value worldwide.",
   "hero.monitoring": "Engineering turnaround",
   "hero.settlement": "Calculation & firm quote",
   "hero.availability": "Projects delivered",

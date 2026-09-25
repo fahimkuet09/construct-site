@@ -80,8 +80,8 @@ export const mission = {
   eyebrow: "Our Mission",
   title: "Safe, economical steel structures — built without compromise",
   body: [
-    "Our mission is to provide workmanship and customer service that maintains the highest level of professionalism and honesty. We keep professionalism and fairness in our relationship with our customers, employees and vendors.",
-    "We grow by continually providing useful and significant products, services and solutions to the markets we already serve, and by expanding into new areas that build on our competencies and our customers' interests.",
+    "Our mission is to provide workmanship and customer service to maintain the highest level of professionalism honesty. We keep a professionalism and fairness in our relationship with our customers, employees and vendors.",
+    "To grow by continually providing useful and significant products, services and solutions to markets, we already serve and to expand new areas that build on our competencies and customer interests.",
   ],
 };
 
@@ -89,7 +89,7 @@ export const visionValues: ValuePillar[] = [
   {
     title: "Mission",
     description:
-      "To provide workmanship and customer service that maintains the highest level of professionalism and honesty, growing by continually providing useful, significant products and solutions to our markets.",
+      "To provide workmanship and customer service to maintain the highest level of professionalism honesty, growing by continually providing useful and significant products, services and solutions to our markets.",
     icon: Target,
   },
   {
@@ -139,10 +139,10 @@ export const leadership: Leader[] = [
     name: "Engr. Md. Sultan Mahmud",
     role: "Managing Director",
     image: "/images/team/md-sultan-mahmud.png",
-    greeting: "Assalamu Alaikum",
+    greeting: "Dear Valued Clients, Partners, and Well-Wishers,",
     welcome:
-      "Dear valued clients, take my warmest welcome to my company “Universal Structural Steel Ltd.”",
-    bio: "Our honest and dedicated vision of offering high-tech along with high-quality metal buildings at an affordable price in all sector of constructions. As a civil engineer, I believe that a proper synchronization of project planning, design, materials fabrication, constructions supervision must lead to a classy and fabulous creation after all.",
+      "It is my pleasure to welcome you to Universal Structural Steel Ltd. (USSL), where we are committed to delivering innovative, reliable, and high-quality steel construction solutions.",
+    bio: "Our expertise covers the design, fabrication, and erection of Pre-Engineered Buildings (PEB) and structural steel structures for industrial, commercial, and infrastructure projects. With a skilled engineering team, modern fabrication facilities, rigorous quality control, and close project supervision, we strive to ensure precision, safety, superior finishing, cost efficiency, and timely delivery.\n\nOur growth is built on the trust of our clients, the dedication of our people, and the strength of our partnerships. As Bangladesh advances through rapid industrialization and infrastructure development, USSL remains committed to supporting this progress through dependable and innovative construction solutions.",
     credentials: "B.Sc. in Civil Engineering (KUET), MIEB",
   },
 ];
