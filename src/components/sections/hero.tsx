@@ -47,14 +47,33 @@ export function Hero() {
         className="absolute inset-0"
         style={reduced ? undefined : { y: mediaY, scale: 1.12 }}
       >
-        <Image
-          src="/images/hero/hero_banner_upgrade.jpeg"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
+        <motion.div
+          className="absolute inset-0"
+          initial={reduced ? undefined : { opacity: 0, scale: 1 }}
+          animate={reduced ? undefined : { opacity: 1, scale: 1.08 }}
+          transition={
+            reduced
+              ? undefined
+              : {
+                  opacity: { duration: 1.6, ease: EASE },
+                  scale: {
+                    duration: 20,
+                    ease: "linear",
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                  },
+                }
+          }
+        >
+          <Image
+            src="/images/hero/hero-image-new.webp"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+        </motion.div>
       </motion.div>
 
       {/* ----------------------------------------------------- overlays */}
@@ -90,8 +109,8 @@ export function Hero() {
             </span>
           </motion.div>
 
-          <h1 className="max-w-[17ch] text-display text-white">
-            {[t("hero.line1"), t("hero.line2"), t("hero.line3")].map((line, i) =>
+          <h1 className="max-w-[32ch] text-display text-white">
+            {[t("hero.line1")].map((line, i) =>
               reduced ? (
                 <span key={line} className="block">
                   {line}

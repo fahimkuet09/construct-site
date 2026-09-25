@@ -48,6 +48,11 @@ export const site = {
       description: "Empowering a sustainable tomorrow",
       logo: "/images/sister_concerns/concern3.png",
     },
+    {
+      name: "Universal Landmark Ltd.",
+      description: "Real estate development",
+      logo: "/images/sister_concerns/concern4.png",
+    },
   ],
   social: {
     linkedin: "https://www.linkedin.com/company/universal-structural-steel",

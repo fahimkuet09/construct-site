@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { PageHero } from "@/components/shared/page-hero";
 import { CtaBand } from "@/components/sections/cta-band";
 import { SectionHeading } from "@/components/ui";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
+import { ParallaxImage } from "@/components/motion/parallax";
 import { factoryEquipment } from "@/data/factory";
 import { site } from "@/lib/site";
 
@@ -148,6 +150,32 @@ export default function FactoryPage() {
           </RevealGroup>
         </div>
       </section>
+
+      {/* ==================================================== showcase */}
+      <Reveal>
+        <section className="relative overflow-hidden bg-primary-950">
+          <ParallaxImage className="aspect-[4/3] w-full sm:aspect-[16/9] lg:aspect-[21/9]" intensity={10}>
+            <Image
+              src="/images/equipment/steel-structure-building.webp"
+              alt="Pre-engineered steel building frame under a clear sky, ready for cladding"
+              fill
+              sizes="100vw"
+              className="object-cover"
+            />
+          </ParallaxImage>
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-primary-950/85 via-primary-950/10 to-transparent"
+          />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0">
+            <div className="container-shell pb-8 lg:pb-10">
+              <p className="max-w-[42ch] font-heading text-[1.1875rem] leading-snug font-bold text-white lg:text-[1.5rem]">
+                Every frame engineered to hold its line — from foundation bolt to roof ridge.
+              </p>
+            </div>
+          </div>
+        </section>
+      </Reveal>
 
       {/* =============================================== materials spec */}
       <section className="section-y bg-background">

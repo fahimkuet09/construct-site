@@ -6,11 +6,9 @@ export const en = {
   // --- hero
   "hero.badge": "Since 2016",
   "hero.badgeText": "Structural steel across Bangladesh",
-  "hero.line1": "Concept to",
-  "hero.line2": "construction,",
-  "hero.line3": "in steel",
+  "hero.line1": "Universal Structural Steel Ltd",
   "hero.lead":
-    "Universal Structural Steel Ltd. — engineered for excellence, built for strength. Delivering world-class structural steel solutions with precision, innovation, quality craftsmanship, and global standards to build lasting value worldwide.",
+    "Engineered for excellence, built for strength — delivering world-class structural steel solutions with precision, innovation, quality craftsmanship, and global standards to build lasting value worldwide.",
   "hero.monitoring": "Engineering turnaround",
   "hero.settlement": "Calculation & firm quote",
   "hero.availability": "Projects delivered",
