@@ -22,8 +22,8 @@ export function AboutIntro() {
                 intensity={9}
               >
                 <Image
-                  src="/images/about/for_misson.png"
-                  alt="Steel structure frame under erection on site"
+                  src="/images/equipment/structural-glass-ceiling_1112-1176.avif"
+                  alt="Structural steel and glass roof framing"
                   fill
                   sizes="(max-width: 1024px) 100vw, 620px"
                   className="object-cover"
@@ -34,8 +34,8 @@ export function AboutIntro() {
               <div className="absolute -right-4 -bottom-10 hidden w-[46%] overflow-hidden rounded-[var(--radius-card)] border-6 border-background shadow-[var(--shadow-lift)] sm:block lg:-right-10">
                 <div className="relative aspect-[4/3]">
                   <Image
-                    src="/images/about/for_second.png"
-                    alt="Close-up of a fabricated steel connection"
+                    src="/images/about/for_misson.png"
+                    alt="Steel structure frame under erection on site"
                     fill
                     sizes="300px"
                     className="object-cover"

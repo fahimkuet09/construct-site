@@ -102,8 +102,8 @@ export default function AboutPage() {
                 intensity={8}
               >
                 <Image
-                  src="/images/about/values.svg"
-                  alt="Structural steel frame under erection on site"
+                  src="/images/equipment/structural-glass-ceiling_1112-1176.avif"
+                  alt="Structural steel and glass roof framing"
                   fill
                   sizes="(max-width: 1024px) 100vw, 560px"
                   className="object-cover"
