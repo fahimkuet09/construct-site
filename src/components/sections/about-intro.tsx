@@ -30,19 +30,6 @@ export function AboutIntro() {
                 />
               </ParallaxImage>
 
-              {/* Overlapping secondary frame */}
-              <div className="absolute -right-4 -bottom-10 hidden w-[46%] overflow-hidden rounded-[var(--radius-card)] border-6 border-background shadow-[var(--shadow-lift)] sm:block lg:-right-10">
-                <div className="relative aspect-[4/3]">
-                  <Image
-                    src="/images/about/for_misson.png"
-                    alt="Steel structure frame under erection on site"
-                    fill
-                    sizes="300px"
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-
               {/* Founding datum */}
               <div className="absolute -top-6 -left-4 rounded-2xl bg-primary px-6 py-5 shadow-[var(--shadow-lift)] lg:-left-10">
                 <p className="font-heading text-[0.625rem] font-bold tracking-[0.16em] text-white/60 uppercase">

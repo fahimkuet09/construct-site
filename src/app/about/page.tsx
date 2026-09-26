@@ -166,64 +166,90 @@ export default function AboutPage() {
       </section>
 
       {/* ================================================ leadership */}
-      <section id="leadership" className="section-y bg-secondary text-white">
-        <div className="container-shell">
-          <div className="grid gap-16 lg:grid-cols-[0.72fr_1.28fr] lg:items-center lg:gap-24">
-            <Reveal>
-              <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-                <div className="relative size-56 shrink-0 overflow-hidden rounded-full border-4 border-white/10 shadow-[var(--shadow-deep)] sm:size-64 lg:size-72">
-                  <Image
-                    src={md.image}
-                    alt={`Portrait of ${md.name}`}
-                    fill
-                    sizes="(max-width: 640px) 224px, (max-width: 1024px) 256px, 288px"
-                    className="object-cover"
-                  />
+      <section
+        id="leadership"
+        className="relative overflow-hidden bg-primary-950 text-white"
+      >
+        {/* ------------------------------------------------------- media */}
+        <ParallaxImage className="absolute inset-0" intensity={8}>
+          <Image
+            src="/images/equipment/steel-structure-building.webp"
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+        </ParallaxImage>
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-gradient-to-b from-primary-950/92 via-primary-950/90 to-primary-950/95"
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-gradient-to-r from-primary-950/60 via-transparent to-primary-950/60"
+        />
+        <div aria-hidden className="blueprint-grid-dark absolute inset-0 opacity-30" />
+
+        {/* ----------------------------------------------------- content */}
+        <div className="relative section-y">
+          <div className="container-shell">
+            <div className="grid gap-16 lg:grid-cols-[0.72fr_1.28fr] lg:items-center lg:gap-24">
+              <Reveal>
+                <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+                  <div className="relative size-56 shrink-0 overflow-hidden rounded-full border-4 border-white/15 shadow-[var(--shadow-deep)] sm:size-64 lg:size-72">
+                    <Image
+                      src={md.image}
+                      alt={`Portrait of ${md.name}`}
+                      fill
+                      sizes="(max-width: 640px) 224px, (max-width: 1024px) 256px, 288px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <p className="mt-7 font-heading text-[1.0625rem] font-bold text-white">
+                    {md.name}
+                  </p>
+                  <p className="mt-1 text-[0.875rem] text-white/65">{md.role}</p>
                 </div>
-                <p className="mt-7 font-heading text-[1.0625rem] font-bold text-white">
-                  {md.name}
+              </Reveal>
+
+              <Reveal direction="left">
+                <span className="eyebrow text-accent">
+                  <span aria-hidden className="h-px w-8 bg-accent/50" />
+                  Managing Director&rsquo;s message
+                </span>
+
+                <Quote
+                  aria-hidden
+                  className="mt-7 size-11 text-accent/35"
+                  strokeWidth={1.5}
+                />
+
+                {md.greeting ? (
+                  <h2 className="mt-5 text-[clamp(1.75rem,1.3rem+2vw,2.75rem)] leading-[1.1] font-bold tracking-[-0.03em] text-white">
+                    {md.greeting}
+                  </h2>
+                ) : null}
+
+                {md.welcome ? (
+                  <p className="mt-5 max-w-[58ch] text-[1.1875rem] leading-relaxed text-white/85 italic">
+                    {md.welcome}
+                  </p>
+                ) : null}
+
+                {md.bio.split("\n\n").map((para) => (
+                  <p
+                    key={para}
+                    className="mt-5 max-w-[60ch] text-[1.0625rem] leading-relaxed text-white/70"
+                  >
+                    {para}
+                  </p>
+                ))}
+
+                <p className="mt-8 border-t border-white/12 pt-6 font-heading text-[0.8125rem] font-bold tracking-[0.08em] text-accent uppercase">
+                  {md.credentials}
                 </p>
-                <p className="mt-1 text-[0.875rem] text-white/65">{md.role}</p>
-              </div>
-            </Reveal>
-
-            <Reveal direction="left">
-              <span className="eyebrow text-accent">
-                <span aria-hidden className="h-px w-8 bg-accent/50" />
-                Managing Director&rsquo;s message
-              </span>
-
-              <Quote
-                aria-hidden
-                className="mt-7 size-11 text-accent/35"
-                strokeWidth={1.5}
-              />
-
-              {md.greeting ? (
-                <h2 className="mt-5 text-[clamp(1.75rem,1.3rem+2vw,2.75rem)] leading-[1.1] font-bold tracking-[-0.03em] text-white">
-                  {md.greeting}
-                </h2>
-              ) : null}
-
-              {md.welcome ? (
-                <p className="mt-5 max-w-[58ch] text-[1.1875rem] leading-relaxed text-white/85 italic">
-                  {md.welcome}
-                </p>
-              ) : null}
-
-              {md.bio.split("\n\n").map((para) => (
-                <p
-                  key={para}
-                  className="mt-5 max-w-[60ch] text-[1.0625rem] leading-relaxed text-white/70"
-                >
-                  {para}
-                </p>
-              ))}
-
-              <p className="mt-8 border-t border-white/12 pt-6 font-heading text-[0.8125rem] font-bold tracking-[0.08em] text-accent uppercase">
-                {md.credentials}
-              </p>
-            </Reveal>
+              </Reveal>
+            </div>
           </div>
         </div>
       </section>
